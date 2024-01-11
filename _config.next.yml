@@ -43,7 +43,7 @@ scheme: Mist
 #scheme: Gemini
 
 # Dark Mode
-darkmode: false
+darkmode: true
 
 
 # ---------------------------------------------------------------
@@ -55,7 +55,7 @@ favicon:
   medium: /images/favicon-32x32-next.png
   apple_touch_icon: /images/apple-touch-icon-next.png
   safari_pinned_tab: /images/logo.svg
-  #android_manifest: /manifest.json
+  android_manifest: /manifest.json
 
 # Custom Logo (Warning: Do not support scheme Mist)
 custom_logo: #/uploads/custom-logo.png
@@ -71,7 +71,7 @@ creative_commons:
   post: false
   # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
   # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
-  language:
+  language: zh-CN
 
 # Open graph settings
 # See: https://hexo.io/docs/helpers#open-graph
@@ -131,7 +131,7 @@ sidebar:
   #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  totally remove sidebar including sidebar toggle.
-  display: post
+  display: always
 
   # Sidebar padding in pixels.
   padding: 18
@@ -155,13 +155,13 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  GitHub: https://github.com/yourname || fab fa-github
-  E-Mail: mailto:yourname@gmail.com || fa fa-envelope
-  Weibo: https://weibo.com/yourname || fab fa-weibo
-  Twitter: https://twitter.com/yourname || fab fa-twitter
+  GitHub: https://github.com/nadav-cheung || fab fa-github
+  E-Mail: mailto:nadav.cheung@gmail.com || fa fa-envelope
+#  Weibo: https://weibo.com/yourname || fab fa-weibo
+#  Twitter: https://twitter.com/yourname || fab fa-twitter
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
   #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
-  YouTube: https://youtube.com/yourname || fab fa-youtube
+#  YouTube: https://youtube.com/yourname || fab fa-youtube
   #Instagram: https://instagram.com/yourname || fab fa-instagram
   #Skype: skype:yourname?call|chat || fab fa-skype
 
@@ -279,9 +279,9 @@ reward:
 # Subscribe through Telegram Channel, Twitter, etc.
 # Usage: `Key: permalink || icon` (Font Awesome)
 follow_me:
-  Twitter: https://twitter.com/username || fab fa-twitter
-  Telegram: https://t.me/channel_name || fab fa-telegram
-  WeChat: /images/wechat_channel.png || fab fa-weixin
+  Twitter: https://twitter.com/nadav_cheung || fab fa-twitter
+  Telegram: https://t.me/nadav-cheung || fab fa-telegram
+  公众号: /images/wechat_channel.png || fab fa-weixin
   #RSS: /atom.xml || fa fa-rss
 
 # Related popular posts
