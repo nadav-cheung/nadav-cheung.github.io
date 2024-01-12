@@ -5,6 +5,7 @@ categories:
 tags:
   - 算法与数据结构
   - LeetCode
+top: 1
 ---
 ### Java 解决方案
 
@@ -26,6 +27,8 @@ public class Solution {
     }
 }
 ```
+
+<!-- more -->
 
 ### 解释
 
