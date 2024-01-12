@@ -30,7 +30,9 @@ custom_file_path:
   #variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
   #style: source/_data/styles.styl
-
+#  bodyEnd: source/_data/body-end.swig
+#  footer: source/_data/footer.swig
+#  sidebar: source/_data/sidebar.swig
 
 # ---------------------------------------------------------------
 # Scheme Settings
@@ -67,8 +69,8 @@ creative_commons:
   license: by-nc-sa
   # Available values: big | small
   size: small
-  sidebar: false
-  post: false
+  sidebar: true
+  post: true
   # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
   # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
   language: zh-CN
@@ -157,14 +159,14 @@ site_state: true
 social:
   GitHub: https://github.com/nadav-cheung || fab fa-github
   G-Mail: mailto:nadav.cheung@gmail.com || fa fa-envelope
-  知乎: https://www.zhihu.com/people/nadav-cheung || fab fa-zhihu
-#  Weibo: https://weibo.com/yourname || fab fa-weibo
-#  Twitter: https://twitter.com/yourname || fab fa-twitter
-  #FB Page: https://www.facebook.com/yourname || fab fa-facebook
-  #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
-#  YouTube: https://youtube.com/yourname || fab fa-youtube
+  Weibo: https://weibo.com/yourname || fab fa-weibo
+  Twitter: https://twitter.com/yourname || fab fa-twitter
+  FB Page: https://www.facebook.com/yourname || fab fa-facebook
+  YouTube: https://youtube.com/yourname || fab fa-youtube
   #Instagram: https://instagram.com/yourname || fab fa-instagram
   #Skype: skype:yourname?call|chat || fab fa-skype
+  #  知乎: https://www.zhihu.com/people/nadav-cheung || fab fa-zhihu
+  #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
 
 social_icons:
   enable: true
@@ -371,12 +373,12 @@ codeblock:
     dark: prism-dark
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Available values: default | flat | mac
-    style:
+    style: default
   # Fold code block
   fold:
-    enable: false
+    enable: true
     height: 500
 
 back2top:
@@ -640,7 +642,7 @@ motion:
 # Progress bar in the top during page loading.
 # For more information: https://github.com/CodeByZach/pace
 pace:
-  enable: false
+  enable: true
   # All available colors:
   # black | blue | green | orange | pink | purple | red | silver | white | yellow
   color: blue
@@ -868,9 +870,9 @@ local_search:
   # Show top n results per article, show all results by setting to -1
   top_n_per_article: 1
   # Unescape html strings to the readable one.
-  unescape: false
+  unescape: true
   # Preload the search data when the page loads.
-  preload: false
+  preload: true
 
 
 # ---------------------------------------------------------------

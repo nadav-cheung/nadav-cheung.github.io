@@ -5,6 +5,7 @@ categories:
 tags:
   - 算法与数据结构
   - LeetCode
+abbrlink: bbc911a8
 ---
 在 LeetCode 上，“Longest Substring Without Repeating Characters” 题目要求找出给定字符串中最长的不包含重复字符的子串的长度。这是一个涉及字符串处理和滑动窗口技术的问题。
 
