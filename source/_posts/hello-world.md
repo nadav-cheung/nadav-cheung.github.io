@@ -1,9 +1,8 @@
 ---
 title: Hello World
 categories:
-  - web前端
+  - LeetCode刷题笔记
 tags:
-  - jQuery
-  - 表格
-  - 表单验证
+  - 算法与数据结构
+  - LeetCode
 ---
