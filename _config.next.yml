@@ -203,34 +203,34 @@ language_switcher: false
 
 footer:
   # Specify the year when the site was setup. If not defined, current year will be used.
-  #since: 2021
+  since: 2024
 
   # Icon between year and copyright info.
   icon:
     # Icon name in Font Awesome. See: https://fontawesome.com/icons
     name: fa fa-heart
     # If you want to animate the icon, set it to true.
-    animated: false
+    animated: true
     # Change the color of icon, using Hex Code.
     color: "#ff0000"
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
   # Set to `false` to disable the copyright statement.
-  copyright:
+  copyright: true
 
   # Powered by Hexo & NexT
-  powered: true
+  powered: false
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
   beian:
-    enable: false
-    icp:
+    enable: true
+    icp: 浙ICP备2022010395号
     # The digit in the num of gongan beian.
-    gongan_id:
+    gongan_id: 2022010395
     # The full num of gongan beian.
-    gongan_num:
+    gongan_num: 浙ICP备2022010395号-1
     # The icon for gongan beian. Login and See: https://beian.mps.gov.cn/web/business/businessHome/website
-    gongan_icon_url:
+    gongan_icon_url: /uploads/beian.png
 
 
 # ---------------------------------------------------------------
