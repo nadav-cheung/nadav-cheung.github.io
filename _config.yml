@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 凡人修仙手册
+title: 算法之旅
 subtitle: 算法与数据结构
-description: Java软件开发工程师的算法之旅
-keywords: Java软件开发工程师的算法之旅 凡人修仙手册  算法与数据结构 知乎我有一头小毛驴'
+description: 软件开发工程师的算法之旅
+keywords: Java 软件开发工程师的算法之旅 凡人修仙手册  算法与数据结构 知乎我有一头小毛驴'
 author: Nadav Cheung
 language: zh-CN
 timezone: 'Asia/Shanghai'
@@ -107,3 +107,12 @@ deploy:
   # example, https://github.com/hexojs/hexojs.github.io
   branch: pages
   message: hexo auto deploy
+
+
+# Search
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+

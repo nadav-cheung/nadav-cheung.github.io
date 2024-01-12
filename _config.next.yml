@@ -224,11 +224,11 @@ footer:
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
   beian:
     enable: true
-    icp: 浙ICP备2022010395号
+    icp: 浙ICP备 2022010395号-1
     # The digit in the num of gongan beian.
     gongan_id: 2022010395
     # The full num of gongan beian.
-    gongan_num: 浙ICP备2022010395号-1
+    gongan_num: 浙ICP备 2022010395号
     # The icon for gongan beian. Login and See: https://beian.mps.gov.cn/web/business/businessHome/website
     gongan_icon_url: /uploads/beian.png
 
@@ -383,7 +383,7 @@ back2top:
   # Back to top in sidebar.
   sidebar: false
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
 # Reading progress bar
 reading_progress:
@@ -860,7 +860,7 @@ algolia_search:
 # Local Search
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
-  enable: false
+  enable: true
   # If auto, trigger search by changing input.
   # If manual, trigger search by pressing enter key or search button.
   trigger: auto
