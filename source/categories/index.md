@@ -1,6 +1,7 @@
 ---
-title: 分类
-date: 2024-01-12 11:24:40
+title: categories
+mathjax: true
+date: 2024-01-14 18:37:45
 type: "categories"
+comments: false
 ---
-

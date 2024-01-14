@@ -1,4 +1,7 @@
 ---
-title: 关于
-date: 2024-01-12 14:22:50
+title: about
+mathjax: true
+date: 2024-01-14 18:37:26
+categories:
+tags:
 ---
