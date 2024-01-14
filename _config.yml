@@ -29,7 +29,7 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+skip_render: README.md
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -47,12 +47,12 @@ future: true
 syntax_highlighter: highlight.js
 highlight:
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace: ''
   wrap: true
   hljs: false
 prismjs:
-  preprocess: true
+  preprocess: false
   line_number: true
   tab_replace: ''
 
@@ -115,16 +115,6 @@ search:
   field: post
   content: true
   format: html
-
-# npm install hexo-word-counter
-symbols_count_time:
-  symbols: true
-  time: true
-  total_symbols: true
-  total_time: true
-  exclude_codeblock: false
-  wpm: 275
-  suffix: "mins."
 
 # npm install hexo-filter-mathjax
 mathjax:
@@ -192,7 +182,7 @@ sitemap:
   path:
     - sitemap.xml
     - sitemap.txt
-#  template: ./sitemap_template.xml
+#  templatef: ./sitemap_template.xml
 #  template_txt: ./sitemap_template.txt
   rel: false
   tags: true

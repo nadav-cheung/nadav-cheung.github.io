@@ -21,18 +21,15 @@ minify: true
 custom_file_path:
   #head: source/_data/head.njk
   #header: source/_data/header.njk
-  #sidebar: source/_data/sidebar.njk
+  sidebar: source/_data/sidebar.njk
   #postMeta: source/_data/post-meta.njk
   #postBodyStart: source/_data/post-body-start.njk
-  #postBodyEnd: source/_data/post-body-end.njk
-  #footer: source/_data/footer.njk
+  postBodyEnd: source/_data/post-body-end.njk
+  footer: source/_data/footer.njk
   #bodyEnd: source/_data/body-end.njk
-  #variable: source/_data/variables.styl
+  variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
-  #style: source/_data/styles.styl
-#  bodyEnd: source/_data/body-end.swig
-#  footer: source/_data/footer.swig
-#  sidebar: source/_data/sidebar.swig
+  style: source/_data/styles.styl
 
 # ---------------------------------------------------------------
 # Scheme Settings
@@ -53,9 +50,14 @@ darkmode: true
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
+#  small: /images/favicon-16x16-next.png
+#  medium: /images/favicon-32x32-next.png
+#  apple_touch_icon: /images/apple-touch-icon-next.png
+#  safari_pinned_tab: /images/logo.svg
+#  android_manifest: /manifest.json
+  small: /images/favicon.png
+  medium: /images/favicon.png
+  apple_touch_icon: /images/favicon.png
   safari_pinned_tab: /images/logo.svg
   android_manifest: /manifest.json
 
@@ -99,20 +101,18 @@ open_graph:
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-#  algorithms: /algorithms || fa fa-home
-#  leetcode: /leetcode || fa fa-home
-  tags: /tags/ || fa fa-tags
   categories: /categories/ || fa fa-th
+  tags: /tags/ || fa fa-tags
   archives: /archives/ || fa fa-archive
   about: /about/ || fa fa-user
-#  schedule: /schedule/ || fa fa-calendar
-#  sitemap: /sitemap.xml || fa fa-sitemap
-#  commonweal: /404/ || fa fa-heartbeat
+  commonweal: /404/ || fa fa-heartbeat
+  #sitemap: /sitemap.xml || fa fa-sitemap
+  #schedule: /schedule/ || fa fa-calendar
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: false
+  badges: true
 
 
 # ---------------------------------------------------------------
@@ -135,7 +135,7 @@ sidebar:
   #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  totally remove sidebar including sidebar toggle.
-  display: always
+  display: post
 
   # Sidebar padding in pixels.
   padding: 18
@@ -146,6 +146,7 @@ sidebar:
 avatar:
   # Replace the default image and set the url here.
 #  url: #/images/avatar.gif
+  url: /images/avatar.png
   # If true, the avatar will be displayed in circle.
   rounded: true
   # If true, the avatar will be rotated with the cursor.
@@ -159,15 +160,16 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
+  知乎: https://www.zhihu.com/people/nadav-cheung || fab fa-zhihu
   GitHub: https://github.com/nadav-cheung || fab fa-github
   G-Mail: mailto:nadav.cheung@gmail.com || fa fa-envelope
   Weibo: https://weibo.com/yourname || fab fa-weibo
-  Twitter: https://twitter.com/yourname || fab fa-twitter
-  FB Page: https://www.facebook.com/yourname || fab fa-facebook
-  YouTube: https://youtube.com/yourname || fab fa-youtube
+  Twitter: https://twitter.com/nadav_cheung || fab fa-twitter
+  FB Page: https://www.facebook.com/nadav.cheung || fab fa-facebook
+  YouTube: https://youtube.com/nadav.cheung || fab fa-youtube
+  bilibili: https://space.bilibili.com/101980166 || fab fa-bilibili
   #Instagram: https://instagram.com/yourname || fab fa-instagram
   #Skype: skype:yourname?call|chat || fab fa-skype
-  #  知乎: https://www.zhihu.com/people/nadav-cheung || fab fa-zhihu
   #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
 
 social_icons:
@@ -204,7 +206,7 @@ toc:
 # ---------------------------------------------------------------
 
 # Show multilingual switcher in footer.
-language_switcher: false
+language_switcher: true
 
 footer:
   # Specify the year when the site was setup. If not defined, current year will be used.
@@ -221,14 +223,14 @@ footer:
 
   # If not defined, `author` from Hexo `_config.yml` will be used.
   # Set to `false` to disable the copyright statement.
-  copyright: true
+  copyright:
 
   # Powered by Hexo & NexT
   powered: false
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
   beian:
-    enable: true
+    enable: false
     icp: 浙ICP备 2022010395号-1
     # The digit in the num of gongan beian.
     gongan_id: 2022010395
@@ -261,12 +263,18 @@ post_meta:
 
 # Post wordcount display settings
 # Dependencies: https://github.com/next-theme/hexo-word-counter
+# npm install hexo-word-counter
 symbols_count_time:
   separated_meta: true
-  item_text_total: false
+  item_text_total: true
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: false
+  wpm: 275
+  suffix: "mins."
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Donate (Sponsor) settings
 # Front-matter variable (nonsupport animation).
@@ -284,9 +292,11 @@ reward:
 # Subscribe through Telegram Channel, Twitter, etc.
 # Usage: `Key: permalink || icon` (Font Awesome)
 follow_me:
-  Twitter: https://twitter.com/nadav_cheung || fab fa-twitter
-  Telegram: https://t.me/nadav-cheung || fab fa-telegram
+  知乎: https://www.zhihu.com/people/nadav-cheung || fab fa-zhihu
   公众号: /images/wechat_channel.png || fab fa-weixin
+  Twitter: https://twitter.com/nadav_cheung || fab fa-twitter
+  Telegram: https://t.me/nadav_cheung || fab fa-telegram
+
   #RSS: /atom.xml || fa fa-rss
 
 # Related popular posts
@@ -314,8 +324,8 @@ post_navigation: left
 
 # TagCloud settings for tags page.
 tagcloud:
-  min: 12 # Minimum font size in px
-  max: 30 # Maximum font size in px
+  min: 18 # Minimum font size in px
+  max: 18 # Maximum font size in px
   amount: 200 # Total amount of tags
   orderby: name # Order of tags
   order: 1 # Sort order
@@ -368,8 +378,8 @@ codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
   theme:
-    light: default
-    dark: stackoverflow-dark
+    light: github
+    dark: github-dark
   prism:
     light: prism
     dark: prism-dark
@@ -377,7 +387,7 @@ codeblock:
   copy_button:
     enable: true
     # Available values: default | flat | mac
-    style: default
+    style: mac
   # Fold code block
   fold:
     enable: true
@@ -386,7 +396,7 @@ codeblock:
 back2top:
   enable: true
   # Back to top in sidebar.
-  sidebar: false
+  sidebar: true
   # Scroll percent label in b2t button.
   scrollpercent: true
 
@@ -520,9 +530,9 @@ note:
 # Tabs tag
 tabs:
   # Make the nav bar of tabs with long content stick to the top.
-  sticky: false
+  sticky: true
   transition:
-    tabs: false
+    tabs: true
     labels: true
 
 # PDF tag
@@ -647,11 +657,11 @@ pace:
   enable: true
   # All available colors:
   # black | blue | green | orange | pink | purple | red | silver | white | yellow
-  color: blue
+  color: purple
   # All available themes:
   # big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
   # corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
-  theme: minimal
+  theme: bounce
 
 # Generate a ribbon in your website with HTML5 canvas.
 # For more information: https://github.com/hustcc/ribbon.js
@@ -931,3 +941,7 @@ vendors:
 css: css
 js: js
 images: images
+
+# post body end personal tag
+passage_end_tag:
+  enabled: true
