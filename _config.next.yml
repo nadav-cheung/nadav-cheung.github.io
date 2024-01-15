@@ -360,7 +360,7 @@ text_align:
   mobile: justify
 
 # Reduce padding / margin indents on devices with narrow width.
-mobile_layout_economy: false
+mobile_layout_economy: true
 
 # Browser header panel color.
 theme_color:
@@ -372,7 +372,7 @@ body_scrollbar:
   # Place the scrollbar over the content.
   overlay: false
   # Present the scrollbar even if the content is not overflowing.
-  stable: false
+  stable: true
 
 codeblock:
   # Code Highlight theme
@@ -439,10 +439,10 @@ github_banner:
 # ---------------------------------------------------------------
 
 font:
-  enable: false
+  enable: true
 
   # Uri of fonts host, e.g. https://fonts.googleapis.com (Default).
-  host:
+  host: https://fonts.googleapis.com
 
   # Font options:
   # `external: true` will load this font family from `host` above.
@@ -452,7 +452,8 @@ font:
   # Global font settings used for all elements inside <body>.
   global:
     external: true
-    family: Lato
+#    family: Lato
+    family: Comic Sans MS
     size:
 
   # Font settings for site title (.site-title).
@@ -506,7 +507,7 @@ yandex_site_verification:
 
 # Baidu Webmaster tools verification.
 # See: https://ziyuan.baidu.com/site
-baidu_site_verification:
+baidu_site_verification: codeva-1ldrDhWqJG
 
 
 # ---------------------------------------------------------------
@@ -884,7 +885,7 @@ local_search:
   # Unescape html strings to the readable one.
   unescape: true
   # Preload the search data when the page loads.
-  preload: true
+  preload: false
 
 
 # ---------------------------------------------------------------
