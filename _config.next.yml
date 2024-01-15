@@ -195,7 +195,7 @@ toc:
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: true
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
-  expand_all: true
+  expand_all: false
   # Maximum heading depth of generated toc.
   max_depth: 6
 
@@ -281,7 +281,7 @@ tag_icon: true
 reward_settings:
   # If true, a donate button will be displayed in every article by default.
   enable: true
-  animation: true
+  animation: false
 
 reward:
   wechatpay: /images/wechatpay.jpg
