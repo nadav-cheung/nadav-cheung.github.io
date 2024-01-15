@@ -187,6 +187,8 @@ sitemap:
   rel: false
   tags: true
   categories: true
+baidusitemap:
+  path: baidusitemap.xml
 
 
 
