@@ -1,11 +1,7 @@
 ---
 title: 《如何写LeetCode刷题笔记》
-categories:
-  - LeetCode刷题笔记
-tags:
-  - 算法与数据结构
-  - LeetCode
-  - 写作
+categories: [ LeetCode刷题笔记 ]
+tags: [ 算法与数据结构,LeetCode,写作 ]
 top: 3000
 abbrlink: '32e49274'
 ---
