@@ -5,6 +5,7 @@ categories:
 tags:
   - 算法与数据结构
   - LeetCode
+top: 100
 abbrlink: cbfbeb4e
 ---
 

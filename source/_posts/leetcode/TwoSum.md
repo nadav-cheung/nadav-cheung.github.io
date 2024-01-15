@@ -5,7 +5,7 @@ categories:
 tags:
   - 算法与数据结构
   - LeetCode
-top: 1
+top: 100
 abbrlink: '6773541'
 ---
 ### Java 解决方案
