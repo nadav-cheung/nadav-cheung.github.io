@@ -13,3 +13,5 @@ Disallow: /vendors/
 Disallow: /fancybox/
 
 Sitemap: https://nadav.com.cn/sitemap.xml
+Sitemap: https://nadav.com.cn/sitemap.txt
+Sitemap: https://nadav.com.cn/baidusitemap.xml
