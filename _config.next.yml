@@ -184,7 +184,7 @@ links_settings:
   layout: block
 
 links:
-#  标签信息: /tags/
+#  rss: ./atom.xml
 
 # Table of Contents in the Sidebar
 # Front-matter variable (nonsupport wrap expand_all).
@@ -324,7 +324,7 @@ post_navigation: left
 
 # TagCloud settings for tags page.
 tagcloud:
-  min: 18 # Minimum font size in px
+  min: 18 # Minimum font: size in px
   max: 18 # Maximum font size in px
   amount: 200 # Total amount of tags
   orderby: name # Order of tags
