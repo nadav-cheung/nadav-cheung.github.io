@@ -105,7 +105,7 @@ menu:
   tags: /tags/ || fa fa-tags
   archives: /archives/ || fa fa-archive
   about: /about/ || fa fa-user
-  commonweal: /404/ || fa fa-heartbeat
+#  commonweal: /404/ || fa fa-heartbeat
   #sitemap: /sitemap.xml || fa fa-sitemap
   #schedule: /schedule/ || fa fa-calendar
 
@@ -160,14 +160,15 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  知乎: https://www.zhihu.com/people/nadav-cheung || fab fa-zhihu
+  知乎: https://www.zhihu.com/people/nadav-cheung || fab fa-zhihu fa-beat-fade
   GitHub: https://github.com/nadav-cheung || fab fa-github
   G-Mail: mailto:nadav.cheung@gmail.com || fa fa-envelope
-  Weibo: https://weibo.com/yourname || fab fa-weibo
+#  Weibo: https://weibo.com/yourname || fab fa-weibo
   Twitter: https://twitter.com/nadav_cheung || fab fa-twitter
   FB Page: https://www.facebook.com/nadav.cheung || fab fa-facebook
   YouTube: https://youtube.com/nadav.cheung || fab fa-youtube
   bilibili: https://space.bilibili.com/101980166 || fab fa-bilibili
+  ProcessOn: https://www.processon.com/u/5e690116e4b00fb1da107799 || fab a-brands fa-product-hunt fa-beat-fade
   #Instagram: https://instagram.com/yourname || fab fa-instagram
   #Skype: skype:yourname?call|chat || fab fa-skype
   #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
@@ -352,7 +353,7 @@ calendar:
 
 # Preload styles and preconnect CDN for fonts and plugins.
 # For more information: https://www.w3.org/TR/resource-hints/#preconnect
-preconnect: false
+preconnect: true
 
 # Set the text alignment in posts / pages.
 text_align:
