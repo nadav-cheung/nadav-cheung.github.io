@@ -782,7 +782,7 @@ addtoany:
 # Google Analytics
 # See: https://analytics.google.com
 google_analytics:
-  tracking_id: G-C4RLTDG3VJ
+  tracking_id: G-V46WZ4FJX1
   # By default, NexT will load an external gtag.js script on your site.
   # If you only need the pageview feature, set the following option to true to get a better performance.
   only_pageview: false
@@ -846,8 +846,8 @@ leancloud_visitors:
 firestore:
   enable: true
   collection: articles # Required, a string collection name to access firestore database
-  apiKey: AIzaSyA3PWP1-LkwdWx5CTHHF-torB2nSDmNP7s
-  projectId: nadav-e05ca
+  apiKey: AIzaSyCzx9lt4NaNcSCHb3uiAmrTyjtfGdXdVAI
+  projectId: nadav-cheung-github-io
 
 # Show Views / Visitors of the website / page with busuanzi.
 # For more information: http://ibruce.info/2015/04/04/busuanzi/
