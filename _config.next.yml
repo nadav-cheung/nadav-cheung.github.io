@@ -160,7 +160,7 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  知乎: https://www.zhihu.com/people/nadav-cheung || fab fa-zhihu fa-beat-fade
+  知乎: https://www.zhihu.com/people/nadav-cheung/posts || fab fa-zhihu fa-beat-fade
   GitHub: https://github.com/nadav-cheung || fab fa-github
   G-Mail: mailto:nadav.cheung@gmail.com || fa fa-envelope
   Twitter: https://twitter.com/nadav_cheung || fab fa-twitter
