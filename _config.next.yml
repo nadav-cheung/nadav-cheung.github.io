@@ -285,15 +285,15 @@ reward_settings:
   animation: false
 
 reward:
-  wechatpay: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202401161902004.png
-#  alipay: /images/alipay.png
+  wechatpay: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202401171842413.png
+  alipay: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202401171841199.png
   #paypal: /images/paypal.png
   #bitcoin: /images/bitcoin.png
 
 # Subscribe through Telegram Channel, Twitter, etc.
 # Usage: `Key: permalink || icon` (Font Awesome)
 follow_me:
-  知乎: https://www.zhihu.com/people/nadav-cheung || fab fa-zhihu fa-beat-fade
+  知乎: https://www.zhihu.com/people/nadav-cheung/posts || fab fa-zhihu fa-beat-fade
 #  Twitter: https://twitter.com/nadav_cheung || fab fa-twitter fa-beat-fade
   Telegram: https://t.me/nadav_cheung || fab fa-telegram fa-beat-fade
 #  公众号: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/wechat_channel.png || fab fa-weixin fa-beat-fade
@@ -688,7 +688,7 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: disqus | disqusjs | changyan | livere | gitalk | utterances
-  active:
+  active: gitalk
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
@@ -736,19 +736,20 @@ livere_uid: # <your_uid>
 # Gitalk
 # For more information: https://gitalk.github.io
 gitalk:
-  enable: false
-  github_id: # GitHub repo owner
-  repo: # Repository name to store issues
-  client_id: # GitHub Application Client ID
-  client_secret: # GitHub Application Client Secret
-  admin_user: # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
+  enable: true
+#  github_id:
+  github_id: nadav-cheung  # GitHub repo owner
+  repo: gitalk.nadav-cheung.github.io # Repository name to store issues
+  client_id: 95c086f5b866227c9872
+  client_secret: 5e7dbe3a5efec790afd4b6d4682bb60748c8613a
+  admin_user: nadav-cheung # GitHub repo owner and collaborators, only these guys can initialize gitHub issues
   distraction_free_mode: true # Facebook-like distraction free mode
   # When the official proxy is not available, you can change it to your own proxy address
   proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token # This is official proxy address
   # Gitalk's display language depends on user's browser or system environment
   # If you want everyone visiting your site to see a uniform language, you can set a force language value
   # Available values: en | es-ES | fr | ru | zh-CN | zh-TW
-  language:
+  language: zh-CN
 
 # Utterances
 # For more information: https://utteranc.es
