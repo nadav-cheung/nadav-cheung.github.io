@@ -23,10 +23,10 @@ custom_file_path:
   #header: source/_data/header.njk
   sidebar: source/_data/sidebar.njk
   #postMeta: source/_data/post-meta.njk
-  #postBodyStart: source/_data/post-body-start.njk
+  postBodyStart: source/_data/post-body-start.njk
   postBodyEnd: source/_data/post-body-end.njk
   footer: source/_data/footer.njk
-  #bodyEnd: source/_data/body-end.njk
+  bodyEnd: source/_data/body-end.njk
   variable: source/_data/variables.styl
   #mixin: source/_data/mixins.styl
   style: source/_data/styles.styl
@@ -294,9 +294,9 @@ reward:
 # Usage: `Key: permalink || icon` (Font Awesome)
 follow_me:
   知乎: https://www.zhihu.com/people/nadav-cheung || fab fa-zhihu fa-beat-fade
-  Twitter: https://twitter.com/nadav_cheung || fab fa-twitter fa-beat-fade
+#  Twitter: https://twitter.com/nadav_cheung || fab fa-twitter fa-beat-fade
   Telegram: https://t.me/nadav_cheung || fab fa-telegram fa-beat-fade
-  公众号: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/wechat_channel.png || fab fa-weixin fa-beat-fade
+#  公众号: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/wechat_channel.png || fab fa-weixin fa-beat-fade
   ProcessOn: https://www.processon.com/u/5e690116e4b00fb1da107799 || fab a-brands fa-product-hunt fa-beat-fade
 
 
@@ -305,7 +305,7 @@ follow_me:
 # Related popular posts
 # Dependencies: https://github.com/sergeyzwezdin/hexo-related-posts
 related_posts:
-  enable: false
+  enable: true
   icon: fa fa-signs-post
 
 # Post edit
@@ -950,3 +950,4 @@ images: images
 # post body end personal tag
 passage_end_tag:
   enabled: true
+
