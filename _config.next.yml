@@ -59,7 +59,7 @@ favicon:
   medium: /images/favicon.png
   apple_touch_icon: /images/favicon.png
   safari_pinned_tab: /images/logo.svg
-  android_manifest: /manifest.json
+#  android_manifest: /manifest.json
 
 # Custom Logo (Warning: Do not support scheme Mist)
 custom_logo: #/uploads/custom-logo.png
@@ -163,7 +163,6 @@ social:
   知乎: https://www.zhihu.com/people/nadav-cheung || fab fa-zhihu fa-beat-fade
   GitHub: https://github.com/nadav-cheung || fab fa-github
   G-Mail: mailto:nadav.cheung@gmail.com || fa fa-envelope
-#  Weibo: https://weibo.com/yourname || fab fa-weibo
   Twitter: https://twitter.com/nadav_cheung || fab fa-twitter
   FB Page: https://www.facebook.com/nadav.cheung || fab fa-facebook
   YouTube: https://youtube.com/nadav.cheung || fab fa-youtube
@@ -172,6 +171,7 @@ social:
   #Instagram: https://instagram.com/yourname || fab fa-instagram
   #Skype: skype:yourname?call|chat || fab fa-skype
   #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
+#  Weibo: https://weibo.com/yourname || fab fa-weibo
 
 social_icons:
   enable: true
@@ -490,7 +490,7 @@ font:
 
 # If true, site-subtitle will be added to the title of index page.
 # Remember to set up your site-subtitle in Hexo `_config.yml` (e.g. subtitle: Subtitle)
-index_with_subtitle: false
+index_with_subtitle: true
 
 # Automatically add external URL with Base64 encrypt & decrypt.
 exturl: false
