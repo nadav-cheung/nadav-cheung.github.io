@@ -1,9 +1,20 @@
-<!-- 文章结尾提示 还要在学吗？-->
+<!-- 文章结尾提示 还要在学吗？
 <div>
    {% if theme.passage_end_tag.enabled %}
      <div style="text-align:center;color: #ccc;font-size:14px;">
      <i class="fa fa-paw"></i>
      已经到底啦！歇歇吧别学啦！
+     <i class="fa fa-paw"></i>
+     </div>
+   {% endif %}
+</div>
+-->
+
+<div>
+   {% if theme.passage_end_tag.enabled %}
+     <div style="text-align:center;color: #ccc;">
+     <i class="fa fa-paw"></i>
+        已经到底啦！别学了歇歇吧！
      <i class="fa fa-paw"></i>
      </div>
    {% endif %}
