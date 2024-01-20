@@ -165,7 +165,7 @@ social:
   G-Mail: mailto:nadav.cheung@gmail.com || fa fa-envelope
   Twitter: https://twitter.com/nadav_cheung || fab fa-twitter
   FB Page: https://www.facebook.com/nadav.cheung || fab fa-facebook
-  YouTube: https://youtube.com/nadav.cheung || fab fa-youtube
+  YouTube: https://www.youtube.com/@NadavCheung || fab fa-youtube
   bilibili: https://space.bilibili.com/101980166 || fab fa-bilibili
   ProcessOn: https://www.processon.com/u/5e690116e4b00fb1da107799 || fab a-brands fa-product-hunt fa-beat-fade
   #Instagram: https://instagram.com/yourname || fab fa-instagram
@@ -231,12 +231,12 @@ footer:
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
   beian:
-    enable: false
-    icp: 浙ICP备 2022010395号-1
+    enable: true
+    icp: 浙ICP备2022010395号-2
     # The digit in the num of gongan beian.
     gongan_id: 2022010395
     # The full num of gongan beian.
-    gongan_num: 浙ICP备 2022010395号
+    gongan_num: 浙ICP备2022010395号
     # The icon for gongan beian. Login and See: https://beian.mps.gov.cn/web/business/businessHome/website
     gongan_icon_url: /uploads/beian.png
 
@@ -300,12 +300,12 @@ follow_me:
   ProcessOn: https://www.processon.com/u/5e690116e4b00fb1da107799 || fab a-brands fa-product-hunt fa-beat-fade
 
 
-  #RSS: /atom.xml || fa fa-rss
+#RSS: /atom.xml || fa fa-rss
 
 # Related popular posts
 # Dependencies: https://github.com/sergeyzwezdin/hexo-related-posts
 related_posts:
-  enable: true
+  enable: false
   icon: fa fa-signs-post
 
 # Post edit
@@ -399,7 +399,7 @@ codeblock:
 back2top:
   enable: true
   # Back to top in sidebar.
-  sidebar: true
+  sidebar: false
   # Scroll percent label in b2t button.
   scrollpercent: true
 
