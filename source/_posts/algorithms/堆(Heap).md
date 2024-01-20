@@ -1,11 +1,13 @@
 ---
 title: 《堆》
-categories: [算法与数据结构, Java开发者的探索之旅]
+categories:
+  - 算法与数据结构
+  - Java开发者的探索之旅
 tags:
   - 算法与数据结构
   - 堆
 top: 3011
-abbrlink: 1887ef
+abbrlink: 8e3ec9bc
 ---
 
 ## 堆
