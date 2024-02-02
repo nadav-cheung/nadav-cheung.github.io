@@ -344,7 +344,7 @@ public interface List<E> {
 
 ![移动元素，覆盖要删除的数据](https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/v2-3200fc986303b9036f8832ad51a35f88_1440w.png)
 
-![置空数据](https://pic1.zhimg.com/80/v2-92212204942490230aa4f166fb07e99d_1440w.png?source=d16d100b)
+![置空数据](https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/v2-92212204942490230aa4f166fb07e99d_1440w-20240202213325202.png)
 
 ```java
     public E remove(int index) {

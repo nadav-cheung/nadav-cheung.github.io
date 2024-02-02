@@ -1,5 +1,5 @@
 ---
-title: 《算法与数据结构：Heap》
+title: 《算法与数据结构:Heap》
 categories:
   - 算法与数据结构
   - Heap
