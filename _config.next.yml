@@ -234,11 +234,11 @@ footer:
     enable: true
     icp: 浙ICP备2022010395号-2
     # The digit in the num of gongan beian.
-    gongan_id:
+    gongan_id: 33010802013393
     # The full num of gongan beian.
-    gongan_num:
+    gongan_num: 浙公网安备33010802013393
     # The icon for gongan beian. Login and See: https://beian.mps.gov.cn/web/business/businessHome/website
-    gongan_icon_url: /uploads/beian.png
+    gongan_icon_url: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png
 
 
 # ---------------------------------------------------------------
