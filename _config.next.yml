@@ -234,9 +234,9 @@ footer:
     enable: true
     icp: 浙ICP备2022010395号-2
     # The digit in the num of gongan beian.
-    gongan_id: 2022010395
+    gongan_id:
     # The full num of gongan beian.
-    gongan_num: 浙ICP备2022010395号
+    gongan_num:
     # The icon for gongan beian. Login and See: https://beian.mps.gov.cn/web/business/businessHome/website
     gongan_icon_url: /uploads/beian.png
 
