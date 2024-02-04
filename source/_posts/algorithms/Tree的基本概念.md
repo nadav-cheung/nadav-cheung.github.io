@@ -1,5 +1,5 @@
 ---
-title: 《算法与数据结构：Tree的基本概念》
+title: 《Tree的基本概念》
 categories:
   - 算法与数据结构
   - Tree

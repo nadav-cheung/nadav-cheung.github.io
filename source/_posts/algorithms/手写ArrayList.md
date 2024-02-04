@@ -1,11 +1,12 @@
 ---
-title: '《算法与数据结构:手写ArrayList》'
+title: 《手写ArrayList》
 categories:
   - 算法与数据结构
   - ArrayList
 tags:
   - 算法与数据结构
   - List
+  - ArrayList
 top: 3018
 abbrlink: e7bb25a0
 ---
