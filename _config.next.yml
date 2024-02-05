@@ -55,10 +55,10 @@ favicon:
 #  apple_touch_icon: /images/apple-touch-icon-next.png
 #  safari_pinned_tab: /images/logo.svg
 #  android_manifest: /manifest.json
-  small: /images/favicon.png
-  medium: /images/favicon.png
-  apple_touch_icon: /images/favicon.png
-  safari_pinned_tab: /images/logo.svg
+  small: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202402051051028.png
+  medium: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202402051051028.png
+  apple_touch_icon: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202402051051028.png
+  safari_pinned_tab: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/logo.svg
 #  android_manifest: /manifest.json
 
 # Custom Logo (Warning: Do not support scheme Mist)
@@ -146,7 +146,7 @@ sidebar:
 avatar:
   # Replace the default image and set the url here.
 #  url: #/images/avatar.gif
-  url: /images/avatar.png
+  url: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/avatar.png
   # If true, the avatar will be displayed in circle.
   rounded: true
   # If true, the avatar will be rotated with the cursor.
