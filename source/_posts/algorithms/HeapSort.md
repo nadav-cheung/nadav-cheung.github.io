@@ -31,7 +31,7 @@ abbrlink: 607bf52d
 
 在Java中，可以使用数组来实现堆。数组中的每个位置对应堆中的一个节点，父节点和子节点的位置关系可以通过数组索引轻松找到。这种数据结构使得堆操作的时间复杂度保持在对数级别。
 
-![img](https://picx.zhimg.com/v2-35f567686fae868e742dcdabc49584cb_r.jpg?source=172ae18b)
+![img](https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/v2-35f567686fae868e742dcdabc49584cb_r.jpg)
 
 ### 堆排序算法步骤
 
