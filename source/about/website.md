@@ -5,7 +5,7 @@ date: 2024-01-14 18:37:26
 top: 100
 ---
 
-# 站点简介
+## 站点简介
 
 ## [本站主要是个人github项目algorithm的附属品](https://github.com/nadav-cheung/algorithm)
 

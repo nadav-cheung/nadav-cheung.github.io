@@ -2,14 +2,14 @@
 title: 《优先队列PriorityQueue》
 categories:
   - 算法与数据结构
-  - riorityQueue
+  - priorityQueue
 tags:
   - 算法与数据结构
-  - riorityQueue
+  - priorityQueue
 top: 30444
 abbrlink: 96e44c12
 ---
-# 《算法与数据结构：优先队列PriorityQueue》
+## 《算法与数据结构：优先队列PriorityQueue》
 
 ## 什么是优先队列？
 

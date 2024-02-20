@@ -6,10 +6,10 @@ categories:
 tags:
   - 算法与数据结构
   - BST
-top: 30444
+top: 30477
 abbrlink: 49745c6b
 ---
-# 《算法与数据结构：（Binary Search Tree, BST）二叉搜索树》
+## 《算法与数据结构：（Binary Search Tree, BST）二叉搜索树》
 
 ## **简介**
 
