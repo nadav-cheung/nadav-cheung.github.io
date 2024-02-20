@@ -3,7 +3,7 @@
   <entry>
     <title>《排序算法纲领》</title>
     <url>/posts/d161d12f/</url>
-    <content><![CDATA[<h2 id="《算法与数据结构-排序算法纲领》"><a href="#《算法与数据结构-排序算法纲领》" class="headerlink" title="《算法与数据结构:排序算法纲领》"></a>《算法与数据结构：排序算法纲领》</h2><h2 id="排序算法概览"><a href="#排序算法概览" class="headerlink" title="排序算法概览"></a>排序算法概览</h2><h3 id="排序算法的概念"><a href="#排序算法的概念" class="headerlink" title="排序算法的概念"></a><strong>排序算法的概念</strong></h3><p>排序算法是一类算法，用于将一组数据元素（通常是数组）按照特定的顺序（如升序或降序）重新排列。排序是计算机科学中基本的操作之一，广泛应用于数据处理、数据库系统、算法设计等领域。</p>
+    <content><![CDATA[<h1 id="《算法与数据结构-排序算法纲领》"><a href="#《算法与数据结构-排序算法纲领》" class="headerlink" title="《算法与数据结构:排序算法纲领》"></a>《算法与数据结构：排序算法纲领》</h1><h2 id="排序算法概览"><a href="#排序算法概览" class="headerlink" title="排序算法概览"></a>排序算法概览</h2><h3 id="排序算法的概念"><a href="#排序算法的概念" class="headerlink" title="排序算法的概念"></a><strong>排序算法的概念</strong></h3><p>排序算法是一类算法，用于将一组数据元素（通常是数组）按照特定的顺序（如升序或降序）重新排列。排序是计算机科学中基本的操作之一，广泛应用于数据处理、数据库系统、算法设计等领域。</p>
 <h3 id="排序算法的本质"><a href="#排序算法的本质" class="headerlink" title="排序算法的本质"></a><strong>排序算法的本质</strong></h3><p>排序算法的本质是比较和交换（或移动）数据元素，以达到预定的顺序。这个过程通常涉及以下基本操作：</p>
 <ul>
 <li><strong>比较</strong>：判断两个元素之间的顺序关系。</li>
@@ -56,7 +56,7 @@
 <li><h3 id="双路快速排序算法"><a href="#双路快速排序算法" class="headerlink" title="双路快速排序算法"></a><strong>双路快速排序算法</strong></h3></li>
 <li><h3 id="三路快速排序算法"><a href="#三路快速排序算法" class="headerlink" title="三路快速排序算法"></a><strong>三路快速排序算法</strong></h3></li>
 </ul>
-<h3 id="桶排序算法"><a href="#桶排序算法" class="headerlink" title="桶排序算法"></a><strong>桶排序算法</strong></h3><h3 id="希尔排序算法"><a href="#希尔排序算法" class="headerlink" title="希尔排序算法"></a><strong>希尔排序算法</strong></h3><h2 id="github项目地址"><a href="#github项目地址" class="headerlink" title="github项目地址"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目地址</a></h2>]]></content>
+<h3 id="桶排序算法"><a href="#桶排序算法" class="headerlink" title="桶排序算法"></a><strong>桶排序算法</strong></h3><h3 id="希尔排序算法"><a href="#希尔排序算法" class="headerlink" title="希尔排序算法"></a><strong>希尔排序算法</strong></h3><h2 id="github项目"><a href="#github项目" class="headerlink" title="github项目"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目</a></h2>]]></content>
       <categories>
         <category>算法与数据结构</category>
         <category>排序算法纲领</category>
@@ -69,7 +69,7 @@
   <entry>
     <title>《Tree 的基本概念》</title>
     <url>/posts/6e5a1512/</url>
-    <content><![CDATA[<h2 id="《算法与数据结构-Tree的基本概念》"><a href="#《算法与数据结构-Tree的基本概念》" class="headerlink" title="《算法与数据结构:Tree的基本概念》"></a>《算法与数据结构：Tree 的基本概念》</h2><h2 id="树的基本概念"><a href="#树的基本概念" class="headerlink" title="树的基本概念"></a><strong>树的基本概念</strong></h2><h3 id="树（Tree）结构简介"><a href="#树（Tree）结构简介" class="headerlink" title="树（Tree）结构简介"></a><strong>树（Tree）结构简介</strong></h3><p>树是一种层级数据结构，非常适合用来表示具有层级关系或者需要快速搜索操作的数据集合。它由节点 Nodes 组成，这些节点通过边 Edges 相连。一个树结构有以下特点：</p>
+    <content><![CDATA[<h1 id="《算法与数据结构-Tree的基本概念》"><a href="#《算法与数据结构-Tree的基本概念》" class="headerlink" title="《算法与数据结构:Tree的基本概念》"></a>《算法与数据结构：Tree 的基本概念》</h1><h2 id="树的基本概念"><a href="#树的基本概念" class="headerlink" title="树的基本概念"></a><strong>树的基本概念</strong></h2><h3 id="树（Tree）结构简介"><a href="#树（Tree）结构简介" class="headerlink" title="树（Tree）结构简介"></a><strong>树（Tree）结构简介</strong></h3><p>树是一种层级数据结构，非常适合用来表示具有层级关系或者需要快速搜索操作的数据集合。它由节点 Nodes 组成，这些节点通过边 Edges 相连。一个树结构有以下特点：</p>
 <ul>
 <li><strong>树与子树：</strong>树是一个有限集合，子树则是该集合的子集。就像套娃一样，一棵树下面还包含着其子树。比如，树 T1 的子树为 树 T2、T3、T4，树 T2 的子树为 T5、T6。 上图中还有许多子树没有标记出来 。</li>
 <li><strong>结点 (Node)：</strong>一个结点包括一个数据元素和若干指向其子树分支。比如，在树 T1 中，结点 A 包括一个数据元素 A 和 三个指向其子树的分支。上图中共有 18 个结点 。</li>
@@ -150,7 +150,7 @@
 <li>快速排序   前序遍历 </li>
 </ol>
 <p><img data-src="https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/v2-c8e7df0d473656b8f82f7ac46c02461c_1440w.png" alt="img"></p>
-<h2 id="github项目地址"><a href="#github项目地址" class="headerlink" title="github项目地址"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目地址</a></h2>]]></content>
+<h2 id="github项目"><a href="#github项目" class="headerlink" title="github项目"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目</a></h2>]]></content>
       <categories>
         <category>算法与数据结构</category>
         <category>Tree</category>
@@ -163,7 +163,7 @@
   <entry>
     <title>《Java 开发者的探索之旅》</title>
     <url>/posts/1887ef/</url>
-    <content><![CDATA[<h2 id="《算法与数据结构-Java开发者的探索之旅》专栏简介"><a href="#《算法与数据结构-Java开发者的探索之旅》专栏简介" class="headerlink" title="《算法与数据结构:Java开发者的探索之旅》专栏简介"></a>《算法与数据结构：Java 开发者的探索之旅》专栏简介</h2><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>欢迎来到《算法与数据结构：Java 开发者的探索之旅》一个专为 Java 程序员设计的综合学习平台。无论您是初涉编程世界的新手，还是经验丰富的行业专家，这里都有您需要的知识和资源。通过本专栏，我们将共同探索算法的奥秘和数据结构的精髓，不仅提升您的编程技能，还将激发您解决复杂问题的能力。</p>
+    <content><![CDATA[<h1 id="《算法与数据结构-Java开发者的探索之旅》专栏简介"><a href="#《算法与数据结构-Java开发者的探索之旅》专栏简介" class="headerlink" title="《算法与数据结构:Java开发者的探索之旅》专栏简介"></a>《算法与数据结构：Java 开发者的探索之旅》专栏简介</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>欢迎来到《算法与数据结构：Java 开发者的探索之旅》一个专为 Java 程序员设计的综合学习平台。无论您是初涉编程世界的新手，还是经验丰富的行业专家，这里都有您需要的知识和资源。通过本专栏，我们将共同探索算法的奥秘和数据结构的精髓，不仅提升您的编程技能，还将激发您解决复杂问题的能力。</p>
 <h2 id="第一部分：基础篇"><a href="#第一部分：基础篇" class="headerlink" title="第一部分：基础篇"></a>第一部分：基础篇</h2><h3 id="1-算法和数据结构入门"><a href="#1-算法和数据结构入门" class="headerlink" title="1. 算法和数据结构入门"></a>1. 算法和数据结构入门</h3><p>对于刚开始学习 Java 的读者，我们将从最基本的算法和数据结构开始。这包括了解数组、链表、栈、队列、堆、字典、集合、树等基础数据结构，以及排序和搜索等基本算法。</p>
 <span id="more"></span>
 
@@ -175,7 +175,7 @@
 <h3 id="7-实战案例与新趋势"><a href="#7-实战案例与新趋势" class="headerlink" title="7. 实战案例与新趋势"></a>7. 实战案例与新趋势</h3><p>结合真实世界的案例，我们将展示高级算法和数据结构在解决实际问题时的强大力量。此外，还将关注行业的最新趋势和未来的发展方向。</p>
 <h2 id="第四部分：无招胜有招"><a href="#第四部分：无招胜有招" class="headerlink" title="第四部分：无招胜有招"></a>第四部分：无招胜有招</h2><h3 id="8-LeetCode实战"><a href="#8-LeetCode实战" class="headerlink" title="8. LeetCode实战"></a>8. LeetCode 实战</h3><p>通过对算法和数据结构中各种数据结构的阐释，帮助大家培养计算机思维模式，最后以击穿 LeetCode 三百道经典题型作为本专题的出师条件。</p>
 <h2 id="适宜读者"><a href="#适宜读者" class="headerlink" title="适宜读者"></a><strong>适宜读者</strong></h2><p>无论你是 Java 新手，还是有着丰富开发经验的专业人士，这个专栏都将为你提供宝贵的学习资源和启发。加入我们，一起在算法与数据结构的世界中不断成长！</p>
-<h2 id="github项目地址"><a href="#github项目地址" class="headerlink" title="github项目地址"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目地址</a></h2>]]></content>
+<h2 id="github项目"><a href="#github项目" class="headerlink" title="github项目"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目</a></h2>]]></content>
       <categories>
         <category>算法与数据结构</category>
         <category>Java开发者的探索之旅</category>
@@ -186,126 +186,8 @@
       </tags>
   </entry>
   <entry>
-    <title>《Binary Search Tree BST 二叉搜索树》</title>
-    <url>/posts/59f3686c/</url>
-    <content><![CDATA[<h2 id="《算法与数据结构：Binary-Search-Tree-BST二叉搜索树》"><a href="#《算法与数据结构：Binary-Search-Tree-BST二叉搜索树》" class="headerlink" title="《算法与数据结构：Binary Search Tree BST二叉搜索树》"></a>《算法与数据结构：Binary Search Tree BST 二叉搜索树》</h2><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h2><p>二分搜索树（Binary Search Tree，简称 BST）是一种基于二叉树的数据结构，它在数据存储、检索和管理方面具有独特的优势。每个节点都有一个键（和相应的值）及最多两个子节点。它的关键特性是，对于树中的任意节点 X，其左子树中的所有键都小于 X 的键，而右子树的键都大于 X 的键。这一特性使得二分搜索树在执行查找、插入和删除操作时效率较高，是许多高级数据结构和算法的基础。</p>
-<h3 id="定义和特性"><a href="#定义和特性" class="headerlink" title="定义和特性"></a>定义和特性</h3><ul>
-<li><strong>定义</strong>：二分搜索树是一个二叉树，其中每个节点都含有一个可比较的键（及与之关联的值），并且对于任何节点，其左子树中的所有键都小于该节点的键，其右子树的所有键都大于该节点的键。</li>
-<li><strong>特性</strong>：</li>
-<li><strong>有序性</strong>：通过中序遍历二分搜索树，可以获得一个有序的键序列。</li>
-<li><strong>动态数据结构</strong>：二分搜索树可以在运行时动态地插入和删除节点，从而适应数据集的变化。</li>
-<li><strong>效率</strong>：在平衡的情况下，二叉搜索树的操作（如查找、插入、删除）可以在 O (log n) 时间内完成，其中 n 是树中的节点数。</li>
-</ul>
-<h3 id="节点结构"><a href="#节点结构" class="headerlink" title="节点结构"></a>节点结构</h3><p>每个节点通常包含以下几个基本组成部分：</p>
-<ul>
-<li><strong>键（Key）</strong>：节点的唯一标识符，用于节点间的比较。</li>
-<li><strong>值（Value）</strong>：与键相关联的数据。</li>
-<li><strong>左子节点（Left Child）</strong>：指向左侧子节点的指针，该子节点的键小于当前节点。</li>
-<li><strong>右子节点（Right Child）</strong>：指向右侧子节点的指针，该子节点的键大于当前节点。</li>
-</ul>
-<p>二叉搜索树是一种特殊的二叉树，它满足以下条件：</p>
-<ol>
-<li><strong>节点的左子树只包含小于当前节点的数。</strong></li>
-<li><strong>节点的右子树只包含大于当前节点的数。</strong></li>
-<li><strong>左右子树也必须是二叉搜索树。</strong></li>
-<li><strong>不存在两个节点具有相同的值。</strong><span id="more"></span></li>
-</ol>
-<h3 id="二分搜索树与普通二叉树的区别"><a href="#二分搜索树与普通二叉树的区别" class="headerlink" title="二分搜索树与普通二叉树的区别"></a>二分搜索树与普通二叉树的区别</h3><p>虽然二分搜索树是基于二叉树的，但它通过节点间键值的有序关系增加了额外的结构性，这使得二分搜索树在执行查找、插入和删除等操作时更为高效。相比之下，普通的二叉树不强制要求节点之间遵循特定的顺序，这可能导致上述操作的效率较低。</p>
-<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a><strong>基本操作</strong></h3><ol>
-<li><strong>查找</strong>：从根节点开始，递归或循环地比较当前节点的键与目标键，根据比较结果转向左子树或右子树。</li>
-<li><strong>插入</strong>：从根节点开始，找到合适的叶子节点位置插入新节点，以保持二叉搜索树的有序性。</li>
-<li><strong>删除</strong>：删除操作稍复杂，分三种情况：删除的节点是叶子节点、只有一个子节点、有两个子节点。</li>
-<li><strong>遍历</strong>：常见的遍历方式包括中序遍历（In-order），前序遍历（Pre-order）和后序遍历（Post-order）。中序遍历二叉搜索树会按键的升序访问所有节点。</li>
-</ol>
-<h2 id="构建二分搜索树"><a href="#构建二分搜索树" class="headerlink" title="构建二分搜索树"></a>构建二分搜索树</h2><h3 id="基础元素Node"><a href="#基础元素Node" class="headerlink" title="基础元素Node"></a>基础元素 Node</h3><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">Node</span>&lt;K, V&gt; {</span><br><span class="line">    <span class="keyword">public</span> K key;</span><br><span class="line">    <span class="keyword">public</span> V value;</span><br><span class="line">    <span class="keyword">public</span> Node&lt;K, V&gt; left, right;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Node</span><span class="params">(K key, V value, Node&lt;K, V&gt; left, Node&lt;K, V&gt; right)</span> {</span><br><span class="line">        <span class="built_in">this</span>.key = key;</span><br><span class="line">        <span class="built_in">this</span>.value = value;</span><br><span class="line">        <span class="built_in">this</span>.left = left;</span><br><span class="line">        <span class="built_in">this</span>.right = right;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Node</span><span class="params">(K key, V value)</span> {</span><br><span class="line">        <span class="built_in">this</span>(key, value, <span class="literal">null</span>, <span class="literal">null</span>);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h3><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> Node&lt;K, V&gt; root;</span><br><span class="line"><span class="keyword">private</span> <span class="type">int</span> size;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="title function_">BinarySearchTree</span><span class="params">()</span> {</span><br><span class="line">    root = <span class="literal">null</span>;</span><br><span class="line">    size = <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="插入操作"><a href="#插入操作" class="headerlink" title="插入操作"></a>插入操作</h3><p>在二分搜索树中插入一个新节点的过程涉及到比较新节点的键与当前节点键的大小，以决定是将新节点插入到当前节点的左侧还是右侧。</p>
-<ul>
-<li><strong>步骤</strong>：</li>
-</ul>
-<ol>
-<li>从根节点开始，比较新节点的键与当前节点的键。</li>
-<li>如果新节点的键小于当前节点的键，则向左子树递归；如果大于，则向右子树递归。</li>
-<li>如果当前节点的相应子树为空，则在这个位置插入新节点。</li>
-</ol>
-<p><img data-src="https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202402201108577.png" alt="img"></p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">add</span><span class="params">(K key, V value)</span> {</span><br><span class="line">    root = add(root, key, value);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p><strong>方法签名：向一颗二分搜索树中添加一个元素，并返回添加元素后的二分搜索树</strong></p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 向以node为根的二分搜索树中添加键值对key value</span></span><br><span class="line"><span class="comment"> * 返回插入新结算后二分搜索树的根</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">private</span> Node&lt;K, V&gt; <span class="title function_">add</span><span class="params">(Node&lt;K, V&gt; node, K key, V value)</span> {</span><br><span class="line">    <span class="keyword">if</span> (node == <span class="literal">null</span>) {</span><br><span class="line">        ++size;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Node</span>&lt;K, V&gt;(key, value);</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">if</span> (key.compareTo(node.key) &lt; <span class="number">0</span>) {</span><br><span class="line">        <span class="keyword">return</span> node.left = add(node.left, key, value);</span><br><span class="line">    } <span class="keyword">else</span> <span class="keyword">if</span> (key.compareTo(node.key) &gt; <span class="number">0</span>) {</span><br><span class="line">        <span class="keyword">return</span> node.right = add(node.right, key, value);</span><br><span class="line">    } <span class="keyword">else</span> {</span><br><span class="line">        <span class="comment">// key.compareTo(node.key) = 0 update</span></span><br><span class="line">        node.value = value;</span><br><span class="line">        <span class="keyword">return</span> node;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="删除操作"><a href="#删除操作" class="headerlink" title="删除操作"></a>删除操作</h3><p>删除操作是二分搜索树中最复杂的操作之一，特别是当需要删除的节点既有左子树又有右子树时。</p>
-<ul>
-<li><strong>删除叶子节点</strong>：直接将父节点指向该叶子节点的链接设为 null。</li>
-<li><strong>删除只有一个孩子的节点</strong>：将该节点的父节点指向该节点的唯一子节点。</li>
-<li><strong>删除有两个孩子的节点</strong>：</li>
-</ul>
-<ol>
-<li>找到该节点右子树中的最小节点（或左子树中的最大节点）。</li>
-<li>用这个最小节点的键和值替换要删除的节点。</li>
-<li>删除原最小节点。</li>
-</ol>
-<p><img data-src="https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202402201109489.png" alt="img"></p>
-<p><img data-src="https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202402201109112.png" alt="img"></p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 从二分搜索树中删除键为key的节点</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> V <span class="title function_">remove</span><span class="params">(K key)</span> {</span><br><span class="line">    Node&lt;K, V&gt; removeNode = getNode(root, key);</span><br><span class="line">    <span class="keyword">if</span> (removeNode != <span class="literal">null</span>) {</span><br><span class="line">        root = remove(root, key);</span><br><span class="line">        <span class="keyword">return</span> removeNode.value;</span><br><span class="line">    } <span class="keyword">else</span> {</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p><strong>方法签名：删除二叉树 Node 中的 key，并返回删除后的 Node 二叉树</strong></p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@param</span> node 二叉树</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@param</span> key  要移除的Key</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@return</span> 移除Key节点后的的二叉树</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="keyword">private</span> Node&lt;K, V&gt; <span class="title function_">remove</span><span class="params">(Node&lt;K, V&gt; node, K key)</span> {</span><br><span class="line">       <span class="keyword">if</span> (node == <span class="literal">null</span>) {</span><br><span class="line">           <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">       }</span><br><span class="line">       <span class="keyword">if</span> (key.compareTo(node.key) &lt; <span class="number">0</span>) {</span><br><span class="line">           node.left = remove(node.left, key);</span><br><span class="line">           <span class="keyword">return</span> node;</span><br><span class="line">       } <span class="keyword">else</span> <span class="keyword">if</span> (key.compareTo(node.key) &gt; <span class="number">0</span>) {</span><br><span class="line">           node.right = remove(node.right, key);</span><br><span class="line">           <span class="keyword">return</span> node;</span><br><span class="line">       } <span class="keyword">else</span> {</span><br><span class="line"></span><br><span class="line">           <span class="comment">//key.compareTo(node.key) = 0</span></span><br><span class="line">           <span class="keyword">if</span> (node.left == <span class="literal">null</span>) {</span><br><span class="line">               Node&lt;K, V&gt; rightNode = node.right;</span><br><span class="line">               node.right = <span class="literal">null</span>;</span><br><span class="line">               size--;</span><br><span class="line">               <span class="keyword">return</span> rightNode;</span><br><span class="line">           } <span class="keyword">else</span> <span class="keyword">if</span> (node.right == <span class="literal">null</span>) {</span><br><span class="line">               Node&lt;K, V&gt; leftNode = node.left;</span><br><span class="line">               node.left = <span class="literal">null</span>;</span><br><span class="line">               size--;</span><br><span class="line">               <span class="keyword">return</span> leftNode;</span><br><span class="line">           } <span class="keyword">else</span> {</span><br><span class="line">               Node&lt;K, V&gt; successor = minimum(node.right);</span><br><span class="line">               successor.left = node.left;</span><br><span class="line">               successor.right = remove(node.right, successor.key);</span><br><span class="line">               node.left = node.right = <span class="literal">null</span>;</span><br><span class="line">               <span class="keyword">return</span> successor;</span><br><span class="line">           }</span><br><span class="line">       }</span><br><span class="line">   }</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="常规方法"><a href="#常规方法" class="headerlink" title="常规方法"></a>常规方法</h3><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 如果此列表不包含任何元素，则返回true</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">empty</span><span class="params">()</span> {</span><br><span class="line">     <span class="keyword">return</span> getSize() == <span class="number">0</span>;</span><br><span class="line"> }</span><br><span class="line"></span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 返回此队列中的元素数量</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getSize</span><span class="params">()</span> {</span><br><span class="line">     <span class="keyword">return</span> size;</span><br><span class="line"> }</span><br><span class="line"></span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 查询二分搜索树中是否包含元素e</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">contains</span><span class="params">(K key)</span> {</span><br><span class="line">     Node&lt;K, V&gt; node = getNode(root, key);</span><br><span class="line">     <span class="keyword">return</span> node != <span class="literal">null</span>;</span><br><span class="line"> }</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 查询二分搜索树中是否包含元素e</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">private</span> Node&lt;K, V&gt; <span class="title function_">getNode</span><span class="params">(Node&lt;K, V&gt; node, K key)</span> {</span><br><span class="line">     <span class="keyword">if</span> (node == <span class="literal">null</span>) {</span><br><span class="line">         <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">     }</span><br><span class="line">     <span class="keyword">if</span> (key.compareTo(node.key) &lt; <span class="number">0</span>) {</span><br><span class="line">         <span class="keyword">return</span> getNode(node.left, key);</span><br><span class="line">     } <span class="keyword">else</span> <span class="keyword">if</span> (key.compareTo(node.key) &gt; <span class="number">0</span>) {</span><br><span class="line">         <span class="keyword">return</span> getNode(node.right, key);</span><br><span class="line">     } <span class="keyword">else</span> { <span class="comment">// key.compareTo(node.key) = 0</span></span><br><span class="line">         <span class="keyword">return</span> node;</span><br><span class="line">     }</span><br><span class="line"> }</span><br><span class="line"></span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 查询二分搜索树中是否包含元素e</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">public</span> V <span class="title function_">get</span><span class="params">(K key)</span> {</span><br><span class="line">     Node&lt;K, V&gt; node = getNode(root, key);</span><br><span class="line">     <span class="keyword">return</span> node != <span class="literal">null</span> ? node.value : <span class="literal">null</span>;</span><br><span class="line"> }</span><br><span class="line"></span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 将此列表中指定位置的元素替换为指定元素（可选操作）</span></span><br><span class="line"><span class="comment">  *</span></span><br><span class="line"><span class="comment">  * <span class="doctag">@param</span> key      key</span></span><br><span class="line"><span class="comment">  * <span class="doctag">@param</span> newValue 新值</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">set</span><span class="params">(K key, V newValue)</span> {</span><br><span class="line">     Node&lt;K, V&gt; node = getNode(root, key);</span><br><span class="line">     <span class="keyword">if</span> (node == <span class="literal">null</span>) {</span><br><span class="line">         <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">IllegalArgumentException</span>();</span><br><span class="line">     }</span><br><span class="line">     node.value = newValue;</span><br><span class="line"> }</span><br></pre></td></tr></tbody></table></figure>
-
-<h2 id="二叉树的遍历"><a href="#二叉树的遍历" class="headerlink" title="二叉树的遍历"></a>二叉树的遍历</h2><p>遍历二分搜索树是访问树中每个节点的过程，以特定的顺序执行操作（如打印节点值）。遍历对于理解树的结构、调试代码和实现树的算法至关重要。</p>
-<h3 id="前序遍历preOrder"><a href="#前序遍历preOrder" class="headerlink" title="前序遍历preOrder"></a>前序遍历 preOrder</h3><p>前序遍历首先访问根节点，然后递归地对左子树和右子树进行前序遍历。这种遍历方式适用于创建树的副本或打印树的结构。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">preOrder</span><span class="params">()</span> {</span><br><span class="line">    preOrder(root);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">preOrder</span><span class="params">(Node&lt;K, V&gt; root)</span> {</span><br><span class="line">    <span class="keyword">if</span> (root == <span class="literal">null</span>) {</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    }</span><br><span class="line">    System.out.println(root.key);</span><br><span class="line">    preOrder(root.left);</span><br><span class="line">    preOrder(root.right);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="使用栈实现非递归的前序遍历"><a href="#使用栈实现非递归的前序遍历" class="headerlink" title="使用栈实现非递归的前序遍历"></a>使用栈实现非递归的前序遍历</h3><ol>
-<li>创建一个空栈。</li>
-<li>将根节点压入栈中。</li>
-<li>当栈不为空时，执行以下操作：</li>
-</ol>
-<ul>
-<li>弹出栈顶元素，访问该元素。</li>
-<li>将弹出节点的右子节点（如果有）压入栈中。</li>
-<li>将弹出节点的左子节点（如果有）压入栈中。</li>
-</ul>
-<p>注意，右子节点先入栈，左子节点后入栈，这样可以保证左子节点先被访问。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">preOrderNR</span><span class="params">()</span> {</span><br><span class="line">     <span class="keyword">if</span> (root == <span class="literal">null</span>) {</span><br><span class="line">         <span class="keyword">return</span>;</span><br><span class="line">     }</span><br><span class="line">     Deque&lt;Node&lt;K, V&gt;&gt; stack = <span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">     stack.push(root);</span><br><span class="line">     <span class="keyword">while</span> (!stack.isEmpty()) {</span><br><span class="line">         Node&lt;K, V&gt; node = stack.pop();</span><br><span class="line">         System.out.println(node.key);</span><br><span class="line">         <span class="keyword">if</span> (node.right != <span class="literal">null</span>) {</span><br><span class="line">             stack.push(node.right);</span><br><span class="line">         }</span><br><span class="line">         <span class="keyword">if</span> (node.left != <span class="literal">null</span>) {</span><br><span class="line">             stack.push(node.left);</span><br><span class="line">         }</span><br><span class="line">     }</span><br><span class="line"> }</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="中序遍历inOrder"><a href="#中序遍历inOrder" class="headerlink" title="中序遍历inOrder"></a>中序遍历 inOrder</h3><p>中序遍历首先递归地对左子树进行中序遍历，然后访问根节点，最后递归地对右子树进行中序遍历。中序遍历二分搜索树可以得到一个有序的键序列，是二分搜索树最常用的遍历方式。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">inOrder</span><span class="params">()</span> {</span><br><span class="line">    inOrder(root);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">inOrder</span><span class="params">(Node&lt;K, V&gt; root)</span> {</span><br><span class="line">    <span class="keyword">if</span> (root == <span class="literal">null</span>) {</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    }</span><br><span class="line">    inOrder(root.left);</span><br><span class="line">    System.out.println(root.key);</span><br><span class="line">    inOrder(root.right);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="使用栈实现非递归的中序遍历"><a href="#使用栈实现非递归的中序遍历" class="headerlink" title="使用栈实现非递归的中序遍历"></a>使用栈实现非递归的中序遍历</h3><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">inOrderNR</span><span class="params">()</span> {</span><br><span class="line">      <span class="keyword">if</span> (root == <span class="literal">null</span>) {</span><br><span class="line">          <span class="keyword">return</span>;</span><br><span class="line">      }</span><br><span class="line">      Deque&lt;Node&lt;K, V&gt;&gt; stack = <span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">      Node&lt;K, V&gt; cur = root;</span><br><span class="line">      <span class="keyword">while</span> (cur != <span class="literal">null</span> || !stack.isEmpty()) {</span><br><span class="line">          <span class="keyword">while</span> (cur != <span class="literal">null</span>) {</span><br><span class="line">              stack.push(cur);</span><br><span class="line">              cur = cur.left;</span><br><span class="line">          }</span><br><span class="line">          cur = stack.pop();</span><br><span class="line">          System.out.println(cur.key);</span><br><span class="line">          cur = cur.right;</span><br><span class="line">      }</span><br><span class="line">  }</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="后序遍历-postOrder"><a href="#后序遍历-postOrder" class="headerlink" title="后序遍历 postOrder"></a>后序遍历 postOrder</h3><p>后序遍历首先递归地对左子树和右子树进行后序遍历，然后访问根节点。后序遍历适用于递归释放或删除树的节点，因为它确保节点在其子节点被处理后才被访问。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">postOrder</span><span class="params">()</span> {</span><br><span class="line">    postOrder(root);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">postOrder</span><span class="params">(Node&lt;K, V&gt; root)</span> {</span><br><span class="line">    <span class="keyword">if</span> (root == <span class="literal">null</span>) {</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    }</span><br><span class="line">    postOrder(root.left);</span><br><span class="line">    postOrder(root.right);</span><br><span class="line">    System.out.println(root.key);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="使用栈实现非递归的后序遍历"><a href="#使用栈实现非递归的后序遍历" class="headerlink" title="使用栈实现非递归的后序遍历"></a>使用栈实现非递归的后序遍历</h3><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">postOrderNR</span><span class="params">()</span> {</span><br><span class="line">    <span class="keyword">if</span> (root == <span class="literal">null</span>) {</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    }</span><br><span class="line">    Deque&lt;Node&lt;K, V&gt;&gt; stack = <span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">    Deque&lt;Node&lt;K, V&gt;&gt; output = <span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">    stack.push(root);</span><br><span class="line">    <span class="keyword">while</span> (!stack.isEmpty()) {</span><br><span class="line">        Node&lt;K, V&gt; node = stack.pop();</span><br><span class="line">        output.push(node);</span><br><span class="line">        <span class="keyword">if</span> (node.left != <span class="literal">null</span>) {</span><br><span class="line">            stack.push(node.left);</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">if</span> (node.right != <span class="literal">null</span>) {</span><br><span class="line">            stack.push(node.right);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">while</span> (!output.isEmpty()) {</span><br><span class="line">        System.out.println(output.pop().key);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<h3 id="层序遍历"><a href="#层序遍历" class="headerlink" title="层序遍历"></a>层序遍历</h3><p>层序遍历（广度优先搜索）按照树的层次从上到下遍历树的节点，通常使用队列来实现。层序遍历用于寻找最短路径、进行层次分析或在树中按层次顺序执行操作。</p>
-<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">levelOrder</span><span class="params">()</span> {</span><br><span class="line">    <span class="keyword">if</span> (root == <span class="literal">null</span>) {</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    }</span><br><span class="line">    Queue&lt;Node&lt;K, V&gt;&gt; queue = <span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">    queue.offer(root);</span><br><span class="line">    <span class="keyword">while</span> (!queue.isEmpty()) {</span><br><span class="line">        Node&lt;K, V&gt; node = queue.poll();</span><br><span class="line">        System.out.println(node.key);</span><br><span class="line">        <span class="keyword">if</span> (node.left != <span class="literal">null</span>) {</span><br><span class="line">            queue.offer(node.left);</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">if</span> (node.right != <span class="literal">null</span>) {</span><br><span class="line">            queue.offer(node.right);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
-
-<p>二分搜索树以其独特的结构和操作效率，在众多领域内发挥着重要作用。以下是一些主要的应用场景：</p>
-<h3 id="构建动态数据结构"><a href="#构建动态数据结构" class="headerlink" title="构建动态数据结构"></a>构建动态数据结构</h3><p>二分搜索树能够动态地插入和删除节点，使其成为实现各种动态数据结构（如集合、映射和优先队列）的理想选择。通过二分搜索树，可以在对数时间内完成添加、查询和删除等操作，大大提高了数据处理的效率。</p>
-<h3 id="实现查找表"><a href="#实现查找表" class="headerlink" title="实现查找表"></a>实现查找表</h3><p>二分搜索树特别适合用于实现查找表，其中包括键值对的存储和检索。由于其有序性，二分搜索树可以快速定位到一个键，并检索或更新与之关联的值。这在数据库管理系统和文件系统中尤其有用。</p>
-<h3 id="算法中的应用"><a href="#算法中的应用" class="headerlink" title="算法中的应用"></a>算法中的应用</h3><p>在算法设计中，二分搜索树用于解决诸如范围查询、排序和近似匹配等问题。例如，通过中序遍历二分搜索树，可以高效地实现数据的排序。此外，二分搜索树也常用于实现各种高级算法，如动态顺序统计、区间树和伸展树等。</p>
-<h3 id="支持范围操作"><a href="#支持范围操作" class="headerlink" title="支持范围操作"></a>支持范围操作</h3><p>二分搜索树支持高效的范围搜索操作，可以快速找到给定范围内的所有键。这在需要对数据进行分段分析或查询特定区间内的数据时特别有用，如在报告生成和数据分析应用中。</p>
-<h3 id="高级话题和优化"><a href="#高级话题和优化" class="headerlink" title="高级话题和优化"></a>高级话题和优化</h3><p>虽然标准的二分搜索树在许多情况下表现良好，但在最坏情况下它可能会退化成一个链表，导致操作效率大幅下降。为了解决这个问题，研究人员提出了多种平衡二叉搜索树，如 AVL 树、红黑树和 B 树等。这些树通过在树操作中加入旋转和重组操作，保证了树的平衡性，从而确保了操作的最坏情况时间复杂度为对数级别。此外，二分搜索树的性能也可以通过各种优化策略，如节点缓存、懒惰删除和树的重构等，进一步提高。</p>
-<h2 id="github项目"><a href="#github项目" class="headerlink" title="github项目"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目</a></h2>]]></content>
-      <categories>
-        <category>算法与数据结构</category>
-        <category>BST</category>
-      </categories>
-      <tags>
-        <tag>算法与数据结构</tag>
-        <tag>BST</tag>
-        <tag>二叉搜索树</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>《优先队列 PriorityQueue》</title>
-    <url>/posts/dbb3c5e/</url>
+    <url>/posts/undefined/</url>
     <content><![CDATA[<h2 id="《算法与数据结构：优先队列PriorityQueue》"><a href="#《算法与数据结构：优先队列PriorityQueue》" class="headerlink" title="《算法与数据结构：优先队列PriorityQueue》"></a>《算法与数据结构：优先队列 PriorityQueue》</h2><h2 id="什么是优先队列？"><a href="#什么是优先队列？" class="headerlink" title="什么是优先队列？"></a>什么是优先队列？</h2><p>优先队列是一种特殊的队列，其核心特性在于队列中的元素是按照一定的优先级进行排序的，而不是按照它们进入队列的顺序。在优先队列中，元素被赋予一个优先级，当访问队列时，优先级最高的元素最先被删除。这种机制使得优先队列非常适用于那些需要快速访问最重要元素的场合。</p>
 <p><img data-src="https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202402201117648.jpg" alt="img"></p>
 <p><strong>可以看到优先攻击目标有三个选项，当我们点击自动补刀时，游戏英雄就会按照相应的优先级进行攻击</strong></p>
@@ -316,8 +198,10 @@
 <h3 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h3><ul>
 <li><strong>任务调度</strong>：在操作系统中管理进程或任务的执行顺序。</li>
 <li><strong>图算法</strong>：如在 Dijkstra 最短路径算法中选择下一个要访问的节点。</li>
-<li><strong>事件驱动模拟</strong>：按事件优先级顺序处理模拟事件。<span id="more"></span></li>
+<li><strong>事件驱动模拟</strong>：按事件优先级顺序处理模拟事件。</li>
 </ul>
+<span id="more"></span>
+
 <h2 id="优先队列的工作原理"><a href="#优先队列的工作原理" class="headerlink" title="优先队列的工作原理"></a>优先队列的工作原理</h2><p>要理解优先队列是如何工作的，首先需要了解它背后最常用的数据结构 —— 二叉堆。</p>
 <h3 id="二叉堆简介"><a href="#二叉堆简介" class="headerlink" title="二叉堆简介"></a>二叉堆简介</h3><p>二叉堆是一种完全二叉树，树中的每个节点都满足堆属性，即节点的键值大于等于（或小于等于）其子节点的键值。这种属性使得堆的根节点总是存储最大元素（在最大堆中）或最小元素（在最小堆中）。</p>
 <h3 id="插入操作"><a href="#插入操作" class="headerlink" title="插入操作"></a>插入操作</h3><p>当新元素被加入到优先队列时，它首先被插入到堆的末尾。随后，通过一系列上浮操作，该元素可能会上移至更靠近根部的位置，以维持堆的有序性。</p>
@@ -345,7 +229,7 @@
   <entry>
     <title>《插入排序算法》</title>
     <url>/posts/761b8361/</url>
-    <content><![CDATA[<h2 id="《算法与数据结构-插入排序算法》"><a href="#《算法与数据结构-插入排序算法》" class="headerlink" title="《算法与数据结构:插入排序算法》"></a>《算法与数据结构：插入排序算法》</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><p>插入排序是一种简单直观的排序算法，它通过构建有序序列，对于未排序数据，在已排序序列中从后向前扫描，找到相应位置并插入。插入排序在实践中对小型数组表现良好，尤其是当数组部分已经排序时。</p>
+    <content><![CDATA[<h1 id="《算法与数据结构-插入排序算法》"><a href="#《算法与数据结构-插入排序算法》" class="headerlink" title="《算法与数据结构:插入排序算法》"></a>《算法与数据结构：插入排序算法》</h1><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><p>插入排序是一种简单直观的排序算法，它通过构建有序序列，对于未排序数据，在已排序序列中从后向前扫描，找到相应位置并插入。插入排序在实践中对小型数组表现良好，尤其是当数组部分已经排序时。</p>
 <p><strong>算法思想</strong></p>
 <p>插入排序的基本思想是将待排序的元素看作一个有序表和一个无序表。开始时，有序表中只包含一个元素，而无序表中包含有 n-1 个元素。在排序过程中，每次从无序表中取出第一个元素，将其与有序表中的元素的排序码进行比较，然后将其插入到有序表中的适当位置，形成新的有序表。</p>
 <h3 id="关键特点"><a href="#关键特点" class="headerlink" title="关键特点"></a>关键特点</h3><ul>
@@ -430,7 +314,7 @@
 <p><strong>Java 范型接口</strong></p>
 <figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> &lt;E <span class="keyword">extends</span> <span class="title class_">Comparable</span>&lt;? <span class="built_in">super</span> E&gt;&gt; <span class="keyword">void</span> <span class="title function_">insertionSort</span><span class="params">(E[] nums)</span> {</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">1</span>; i &lt; nums.length; i++) {</span><br><span class="line">        <span class="comment">// 待排序代元素</span></span><br><span class="line">        <span class="type">E</span> <span class="variable">ret</span> <span class="operator">=</span> nums[i];</span><br><span class="line">        <span class="type">int</span> j;</span><br><span class="line">        <span class="keyword">for</span> (j = i; j - <span class="number">1</span> &gt;= <span class="number">0</span> &amp;&amp; ret.compareTo(nums[j - <span class="number">1</span>]) &lt; <span class="number">0</span>; j--) {</span><br><span class="line">            nums[j] = nums[j - <span class="number">1</span>];</span><br><span class="line">        }</span><br><span class="line">        nums[j] = ret;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
-<h2 id="github项目地址"><a href="#github项目地址" class="headerlink" title="github项目地址"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目地址</a></h2>]]></content>
+<h2 id="github项目"><a href="#github项目" class="headerlink" title="github项目"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目</a></h2>]]></content>
       <categories>
         <category>算法与数据结构</category>
         <category>插入排序算法</category>
@@ -444,7 +328,7 @@
   <entry>
     <title>《冒泡排序算法》</title>
     <url>/posts/55c8611c/</url>
-    <content><![CDATA[<h2 id="《算法与数据结构-冒泡排序算法》"><a href="#《算法与数据结构-冒泡排序算法》" class="headerlink" title="《算法与数据结构:冒泡排序算法》"></a>《算法与数据结构：冒泡排序算法》</h2><h2 id="冒泡排序算法"><a href="#冒泡排序算法" class="headerlink" title="冒泡排序算法"></a>冒泡排序算法</h2><h3 id="算法简介"><a href="#算法简介" class="headerlink" title="算法简介"></a><strong>算法简介</strong></h3><p>冒泡排序是一种简单的排序算法，它重复地遍历待排序的元素列表，比较相邻的元素，并在需要时交换它们的位置。每遍历一次列表，至少有一个元素会被移至其正确的位置，这个过程类似于气泡从水底升到水面的过程，因此得名 “冒泡排序”。</p>
+    <content><![CDATA[<h1 id="《算法与数据结构-冒泡排序算法》"><a href="#《算法与数据结构-冒泡排序算法》" class="headerlink" title="《算法与数据结构:冒泡排序算法》"></a>《算法与数据结构：冒泡排序算法》</h1><h2 id="冒泡排序算法"><a href="#冒泡排序算法" class="headerlink" title="冒泡排序算法"></a>冒泡排序算法</h2><h3 id="算法简介"><a href="#算法简介" class="headerlink" title="算法简介"></a><strong>算法简介</strong></h3><p>冒泡排序是一种简单的排序算法，它重复地遍历待排序的元素列表，比较相邻的元素，并在需要时交换它们的位置。每遍历一次列表，至少有一个元素会被移至其正确的位置，这个过程类似于气泡从水底升到水面的过程，因此得名 “冒泡排序”。</p>
 <h3 id="关键特点"><a href="#关键特点" class="headerlink" title="关键特点"></a><strong>关键特点</strong></h3><ul>
 <li><strong>简单直观</strong>：易于理解和实现。</li>
 <li><strong>效率较低</strong>：对于大量元素的列表，其性能不如更复杂的排序算法。</li>
@@ -500,7 +384,7 @@
 
 <h3 id="Java范型实现"><a href="#Java范型实现" class="headerlink" title="Java范型实现"></a>Java 范型实现</h3><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">BubbleSort</span> {</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;E <span class="keyword">extends</span> <span class="title class_">Comparable</span>&lt;? <span class="built_in">super</span> E&gt;&gt; <span class="keyword">void</span> <span class="title function_">bubbleSort</span><span class="params">(E[] nums)</span> {</span><br><span class="line">        <span class="type">int</span> <span class="variable">len</span> <span class="operator">=</span> nums.length;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; len - <span class="number">1</span>; i++) {</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> <span class="number">0</span>; j &lt; len - i - <span class="number">1</span>; j++) {</span><br><span class="line">                <span class="keyword">if</span> (nums[j].compareTo(nums[j + <span class="number">1</span>]) &gt; <span class="number">0</span>) {</span><br><span class="line">                    swap(nums, j, j + <span class="number">1</span>);</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">  </span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> &lt;E <span class="keyword">extends</span> <span class="title class_">Comparable</span>&lt;? <span class="built_in">super</span> E&gt;&gt; <span class="keyword">void</span> <span class="title function_">swap</span><span class="params">(E[] nums, <span class="type">int</span> low, <span class="type">int</span> high)</span> {</span><br><span class="line">        <span class="type">E</span> <span class="variable">temp</span> <span class="operator">=</span> nums[low];</span><br><span class="line">        nums[low] = nums[high];</span><br><span class="line">        nums[high] = temp;</span><br><span class="line">        <span class="comment">// help gc</span></span><br><span class="line">        temp = <span class="literal">null</span>;</span><br><span class="line">    }</span><br><span class="line">}</span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure>
 
-<h2 id="github项目地址"><a href="#github项目地址" class="headerlink" title="github项目地址"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目地址</a></h2>]]></content>
+<h2 id="github项目"><a href="#github项目" class="headerlink" title="github项目"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目</a></h2>]]></content>
       <categories>
         <category>算法与数据结构</category>
         <category>冒泡排序算法</category>
@@ -514,7 +398,7 @@
   <entry>
     <title>《选择排序算法》</title>
     <url>/posts/f3a42a74/</url>
-    <content><![CDATA[<h2 id="《算法与数据结构-选择排序算法》"><a href="#《算法与数据结构-选择排序算法》" class="headerlink" title="《算法与数据结构:选择排序算法》"></a>《算法与数据结构：选择排序算法》</h2><h2 id="选择排序算法"><a href="#选择排序算法" class="headerlink" title="选择排序算法"></a>选择排序算法</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><p>选择排序是一种简单直观的排序算法。它的工作原理是每次从待排序的数据元素中选出最小（或最大）的一个元素，存放在序列的起始位置，直到全部待排序的数据元素排完。选择排序是不稳定的排序方法（即相同的元素可能在排序后的序列中有不同的顺序）。</p>
+    <content><![CDATA[<h1 id="《算法与数据结构-选择排序算法》"><a href="#《算法与数据结构-选择排序算法》" class="headerlink" title="《算法与数据结构:选择排序算法》"></a>《算法与数据结构：选择排序算法》</h1><h2 id="选择排序算法"><a href="#选择排序算法" class="headerlink" title="选择排序算法"></a>选择排序算法</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><p>选择排序是一种简单直观的排序算法。它的工作原理是每次从待排序的数据元素中选出最小（或最大）的一个元素，存放在序列的起始位置，直到全部待排序的数据元素排完。选择排序是不稳定的排序方法（即相同的元素可能在排序后的序列中有不同的顺序）。</p>
 <h3 id="算法原理"><a href="#算法原理" class="headerlink" title="算法原理"></a><strong>算法原理</strong></h3><p>选择排序算法的主要步骤如下：</p>
 <ol>
 <li>在未排序序列中找到最小（或最大）元素，存放到排序序列的起始位置。</li>
@@ -568,7 +452,7 @@
 
 <h3 id="Java范型实现"><a href="#Java范型实现" class="headerlink" title="Java范型实现"></a>Java 范型实现</h3><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">SelectionSort</span> {</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> &lt;E <span class="keyword">extends</span> <span class="title class_">Comparable</span>&lt;? <span class="built_in">super</span> E&gt;&gt; <span class="keyword">void</span> <span class="title function_">selectionSort</span><span class="params">(E[] nums)</span> {</span><br><span class="line">        <span class="type">int</span> <span class="variable">len</span> <span class="operator">=</span> nums.length;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; len; i++) {</span><br><span class="line">            <span class="type">int</span> <span class="variable">minIndex</span> <span class="operator">=</span> i;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">j</span> <span class="operator">=</span> i; j &lt; len; j++) {</span><br><span class="line">                <span class="keyword">if</span> (nums[minIndex].compareTo(nums[j]) &gt; <span class="number">0</span>) {</span><br><span class="line">                    minIndex = j;</span><br><span class="line">                }</span><br><span class="line">            }</span><br><span class="line">            swap(nums, minIndex, i);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> &lt;E <span class="keyword">extends</span> <span class="title class_">Comparable</span>&lt;? <span class="built_in">super</span> E&gt;&gt; <span class="keyword">void</span> <span class="title function_">swap</span><span class="params">(E[] nums, <span class="type">int</span> low, <span class="type">int</span> high)</span> {</span><br><span class="line">        <span class="type">E</span> <span class="variable">temp</span> <span class="operator">=</span> nums[low];</span><br><span class="line">        nums[low] = nums[high];</span><br><span class="line">        nums[high] = temp;</span><br><span class="line">        <span class="comment">// help gc</span></span><br><span class="line">        temp = <span class="literal">null</span>;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
-<h2 id="github项目地址"><a href="#github项目地址" class="headerlink" title="github项目地址"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目地址</a></h2>]]></content>
+<h2 id="github项目"><a href="#github项目" class="headerlink" title="github项目"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目</a></h2>]]></content>
       <categories>
         <category>算法与数据结构</category>
         <category>选择排序算法</category>
@@ -582,7 +466,7 @@
   <entry>
     <title>《Node》</title>
     <url>/posts/fc608e54/</url>
-    <content><![CDATA[<h2 id="《算法与数据结构-Node》"><a href="#《算法与数据结构-Node》" class="headerlink" title="《算法与数据结构:Node》"></a>《算法与数据结构：Node》</h2><h2 id="节点（Node）数据结构基石"><a href="#节点（Node）数据结构基石" class="headerlink" title="节点（Node）数据结构基石"></a>节点（Node）数据结构基石</h2><h3 id="理解Node数据结构及其应用"><a href="#理解Node数据结构及其应用" class="headerlink" title="理解Node数据结构及其应用"></a><strong>理解 Node 数据结构及其应用</strong></h3><p>Node（节点）在计算机科学中扮演着核心角色，它是构建更复杂数据结构的基石。深入理解 Node 及其在各种数据结构中的应用，对于开发高效、可扩展的软件应用至关重要。</p>
+    <content><![CDATA[<h1 id="《算法与数据结构-Node》"><a href="#《算法与数据结构-Node》" class="headerlink" title="《算法与数据结构:Node》"></a>《算法与数据结构：Node》</h1><h2 id="节点（Node）数据结构基石"><a href="#节点（Node）数据结构基石" class="headerlink" title="节点（Node）数据结构基石"></a>节点（Node）数据结构基石</h2><h3 id="理解Node数据结构及其应用"><a href="#理解Node数据结构及其应用" class="headerlink" title="理解Node数据结构及其应用"></a><strong>理解 Node 数据结构及其应用</strong></h3><p>Node（节点）在计算机科学中扮演着核心角色，它是构建更复杂数据结构的基石。深入理解 Node 及其在各种数据结构中的应用，对于开发高效、可扩展的软件应用至关重要。</p>
 <h3 id="Node节点概念"><a href="#Node节点概念" class="headerlink" title="Node节点概念"></a>Node 节点概念</h3><ul>
 <li><strong>定义与结构</strong>：Node 通常是一个包含数据和指向其他节点的引用的对象。它的结构可能因应用的不同而有所不同，但通常包括至少一个数据字段和一个或多个链接字段。</li>
 <li><strong>类型</strong>：<ul>
@@ -686,7 +570,7 @@
 
 <h2 id="字典树"><a href="#字典树" class="headerlink" title="字典树"></a><strong>字典树</strong></h2><h2 id="BST树"><a href="#BST树" class="headerlink" title="BST树"></a><strong>BST 树</strong></h2><p>todo</p>
 <h2 id="AVL树"><a href="#AVL树" class="headerlink" title="AVL树"></a><strong>AVL 树</strong></h2><p>todo</p>
-<h2 id="红黑树"><a href="#红黑树" class="headerlink" title="红黑树"></a><strong>红黑树</strong></h2><h2 id="github项目地址"><a href="#github项目地址" class="headerlink" title="github项目地址"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目地址</a></h2>]]></content>
+<h2 id="红黑树"><a href="#红黑树" class="headerlink" title="红黑树"></a><strong>红黑树</strong></h2><h2 id="github项目"><a href="#github项目" class="headerlink" title="github项目"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目</a></h2>]]></content>
       <categories>
         <category>算法与数据结构</category>
         <category>Node</category>
@@ -700,7 +584,7 @@
   <entry>
     <title>《手写 ArrayList》</title>
     <url>/posts/e7bb25a0/</url>
-    <content><![CDATA[<h2 id="《算法与数据结构-手写ArrayList》"><a href="#《算法与数据结构-手写ArrayList》" class="headerlink" title="《算法与数据结构:手写ArrayList》"></a>《算法与数据结构：手写 ArrayList》</h2><h3 id="List的数组"><a href="#List的数组" class="headerlink" title="List的数组"></a>List 的数组</h3><p>List（列表）是编程中一种极为常见且重要的数据结构，用于存储元素的有序集合。在 Java 中，List 是一个接口，它允许我们以线性方式存储元素，同时提供了一系列操作这些元素的方法，List 是线性表的一种。</p>
+    <content><![CDATA[<h1 id="《算法与数据结构-手写ArrayList》"><a href="#《算法与数据结构-手写ArrayList》" class="headerlink" title="《算法与数据结构:手写ArrayList》"></a>《算法与数据结构：手写 ArrayList》</h1><h3 id="List的数组"><a href="#List的数组" class="headerlink" title="List的数组"></a>List 的数组</h3><p>List（列表）是编程中一种极为常见且重要的数据结构，用于存储元素的有序集合。在 Java 中，List 是一个接口，它允许我们以线性方式存储元素，同时提供了一系列操作这些元素的方法，List 是线性表的一种。</p>
 <p>线性表是一种最基本、最简单、也是最常用的一种数据结构。一个线性表是 n 个具有相同特性的数据元素的有限序列。在这些元素中，每个元素都有一个前驱和一个后继，除了第一个和最后一个元素之外，其它元素都是首尾相接的。</p>
 <h3 id="List数据结构的基本概念"><a href="#List数据结构的基本概念" class="headerlink" title="List数据结构的基本概念"></a>List 数据结构的基本概念</h3><ul>
 <li><strong>定义</strong>：List 是一种允许重复元素的序列，它可以维护元素插入的顺序。</li>
@@ -750,7 +634,7 @@
 <p><img data-src="https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/v2-92212204942490230aa4f166fb07e99d_1440w-20240202213325202.png" alt="置空数据"></p>
 <figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> E <span class="title function_">remove</span><span class="params">(<span class="type">int</span> index)</span> {</span><br><span class="line">    <span class="comment">// 判断待删除元素下标是否越界</span></span><br><span class="line">    rangeCheck(index);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 待删除的旧值</span></span><br><span class="line">    <span class="type">E</span> <span class="variable">oldValue</span> <span class="operator">=</span> elementData(index);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 计算需要移动位置元素的数量</span></span><br><span class="line">    <span class="type">int</span> <span class="variable">numMoved</span> <span class="operator">=</span> size - index - <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span> (numMoved &gt; <span class="number">0</span>)</span><br><span class="line">        <span class="comment">// 移动位置</span></span><br><span class="line">        System.arraycopy(elementData, index + <span class="number">1</span>, elementData, index,</span><br><span class="line">                numMoved);</span><br><span class="line">    <span class="comment">// size-1 </span></span><br><span class="line">    elementData[--size] = <span class="literal">null</span>; <span class="comment">// clear to let GC do its work</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// 返回删除元素</span></span><br><span class="line">    <span class="keyword">return</span> oldValue;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
-<h2 id="github项目地址"><a href="#github项目地址" class="headerlink" title="github项目地址"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目地址</a></h2>]]></content>
+<h2 id="github项目"><a href="#github项目" class="headerlink" title="github项目"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目</a></h2>]]></content>
       <categories>
         <category>算法与数据结构</category>
         <category>ArrayList</category>
@@ -764,7 +648,7 @@
   <entry>
     <title>《线性搜索算法》</title>
     <url>/posts/dea6490e/</url>
-    <content><![CDATA[<h2 id="《算法与数据结构-线性搜索算法》"><a href="#《算法与数据结构-线性搜索算法》" class="headerlink" title="《算法与数据结构:线性搜索算法》"></a>《算法与数据结构：线性搜索算法》</h2><h2 id="线性搜索算法"><a href="#线性搜索算法" class="headerlink" title="线性搜索算法"></a>线性搜索算法</h2><p>当我们谈论搜索算法时，线性搜索算法因其简单性和直接性而占据了一个重要的位置。这种算法在编程和数据处理中非常常见，尤其是在处理未排序的数据集时。本文将详细介绍线性搜索算法的基本原理，并提供 Java 语言的实现示例。</p>
+    <content><![CDATA[<h1 id="《算法与数据结构-线性搜索算法》"><a href="#《算法与数据结构-线性搜索算法》" class="headerlink" title="《算法与数据结构:线性搜索算法》"></a>《算法与数据结构：线性搜索算法》</h1><h2 id="线性搜索算法"><a href="#线性搜索算法" class="headerlink" title="线性搜索算法"></a>线性搜索算法</h2><p>当我们谈论搜索算法时，线性搜索算法因其简单性和直接性而占据了一个重要的位置。这种算法在编程和数据处理中非常常见，尤其是在处理未排序的数据集时。本文将详细介绍线性搜索算法的基本原理，并提供 Java 语言的实现示例。</p>
 <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><p>线性搜索，又被称为顺序搜索，是一种在数据结构（如数组或列表）中查找特定元素的方法。这种搜索从数据结构的一端开始，顺序检查每个元素，直到找到所需的元素或搜索完所有元素为止。</p>
 <span id="more"></span>
 
@@ -785,7 +669,7 @@
 <p><strong>Java 范型实现</strong></p>
 <figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> &lt;E <span class="keyword">extends</span> <span class="title class_">Comparable</span>&lt;? <span class="built_in">super</span> E&gt;&gt; <span class="type">int</span> <span class="title function_">search</span><span class="params">(E[] nums, E target)</span> {</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> <span class="variable">i</span> <span class="operator">=</span> <span class="number">0</span>; i &lt; nums.length; i++) {</span><br><span class="line">        <span class="keyword">if</span> (nums[i].compareTo(target) == <span class="number">0</span>) {</span><br><span class="line">            <span class="keyword">return</span> i;</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
 
-<h2 id="github项目地址"><a href="#github项目地址" class="headerlink" title="github项目地址"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目地址</a></h2>]]></content>
+<h2 id="github项目"><a href="#github项目" class="headerlink" title="github项目"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目</a></h2>]]></content>
       <categories>
         <category>算法与数据结构</category>
         <category>线性搜索算法</category>
@@ -798,7 +682,7 @@
   <entry>
     <title>《二分搜索算法》</title>
     <url>/posts/86e9784a/</url>
-    <content><![CDATA[<h2 id="《算法与数据结构-二分搜索算法》"><a href="#《算法与数据结构-二分搜索算法》" class="headerlink" title="《算法与数据结构:二分搜索算法》"></a>《算法与数据结构：二分搜索算法》</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><p>二分搜索算法是一种在有序数组中查找特定元素的有效方法。其基本思想是通过将搜索区间分成两半，然后根据目标值与中间元素的比较结果来选择搜索的半区，从而逐步缩小搜索范围，直到找到目标值或确定目标值不存在。</p>
+    <content><![CDATA[<h1 id="《算法与数据结构-二分搜索算法》"><a href="#《算法与数据结构-二分搜索算法》" class="headerlink" title="《算法与数据结构:二分搜索算法》"></a>《算法与数据结构：二分搜索算法》</h1><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><p>二分搜索算法是一种在有序数组中查找特定元素的有效方法。其基本思想是通过将搜索区间分成两半，然后根据目标值与中间元素的比较结果来选择搜索的半区，从而逐步缩小搜索范围，直到找到目标值或确定目标值不存在。</p>
 <h3 id="二分搜索的工作原理"><a href="#二分搜索的工作原理" class="headerlink" title="二分搜索的工作原理"></a><strong>二分搜索的工作原理</strong></h3><p>二分搜索（又称二分查找）是一种在有序数组中查找特定元素的算法。在 Java 中实现二分搜索，你可以遵循以下步骤：</p>
 <p><strong>确定查找范围</strong>：设置两个指针，low 和 high，分别表示数组的起始和结束位置 nums [low,high) 左闭右开区间。</p>
 <p><strong>计算中间位置</strong>：在每次迭代中，计算中间位置 mid = low + (high - low) / 2。</p>
@@ -868,7 +752,7 @@
 
 <p>这段代码中，interpolationSearch 方法实现了插值查找的逻辑。需要注意的是，由于插值查找依赖于数据的分布，因此它在处理非均匀分布的数据时效率不如二分搜索。</p>
 <p>在实际应用中，选择使用插值搜索还是二分搜索取决于数据的特性。</p>
-<h2 id="github项目地址"><a href="#github项目地址" class="headerlink" title="github项目地址"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目地址</a></h2>]]></content>
+<h2 id="github项目"><a href="#github项目" class="headerlink" title="github项目"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目</a></h2>]]></content>
       <categories>
         <category>算法与数据结构</category>
         <category>二分搜索算法</category>
@@ -881,7 +765,7 @@
   <entry>
     <title>《HeapSort》</title>
     <url>/posts/607bf52d/</url>
-    <content><![CDATA[<h2 id="《算法与数据结构-HeapSort》"><a href="#《算法与数据结构-HeapSort》" class="headerlink" title="《算法与数据结构:HeapSort》"></a>《算法与数据结构：HeapSort》</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>堆排序是一种高效的排序算法，它利用了堆的数据结构特性来排序元素。在堆排序中，首先将待排序的序列构造成一个堆，然后将堆顶的最大（或最小）元素与堆尾元素交换，然后调整堆结构，继续选择堆顶的元素，直到序列排序完成。</p>
+    <content><![CDATA[<h1 id="《算法与数据结构-HeapSort》"><a href="#《算法与数据结构-HeapSort》" class="headerlink" title="《算法与数据结构:HeapSort》"></a>《算法与数据结构：HeapSort》</h1><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>堆排序是一种高效的排序算法，它利用了堆的数据结构特性来排序元素。在堆排序中，首先将待排序的序列构造成一个堆，然后将堆顶的最大（或最小）元素与堆尾元素交换，然后调整堆结构，继续选择堆顶的元素，直到序列排序完成。</p>
 <h3 id="堆的类型和性质"><a href="#堆的类型和性质" class="headerlink" title="堆的类型和性质"></a>堆的类型和性质</h3><ul>
 <li><strong>最大堆</strong>：父节点的值总是大于或等于子节点的值。在数组中，对于每个元素 <code>i</code>，其子节点位于 2 * i + 1 和 <code>2 * i + 2</code>。</li>
 <li><strong>最小堆</strong>：父节点的值总是小于或等于子节点的值。同样地，子节点的位置与最大堆相同。</li>
@@ -933,7 +817,7 @@
 <li><strong>不稳定性</strong>：堆排序是一种不稳定的排序算法，因为在堆顶的元素与子树的最后一个元素交换时，可能会改变相等元素的初始顺序。</li>
 </ul>
 <p>理解堆排序主要就是理解堆的特性和 <strong>siftDown</strong> 操作原理</p>
-<h2 id="github项目地址"><a href="#github项目地址" class="headerlink" title="github项目地址"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目地址</a></h2>]]></content>
+<h2 id="github项目"><a href="#github项目" class="headerlink" title="github项目"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目</a></h2>]]></content>
       <categories>
         <category>算法与数据结构</category>
         <category>HeapSort</category>
@@ -947,7 +831,7 @@
   <entry>
     <title>《Heap》</title>
     <url>/posts/5eb18949/</url>
-    <content><![CDATA[<h2 id="《算法与数据结构-Heap》"><a href="#《算法与数据结构-Heap》" class="headerlink" title="《算法与数据结构:Heap》"></a>《算法与数据结构：Heap》</h2><h2 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h2><p>堆是一种数据结构，它是一种完全二叉树，具有以下特点：</p>
+    <content><![CDATA[<h1 id="《算法与数据结构-Heap》"><a href="#《算法与数据结构-Heap》" class="headerlink" title="《算法与数据结构:Heap》"></a>《算法与数据结构：Heap》</h1><h2 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h2><p>堆是一种数据结构，它是一种完全二叉树，具有以下特点：</p>
 <ol>
 <li>堆是完全二叉树，即每个节点都有两个子节点。</li>
 <li>堆是一种有序树，即对于任意节点 n，如果 n 有左子节点 l 和右子节点 r，则 n 的值比 l 和 r 的值都大或都小。</li>
@@ -1096,7 +980,7 @@
 <li>最后一个非叶子节点是索引 2（3 的父节点），这也是 (7&gt;&gt;&gt; 1) - 1 = 3 - 1 = 2 的结果。</li>
 </ul>
 <p>因此，这个表达式是一种快速而有效的方式来找到在堆（作为一个数组表示的完全二叉树）中最后一个非叶子节点的索引。</p>
-<h2 id="github项目地址"><a href="#github项目地址" class="headerlink" title="github项目地址"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目地址</a></h2>]]></content>
+<h2 id="github项目"><a href="#github项目" class="headerlink" title="github项目"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目</a></h2>]]></content>
       <categories>
         <category>算法与数据结构</category>
         <category>Heap</category>
@@ -1109,7 +993,7 @@
   <entry>
     <title>《字符串搜索算法》</title>
     <url>/posts/b238ed84/</url>
-    <content><![CDATA[<h2 id="《算法与数据结构-字符串搜索算法》"><a href="#《算法与数据结构-字符串搜索算法》" class="headerlink" title="《算法与数据结构:字符串搜索算法》"></a>《算法与数据结构：字符串搜索算法》</h2><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>字符串匹配是计算机科学中一个基础而重要的问题，它涉及在一个文本字符串中寻找一个子字符串的过程。这一问题在许多领域都有广泛的应用，包括文本编辑、生物信息学、数据检索等。在众多解决字符串匹配问题的算法中，KMP（Knuth-Morris-Pratt）算法因其高效的匹配过程而著称。不同于传统的朴素匹配方法，KMP 算法利用已匹配的部分信息避免从头开始匹配，大大提高了搜索效率。本文旨在为初学者提供一个关于 KMP 算法的入门指南，介绍其基本概念、工作原理及应用场景。</p>
+    <content><![CDATA[<h1 id="《算法与数据结构-字符串搜索算法》"><a href="#《算法与数据结构-字符串搜索算法》" class="headerlink" title="《算法与数据结构:字符串搜索算法》"></a>《算法与数据结构：字符串搜索算法》</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>字符串匹配是计算机科学中一个基础而重要的问题，它涉及在一个文本字符串中寻找一个子字符串的过程。这一问题在许多领域都有广泛的应用，包括文本编辑、生物信息学、数据检索等。在众多解决字符串匹配问题的算法中，KMP（Knuth-Morris-Pratt）算法因其高效的匹配过程而著称。不同于传统的朴素匹配方法，KMP 算法利用已匹配的部分信息避免从头开始匹配，大大提高了搜索效率。本文旨在为初学者提供一个关于 KMP 算法的入门指南，介绍其基本概念、工作原理及应用场景。</p>
 <h3 id="字符串匹配基础"><a href="#字符串匹配基础" class="headerlink" title="字符串匹配基础"></a>字符串匹配基础</h3><p>字符串匹配是指在一个较长的文本字符串中查找一个指定的子字符串的过程。这个问题看似简单，实则是许多计算机应用的核心部分，例如，在一个大型文档中查找特定单词，或者在网页搜索中定位关键词。字符串匹配的效率直接影响到这些应用的性能和用户体验。</p>
 <span id="more"></span>
 
@@ -1183,7 +1067,7 @@
 <li>在 KMPSearch 中，通过比较 txt 和 pat 来进行搜索，当遇到不匹配时，使用 lps 数组来决定下一步的搜索位置，这样可以避免从模式字符串的起始位置重新开始搜索，从而提高搜索效率。</li>
 </ul>
 <h3 id="时间复杂度"><a href="#时间复杂度" class="headerlink" title="时间复杂度"></a>时间复杂度</h3><p>KMP 算法的时间复杂度为 O (N)，其中 N 是主字符串的长度，这比朴素的字符串搜索算法，时间复杂度为 O (NM)，M 是模式字符串的长度要高效得多。</p>
-<h2 id="github项目地址"><a href="#github项目地址" class="headerlink" title="github项目地址"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目地址</a></h2>]]></content>
+<h2 id="github项目"><a href="#github项目" class="headerlink" title="github项目"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目</a></h2>]]></content>
       <categories>
         <category>算法与数据结构</category>
         <category>字符串搜索算法</category>
@@ -1731,6 +1615,125 @@
       <tags>
         <tag>LeetCode</tag>
         <tag>链表</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>《Binary Search Tree BST 二叉搜索树》</title>
+    <url>/posts/undefined/</url>
+    <content><![CDATA[<h1 id="《算法与数据结构：Binary-Search-Tree-BST二叉搜索树》"><a href="#《算法与数据结构：Binary-Search-Tree-BST二叉搜索树》" class="headerlink" title="《算法与数据结构：Binary Search Tree BST二叉搜索树》"></a>《算法与数据结构：Binary Search Tree BST 二叉搜索树》</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h2><p>二分搜索树（Binary Search Tree，简称 BST）是一种基于二叉树的数据结构，它在数据存储、检索和管理方面具有独特的优势。每个节点都有一个键（和相应的值）及最多两个子节点。它的关键特性是，对于树中的任意节点 X，其左子树中的所有键都小于 X 的键，而右子树的键都大于 X 的键。这一特性使得二分搜索树在执行查找、插入和删除操作时效率较高，是许多高级数据结构和算法的基础。</p>
+<h3 id="定义和特性"><a href="#定义和特性" class="headerlink" title="定义和特性"></a>定义和特性</h3><ul>
+<li><strong>定义</strong>：二分搜索树是一个二叉树，其中每个节点都含有一个可比较的键（及与之关联的值），并且对于任何节点，其左子树中的所有键都小于该节点的键，其右子树的所有键都大于该节点的键。</li>
+<li><strong>特性</strong>：</li>
+<li><strong>有序性</strong>：通过中序遍历二分搜索树，可以获得一个有序的键序列。</li>
+<li><strong>动态数据结构</strong>：二分搜索树可以在运行时动态地插入和删除节点，从而适应数据集的变化。</li>
+<li><strong>效率</strong>：在平衡的情况下，二叉搜索树的操作（如查找、插入、删除）可以在 O (log n) 时间内完成，其中 n 是树中的节点数。</li>
+</ul>
+<h3 id="节点结构"><a href="#节点结构" class="headerlink" title="节点结构"></a>节点结构</h3><p>每个节点通常包含以下几个基本组成部分：</p>
+<ul>
+<li><strong>键（Key）</strong>：节点的唯一标识符，用于节点间的比较。</li>
+<li><strong>值（Value）</strong>：与键相关联的数据。</li>
+<li><strong>左子节点（Left Child）</strong>：指向左侧子节点的指针，该子节点的键小于当前节点。</li>
+<li><strong>右子节点（Right Child）</strong>：指向右侧子节点的指针，该子节点的键大于当前节点。</li>
+</ul>
+<p>二叉搜索树是一种特殊的二叉树，它满足以下条件：</p>
+<ol>
+<li><strong>节点的左子树只包含小于当前节点的数。</strong></li>
+<li><strong>节点的右子树只包含大于当前节点的数。</strong></li>
+<li><strong>左右子树也必须是二叉搜索树。</strong></li>
+<li><strong>不存在两个节点具有相同的值。</strong></li>
+</ol>
+<span id="more"></span>
+
+<h3 id="二分搜索树与普通二叉树的区别"><a href="#二分搜索树与普通二叉树的区别" class="headerlink" title="二分搜索树与普通二叉树的区别"></a>二分搜索树与普通二叉树的区别</h3><p>虽然二分搜索树是基于二叉树的，但它通过节点间键值的有序关系增加了额外的结构性，这使得二分搜索树在执行查找、插入和删除等操作时更为高效。相比之下，普通的二叉树不强制要求节点之间遵循特定的顺序，这可能导致上述操作的效率较低。</p>
+<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a><strong>基本操作</strong></h3><ol>
+<li><strong>查找</strong>：从根节点开始，递归或循环地比较当前节点的键与目标键，根据比较结果转向左子树或右子树。</li>
+<li><strong>插入</strong>：从根节点开始，找到合适的叶子节点位置插入新节点，以保持二叉搜索树的有序性。</li>
+<li><strong>删除</strong>：删除操作稍复杂，分三种情况：删除的节点是叶子节点、只有一个子节点、有两个子节点。</li>
+<li><strong>遍历</strong>：常见的遍历方式包括中序遍历（In-order），前序遍历（Pre-order）和后序遍历（Post-order）。中序遍历二叉搜索树会按键的升序访问所有节点。</li>
+</ol>
+<h2 id="构建二分搜索树"><a href="#构建二分搜索树" class="headerlink" title="构建二分搜索树"></a>构建二分搜索树</h2><h3 id="基础元素Node"><a href="#基础元素Node" class="headerlink" title="基础元素Node"></a>基础元素 Node</h3><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">Node</span>&lt;K, V&gt; {</span><br><span class="line">    <span class="keyword">public</span> K key;</span><br><span class="line">    <span class="keyword">public</span> V value;</span><br><span class="line">    <span class="keyword">public</span> Node&lt;K, V&gt; left, right;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Node</span><span class="params">(K key, V value, Node&lt;K, V&gt; left, Node&lt;K, V&gt; right)</span> {</span><br><span class="line">        <span class="built_in">this</span>.key = key;</span><br><span class="line">        <span class="built_in">this</span>.value = value;</span><br><span class="line">        <span class="built_in">this</span>.left = left;</span><br><span class="line">        <span class="built_in">this</span>.right = right;</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">Node</span><span class="params">(K key, V value)</span> {</span><br><span class="line">        <span class="built_in">this</span>(key, value, <span class="literal">null</span>, <span class="literal">null</span>);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="构造函数"><a href="#构造函数" class="headerlink" title="构造函数"></a>构造函数</h3><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> Node&lt;K, V&gt; root;</span><br><span class="line"><span class="keyword">private</span> <span class="type">int</span> size;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="title function_">BinarySearchTree</span><span class="params">()</span> {</span><br><span class="line">    root = <span class="literal">null</span>;</span><br><span class="line">    size = <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="插入操作"><a href="#插入操作" class="headerlink" title="插入操作"></a>插入操作</h3><p>在二分搜索树中插入一个新节点的过程涉及到比较新节点的键与当前节点键的大小，以决定是将新节点插入到当前节点的左侧还是右侧。</p>
+<ul>
+<li><strong>步骤</strong>：</li>
+</ul>
+<ol>
+<li>从根节点开始，比较新节点的键与当前节点的键。</li>
+<li>如果新节点的键小于当前节点的键，则向左子树递归；如果大于，则向右子树递归。</li>
+<li>如果当前节点的相应子树为空，则在这个位置插入新节点。</li>
+</ol>
+<p><img data-src="https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202402201108577.png" alt="img"></p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">add</span><span class="params">(K key, V value)</span> {</span><br><span class="line">    root = add(root, key, value);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p><strong>方法签名：向一颗二分搜索树中添加一个元素，并返回添加元素后的二分搜索树</strong></p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 向以node为根的二分搜索树中添加键值对key value</span></span><br><span class="line"><span class="comment"> * 返回插入新结算后二分搜索树的根</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">private</span> Node&lt;K, V&gt; <span class="title function_">add</span><span class="params">(Node&lt;K, V&gt; node, K key, V value)</span> {</span><br><span class="line">    <span class="keyword">if</span> (node == <span class="literal">null</span>) {</span><br><span class="line">        ++size;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Node</span>&lt;K, V&gt;(key, value);</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">if</span> (key.compareTo(node.key) &lt; <span class="number">0</span>) {</span><br><span class="line">        <span class="keyword">return</span> node.left = add(node.left, key, value);</span><br><span class="line">    } <span class="keyword">else</span> <span class="keyword">if</span> (key.compareTo(node.key) &gt; <span class="number">0</span>) {</span><br><span class="line">        <span class="keyword">return</span> node.right = add(node.right, key, value);</span><br><span class="line">    } <span class="keyword">else</span> {</span><br><span class="line">        <span class="comment">// key.compareTo(node.key) = 0 update</span></span><br><span class="line">        node.value = value;</span><br><span class="line">        <span class="keyword">return</span> node;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="删除操作"><a href="#删除操作" class="headerlink" title="删除操作"></a>删除操作</h3><p>删除操作是二分搜索树中最复杂的操作之一，特别是当需要删除的节点既有左子树又有右子树时。</p>
+<ul>
+<li><strong>删除叶子节点</strong>：直接将父节点指向该叶子节点的链接设为 null。</li>
+<li><strong>删除只有一个孩子的节点</strong>：将该节点的父节点指向该节点的唯一子节点。</li>
+<li><strong>删除有两个孩子的节点</strong>：</li>
+</ul>
+<ol>
+<li>找到该节点右子树中的最小节点（或左子树中的最大节点）。</li>
+<li>用这个最小节点的键和值替换要删除的节点。</li>
+<li>删除原最小节点。</li>
+</ol>
+<p><img data-src="https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202402201109489.png" alt="img"></p>
+<p><img data-src="https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202402201109112.png" alt="img"></p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 从二分搜索树中删除键为key的节点</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> V <span class="title function_">remove</span><span class="params">(K key)</span> {</span><br><span class="line">    Node&lt;K, V&gt; removeNode = getNode(root, key);</span><br><span class="line">    <span class="keyword">if</span> (removeNode != <span class="literal">null</span>) {</span><br><span class="line">        root = remove(root, key);</span><br><span class="line">        <span class="keyword">return</span> removeNode.value;</span><br><span class="line">    } <span class="keyword">else</span> {</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p><strong>方法签名：删除二叉树 Node 中的 key，并返回删除后的 Node 二叉树</strong></p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@param</span> node 二叉树</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@param</span> key  要移除的Key</span></span><br><span class="line"><span class="comment">    * <span class="doctag">@return</span> 移除Key节点后的的二叉树</span></span><br><span class="line"><span class="comment">    */</span></span><br><span class="line">   <span class="keyword">private</span> Node&lt;K, V&gt; <span class="title function_">remove</span><span class="params">(Node&lt;K, V&gt; node, K key)</span> {</span><br><span class="line">       <span class="keyword">if</span> (node == <span class="literal">null</span>) {</span><br><span class="line">           <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">       }</span><br><span class="line">       <span class="keyword">if</span> (key.compareTo(node.key) &lt; <span class="number">0</span>) {</span><br><span class="line">           node.left = remove(node.left, key);</span><br><span class="line">           <span class="keyword">return</span> node;</span><br><span class="line">       } <span class="keyword">else</span> <span class="keyword">if</span> (key.compareTo(node.key) &gt; <span class="number">0</span>) {</span><br><span class="line">           node.right = remove(node.right, key);</span><br><span class="line">           <span class="keyword">return</span> node;</span><br><span class="line">       } <span class="keyword">else</span> {</span><br><span class="line"></span><br><span class="line">           <span class="comment">//key.compareTo(node.key) = 0</span></span><br><span class="line">           <span class="keyword">if</span> (node.left == <span class="literal">null</span>) {</span><br><span class="line">               Node&lt;K, V&gt; rightNode = node.right;</span><br><span class="line">               node.right = <span class="literal">null</span>;</span><br><span class="line">               size--;</span><br><span class="line">               <span class="keyword">return</span> rightNode;</span><br><span class="line">           } <span class="keyword">else</span> <span class="keyword">if</span> (node.right == <span class="literal">null</span>) {</span><br><span class="line">               Node&lt;K, V&gt; leftNode = node.left;</span><br><span class="line">               node.left = <span class="literal">null</span>;</span><br><span class="line">               size--;</span><br><span class="line">               <span class="keyword">return</span> leftNode;</span><br><span class="line">           } <span class="keyword">else</span> {</span><br><span class="line">               Node&lt;K, V&gt; successor = minimum(node.right);</span><br><span class="line">               successor.left = node.left;</span><br><span class="line">               successor.right = remove(node.right, successor.key);</span><br><span class="line">               node.left = node.right = <span class="literal">null</span>;</span><br><span class="line">               <span class="keyword">return</span> successor;</span><br><span class="line">           }</span><br><span class="line">       }</span><br><span class="line">   }</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="常规方法"><a href="#常规方法" class="headerlink" title="常规方法"></a>常规方法</h3><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 如果此列表不包含任何元素，则返回true</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">empty</span><span class="params">()</span> {</span><br><span class="line">     <span class="keyword">return</span> getSize() == <span class="number">0</span>;</span><br><span class="line"> }</span><br><span class="line"></span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 返回此队列中的元素数量</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getSize</span><span class="params">()</span> {</span><br><span class="line">     <span class="keyword">return</span> size;</span><br><span class="line"> }</span><br><span class="line"></span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 查询二分搜索树中是否包含元素e</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">contains</span><span class="params">(K key)</span> {</span><br><span class="line">     Node&lt;K, V&gt; node = getNode(root, key);</span><br><span class="line">     <span class="keyword">return</span> node != <span class="literal">null</span>;</span><br><span class="line"> }</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 查询二分搜索树中是否包含元素e</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">private</span> Node&lt;K, V&gt; <span class="title function_">getNode</span><span class="params">(Node&lt;K, V&gt; node, K key)</span> {</span><br><span class="line">     <span class="keyword">if</span> (node == <span class="literal">null</span>) {</span><br><span class="line">         <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">     }</span><br><span class="line">     <span class="keyword">if</span> (key.compareTo(node.key) &lt; <span class="number">0</span>) {</span><br><span class="line">         <span class="keyword">return</span> getNode(node.left, key);</span><br><span class="line">     } <span class="keyword">else</span> <span class="keyword">if</span> (key.compareTo(node.key) &gt; <span class="number">0</span>) {</span><br><span class="line">         <span class="keyword">return</span> getNode(node.right, key);</span><br><span class="line">     } <span class="keyword">else</span> { <span class="comment">// key.compareTo(node.key) = 0</span></span><br><span class="line">         <span class="keyword">return</span> node;</span><br><span class="line">     }</span><br><span class="line"> }</span><br><span class="line"></span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 查询二分搜索树中是否包含元素e</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">public</span> V <span class="title function_">get</span><span class="params">(K key)</span> {</span><br><span class="line">     Node&lt;K, V&gt; node = getNode(root, key);</span><br><span class="line">     <span class="keyword">return</span> node != <span class="literal">null</span> ? node.value : <span class="literal">null</span>;</span><br><span class="line"> }</span><br><span class="line"></span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 将此列表中指定位置的元素替换为指定元素（可选操作）</span></span><br><span class="line"><span class="comment">  *</span></span><br><span class="line"><span class="comment">  * <span class="doctag">@param</span> key      key</span></span><br><span class="line"><span class="comment">  * <span class="doctag">@param</span> newValue 新值</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">set</span><span class="params">(K key, V newValue)</span> {</span><br><span class="line">     Node&lt;K, V&gt; node = getNode(root, key);</span><br><span class="line">     <span class="keyword">if</span> (node == <span class="literal">null</span>) {</span><br><span class="line">         <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">IllegalArgumentException</span>();</span><br><span class="line">     }</span><br><span class="line">     node.value = newValue;</span><br><span class="line"> }</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="二叉树的遍历"><a href="#二叉树的遍历" class="headerlink" title="二叉树的遍历"></a>二叉树的遍历</h2><p>遍历二分搜索树是访问树中每个节点的过程，以特定的顺序执行操作（如打印节点值）。遍历对于理解树的结构、调试代码和实现树的算法至关重要。</p>
+<h3 id="前序遍历preOrder"><a href="#前序遍历preOrder" class="headerlink" title="前序遍历preOrder"></a>前序遍历 preOrder</h3><p>前序遍历首先访问根节点，然后递归地对左子树和右子树进行前序遍历。这种遍历方式适用于创建树的副本或打印树的结构。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">preOrder</span><span class="params">()</span> {</span><br><span class="line">    preOrder(root);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">preOrder</span><span class="params">(Node&lt;K, V&gt; root)</span> {</span><br><span class="line">    <span class="keyword">if</span> (root == <span class="literal">null</span>) {</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    }</span><br><span class="line">    System.out.println(root.key);</span><br><span class="line">    preOrder(root.left);</span><br><span class="line">    preOrder(root.right);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="使用栈实现非递归的前序遍历"><a href="#使用栈实现非递归的前序遍历" class="headerlink" title="使用栈实现非递归的前序遍历"></a>使用栈实现非递归的前序遍历</h3><ol>
+<li>创建一个空栈。</li>
+<li>将根节点压入栈中。</li>
+<li>当栈不为空时，执行以下操作：</li>
+</ol>
+<ul>
+<li>弹出栈顶元素，访问该元素。</li>
+<li>将弹出节点的右子节点（如果有）压入栈中。</li>
+<li>将弹出节点的左子节点（如果有）压入栈中。</li>
+</ul>
+<p>注意，右子节点先入栈，左子节点后入栈，这样可以保证左子节点先被访问。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">preOrderNR</span><span class="params">()</span> {</span><br><span class="line">     <span class="keyword">if</span> (root == <span class="literal">null</span>) {</span><br><span class="line">         <span class="keyword">return</span>;</span><br><span class="line">     }</span><br><span class="line">     Deque&lt;Node&lt;K, V&gt;&gt; stack = <span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">     stack.push(root);</span><br><span class="line">     <span class="keyword">while</span> (!stack.isEmpty()) {</span><br><span class="line">         Node&lt;K, V&gt; node = stack.pop();</span><br><span class="line">         System.out.println(node.key);</span><br><span class="line">         <span class="keyword">if</span> (node.right != <span class="literal">null</span>) {</span><br><span class="line">             stack.push(node.right);</span><br><span class="line">         }</span><br><span class="line">         <span class="keyword">if</span> (node.left != <span class="literal">null</span>) {</span><br><span class="line">             stack.push(node.left);</span><br><span class="line">         }</span><br><span class="line">     }</span><br><span class="line"> }</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="中序遍历inOrder"><a href="#中序遍历inOrder" class="headerlink" title="中序遍历inOrder"></a>中序遍历 inOrder</h3><p>中序遍历首先递归地对左子树进行中序遍历，然后访问根节点，最后递归地对右子树进行中序遍历。中序遍历二分搜索树可以得到一个有序的键序列，是二分搜索树最常用的遍历方式。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">inOrder</span><span class="params">()</span> {</span><br><span class="line">    inOrder(root);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">inOrder</span><span class="params">(Node&lt;K, V&gt; root)</span> {</span><br><span class="line">    <span class="keyword">if</span> (root == <span class="literal">null</span>) {</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    }</span><br><span class="line">    inOrder(root.left);</span><br><span class="line">    System.out.println(root.key);</span><br><span class="line">    inOrder(root.right);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="使用栈实现非递归的中序遍历"><a href="#使用栈实现非递归的中序遍历" class="headerlink" title="使用栈实现非递归的中序遍历"></a>使用栈实现非递归的中序遍历</h3><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">inOrderNR</span><span class="params">()</span> {</span><br><span class="line">      <span class="keyword">if</span> (root == <span class="literal">null</span>) {</span><br><span class="line">          <span class="keyword">return</span>;</span><br><span class="line">      }</span><br><span class="line">      Deque&lt;Node&lt;K, V&gt;&gt; stack = <span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">      Node&lt;K, V&gt; cur = root;</span><br><span class="line">      <span class="keyword">while</span> (cur != <span class="literal">null</span> || !stack.isEmpty()) {</span><br><span class="line">          <span class="keyword">while</span> (cur != <span class="literal">null</span>) {</span><br><span class="line">              stack.push(cur);</span><br><span class="line">              cur = cur.left;</span><br><span class="line">          }</span><br><span class="line">          cur = stack.pop();</span><br><span class="line">          System.out.println(cur.key);</span><br><span class="line">          cur = cur.right;</span><br><span class="line">      }</span><br><span class="line">  }</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="后序遍历-postOrder"><a href="#后序遍历-postOrder" class="headerlink" title="后序遍历 postOrder"></a>后序遍历 postOrder</h3><p>后序遍历首先递归地对左子树和右子树进行后序遍历，然后访问根节点。后序遍历适用于递归释放或删除树的节点，因为它确保节点在其子节点被处理后才被访问。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">postOrder</span><span class="params">()</span> {</span><br><span class="line">    postOrder(root);</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line"><span class="keyword">private</span> <span class="keyword">void</span> <span class="title function_">postOrder</span><span class="params">(Node&lt;K, V&gt; root)</span> {</span><br><span class="line">    <span class="keyword">if</span> (root == <span class="literal">null</span>) {</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    }</span><br><span class="line">    postOrder(root.left);</span><br><span class="line">    postOrder(root.right);</span><br><span class="line">    System.out.println(root.key);</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="使用栈实现非递归的后序遍历"><a href="#使用栈实现非递归的后序遍历" class="headerlink" title="使用栈实现非递归的后序遍历"></a>使用栈实现非递归的后序遍历</h3><figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">postOrderNR</span><span class="params">()</span> {</span><br><span class="line">    <span class="keyword">if</span> (root == <span class="literal">null</span>) {</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    }</span><br><span class="line">    Deque&lt;Node&lt;K, V&gt;&gt; stack = <span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">    Deque&lt;Node&lt;K, V&gt;&gt; output = <span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">    stack.push(root);</span><br><span class="line">    <span class="keyword">while</span> (!stack.isEmpty()) {</span><br><span class="line">        Node&lt;K, V&gt; node = stack.pop();</span><br><span class="line">        output.push(node);</span><br><span class="line">        <span class="keyword">if</span> (node.left != <span class="literal">null</span>) {</span><br><span class="line">            stack.push(node.left);</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">if</span> (node.right != <span class="literal">null</span>) {</span><br><span class="line">            stack.push(node.right);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">    <span class="keyword">while</span> (!output.isEmpty()) {</span><br><span class="line">        System.out.println(output.pop().key);</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="层序遍历"><a href="#层序遍历" class="headerlink" title="层序遍历"></a>层序遍历</h3><p>层序遍历（广度优先搜索）按照树的层次从上到下遍历树的节点，通常使用队列来实现。层序遍历用于寻找最短路径、进行层次分析或在树中按层次顺序执行操作。</p>
+<figure class="highlight java"><table><tbody><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">levelOrder</span><span class="params">()</span> {</span><br><span class="line">    <span class="keyword">if</span> (root == <span class="literal">null</span>) {</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    }</span><br><span class="line">    Queue&lt;Node&lt;K, V&gt;&gt; queue = <span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">    queue.offer(root);</span><br><span class="line">    <span class="keyword">while</span> (!queue.isEmpty()) {</span><br><span class="line">        Node&lt;K, V&gt; node = queue.poll();</span><br><span class="line">        System.out.println(node.key);</span><br><span class="line">        <span class="keyword">if</span> (node.left != <span class="literal">null</span>) {</span><br><span class="line">            queue.offer(node.left);</span><br><span class="line">        }</span><br><span class="line">        <span class="keyword">if</span> (node.right != <span class="literal">null</span>) {</span><br><span class="line">            queue.offer(node.right);</span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<p>二分搜索树以其独特的结构和操作效率，在众多领域内发挥着重要作用。以下是一些主要的应用场景：</p>
+<h3 id="构建动态数据结构"><a href="#构建动态数据结构" class="headerlink" title="构建动态数据结构"></a>构建动态数据结构</h3><p>二分搜索树能够动态地插入和删除节点，使其成为实现各种动态数据结构（如集合、映射和优先队列）的理想选择。通过二分搜索树，可以在对数时间内完成添加、查询和删除等操作，大大提高了数据处理的效率。</p>
+<h3 id="实现查找表"><a href="#实现查找表" class="headerlink" title="实现查找表"></a>实现查找表</h3><p>二分搜索树特别适合用于实现查找表，其中包括键值对的存储和检索。由于其有序性，二分搜索树可以快速定位到一个键，并检索或更新与之关联的值。这在数据库管理系统和文件系统中尤其有用。</p>
+<h3 id="算法中的应用"><a href="#算法中的应用" class="headerlink" title="算法中的应用"></a>算法中的应用</h3><p>在算法设计中，二分搜索树用于解决诸如范围查询、排序和近似匹配等问题。例如，通过中序遍历二分搜索树，可以高效地实现数据的排序。此外，二分搜索树也常用于实现各种高级算法，如动态顺序统计、区间树和伸展树等。</p>
+<h3 id="支持范围操作"><a href="#支持范围操作" class="headerlink" title="支持范围操作"></a>支持范围操作</h3><p>二分搜索树支持高效的范围搜索操作，可以快速找到给定范围内的所有键。这在需要对数据进行分段分析或查询特定区间内的数据时特别有用，如在报告生成和数据分析应用中。</p>
+<h3 id="高级话题和优化"><a href="#高级话题和优化" class="headerlink" title="高级话题和优化"></a>高级话题和优化</h3><p>虽然标准的二分搜索树在许多情况下表现良好，但在最坏情况下它可能会退化成一个链表，导致操作效率大幅下降。为了解决这个问题，研究人员提出了多种平衡二叉搜索树，如 AVL 树、红黑树和 B 树等。这些树通过在树操作中加入旋转和重组操作，保证了树的平衡性，从而确保了操作的最坏情况时间复杂度为对数级别。此外，二分搜索树的性能也可以通过各种优化策略，如节点缓存、懒惰删除和树的重构等，进一步提高。</p>
+<h2 id="github项目"><a href="#github项目" class="headerlink" title="github项目"></a><a href="https://github.com/nadav-cheung/algorithm">github 项目</a></h2>]]></content>
+      <categories>
+        <category>算法与数据结构</category>
+        <category>二分搜索树</category>
+      </categories>
+      <tags>
+        <tag>BST</tag>
+        <tag>二分搜索树</tag>
       </tags>
   </entry>
 </search>
