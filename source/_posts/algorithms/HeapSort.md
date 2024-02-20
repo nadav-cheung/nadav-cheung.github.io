@@ -23,8 +23,6 @@ abbrlink: 607bf52d
 - **最小堆**：父节点的值总是小于或等于子节点的值。同样地，子节点的位置与最大堆相同。
 - **性质**：堆总是一棵完全二叉树。这意味着除了最底层，每层都是完全填满的，而最底层则尽可能地从左到右填满。
 
-<!-- more -->
-
 ### 堆的实现
 
 [堆前置知识](https://nadav.com.cn/posts/5eb18949/)
@@ -32,6 +30,8 @@ abbrlink: 607bf52d
 在Java中，可以使用数组来实现堆。数组中的每个位置对应堆中的一个节点，父节点和子节点的位置关系可以通过数组索引轻松找到。这种数据结构使得堆操作的时间复杂度保持在对数级别。
 
 ![img](https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/v2-35f567686fae868e742dcdabc49584cb_r.jpg)
+
+<!-- more -->
 
 ### 堆排序算法步骤
 
@@ -69,7 +69,7 @@ abbrlink: 607bf52d
 
 ### 代码示例
 
-**heapify**
+**建堆heapify**
 
 ```java
     private void heapify(T[] nums, int length) {
@@ -79,7 +79,7 @@ abbrlink: 607bf52d
     }
 ```
 
-**siftDown**
+**下沉siftDown**
 
 ```java
     /**
@@ -143,23 +143,6 @@ abbrlink: 607bf52d
     }
 ```
 
-   测试代码
-
-```java
-   // 测试代码
-    public static void main(String args[]) {
-        Integer[] intArray = {12, 11, 13, 5, 6, 7};
-        HeapSort<Integer> intSorter = new HeapSort<>();
-        intSorter.sort(intArray);
-        System.out.println("Sorted Integer array: " + Arrays.toString(intArray));
-
-        String[] stringArray = {"banana", "orange", "apple", "grape", "lemon"};
-        HeapSort<String> stringSorter = new HeapSort<>();
-        stringSorter.sort(stringArray);
-        System.out.println("Sorted String array: " + Arrays.toString(stringArray));
-    }
-```
-
 ### 总结
 
 - **时间复杂度**：平均和最坏情况下都是 O(nlogn)。
@@ -167,3 +150,5 @@ abbrlink: 607bf52d
 - **不稳定性**：堆排序是一种不稳定的排序算法，因为在堆顶的元素与子树的最后一个元素交换时，可能会改变相等元素的初始顺序。
 
 理解堆排序主要就是理解堆的特性和**siftDown** 操作原理
+
+## [github项目地址](https://github.com/nadav-cheung/algorithm)
