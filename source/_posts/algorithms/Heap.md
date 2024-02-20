@@ -10,7 +10,7 @@ top: 3013
 abbrlink: 5eb18949
 ---
 
-## 《算法与数据结构:Heap》
+# 《算法与数据结构:Heap》
 
 ## 堆
 
@@ -474,4 +474,4 @@ System.out.println(b >>> 1); // 结果是一个很大的正数
 
 因此，这个表达式是一种快速而有效的方式来找到在堆（作为一个数组表示的完全二叉树）中最后一个非叶子节点的索引。
 
-## [github项目地址](https://github.com/nadav-cheung/algorithm)
+## [github项目](https://github.com/nadav-cheung/algorithm)

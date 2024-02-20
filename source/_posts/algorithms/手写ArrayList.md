@@ -11,7 +11,7 @@ top: 3018
 abbrlink: e7bb25a0
 ---
 
-## 《算法与数据结构:手写ArrayList》
+# 《算法与数据结构:手写ArrayList》
 
 ### List的数组
 
@@ -371,4 +371,4 @@ public interface List<E> {
     }
 ```
 
-## [github项目地址](https://github.com/nadav-cheung/algorithm)
+## [github项目](https://github.com/nadav-cheung/algorithm)

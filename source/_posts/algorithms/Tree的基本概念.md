@@ -10,7 +10,7 @@ top: 3117
 abbrlink: 6e5a1512
 ---
 
-## 《算法与数据结构:Tree的基本概念》
+# 《算法与数据结构:Tree的基本概念》
 
 ## **树的基本概念**
 
@@ -180,4 +180,4 @@ $$
 
 ![img](https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/v2-c8e7df0d473656b8f82f7ac46c02461c_1440w.png)
 
-## [github项目地址](https://github.com/nadav-cheung/algorithm)
+## [github项目](https://github.com/nadav-cheung/algorithm)

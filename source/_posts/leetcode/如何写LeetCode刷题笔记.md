@@ -6,7 +6,7 @@ top: 3000
 abbrlink: '32e49274'
 ---
 
-## 《如何写LeetCode刷题笔记》
+# 《如何写LeetCode刷题笔记》
 
 ![如何写关于LeetCode专题的理论指导](https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/v2-7b17d478ef4a166be6b8306f9984460c_1440w.png)
 

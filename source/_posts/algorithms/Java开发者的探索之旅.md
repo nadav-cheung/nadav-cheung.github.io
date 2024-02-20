@@ -8,7 +8,7 @@ top: 3111
 abbrlink: 1887ef
 ---
 
-## 《算法与数据结构:Java开发者的探索之旅》专栏简介
+# 《算法与数据结构:Java开发者的探索之旅》专栏简介
 
 ## 引言
 
@@ -60,5 +60,5 @@ abbrlink: 1887ef
 
 无论你是Java新手，还是有着丰富开发经验的专业人士，这个专栏都将为你提供宝贵的学习资源和启发。加入我们，一起在算法与数据结构的世界中不断成长！
 
-## [github项目地址](https://github.com/nadav-cheung/algorithm)
+## [github项目](https://github.com/nadav-cheung/algorithm)
 

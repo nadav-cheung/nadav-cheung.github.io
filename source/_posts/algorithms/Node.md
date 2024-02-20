@@ -11,7 +11,7 @@ top: 3019
 abbrlink: fc608e54
 ---
 
-## 《算法与数据结构:Node》
+# 《算法与数据结构:Node》
 
 ## 节点（Node）数据结构基石
 
@@ -228,4 +228,4 @@ todo
 
 ## **红黑树**
 
-## [github项目地址](https://github.com/nadav-cheung/algorithm)
+## [github项目](https://github.com/nadav-cheung/algorithm)

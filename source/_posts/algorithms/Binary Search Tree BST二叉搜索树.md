@@ -1,17 +1,16 @@
 ---
+layout: psot
 title: 《Binary Search Tree BST二叉搜索树》
+date: 2024-02-20 12:01:03
 categories:
   - 算法与数据结构
-  - BST
+  - 二分搜索树
 tags:
-  - 算法与数据结构
   - BST
-  - 二叉搜索树
-top: 3088
-abbrlink: 59f3686c
+  - 二分搜索树
 ---
 
-## 《算法与数据结构：Binary Search Tree BST二叉搜索树》
+# 《算法与数据结构：Binary Search Tree BST二叉搜索树》
 
 ## **简介**
 
@@ -40,6 +39,7 @@ abbrlink: 59f3686c
 2. **节点的右子树只包含大于当前节点的数。**
 3. **左右子树也必须是二叉搜索树。**
 4. **不存在两个节点具有相同的值。**
+
 <!-- more -->
 
 ### 二分搜索树与普通二叉树的区别

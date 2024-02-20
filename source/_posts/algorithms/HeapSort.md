@@ -11,7 +11,7 @@ top: 3014
 abbrlink: 607bf52d
 ---
 
-## 《算法与数据结构:HeapSort》
+# 《算法与数据结构:HeapSort》
 
 ### 简介
 
@@ -151,4 +151,4 @@ abbrlink: 607bf52d
 
 理解堆排序主要就是理解堆的特性和**siftDown** 操作原理
 
-## [github项目地址](https://github.com/nadav-cheung/algorithm)
+## [github项目](https://github.com/nadav-cheung/algorithm)
