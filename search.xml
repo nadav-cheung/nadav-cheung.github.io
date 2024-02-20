@@ -1081,7 +1081,7 @@
   <entry>
     <title>《如何写 LeetCode 刷题笔记》</title>
     <url>/posts/32e49274/</url>
-    <content><![CDATA[<h2 id="《如何写LeetCode刷题笔记》"><a href="#《如何写LeetCode刷题笔记》" class="headerlink" title="《如何写LeetCode刷题笔记》"></a>《如何写 LeetCode 刷题笔记》</h2><p><img data-src="https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/v2-7b17d478ef4a166be6b8306f9984460c_1440w.png" alt="如何写关于LeetCode专题的理论指导"></p>
+    <content><![CDATA[<h1 id="《如何写LeetCode刷题笔记》"><a href="#《如何写LeetCode刷题笔记》" class="headerlink" title="《如何写LeetCode刷题笔记》"></a>《如何写 LeetCode 刷题笔记》</h1><p><img data-src="https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/v2-7b17d478ef4a166be6b8306f9984460c_1440w.png" alt="如何写关于LeetCode专题的理论指导"></p>
 <h2 id="选择题目"><a href="#选择题目" class="headerlink" title="选择题目"></a><strong>选择题目</strong></h2><h4 id="1-多样化度级别"><a href="#1-多样化度级别" class="headerlink" title="1. 多样化度级别"></a>1. <strong>多样化度级别</strong></h4><ul>
 <li><strong>初级</strong>：从简单的题目开始，帮助初学者建立信心。这些题目通常涉及基本的数据结构和算法。</li>
 <li><strong>中级</strong>：包括中等难度的题目，这些题目通常需要更复杂的算法和数据结构，如动态规划、树、图等。</li>
@@ -1483,7 +1483,7 @@
   <entry>
     <title>《[04] 寻找两个正序数组的中位数》</title>
     <url>/posts/af104c4/</url>
-    <content><![CDATA[<h2 id="《LeetCode-04-寻找两个正序数组的中位数》"><a href="#《LeetCode-04-寻找两个正序数组的中位数》" class="headerlink" title="《LeetCode:[04]寻找两个正序数组的中位数》"></a>《LeetCode:[04] 寻找两个正序数组的中位数》</h2><p><img data-src="https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/v2-7d5b231dd4e7405966a57996174e9bd8_1440w.png" alt="《LeetCode：[04]寻找两个正序数组的中位数》"></p>
+    <content><![CDATA[<h1 id="《LeetCode-04-寻找两个正序数组的中位数》"><a href="#《LeetCode-04-寻找两个正序数组的中位数》" class="headerlink" title="《LeetCode:[04]寻找两个正序数组的中位数》"></a>《LeetCode:[04] 寻找两个正序数组的中位数》</h1><p><img data-src="https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/v2-7d5b231dd4e7405966a57996174e9bd8_1440w.png" alt="《LeetCode：[04]寻找两个正序数组的中位数》"></p>
 <p><a href="https://leetcode.cn/problems/median-of-two-sorted-arrays/">力扣（LeetCode）官网 - 寻找两个正序数组的中位数</a></p>
 <p>给定两个大小分别为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。请你找出并返回这两个正序数组的 <strong>中位数</strong> 。</p>
 <p>算法的时间复杂度应该为 O (log (m+n)) 。</p>
@@ -1571,7 +1571,7 @@
   <entry>
     <title>《[02] 两数相加》</title>
     <url>/posts/216d1c97/</url>
-    <content><![CDATA[<h2 id="《LeetCode-02-两数相加》"><a href="#《LeetCode-02-两数相加》" class="headerlink" title="《LeetCode:[02]两数相加》"></a>《LeetCode:[02] 两数相加》</h2><p><img data-src="https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/v2-f01e20d5cf998483165385f565e865a4_1440w.png" alt="《LeetCode：[02]两数相加》"></p>
+    <content><![CDATA[<h1 id="《LeetCode-02-两数相加》"><a href="#《LeetCode-02-两数相加》" class="headerlink" title="《LeetCode:[02]两数相加》"></a>《LeetCode:[02] 两数相加》</h1><p><img data-src="https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/v2-f01e20d5cf998483165385f565e865a4_1440w.png" alt="《LeetCode：[02]两数相加》"></p>
 <p><a href="https://leetcode.cn/problems/add-two-numbers/description/">力扣（LeetCode）官网 - 两数相加</a></p>
 <p>给你两个 <strong>非空</strong> 的链表，表示两个非负的整数。它们每位数字都是按照 <strong>逆序</strong> 的方式存储的，并且每个节点只能存储 <strong>一位</strong> 数字。</p>
 <p>请你将两个数相加，并以相同形式返回一个表示和的链表。</p>
