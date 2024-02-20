@@ -1,5 +1,7 @@
 ---
+layout: psot
 title: 《优先队列PriorityQueue》
+date: 2024-02-20 13:44:07
 categories:
   - 算法与数据结构
   - PriorityQueue
@@ -9,7 +11,6 @@ tags:
   - 优先队列
   - Queue
 top: 3066
-abbrlink: dbb3c5e
 ---
 
 ## 《算法与数据结构：优先队列PriorityQueue》
@@ -32,7 +33,9 @@ abbrlink: dbb3c5e
 - **任务调度**：在操作系统中管理进程或任务的执行顺序。
 - **图算法**：如在Dijkstra最短路径算法中选择下一个要访问的节点。
 - **事件驱动模拟**：按事件优先级顺序处理模拟事件。
+
 <!-- more -->
+
 ## 优先队列的工作原理
 
 要理解优先队列是如何工作的，首先需要了解它背后最常用的数据结构——二叉堆。
