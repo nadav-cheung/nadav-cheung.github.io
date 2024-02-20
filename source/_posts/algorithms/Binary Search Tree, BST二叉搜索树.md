@@ -1,15 +1,17 @@
 ---
-title: 《Binary Search Tree, BST二叉搜索树》
+title: 《Binary Search Tree BST二叉搜索树》
 categories:
   - 算法与数据结构
   - BST
 tags:
   - 算法与数据结构
   - BST
-top: 30477
-abbrlink: 49745c6b
+  - 二叉搜索树
+top: 3088
+abbrlink: 59f3686c
 ---
-## 《算法与数据结构：（Binary Search Tree, BST）二叉搜索树》
+
+## 《算法与数据结构：Binary Search Tree BST二叉搜索树》
 
 ## **简介**
 
