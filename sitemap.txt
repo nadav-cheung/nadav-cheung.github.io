@@ -1,4 +1,5 @@
 https://nadav.com.cn/posts/49745c6b/
+https://nadav.com.cn/posts/96e44c12/
 https://nadav.com.cn/posts/761b8361/
 https://nadav.com.cn/posts/86e9784a/
 https://nadav.com.cn/posts/55c8611c/
@@ -43,6 +44,7 @@ https://nadav.com.cn/tags/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95
 https://nadav.com.cn/tags/%E7%BA%BF%E6%80%A7%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95/
 https://nadav.com.cn/tags/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/
 https://nadav.com.cn/tags/BST/
+https://nadav.com.cn/tags/riorityQueue/
 https://nadav.com.cn/categories/LeetCode%E5%88%B7%E9%A2%98%E7%AC%94%E8%AE%B0/
 https://nadav.com.cn/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/
 https://nadav.com.cn/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/
@@ -59,3 +61,4 @@ https://nadav.com.cn/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7
 https://nadav.com.cn/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/Java%E5%BC%80%E5%8F%91%E8%80%85%E7%9A%84%E6%8E%A2%E7%B4%A2%E4%B9%8B%E6%97%85/
 https://nadav.com.cn/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2%E7%AE%97%E6%B3%95/
 https://nadav.com.cn/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/BST/
+https://nadav.com.cn/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/riorityQueue/

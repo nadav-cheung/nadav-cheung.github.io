@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://nadav.com.cn/posts/96e44c12/</loc>
+    
+    <lastmod>2024-02-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://nadav.com.cn/posts/761b8361/</loc>
     
     <lastmod>2024-02-20</lastmod>
@@ -364,6 +373,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://nadav.com.cn/tags/riorityQueue/</loc>
+    <lastmod>2024-02-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -473,6 +489,13 @@
   
   <url>
     <loc>https://nadav.com.cn/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/BST/</loc>
+    <lastmod>2024-02-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/categories/%E7%AE%97%E6%B3%95%E4%B8%8E%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/riorityQueue/</loc>
     <lastmod>2024-02-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
