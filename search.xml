@@ -44,7 +44,7 @@
   <entry>
     <title>《Heap》</title>
     <url>/posts/5eb18949/</url>
-    <content><![CDATA[<h1 id="《算法与数据结构-Heap》"><a href="#《算法与数据结构-Heap》" class="headerlink" title="《算法与数据结构:Heap》"></a>《算法与数据结构：Heap》</h1><h2 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h2><p>堆是一种数据结构，它是一种完全二叉树，具有以下特点：</p>
+    <content><![CDATA[<h2 id="《算法与数据结构-Heap》"><a href="#《算法与数据结构-Heap》" class="headerlink" title="《算法与数据结构:Heap》"></a>《算法与数据结构：Heap》</h2><h2 id="堆"><a href="#堆" class="headerlink" title="堆"></a>堆</h2><p>堆是一种数据结构，它是一种完全二叉树，具有以下特点：</p>
 <ol>
 <li>堆是完全二叉树，即每个节点都有两个子节点。</li>
 <li>堆是一种有序树，即对于任意节点 n，如果 n 有左子节点 l 和右子节点 r，则 n 的值比 l 和 r 的值都大或都小。</li>
@@ -206,7 +206,7 @@
   <entry>
     <title>《排序算法纲领》</title>
     <url>/posts/d161d12f/</url>
-    <content><![CDATA[<h1 id="《算法与数据结构-排序算法纲领》"><a href="#《算法与数据结构-排序算法纲领》" class="headerlink" title="《算法与数据结构:排序算法纲领》"></a>《算法与数据结构：排序算法纲领》</h1><h2 id="排序算法概览"><a href="#排序算法概览" class="headerlink" title="排序算法概览"></a>排序算法概览</h2><h3 id="排序算法的概念"><a href="#排序算法的概念" class="headerlink" title="排序算法的概念"></a><strong>排序算法的概念</strong></h3><p>排序算法是一类算法，用于将一组数据元素（通常是数组）按照特定的顺序（如升序或降序）重新排列。排序是计算机科学中基本的操作之一，广泛应用于数据处理、数据库系统、算法设计等领域。</p>
+    <content><![CDATA[<h2 id="《算法与数据结构-排序算法纲领》"><a href="#《算法与数据结构-排序算法纲领》" class="headerlink" title="《算法与数据结构:排序算法纲领》"></a>《算法与数据结构：排序算法纲领》</h2><h2 id="排序算法概览"><a href="#排序算法概览" class="headerlink" title="排序算法概览"></a>排序算法概览</h2><h3 id="排序算法的概念"><a href="#排序算法的概念" class="headerlink" title="排序算法的概念"></a><strong>排序算法的概念</strong></h3><p>排序算法是一类算法，用于将一组数据元素（通常是数组）按照特定的顺序（如升序或降序）重新排列。排序是计算机科学中基本的操作之一，广泛应用于数据处理、数据库系统、算法设计等领域。</p>
 <h3 id="排序算法的本质"><a href="#排序算法的本质" class="headerlink" title="排序算法的本质"></a><strong>排序算法的本质</strong></h3><p>排序算法的本质是比较和交换（或移动）数据元素，以达到预定的顺序。这个过程通常涉及以下基本操作：</p>
 <ul>
 <li><strong>比较</strong>：判断两个元素之间的顺序关系。</li>
@@ -272,7 +272,7 @@
   <entry>
     <title>《Tree 的基本概念》</title>
     <url>/posts/6e5a1512/</url>
-    <content><![CDATA[<h1 id="《算法与数据结构-Tree的基本概念》"><a href="#《算法与数据结构-Tree的基本概念》" class="headerlink" title="《算法与数据结构:Tree的基本概念》"></a>《算法与数据结构：Tree 的基本概念》</h1><h2 id="树的基本概念"><a href="#树的基本概念" class="headerlink" title="树的基本概念"></a><strong>树的基本概念</strong></h2><h3 id="树（Tree）结构简介"><a href="#树（Tree）结构简介" class="headerlink" title="树（Tree）结构简介"></a><strong>树（Tree）结构简介</strong></h3><p>树是一种层级数据结构，非常适合用来表示具有层级关系或者需要快速搜索操作的数据集合。它由节点 Nodes 组成，这些节点通过边 Edges 相连。一个树结构有以下特点：</p>
+    <content><![CDATA[<h2 id="《算法与数据结构-Tree的基本概念》"><a href="#《算法与数据结构-Tree的基本概念》" class="headerlink" title="《算法与数据结构:Tree的基本概念》"></a>《算法与数据结构：Tree 的基本概念》</h2><h2 id="树的基本概念"><a href="#树的基本概念" class="headerlink" title="树的基本概念"></a><strong>树的基本概念</strong></h2><h3 id="树（Tree）结构简介"><a href="#树（Tree）结构简介" class="headerlink" title="树（Tree）结构简介"></a><strong>树（Tree）结构简介</strong></h3><p>树是一种层级数据结构，非常适合用来表示具有层级关系或者需要快速搜索操作的数据集合。它由节点 Nodes 组成，这些节点通过边 Edges 相连。一个树结构有以下特点：</p>
 <ul>
 <li><strong>树与子树：</strong>树是一个有限集合，子树则是该集合的子集。就像套娃一样，一棵树下面还包含着其子树。比如，树 T1 的子树为 树 T2、T3、T4，树 T2 的子树为 T5、T6。 上图中还有许多子树没有标记出来 。</li>
 <li><strong>结点 (Node)：</strong>一个结点包括一个数据元素和若干指向其子树分支。比如，在树 T1 中，结点 A 包括一个数据元素 A 和 三个指向其子树的分支。上图中共有 18 个结点 。</li>
@@ -366,7 +366,7 @@
   <entry>
     <title>《Java 开发者的探索之旅》</title>
     <url>/posts/1887ef/</url>
-    <content><![CDATA[<h1 id="《算法与数据结构-Java开发者的探索之旅》专栏简介"><a href="#《算法与数据结构-Java开发者的探索之旅》专栏简介" class="headerlink" title="《算法与数据结构:Java开发者的探索之旅》专栏简介"></a>《算法与数据结构：Java 开发者的探索之旅》专栏简介</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>欢迎来到《算法与数据结构：Java 开发者的探索之旅》一个专为 Java 程序员设计的综合学习平台。无论您是初涉编程世界的新手，还是经验丰富的行业专家，这里都有您需要的知识和资源。通过本专栏，我们将共同探索算法的奥秘和数据结构的精髓，不仅提升您的编程技能，还将激发您解决复杂问题的能力。</p>
+    <content><![CDATA[<h2 id="《算法与数据结构-Java开发者的探索之旅》专栏简介"><a href="#《算法与数据结构-Java开发者的探索之旅》专栏简介" class="headerlink" title="《算法与数据结构:Java开发者的探索之旅》专栏简介"></a>《算法与数据结构：Java 开发者的探索之旅》专栏简介</h2><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>欢迎来到《算法与数据结构：Java 开发者的探索之旅》一个专为 Java 程序员设计的综合学习平台。无论您是初涉编程世界的新手，还是经验丰富的行业专家，这里都有您需要的知识和资源。通过本专栏，我们将共同探索算法的奥秘和数据结构的精髓，不仅提升您的编程技能，还将激发您解决复杂问题的能力。</p>
 <h2 id="第一部分：基础篇"><a href="#第一部分：基础篇" class="headerlink" title="第一部分：基础篇"></a>第一部分：基础篇</h2><h3 id="1-算法和数据结构入门"><a href="#1-算法和数据结构入门" class="headerlink" title="1. 算法和数据结构入门"></a>1. 算法和数据结构入门</h3><p>对于刚开始学习 Java 的读者，我们将从最基本的算法和数据结构开始。这包括了解数组、链表、栈、队列、堆、字典、集合、树等基础数据结构，以及排序和搜索等基本算法。</p>
 <span id="more"></span>
 
@@ -391,7 +391,7 @@
   <entry>
     <title>《插入排序算法》</title>
     <url>/posts/761b8361/</url>
-    <content><![CDATA[<h1 id="《算法与数据结构-插入排序算法》"><a href="#《算法与数据结构-插入排序算法》" class="headerlink" title="《算法与数据结构:插入排序算法》"></a>《算法与数据结构：插入排序算法》</h1><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><p>插入排序是一种简单直观的排序算法，它通过构建有序序列，对于未排序数据，在已排序序列中从后向前扫描，找到相应位置并插入。插入排序在实践中对小型数组表现良好，尤其是当数组部分已经排序时。</p>
+    <content><![CDATA[<h2 id="《算法与数据结构-插入排序算法》"><a href="#《算法与数据结构-插入排序算法》" class="headerlink" title="《算法与数据结构:插入排序算法》"></a>《算法与数据结构：插入排序算法》</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><p>插入排序是一种简单直观的排序算法，它通过构建有序序列，对于未排序数据，在已排序序列中从后向前扫描，找到相应位置并插入。插入排序在实践中对小型数组表现良好，尤其是当数组部分已经排序时。</p>
 <p><strong>算法思想</strong></p>
 <p>插入排序的基本思想是将待排序的元素看作一个有序表和一个无序表。开始时，有序表中只包含一个元素，而无序表中包含有 n-1 个元素。在排序过程中，每次从无序表中取出第一个元素，将其与有序表中的元素的排序码进行比较，然后将其插入到有序表中的适当位置，形成新的有序表。</p>
 <h3 id="关键特点"><a href="#关键特点" class="headerlink" title="关键特点"></a>关键特点</h3><ul>
@@ -490,7 +490,7 @@
   <entry>
     <title>《冒泡排序算法》</title>
     <url>/posts/55c8611c/</url>
-    <content><![CDATA[<h1 id="《算法与数据结构-冒泡排序算法》"><a href="#《算法与数据结构-冒泡排序算法》" class="headerlink" title="《算法与数据结构:冒泡排序算法》"></a>《算法与数据结构：冒泡排序算法》</h1><h2 id="冒泡排序算法"><a href="#冒泡排序算法" class="headerlink" title="冒泡排序算法"></a>冒泡排序算法</h2><h3 id="算法简介"><a href="#算法简介" class="headerlink" title="算法简介"></a><strong>算法简介</strong></h3><p>冒泡排序是一种简单的排序算法，它重复地遍历待排序的元素列表，比较相邻的元素，并在需要时交换它们的位置。每遍历一次列表，至少有一个元素会被移至其正确的位置，这个过程类似于气泡从水底升到水面的过程，因此得名 “冒泡排序”。</p>
+    <content><![CDATA[<h2 id="《算法与数据结构-冒泡排序算法》"><a href="#《算法与数据结构-冒泡排序算法》" class="headerlink" title="《算法与数据结构:冒泡排序算法》"></a>《算法与数据结构：冒泡排序算法》</h2><h2 id="冒泡排序算法"><a href="#冒泡排序算法" class="headerlink" title="冒泡排序算法"></a>冒泡排序算法</h2><h3 id="算法简介"><a href="#算法简介" class="headerlink" title="算法简介"></a><strong>算法简介</strong></h3><p>冒泡排序是一种简单的排序算法，它重复地遍历待排序的元素列表，比较相邻的元素，并在需要时交换它们的位置。每遍历一次列表，至少有一个元素会被移至其正确的位置，这个过程类似于气泡从水底升到水面的过程，因此得名 “冒泡排序”。</p>
 <h3 id="关键特点"><a href="#关键特点" class="headerlink" title="关键特点"></a><strong>关键特点</strong></h3><ul>
 <li><strong>简单直观</strong>：易于理解和实现。</li>
 <li><strong>效率较低</strong>：对于大量元素的列表，其性能不如更复杂的排序算法。</li>
@@ -560,7 +560,7 @@
   <entry>
     <title>《选择排序算法》</title>
     <url>/posts/f3a42a74/</url>
-    <content><![CDATA[<h1 id="《算法与数据结构-选择排序算法》"><a href="#《算法与数据结构-选择排序算法》" class="headerlink" title="《算法与数据结构:选择排序算法》"></a>《算法与数据结构：选择排序算法》</h1><h2 id="选择排序算法"><a href="#选择排序算法" class="headerlink" title="选择排序算法"></a>选择排序算法</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><p>选择排序是一种简单直观的排序算法。它的工作原理是每次从待排序的数据元素中选出最小（或最大）的一个元素，存放在序列的起始位置，直到全部待排序的数据元素排完。选择排序是不稳定的排序方法（即相同的元素可能在排序后的序列中有不同的顺序）。</p>
+    <content><![CDATA[<h2 id="《算法与数据结构-选择排序算法》"><a href="#《算法与数据结构-选择排序算法》" class="headerlink" title="《算法与数据结构:选择排序算法》"></a>《算法与数据结构：选择排序算法》</h2><h2 id="选择排序算法"><a href="#选择排序算法" class="headerlink" title="选择排序算法"></a>选择排序算法</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><p>选择排序是一种简单直观的排序算法。它的工作原理是每次从待排序的数据元素中选出最小（或最大）的一个元素，存放在序列的起始位置，直到全部待排序的数据元素排完。选择排序是不稳定的排序方法（即相同的元素可能在排序后的序列中有不同的顺序）。</p>
 <h3 id="算法原理"><a href="#算法原理" class="headerlink" title="算法原理"></a><strong>算法原理</strong></h3><p>选择排序算法的主要步骤如下：</p>
 <ol>
 <li>在未排序序列中找到最小（或最大）元素，存放到排序序列的起始位置。</li>
@@ -628,7 +628,7 @@
   <entry>
     <title>《Node》</title>
     <url>/posts/fc608e54/</url>
-    <content><![CDATA[<h1 id="《算法与数据结构-Node》"><a href="#《算法与数据结构-Node》" class="headerlink" title="《算法与数据结构:Node》"></a>《算法与数据结构：Node》</h1><h2 id="节点（Node）数据结构基石"><a href="#节点（Node）数据结构基石" class="headerlink" title="节点（Node）数据结构基石"></a>节点（Node）数据结构基石</h2><h3 id="理解Node数据结构及其应用"><a href="#理解Node数据结构及其应用" class="headerlink" title="理解Node数据结构及其应用"></a><strong>理解 Node 数据结构及其应用</strong></h3><p>Node（节点）在计算机科学中扮演着核心角色，它是构建更复杂数据结构的基石。深入理解 Node 及其在各种数据结构中的应用，对于开发高效、可扩展的软件应用至关重要。</p>
+    <content><![CDATA[<h2 id="《算法与数据结构-Node》"><a href="#《算法与数据结构-Node》" class="headerlink" title="《算法与数据结构:Node》"></a>《算法与数据结构：Node》</h2><h2 id="节点（Node）数据结构基石"><a href="#节点（Node）数据结构基石" class="headerlink" title="节点（Node）数据结构基石"></a>节点（Node）数据结构基石</h2><h3 id="理解Node数据结构及其应用"><a href="#理解Node数据结构及其应用" class="headerlink" title="理解Node数据结构及其应用"></a><strong>理解 Node 数据结构及其应用</strong></h3><p>Node（节点）在计算机科学中扮演着核心角色，它是构建更复杂数据结构的基石。深入理解 Node 及其在各种数据结构中的应用，对于开发高效、可扩展的软件应用至关重要。</p>
 <h3 id="Node节点概念"><a href="#Node节点概念" class="headerlink" title="Node节点概念"></a>Node 节点概念</h3><ul>
 <li><strong>定义与结构</strong>：Node 通常是一个包含数据和指向其他节点的引用的对象。它的结构可能因应用的不同而有所不同，但通常包括至少一个数据字段和一个或多个链接字段。</li>
 <li><strong>类型</strong>：<ul>
@@ -746,7 +746,7 @@
   <entry>
     <title>《手写 ArrayList》</title>
     <url>/posts/e7bb25a0/</url>
-    <content><![CDATA[<h1 id="《算法与数据结构-手写ArrayList》"><a href="#《算法与数据结构-手写ArrayList》" class="headerlink" title="《算法与数据结构:手写ArrayList》"></a>《算法与数据结构：手写 ArrayList》</h1><h3 id="List的数组"><a href="#List的数组" class="headerlink" title="List的数组"></a>List 的数组</h3><p>List（列表）是编程中一种极为常见且重要的数据结构，用于存储元素的有序集合。在 Java 中，List 是一个接口，它允许我们以线性方式存储元素，同时提供了一系列操作这些元素的方法，List 是线性表的一种。</p>
+    <content><![CDATA[<h2 id="《算法与数据结构-手写ArrayList》"><a href="#《算法与数据结构-手写ArrayList》" class="headerlink" title="《算法与数据结构:手写ArrayList》"></a>《算法与数据结构：手写 ArrayList》</h2><h3 id="List的数组"><a href="#List的数组" class="headerlink" title="List的数组"></a>List 的数组</h3><p>List（列表）是编程中一种极为常见且重要的数据结构，用于存储元素的有序集合。在 Java 中，List 是一个接口，它允许我们以线性方式存储元素，同时提供了一系列操作这些元素的方法，List 是线性表的一种。</p>
 <p>线性表是一种最基本、最简单、也是最常用的一种数据结构。一个线性表是 n 个具有相同特性的数据元素的有限序列。在这些元素中，每个元素都有一个前驱和一个后继，除了第一个和最后一个元素之外，其它元素都是首尾相接的。</p>
 <h3 id="List数据结构的基本概念"><a href="#List数据结构的基本概念" class="headerlink" title="List数据结构的基本概念"></a>List 数据结构的基本概念</h3><ul>
 <li><strong>定义</strong>：List 是一种允许重复元素的序列，它可以维护元素插入的顺序。</li>
@@ -810,7 +810,7 @@
   <entry>
     <title>《线性搜索算法》</title>
     <url>/posts/dea6490e/</url>
-    <content><![CDATA[<h1 id="《算法与数据结构-线性搜索算法》"><a href="#《算法与数据结构-线性搜索算法》" class="headerlink" title="《算法与数据结构:线性搜索算法》"></a>《算法与数据结构：线性搜索算法》</h1><h2 id="线性搜索算法"><a href="#线性搜索算法" class="headerlink" title="线性搜索算法"></a>线性搜索算法</h2><p>当我们谈论搜索算法时，线性搜索算法因其简单性和直接性而占据了一个重要的位置。这种算法在编程和数据处理中非常常见，尤其是在处理未排序的数据集时。本文将详细介绍线性搜索算法的基本原理，并提供 Java 语言的实现示例。</p>
+    <content><![CDATA[<h2 id="《算法与数据结构-线性搜索算法》"><a href="#《算法与数据结构-线性搜索算法》" class="headerlink" title="《算法与数据结构:线性搜索算法》"></a>《算法与数据结构：线性搜索算法》</h2><h2 id="线性搜索算法"><a href="#线性搜索算法" class="headerlink" title="线性搜索算法"></a>线性搜索算法</h2><p>当我们谈论搜索算法时，线性搜索算法因其简单性和直接性而占据了一个重要的位置。这种算法在编程和数据处理中非常常见，尤其是在处理未排序的数据集时。本文将详细介绍线性搜索算法的基本原理，并提供 Java 语言的实现示例。</p>
 <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><p>线性搜索，又被称为顺序搜索，是一种在数据结构（如数组或列表）中查找特定元素的方法。这种搜索从数据结构的一端开始，顺序检查每个元素，直到找到所需的元素或搜索完所有元素为止。</p>
 <span id="more"></span>
 
@@ -844,7 +844,7 @@
   <entry>
     <title>《二分搜索算法》</title>
     <url>/posts/86e9784a/</url>
-    <content><![CDATA[<h1 id="《算法与数据结构-二分搜索算法》"><a href="#《算法与数据结构-二分搜索算法》" class="headerlink" title="《算法与数据结构:二分搜索算法》"></a>《算法与数据结构：二分搜索算法》</h1><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><p>二分搜索算法是一种在有序数组中查找特定元素的有效方法。其基本思想是通过将搜索区间分成两半，然后根据目标值与中间元素的比较结果来选择搜索的半区，从而逐步缩小搜索范围，直到找到目标值或确定目标值不存在。</p>
+    <content><![CDATA[<h2 id="《算法与数据结构-二分搜索算法》"><a href="#《算法与数据结构-二分搜索算法》" class="headerlink" title="《算法与数据结构:二分搜索算法》"></a>《算法与数据结构：二分搜索算法》</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h3><p>二分搜索算法是一种在有序数组中查找特定元素的有效方法。其基本思想是通过将搜索区间分成两半，然后根据目标值与中间元素的比较结果来选择搜索的半区，从而逐步缩小搜索范围，直到找到目标值或确定目标值不存在。</p>
 <h3 id="二分搜索的工作原理"><a href="#二分搜索的工作原理" class="headerlink" title="二分搜索的工作原理"></a><strong>二分搜索的工作原理</strong></h3><p>二分搜索（又称二分查找）是一种在有序数组中查找特定元素的算法。在 Java 中实现二分搜索，你可以遵循以下步骤：</p>
 <p><strong>确定查找范围</strong>：设置两个指针，low 和 high，分别表示数组的起始和结束位置 nums [low,high) 左闭右开区间。</p>
 <p><strong>计算中间位置</strong>：在每次迭代中，计算中间位置 mid = low + (high - low) / 2。</p>
@@ -927,7 +927,7 @@
   <entry>
     <title>《HeapSort》</title>
     <url>/posts/607bf52d/</url>
-    <content><![CDATA[<h1 id="《算法与数据结构-HeapSort》"><a href="#《算法与数据结构-HeapSort》" class="headerlink" title="《算法与数据结构:HeapSort》"></a>《算法与数据结构：HeapSort》</h1><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>堆排序是一种高效的排序算法，它利用了堆的数据结构特性来排序元素。在堆排序中，首先将待排序的序列构造成一个堆，然后将堆顶的最大（或最小）元素与堆尾元素交换，然后调整堆结构，继续选择堆顶的元素，直到序列排序完成。</p>
+    <content><![CDATA[<h2 id="《算法与数据结构-HeapSort》"><a href="#《算法与数据结构-HeapSort》" class="headerlink" title="《算法与数据结构:HeapSort》"></a>《算法与数据结构：HeapSort》</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>堆排序是一种高效的排序算法，它利用了堆的数据结构特性来排序元素。在堆排序中，首先将待排序的序列构造成一个堆，然后将堆顶的最大（或最小）元素与堆尾元素交换，然后调整堆结构，继续选择堆顶的元素，直到序列排序完成。</p>
 <h3 id="堆的类型和性质"><a href="#堆的类型和性质" class="headerlink" title="堆的类型和性质"></a>堆的类型和性质</h3><ul>
 <li><strong>最大堆</strong>：父节点的值总是大于或等于子节点的值。在数组中，对于每个元素 <code>i</code>，其子节点位于 2 * i + 1 和 <code>2 * i + 2</code>。</li>
 <li><strong>最小堆</strong>：父节点的值总是小于或等于子节点的值。同样地，子节点的位置与最大堆相同。</li>
@@ -993,7 +993,7 @@
   <entry>
     <title>《字符串搜索算法》</title>
     <url>/posts/b238ed84/</url>
-    <content><![CDATA[<h1 id="《算法与数据结构-字符串搜索算法》"><a href="#《算法与数据结构-字符串搜索算法》" class="headerlink" title="《算法与数据结构:字符串搜索算法》"></a>《算法与数据结构：字符串搜索算法》</h1><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>字符串匹配是计算机科学中一个基础而重要的问题，它涉及在一个文本字符串中寻找一个子字符串的过程。这一问题在许多领域都有广泛的应用，包括文本编辑、生物信息学、数据检索等。在众多解决字符串匹配问题的算法中，KMP（Knuth-Morris-Pratt）算法因其高效的匹配过程而著称。不同于传统的朴素匹配方法，KMP 算法利用已匹配的部分信息避免从头开始匹配，大大提高了搜索效率。本文旨在为初学者提供一个关于 KMP 算法的入门指南，介绍其基本概念、工作原理及应用场景。</p>
+    <content><![CDATA[<h2 id="《算法与数据结构-字符串搜索算法》"><a href="#《算法与数据结构-字符串搜索算法》" class="headerlink" title="《算法与数据结构:字符串搜索算法》"></a>《算法与数据结构：字符串搜索算法》</h2><h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>字符串匹配是计算机科学中一个基础而重要的问题，它涉及在一个文本字符串中寻找一个子字符串的过程。这一问题在许多领域都有广泛的应用，包括文本编辑、生物信息学、数据检索等。在众多解决字符串匹配问题的算法中，KMP（Knuth-Morris-Pratt）算法因其高效的匹配过程而著称。不同于传统的朴素匹配方法，KMP 算法利用已匹配的部分信息避免从头开始匹配，大大提高了搜索效率。本文旨在为初学者提供一个关于 KMP 算法的入门指南，介绍其基本概念、工作原理及应用场景。</p>
 <h3 id="字符串匹配基础"><a href="#字符串匹配基础" class="headerlink" title="字符串匹配基础"></a>字符串匹配基础</h3><p>字符串匹配是指在一个较长的文本字符串中查找一个指定的子字符串的过程。这个问题看似简单，实则是许多计算机应用的核心部分，例如，在一个大型文档中查找特定单词，或者在网页搜索中定位关键词。字符串匹配的效率直接影响到这些应用的性能和用户体验。</p>
 <span id="more"></span>
 
@@ -1620,7 +1620,7 @@
   <entry>
     <title>《Binary Search Tree BST 二叉搜索树》</title>
     <url>/posts/undefined/</url>
-    <content><![CDATA[<h1 id="《算法与数据结构：Binary-Search-Tree-BST二叉搜索树》"><a href="#《算法与数据结构：Binary-Search-Tree-BST二叉搜索树》" class="headerlink" title="《算法与数据结构：Binary Search Tree BST二叉搜索树》"></a>《算法与数据结构：Binary Search Tree BST 二叉搜索树》</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h2><p>二分搜索树（Binary Search Tree，简称 BST）是一种基于二叉树的数据结构，它在数据存储、检索和管理方面具有独特的优势。每个节点都有一个键（和相应的值）及最多两个子节点。它的关键特性是，对于树中的任意节点 X，其左子树中的所有键都小于 X 的键，而右子树的键都大于 X 的键。这一特性使得二分搜索树在执行查找、插入和删除操作时效率较高，是许多高级数据结构和算法的基础。</p>
+    <content><![CDATA[<h2 id="《算法与数据结构：Binary-Search-Tree-BST二叉搜索树》"><a href="#《算法与数据结构：Binary-Search-Tree-BST二叉搜索树》" class="headerlink" title="《算法与数据结构：Binary Search Tree BST二叉搜索树》"></a>《算法与数据结构：Binary Search Tree BST 二叉搜索树》</h2><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h2><p>二分搜索树（Binary Search Tree，简称 BST）是一种基于二叉树的数据结构，它在数据存储、检索和管理方面具有独特的优势。每个节点都有一个键（和相应的值）及最多两个子节点。它的关键特性是，对于树中的任意节点 X，其左子树中的所有键都小于 X 的键，而右子树的键都大于 X 的键。这一特性使得二分搜索树在执行查找、插入和删除操作时效率较高，是许多高级数据结构和算法的基础。</p>
 <h3 id="定义和特性"><a href="#定义和特性" class="headerlink" title="定义和特性"></a>定义和特性</h3><ul>
 <li><strong>定义</strong>：二分搜索树是一个二叉树，其中每个节点都含有一个可比较的键（及与之关联的值），并且对于任何节点，其左子树中的所有键都小于该节点的键，其右子树的所有键都大于该节点的键。</li>
 <li><strong>特性</strong>：</li>
