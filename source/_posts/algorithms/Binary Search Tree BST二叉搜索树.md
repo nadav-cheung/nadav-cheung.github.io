@@ -10,7 +10,7 @@ tags:
   - 二分搜索树
 ---
 
-# 《算法与数据结构：Binary Search Tree BST二叉搜索树》
+## 《算法与数据结构：Binary Search Tree BST二叉搜索树》
 
 ## **简介**
 
