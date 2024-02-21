@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://nadav.com.cn/posts/5eb18949/</loc>
+    <lastmod>2024-02-21</lastmod>
+  </url>
+  <url>
+    <loc>https://nadav.com.cn/posts/undefined/</loc>
+    <lastmod>2024-02-21</lastmod>
+  </url>
+  <url>
     <loc>https://nadav.com.cn/posts/32e49274/</loc>
     <lastmod>2024-02-20</lastmod>
   </url>
@@ -14,10 +22,6 @@
   </url>
   <url>
     <loc>https://nadav.com.cn/posts/b238ed84/</loc>
-    <lastmod>2024-02-20</lastmod>
-  </url>
-  <url>
-    <loc>https://nadav.com.cn/posts/5eb18949/</loc>
     <lastmod>2024-02-20</lastmod>
   </url>
   <url>
@@ -66,10 +70,6 @@
   </url>
   <url>
     <loc>https://nadav.com.cn/posts/761b8361/</loc>
-    <lastmod>2024-02-20</lastmod>
-  </url>
-  <url>
-    <loc>https://nadav.com.cn/posts/undefined/</loc>
     <lastmod>2024-02-20</lastmod>
   </url>
 </urlset> 
