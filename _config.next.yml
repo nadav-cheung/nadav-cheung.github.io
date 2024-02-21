@@ -849,7 +849,7 @@ leancloud_visitors:
 # Visit https://console.firebase.google.com/u/0/ to get apiKey and projectId.
 # Visit https://firebase.google.com/docs/firestore/ to get more information about firestore.
 firestore:
-  enable: true
+  enable: false
   collection: articles # Required, a string collection name to access firestore database
   apiKey: AIzaSyCzx9lt4NaNcSCHb3uiAmrTyjtfGdXdVAI
   projectId: nadav-cheung-github-io
@@ -862,7 +862,7 @@ busuanzi_count:
   total_visitors_icon: fa fa-user
   total_views: true
   total_views_icon: fa fa-eye
-  post_views: false
+  post_views: true
   post_views_icon: far fa-eye
 
 
