@@ -8,7 +8,9 @@ categories:
 tags:
   - BST
   - 二分搜索树
+abbrlink: 607b0520
 ---
+
 
 ## 《算法与数据结构：Binary Search Tree BST二叉搜索树》
 
