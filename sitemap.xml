@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://nadav.com.cn/posts/607b0520/</loc>
+    <loc>https://nadav.com.cn/posts/59f3686c/</loc>
+    
+    <lastmod>2024-02-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/posts/dbb3c5e/</loc>
     
     <lastmod>2024-02-26</lastmod>
     
@@ -138,15 +147,6 @@
   
   <url>
     <loc>https://nadav.com.cn/posts/b238ed84/</loc>
-    
-    <lastmod>2024-02-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/posts/undefined/</loc>
     
     <lastmod>2024-02-21</lastmod>
     

@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>《优先队列 PriorityQueue》</title>
-    <url>/posts/undefined/</url>
+    <url>/posts/dbb3c5e/</url>
     <content><![CDATA[<h2 id="《算法与数据结构：优先队列PriorityQueue》"><a href="#《算法与数据结构：优先队列PriorityQueue》" class="headerlink" title="《算法与数据结构：优先队列PriorityQueue》"></a>《算法与数据结构：优先队列 PriorityQueue》</h2><h2 id="什么是优先队列？"><a href="#什么是优先队列？" class="headerlink" title="什么是优先队列？"></a>什么是优先队列？</h2><p>优先队列是一种特殊的队列，其核心特性在于队列中的元素是按照一定的优先级进行排序的，而不是按照它们进入队列的顺序。在优先队列中，元素被赋予一个优先级，当访问队列时，优先级最高的元素最先被删除。这种机制使得优先队列非常适用于那些需要快速访问最重要元素的场合。</p>
 <p><img data-src="https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202402201117648.jpg" alt="img"></p>
 <p><strong>可以看到优先攻击目标有三个选项，当我们点击自动补刀时，游戏英雄就会按照相应的优先级进行攻击</strong></p>
@@ -1619,7 +1619,7 @@
   </entry>
   <entry>
     <title>《Binary Search Tree BST 二叉搜索树》</title>
-    <url>/posts/607b0520/</url>
+    <url>/posts/59f3686c/</url>
     <content><![CDATA[<h2 id="《算法与数据结构：Binary-Search-Tree-BST二叉搜索树》"><a href="#《算法与数据结构：Binary-Search-Tree-BST二叉搜索树》" class="headerlink" title="《算法与数据结构：Binary Search Tree BST二叉搜索树》"></a>《算法与数据结构：Binary Search Tree BST 二叉搜索树》</h2><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a><strong>简介</strong></h2><p>二分搜索树（Binary Search Tree，简称 BST）是一种基于二叉树的数据结构，它在数据存储、检索和管理方面具有独特的优势。每个节点都有一个键（和相应的值）及最多两个子节点。它的关键特性是，对于树中的任意节点 X，其左子树中的所有键都小于 X 的键，而右子树的键都大于 X 的键。这一特性使得二分搜索树在执行查找、插入和删除操作时效率较高，是许多高级数据结构和算法的基础。</p>
 <h3 id="定义和特性"><a href="#定义和特性" class="headerlink" title="定义和特性"></a>定义和特性</h3><ul>
 <li><strong>定义</strong>：二分搜索树是一个二叉树，其中每个节点都含有一个可比较的键（及与之关联的值），并且对于任何节点，其左子树中的所有键都小于该节点的键，其右子树的所有键都大于该节点的键。</li>
