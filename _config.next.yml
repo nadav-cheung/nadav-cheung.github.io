@@ -232,7 +232,7 @@ footer:
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
   beian:
     enable: true
-    icp: 浙ICP备2022010395号-2
+    icp: ""
     # The digit in the num of gongan beian.
     gongan_id: 33010802013393
     # The full num of gongan beian.
@@ -930,16 +930,16 @@ vendors:
   # The CDN provider of NexT internal scripts.
   # Available values: local | jsdelivr | unpkg | cdnjs | custom
   # Warning: If you are using the latest master branch of NexT, please set `internal: local`
-  internal: local
+  internal: custom
   # The default CDN provider of third-party plugins.
   # Available values: local | jsdelivr | unpkg | cdnjs | custom
   # Dependencies for `plugins: local`: https://github.com/next-theme/plugins
-  plugins: cdnjs
+  plugins: custom
   # Custom CDN URL
   # For example:
   # custom_cdn_url: https://cdn.jsdelivr.net/npm/${npm_name}@${version}/${minified}
   # custom_cdn_url: https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${cdnjs_file}
-  custom_cdn_url:
+  custom_cdn_url: https://jsd.cdn.zzko.cn/npm/${npm_name}@${version}/${minified}
 
 # Assets
 # Accelerate delivery of static files using a CDN

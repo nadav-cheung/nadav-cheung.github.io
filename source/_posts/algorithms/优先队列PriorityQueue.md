@@ -1,7 +1,5 @@
 ---
-layout: psot
 title: 《优先队列PriorityQueue》
-date: 2024-02-20 13:44:07
 categories:
   - 算法与数据结构
   - PriorityQueue
@@ -11,6 +9,8 @@ tags:
   - 优先队列
   - Queue
 top: 3124
+abbrlink: dbb3c5e
+date: 2024-02-20 13:44:07
 ---
 
 ## 《算法与数据结构：优先队列PriorityQueue》
