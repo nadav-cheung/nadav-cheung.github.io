@@ -9,7 +9,7 @@
     "server": "hexo server"
   },
   "hexo": {
-    "version": "7.1.1"
+    "version": "7.2.0"
   },
   "dependencies": {
     "hexo": "^7.1.1",
@@ -30,6 +30,7 @@
     "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^3.0.0",
     "hexo-theme-next": "^8.19.1",
-    "hexo-word-counter": "^0.1.0"
+    "hexo-word-counter": "^0.1.0",
+    "punycode": "^2.3.1"
   }
 }
