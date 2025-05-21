@@ -164,7 +164,7 @@ social:
   GitHub: https://github.com/nadav-cheung || fab fa-github
   G-Mail: mailto:nadav.cheung@gmail.com || fa fa-envelope
   Twitter: https://twitter.com/nadav_cheung || fab fa-twitter
-  FB Page: https://www.facebook.com/nadav.cheung || fab fa-facebook
+  FB Page: https://www.facebook.com/nadavcheung || fab fa-facebook
   YouTube: https://www.youtube.com/@NadavCheung || fab fa-youtube
   bilibili: https://space.bilibili.com/101980166 || fab fa-bilibili
   ProcessOn: https://www.processon.com/u/5e690116e4b00fb1da107799 || fab a-brands fa-product-hunt fa-beat-fade
@@ -938,8 +938,8 @@ vendors:
   # Custom CDN URL
   # For example:
   # custom_cdn_url: https://cdn.jsdelivr.net/npm/${npm_name}@${version}/${minified}
-  # custom_cdn_url: https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${cdnjs_file}
-  custom_cdn_url: https://jsd.cdn.zzko.cn/npm/${npm_name}@${version}/${minified}
+  custom_cdn_url: https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${cdnjs_file}
+  # custom_cdn_url: https://jsd.cdn.zzko.cn/npm/${npm_name}@${version}/${minified}
 
 # Assets
 # Accelerate delivery of static files using a CDN
