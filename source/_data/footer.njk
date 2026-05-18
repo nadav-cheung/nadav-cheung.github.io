@@ -3,6 +3,7 @@
 <script>
 (function() {
   const start = new Date(2022, 1, 23, 11, 40, 0);
+  let timer;
   function update() {
     const diff = Date.now() - start;
     const d = Math.floor(diff / 86400000);
@@ -12,7 +13,11 @@
     document.getElementById('site-time').textContent =
       '本站已运行 ' + d + ' 天 ' + h + ' 小时 ' + m + ' 分钟 ' + s + ' 秒';
   }
-  update();
-  setInterval(update, 1000);
+  function startTimer() { update(); timer = setInterval(update, 1000); }
+  function stopTimer() { clearInterval(timer); }
+  startTimer();
+  document.addEventListener('visibilitychange', function() {
+    if (document.hidden) stopTimer(); else startTimer();
+  });
 })();
 </script>

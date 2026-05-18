@@ -63,10 +63,10 @@ lightdark:
 # 网站图标（favicon）
 # 默认值: 主题自带 /images/favicon-*.png
 favicon:
-  small: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202402051051028.png
-  medium: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202402051051028.png
-  apple_touch_icon: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202402051051028.png
-  safari_pinned_tab: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/logo.svg
+  small: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/avatar.png
+  medium: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/avatar.png
+  apple_touch_icon: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/avatar.png
+  safari_pinned_tab: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/avatar.png
   #android_manifest: /manifest.json
 
 # 自定义 Logo（不支持 Mist 方案）

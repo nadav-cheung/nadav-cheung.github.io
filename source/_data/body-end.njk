@@ -12,14 +12,14 @@
       <a href="/categories/算法与数据结构/" class="book-spine" style="--spine-color: #c4908f; --spine-hover: #d4a0a0;">
         <div class="spine-rule"></div>
         <div class="spine-title">算法与<br>数据结构</div>
-        <div class="spine-count">15 章</div>
+        <div class="spine-count" data-category="算法与数据结构"></div>
         <div class="spine-rule"></div>
       </a>
 
       <a href="/categories/LeetCode刷题笔记/" class="book-spine" style="--spine-color: #8fa4b8; --spine-hover: #a0b4c8;">
         <div class="spine-rule"></div>
         <div class="spine-title">LeetCode<br>刷题笔记</div>
-        <div class="spine-count">3 章</div>
+        <div class="spine-count" data-category="LeetCode刷题笔记"></div>
         <div class="spine-rule"></div>
       </a>
 
@@ -56,6 +56,15 @@
   </div>
 </template>
 
+{#- 构建时生成分类文章计数 JSON -#}
+<script id="category-data" type="application/json">
+{
+  {%- for cat in site.categories.toArray() %}
+  "{{ cat.name }}": {{ cat.posts.length }}{% if not loop.last %},{% endif %}
+  {%- endfor %}
+}
+</script>
+
 <script>
 (function() {
   function initBookshelf() {
@@ -70,6 +79,18 @@
     if (!tpl) return;
 
     var clone = tpl.content.cloneNode(true);
+
+    var dataEl = document.getElementById('category-data');
+    if (dataEl) {
+      try {
+        var counts = JSON.parse(dataEl.textContent);
+        clone.querySelectorAll('[data-category]').forEach(function(el) {
+          var cat = el.getAttribute('data-category');
+          if (counts[cat]) el.textContent = counts[cat] + ' 章';
+        });
+      } catch(e) {}
+    }
+
     var posts = document.querySelector('.posts-expand');
     if (!posts) return;
 

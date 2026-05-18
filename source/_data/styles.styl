@@ -1,8 +1,76 @@
 // ===============================================================
 // 清雅书房 - 完整自定义样式
 // Elegant Pink-White × Editorial Aesthetic
-// 白色渐变 + 淡玫瑰 + 墨色
 // ===============================================================
+
+// ---------------------------------------------------------------
+// CSS 变量（亮色 / 暗色统一管理）
+// ---------------------------------------------------------------
+
+:root
+  --text-primary: #2d2d32
+  --text-body: #3a3a40
+  --text-secondary: #8a8a90
+  --text-footer-link: #a08580
+  --text-nav-number: #b8b0b0
+  --accent: #c4908f
+  --accent-dark: #b07a79
+  --accent-light: #d4a5a5
+  --bg-body-start: #ffffff
+  --bg-body-end: #fef6f6
+  --bg-card: #ffffff
+  --bg-sidebar: #fef7f7
+  --bg-footer: #fef5f5
+  --bg-code: #fdfafa
+  --bg-input: #fdfafa
+  --bg-header: rgba(255, 255, 255, 0.85)
+  --bg-code-inline: rgba(196, 144, 143, 0.06)
+  --border: #efe8e8
+  --border-light: #e5dada
+  --border-hover: #e5dada
+  --shadow-card: 0 1px 4px rgba(196, 144, 143, 0.06)
+  --shadow-card-hover: 0 6px 16px rgba(196, 144, 143, 0.1)
+  --link-border: rgba(196, 144, 143, 0.3)
+  --scrollbar-track: #fef6f6
+  --scrollbar-thumb: #e0d4d4
+  --scrollbar-thumb-hover: #c4908f
+  --btn-hover-text: #ffffff
+  --btn-hover-bg: #c4908f
+  --edge: linear-gradient(90deg, transparent 0%, #e0d4d4 10%, #e0d4d4 90%, transparent 100%)
+  --with-love: #e5dada
+
+@media (prefers-color-scheme: dark)
+  :root
+    --text-primary: #e8e2e2
+    --text-body: #c8c2c2
+    --text-secondary: #7a7578
+    --text-footer-link: #7a7578
+    --text-nav-number: #7a7578
+    --accent: #d4a5a5
+    --accent-dark: #b8908f
+    --accent-light: #e8bab8
+    --bg-body-start: #0f0e10
+    --bg-body-end: #121012
+    --bg-card: #1a1819
+    --bg-sidebar: #141214
+    --bg-footer: #0f0e10
+    --bg-code: #141214
+    --bg-input: #0f0e10
+    --bg-header: rgba(15, 14, 16, 0.85)
+    --bg-code-inline: rgba(212, 165, 165, 0.1)
+    --border: #2a2628
+    --border-light: #2a2628
+    --border-hover: #3a3438
+    --shadow-card: 0 1px 4px rgba(0, 0, 0, 0.06)
+    --shadow-card-hover: 0 6px 16px rgba(0, 0, 0, 0.1)
+    --link-border: rgba(212, 165, 165, 0.3)
+    --scrollbar-track: #0f0e10
+    --scrollbar-thumb: #2a2628
+    --scrollbar-thumb-hover: #3a3438
+    --btn-hover-text: #0f0e10
+    --btn-hover-bg: #d4a5a5
+    --edge: linear-gradient(90deg, transparent 0%, #2a2628 10%, #2a2628 90%, transparent 100%)
+    --with-love: #2a2628
 
 // ---------------------------------------------------------------
 // 基础排版
@@ -16,27 +84,27 @@
 
 .site-title
   font-weight: 900
-  color: #2d2d32 !important
+  color: var(--text-primary) !important
 
 .post-body
   font-family: 'Noto Serif SC', 'PingFang SC', 'Microsoft YaHei', serif
   line-height: 2
-  color: #3a3a40
+  color: var(--text-body)
 
 code, pre, .highlight
   font-family: 'JetBrains Mono', 'Consolas', 'Monaco', monospace !important
 
 h1, h2, h3, h4, h5, h6
   font-family: 'Source Serif 4', 'Noto Serif SC', serif
-  color: #2d2d32
-  border-bottom-color: #efe8e8 !important
+  color: var(--text-primary)
+  border-bottom-color: var(--border) !important
 
 // ---------------------------------------------------------------
 // 页面背景
 // ---------------------------------------------------------------
 
 body
-  background: linear-gradient(180deg, #ffffff 0%, #fef6f6 100%) !important
+  background: linear-gradient(180deg, var(--bg-body-start) 0%, var(--bg-body-end) 100%) !important
   background-attachment: fixed
 
 // ---------------------------------------------------------------
@@ -44,37 +112,37 @@ body
 // ---------------------------------------------------------------
 
 .sidebar
-  background: #fef7f7 !important
-  box-shadow: 1px 0 0 #efe8e8
+  background: var(--bg-sidebar) !important
+  box-shadow: 1px 0 0 var(--border)
 
 .sidebar-inner
   background: transparent !important
   box-shadow: none !important
 
 .site-author-image
-  border: 3px solid #efe8e8
+  border: 3px solid var(--border)
   transition: border-color 0.3s ease
   &:hover
-    border-color: #c4908f
+    border-color: var(--accent)
 
 .site-author-name
-  color: #2d2d32 !important
+  color: var(--text-primary) !important
   font-family: 'Source Serif 4', 'Noto Serif SC', serif
   font-weight: 700
 
 .site-state-item
-  border-color: #efe8e8 !important
+  border-color: var(--border) !important
 
 .site-state-item-count
-  color: #c4908f !important
+  color: var(--accent) !important
   font-family: 'JetBrains Mono', monospace
 
 .links-of-author-item a
   border-bottom: none !important
-  color: #8a8a90
+  color: var(--text-secondary)
   transition: all 0.2s ease
   &:hover
-    color: #c4908f
+    color: var(--accent)
     transform: translateX(4px)
 
 // ---------------------------------------------------------------
@@ -82,37 +150,37 @@ body
 // ---------------------------------------------------------------
 
 .post-block
-  background: #ffffff !important
-  border: 1px solid #efe8e8
+  background: var(--bg-card) !important
+  border: 1px solid var(--border)
   border-radius: 8px !important
   padding: 2em !important
   margin-bottom: 1.5em !important
   transition: border-color 0.3s ease, box-shadow 0.3s ease
-  box-shadow: 0 1px 4px rgba(196, 144, 143, 0.06)
+  box-shadow: var(--shadow-card)
   &:hover
-    border-color: #e5dada
-    box-shadow: 0 6px 16px rgba(196, 144, 143, 0.1)
+    border-color: var(--border-hover)
+    box-shadow: var(--shadow-card-hover)
 
 .post-title
   a
-    color: #2d2d32 !important
+    color: var(--text-primary) !important
     border-bottom: none !important
     transition: color 0.2s ease
     &:hover
-      color: #c4908f !important
+      color: var(--accent) !important
 
 .post-meta
-  color: #8a8a90 !important
+  color: var(--text-secondary) !important
   a
-    color: #8a8a90 !important
+    color: var(--text-secondary) !important
     border-bottom: none !important
     &:hover
-      color: #c4908f !important
+      color: var(--accent) !important
 
 .post-button .btn
-  color: #c4908f !important
+  color: var(--accent) !important
   background: transparent
-  border: 1px solid #e5dada !important
+  border: 1px solid var(--border-light) !important
   border-radius: 6px !important
   padding: 8px 24px !important
   font-family: 'Source Serif 4', 'Noto Serif SC', serif
@@ -121,77 +189,77 @@ body
   transition: all 0.3s ease
   box-shadow: none !important
   &:hover
-    color: #ffffff !important
-    background: #c4908f !important
-    border-color: #c4908f !important
+    color: var(--btn-hover-text) !important
+    background: var(--btn-hover-bg) !important
+    border-color: var(--btn-hover-bg) !important
 
 .post-body p a
-  color: #c4908f
-  border-bottom: 1px solid rgba(#c4908f, 0.3)
+  color: var(--accent)
+  border-bottom: 1px solid var(--link-border)
   &:hover
-    color: #b07a79
-    border-bottom-color: #b07a79
+    color: var(--accent-dark)
+    border-bottom-color: var(--accent-dark)
 
 // ---------------------------------------------------------------
 // 导航菜单
 // ---------------------------------------------------------------
 
 .header-inner
-  background: rgba(255, 255, 255, 0.85) !important
+  background: var(--bg-header) !important
   backdrop-filter: blur(12px)
   -webkit-backdrop-filter: blur(12px)
 
 .site-nav .menu-item a
-  color: #8a8a90
+  color: var(--text-secondary)
   border-bottom: none !important
   transition: color 0.2s ease
   &:hover, &.menu-item-active
-    color: #c4908f
+    color: var(--accent)
 
 // ---------------------------------------------------------------
 // 代码块
 // ---------------------------------------------------------------
 
 .highlight
-  background: #fdfafa !important
-  border: 1px solid #efe8e8
+  background: var(--bg-code) !important
+  border: 1px solid var(--border)
   border-radius: 6px
 
 code
-  background: rgba(#c4908f, 0.06)
-  color: #b07a79
+  background: var(--bg-code-inline)
+  color: var(--accent-dark)
   border-radius: 3px
   padding: 2px 6px
   font-size: 0.9em
 
 .copy-btn
-  color: #8a8a90 !important
-  border-color: #efe8e8 !important
-  background: #fdfafa !important
+  color: var(--text-secondary) !important
+  border-color: var(--border) !important
+  background: var(--bg-code) !important
   &:hover
-    color: #c4908f !important
+    color: var(--accent) !important
 
 // ---------------------------------------------------------------
 // 标签云
 // ---------------------------------------------------------------
 
 .tag-cloud a
-  box-shadow: 0 1px 3px rgba(196, 144, 143, 0.06)
+  box-shadow: var(--shadow-card)
   padding: 4px 14px
   margin: 8px
-  background: #ffffff
-  border: 1px solid #efe8e8
+  background: var(--bg-card)
+  border: 1px solid var(--border)
   border-bottom: none
   border-radius: 20px
-  color: #8a8a90
+  color: var(--text-secondary)
   transition: all 0.2s ease
   font-family: 'JetBrains Mono', monospace
   font-size: 0.85em
 
 .tag-cloud-tags a:hover
-  background: #c4908f
-  color: #ffffff
-  border-color: #c4908f
+  background: var(--accent)
+  color: var(--btn-hover-text)
+  border-color: var(--accent)
   transform: scale(1.05)
 
 // ---------------------------------------------------------------
@@ -199,19 +267,19 @@ code
 // ---------------------------------------------------------------
 
 .footer
-  background: #fef5f5 !important
-  color: #8a8a90
+  background: var(--bg-footer) !important
+  color: var(--text-secondary)
   a
-    color: #a08580
+    color: var(--text-footer-link)
     &:hover
-      color: #c4908f
+      color: var(--accent)
   .with-love
-    color: #e5dada
+    color: var(--with-love)
 
 .beian
-  color: #8a8a90
+  color: var(--text-secondary)
   a
-    color: #a08580
+    color: var(--text-footer-link)
   img
     display: inline-block
     margin: 0 3px
@@ -223,89 +291,89 @@ code
 // ---------------------------------------------------------------
 
 .back-to-top
-  background: #ffffff !important
-  color: #c4908f !important
-  border: 1px solid #efe8e8
+  background: var(--bg-card) !important
+  color: var(--accent) !important
+  border: 1px solid var(--border)
   &:hover
-    background: #c4908f !important
-    color: #ffffff !important
+    background: var(--btn-hover-bg) !important
+    color: var(--btn-hover-text) !important
 
 // ---------------------------------------------------------------
 // 搜索
 // ---------------------------------------------------------------
 
 .search-popup
-  background: #ffffff !important
-  border: 1px solid #efe8e8
+  background: var(--bg-card) !important
+  border: 1px solid var(--border)
 
 .search-popup .search-input
-  background: #fdfafa !important
-  border: 1px solid #efe8e8
-  color: #2d2d32
+  background: var(--bg-input) !important
+  border: 1px solid var(--border)
+  color: var(--text-primary)
 
 .search-popup .search-result-container
   .search-result-list a
-    color: #2d2d32
+    color: var(--text-primary)
     &:hover
-      color: #c4908f
+      color: var(--accent)
   .search-result-list p
-    color: #8a8a90
+    color: var(--text-secondary)
 
 .search-icon, .popup-trigger
-  color: #8a8a90
+  color: var(--text-secondary)
   &:hover
-    color: #c4908f
+    color: var(--accent)
 
 // ---------------------------------------------------------------
 // 阅读进度条
 // ---------------------------------------------------------------
 
 .reading-progress-bar
-  background: linear-gradient(90deg, #c4908f, #d4a5a5) !important
+  background: linear-gradient(90deg, var(--accent), var(--accent-light)) !important
 
 // ---------------------------------------------------------------
 // 分页
 // ---------------------------------------------------------------
 
 .pagination .page-number
-  background: #ffffff
-  color: #8a8a90
-  border: 1px solid #efe8e8
+  background: var(--bg-card)
+  color: var(--text-secondary)
+  border: 1px solid var(--border)
   border-radius: 6px
   transition: all 0.2s ease
   &:hover, &.current
-    background: #c4908f
-    color: #ffffff
-    border-color: #c4908f
+    background: var(--accent)
+    color: var(--btn-hover-text)
+    border-color: var(--accent)
 
 // ---------------------------------------------------------------
 // 打赏
 // ---------------------------------------------------------------
 
 .reward-container button
-  background: #fdfafa
-  color: #c4908f
-  border: 1px solid #efe8e8
+  background: var(--bg-code)
+  color: var(--accent)
+  border: 1px solid var(--border)
   border-radius: 6px
   transition: all 0.3s ease
   &:hover
-    background: #c4908f
-    color: #ffffff
-    border-color: #c4908f
+    background: var(--accent)
+    color: var(--btn-hover-text)
+    border-color: var(--accent)
 
 // ---------------------------------------------------------------
 // TOC 目录
 // ---------------------------------------------------------------
 
 .toc .nav-item .nav-link
-  color: #8a8a90
+  color: var(--text-secondary)
   border-bottom: none !important
   transition: color 0.2s ease
   &:hover, &.active
-    color: #c4908f !important
+    color: var(--accent) !important
 
 .toc .nav-item .nav-number
-  color: #b8b0b0
+  color: var(--text-nav-number)
 
 // ---------------------------------------------------------------
 // 微信公众号
@@ -321,10 +389,10 @@ code
 // ---------------------------------------------------------------
 
 .github-banner
-  color: #8a8a90 !important
+  color: var(--text-secondary) !important
   border-bottom: none !important
   &:hover
-    color: #c4908f !important
+    color: var(--accent) !important
 
 // ---------------------------------------------------------------
 // 书架组件
@@ -346,14 +414,14 @@ code
   font-family: 'Source Serif 4', 'Noto Serif SC', serif
   font-size: 1.1em
   font-weight: 700
-  color: #2d2d32
+  color: var(--text-primary)
   letter-spacing: 0.15em
 
 .shelf-line
   display: inline-block
   width: 40px
   height: 1px
-  background: #c4908f
+  background: var(--accent)
   flex-shrink: 0
 
 .books-row
@@ -416,7 +484,7 @@ code
 
 .shelf-edge
   height: 2px
-  background: linear-gradient(90deg, transparent 0%, #e0d4d4 10%, #e0d4d4 90%, transparent 100%)
+  background: var(--edge)
   margin: 0 2em
   border-radius: 1px
 
@@ -445,166 +513,19 @@ code
   height: 6px
 
 ::-webkit-scrollbar-track
-  background: #fef6f6
+  background: var(--scrollbar-track)
 
 ::-webkit-scrollbar-thumb
-  background: #e0d4d4
+  background: var(--scrollbar-thumb)
   border-radius: 3px
   &:hover
-    background: #c4908f
+    background: var(--scrollbar-thumb-hover)
 
 // ---------------------------------------------------------------
-// 暗色模式
+// 暗色模式补充（无法用变量表达的样式）
 // ---------------------------------------------------------------
 
 @media (prefers-color-scheme: dark)
-  body
-    background: linear-gradient(180deg, #0f0e10 0%, #121012 100%) !important
-    background-attachment: fixed
-
-  .sidebar
-    background: #141214 !important
-    box-shadow-color: #2a2628
-
-  .header-inner
-    background: rgba(15, 14, 16, 0.85) !important
-
-  .post-block
-    background: #1a1819 !important
-    border-color: #2a2628
-    &:hover
-      border-color: #3a3438
-
-  h1, h2, h3, h4, h5, h6
-    color: #e8e2e2
-
-  .post-title a
-    color: #e8e2e2 !important
-    &:hover
-      color: #d4a5a5 !important
-
-  .site-author-name
-    color: #e8e2e2 !important
-
-  .site-title
-    color: #e8e2e2 !important
-
-  .post-meta, .post-meta a
-    color: #7a7578 !important
-
-  .post-body
-    color: #c8c2c2
-
-  .highlight
-    background: #141214 !important
-    border-color: #2a2628
-
-  code
-    background: rgba(#d4a5a5, 0.1)
-    color: #d4a5a5
-
-  .footer
-    background: #0f0e10 !important
-
-  .back-to-top
-    background: #1a1819 !important
-    color: #d4a5a5 !important
-    border-color: #2a2628
-    &:hover
-      background: #d4a5a5 !important
-      color: #0f0e10 !important
-
-  .search-popup
-    background: #1a1819 !important
-
-  .search-popup .search-input
-    background: #0f0e10 !important
-    color: #e8e2e2
-    border-color: #2a2628
-
-  .tag-cloud a
-    background: #1a1819
-    border-color: #2a2628
-    color: #7a7578
-    &:hover
-      background: #d4a5a5
-      color: #0f0e10
-
-  .pagination .page-number
-    background: #1a1819
-    color: #7a7578
-    border-color: #2a2628
-    &:hover, &.current
-      background: #d4a5a5
-      color: #0f0e10
-
-  .links-of-author-item a
-    color: #7a7578
-    &:hover
-      color: #d4a5a5
-
-  .site-nav .menu-item a
-    color: #7a7578
-    &:hover
-      color: #d4a5a5
-
-  .toc .nav-item .nav-link
-    color: #7a7578
-    &:hover, &.active
-      color: #d4a5a5 !important
-
-  .reading-progress-bar
-    background: linear-gradient(90deg, #d4a5a5, #b8908f) !important
-
-  .copy-btn
-    background: #141214 !important
-    color: #7a7578 !important
-    border-color: #2a2628 !important
-
-  .github-banner
-    color: #7a7578 !important
-    &:hover
-      color: #d4a5a5 !important
-
-  .site-state-item-count
-    color: #d4a5a5 !important
-
-  ::-webkit-scrollbar-track
-    background: #0f0e10
-
-  ::-webkit-scrollbar-thumb
-    background: #2a2628
-    &:hover
-      background: #3a3438
-
-  .post-button .btn
-    color: #d4a5a5 !important
-    border-color: #2a2628 !important
-    &:hover
-      color: #0f0e10 !important
-      background: #d4a5a5 !important
-      border-color: #d4a5a5 !important
-
-  .post-body p a
-    color: #d4a5a5
-    border-bottom-color: rgba(#d4a5a5, 0.3)
-    &:hover
-      color: #e8bab8
-
-  .reward-container button
-    background: #141214
-    color: #d4a5a5
-    border-color: #2a2628
-    &:hover
-      background: #d4a5a5
-      color: #0f0e10
-
   #bookshelf
     background: transparent !important
     border-color: transparent !important
-
-  .shelf-heading
-    color: #e8e2e2 !important
-
-  .shelf-line
-    background: #d4a5a5 !important

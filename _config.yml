@@ -130,7 +130,7 @@ relative_link: false
 
 # 显示未来日期的文章
 # 默认值: false
-future: true
+future: false
 
 # 语法高亮引擎
 # 可选值: highlight.js | prismjs
@@ -144,7 +144,7 @@ highlight:
   line_number: true
   # 自动检测语言
   # 默认值: false（Hexo 7+ 废弃此选项，建议在代码块指定语言）
-  auto_detect: true
+  auto_detect: false
   # 替换制表符为空格
   # 默认值: ''
   tab_replace: ''
@@ -276,10 +276,10 @@ search:
   path: search.xml
   # 搜索范围: post(仅文章) | page(仅页面) | all(全部)
   field: post
-  # 是否包含文章正文内容
+  # 是否包含文章正文内容（false 仅搜索标题和摘要，减少文件体积）
   content: true
-  # 内容格式: html | raw | strip
-  format: html
+  # 内容格式: strip 纯文本更紧凑
+  format: strip
 
 # MathJax 已移除服务端渲染插件 hexo-filter-mathjax
 # 现由 NexT 主题内置的客户端 MathJax 支持处理
@@ -369,6 +369,6 @@ baidusitemap:
 deepseek_description:
   enable: true
   provider: anthropic
-  api_key: sk-a792be7e2f0e4fe586fb1ceac312cf29
+  # API Key 通过环境变量 DEEPSEEK_API_KEY 设置，不要明文写入配置
   base_url: https://api.deepseek.com/anthropic
   model: deepseek-v4-pro[1m]

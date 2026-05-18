@@ -97,33 +97,48 @@ function extractContent(text) {
   return text.slice(0, 4000).trim();
 }
 
-function needsDesc(fm) {
-  return !fm.match(/description:\s*\S/);
+function parseFrontMatter(raw) {
+  const start = raw.indexOf('---');
+  if (start === -1) return null;
+  const end = raw.indexOf('\n---', start + 3);
+  if (end === -1) return null;
+  return {
+    fm: raw.slice(start + 3, end),
+    body: raw.slice(end + 4),
+    end
+  };
 }
 
-function needsTags(fm) {
-  const m = fm.match(/tags:\s*\[([^\]]*)\]/);
-  if (m && m[1].trim()) return false;
-  const m2 = fm.match(/tags:\s*\n(\s+-\s+\S)/);
-  return !m2;
+function needsValue(fm, key) {
+  const re = new RegExp(`^${key}:\\s*(.+)$`, 'm');
+  const m = fm.match(re);
+  if (!m) return true;
+  const val = m[1].trim().replace(/^['"]|['"]$/g, '');
+  return val.length === 0;
 }
 
-function needsCategories(fm) {
-  const m = fm.match(/categories:\s*\[([^\]]*)\]/);
-  if (m && m[1].trim()) return false;
-  const m2 = fm.match(/categories:\s*\n(\s+-\s+\S)/);
-  return !m2;
+function needsList(fm, key) {
+  const inline = fm.match(new RegExp(`${key}:\\s*\\[([^\\]]*)\\]`));
+  if (inline && inline[1].trim()) return false;
+  const block = fm.match(new RegExp(`${key}:\\s*\\n(\\s+-\\s+\\S)`));
+  return !block;
 }
 
 function removeEmptyKey(fm, key) {
   return fm.replace(new RegExp(`^${key}:\\s*\\n(?!\\s*-)`, 'gm'), '');
 }
 
+function atomicWrite(filePath, content) {
+  const tmp = filePath + '.tmp';
+  fs.writeFileSync(tmp, content, 'utf-8');
+  fs.renameSync(tmp, filePath);
+}
+
 hexo.extend.filter.register('before_generate', async function () {
   const config = getConfig();
   if (!config.enable) return;
   if (!config.apiKey) {
-    hexo.log.warn('[deepseek-ai] No API key.');
+    hexo.log.warn('[deepseek-ai] No API key. Set DEEPSEEK_API_KEY env var.');
     return;
   }
 
@@ -142,11 +157,10 @@ hexo.extend.filter.register('before_generate', async function () {
 
   for (const full of files) {
     const raw = fs.readFileSync(full, 'utf-8');
-    const fmEnd = raw.indexOf('\n---', 3);
-    if (fmEnd === -1) continue;
+    const parsed = parseFrontMatter(raw);
+    if (!parsed) continue;
 
-    let fm = raw.slice(raw.indexOf('---') + 3, fmEnd);
-    const body = raw.slice(fmEnd + 4);
+    let { fm, body } = parsed;
 
     const abbrMatch = fm.match(/abbrlink:\s*['"]?(\S+)/);
     const abbrlink = abbrMatch ? abbrMatch[1] : null;
@@ -155,11 +169,11 @@ hexo.extend.filter.register('before_generate', async function () {
     const titleMatch = fm.match(/title:\s*['"]?(.+?)[\n'"]?$/m);
     const title = titleMatch ? titleMatch[1].trim() : path.basename(full);
     const content = extractContent(body);
+    if (content.length < 50) continue;
 
     let modified = false;
 
-    // Description
-    if (needsDesc(fm) && content.length >= 50) {
+    if (needsValue(fm, 'description')) {
       const cacheKey = `desc:${key}`;
       if (cache[cacheKey]) {
         const desc = cache[cacheKey].replace(/"/g, '\\"');
@@ -181,8 +195,7 @@ hexo.extend.filter.register('before_generate', async function () {
       }
     }
 
-    // Categories — remove empty key before appending
-    if (needsCategories(fm) && content.length >= 50) {
+    if (needsList(fm, 'categories')) {
       fm = removeEmptyKey(fm, 'categories');
       const cacheKey = `cats:${key}`;
       if (cache[cacheKey]) {
@@ -208,8 +221,7 @@ hexo.extend.filter.register('before_generate', async function () {
       }
     }
 
-    // Tags — remove empty key before appending
-    if (needsTags(fm) && content.length >= 50) {
+    if (needsList(fm, 'tags')) {
       fm = removeEmptyKey(fm, 'tags');
       const cacheKey = `tags:${key}`;
       if (cache[cacheKey]) {
@@ -236,7 +248,7 @@ hexo.extend.filter.register('before_generate', async function () {
     }
 
     if (modified) {
-      fs.writeFileSync(full, '---\n' + fm + '\n---' + body, 'utf-8');
+      atomicWrite(full, '---\n' + fm + '\n---' + body);
     }
   }
 
