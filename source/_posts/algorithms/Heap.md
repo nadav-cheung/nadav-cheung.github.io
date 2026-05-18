@@ -1,4 +1,5 @@
 ---
+mathjax: true
 title: 《Heap》
 categories:
   - 算法与数据结构
@@ -6,7 +7,7 @@ categories:
 tags:
   - 算法与数据结构
   - 堆
-top: 3122
+sticky: 3122
 abbrlink: 5eb18949
 ---
 

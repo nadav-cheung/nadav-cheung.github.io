@@ -4,7 +4,7 @@ categories: [算法与数据结构, Java开发者的探索之旅]
 tags:
   - 算法与数据结构
   - 写作
-top: 3111
+sticky: 3111
 abbrlink: 1887ef
 ---
 

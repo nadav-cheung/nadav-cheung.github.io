@@ -8,7 +8,7 @@ tags:
   - PriorityQueue
   - 优先队列
   - Queue
-top: 3124
+sticky: 3124
 abbrlink: dbb3c5e
 date: 2024-02-20 13:44:07
 ---

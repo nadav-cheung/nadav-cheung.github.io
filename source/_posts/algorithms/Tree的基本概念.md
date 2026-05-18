@@ -6,7 +6,7 @@ categories:
 tags:
   - 算法与数据结构
   - Tree
-top: 3117
+sticky: 3117
 abbrlink: 6e5a1512
 ---
 

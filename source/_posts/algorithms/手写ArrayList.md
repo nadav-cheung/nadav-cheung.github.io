@@ -7,7 +7,7 @@ tags:
   - 算法与数据结构
   - List
   - ArrayList
-top: 3018
+sticky: 3018
 abbrlink: e7bb25a0
 ---
 

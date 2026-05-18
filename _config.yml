@@ -1,199 +1,365 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
+# ===============================================================
+# Hexo 主配置文件
+# 文档: https://hexo.io/docs/configuration.html
+# 源码: https://github.com/hexojs/hexo/
+# 当前版本: Hexo 8.1.2 + NexT 8.27.0
+# ===============================================================
 
-# Site
+# ---------------------------------------------------------------
+# 站点信息
+# 默认值: 无（必须手动设置）
+# ---------------------------------------------------------------
+
+# 网站标题
 title: Nadav's 算法之旅
+# 网站副标题
 subtitle: 算法与数据结构
+# 网站描述（用于 SEO，建议 150 字以内）
 description: 软件开发工程师的算法之旅
+# 网站关键词（用于 SEO，逗号分隔）
 keywords: Java 软件开发工程师的算法之旅 凡人修仙手册  算法与数据结构 知乎我有一头小毛驴'
+# 网站作者
 author: Nadav Cheung
+# 网站语言
+# 默认值: en，中文: zh-CN
 language: zh-CN
+# 时区
+# 默认值: 使用系统时区
+# 常见值: 'Asia/Shanghai' | 'UTC' | 'America/New_York'
 timezone: 'Asia/Shanghai'
 
-# URL
-# Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://nadav.com.cn
-#permalink: :year/:month/:day/:title/
-permalink: posts/:abbrlink/
-permalink_defaults:
-pretty_urls:
-  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-  trailing_html: true # Set to false to remove trailing '.html' from permalinks
 
-# Directory
+# ---------------------------------------------------------------
+# URL 设置
+# 默认值: url: http://yoursite.com
+# ---------------------------------------------------------------
+
+# 网站完整 URL（末尾不加 /）
+url: https://nadav.com.cn
+
+# 文章永久链接格式
+# 默认值: :year/:month/:day/:title/
+# 当前使用 abbrlink 插件生成短链接
+permalink: posts/:abbrlink/
+
+# 永久链接中各变量的默认值
+permalink_defaults:
+
+# URL 美化
+pretty_urls:
+  # 是否保留末尾的 index.html
+  # false: /archives/ → /archives (更简洁)
+  # 默认值: true
+  trailing_index: true
+  # 是否保留末尾的 .html
+  # false: /posts/abc.html → /posts/abc
+  # 默认值: true
+  trailing_html: true
+
+
+# ---------------------------------------------------------------
+# 目录设置
+# 默认值: 如下
+# ---------------------------------------------------------------
+
+# 源文件目录
 source_dir: source
+# 生成文件目录
 public_dir: public
+# 标签目录
 tag_dir: tags
+# 归档目录
 archive_dir: archives
+# 分类目录
 category_dir: categories
+# 代码目录
 code_dir: downloads/code
+# 国际化目录
 i18n_dir: :lang
+# 跳过渲染的文件（直接复制到 public）
+# 支持 glob 匹配
 skip_render:
   - README.md
   - googlebbac9c0db9dc6383.html
   - baidu_verify_codeva-1ldrDhWqJG.html
   - BingSiteAuth.xml
 
-# Writing
-new_post_name: :title.md # File name of new posts
+
+# ---------------------------------------------------------------
+# 写作设置
+# ---------------------------------------------------------------
+
+# 新文章的文件名格式
+# 默认值: :title.md
+new_post_name: :title.md
+
+# 默认布局
+# 可选值: post | page | draft
+# 默认值: post
 default_layout: post
-titlecase: false # Transform title into titlecase
+
+# 将标题转换为 Title Case
+# 默认值: false
+titlecase: false
+
+# 外部链接在新标签页打开
+# 默认值: enable: true, field: site
 external_link:
-  enable: true # Open external links in new tab
-  field: site # Apply to the whole site
+  enable: true
+  # site: 全站生效 | post: 仅文章生效
+  field: site
+  # 排除的域名
   exclude: ''
+
+# 文件名大小写转换
+# 0: 不转换 | 1: 小写 | 2: 大写
+# 默认值: 0
 filename_case: 0
+
+# 渲染草稿
+# 默认值: false
 render_drafts: false
+
+# 启用文章资源文件夹（与文章同名的文件夹存放图片等）
+# 默认值: false
 post_asset_folder: false
+
+# 相对链接
+# 默认值: false
 relative_link: false
+
+# 显示未来日期的文章
+# 默认值: false
 future: true
+
+# 语法高亮引擎
+# 可选值: highlight.js | prismjs
+# 默认值: highlight.js
 syntax_highlighter: highlight.js
+
+# Highlight.js 设置
 highlight:
+  # 显示行号
+  # 默认值: true
   line_number: true
+  # 自动检测语言
+  # 默认值: false（Hexo 7+ 废弃此选项，建议在代码块指定语言）
   auto_detect: true
+  # 替换制表符为空格
+  # 默认值: ''
   tab_replace: ''
+  # 将代码包裹在 <table> 中（用于行号显示）
+  # 默认值: true
   wrap: true
+  # 使用 hljs 类名前缀
+  # 默认值: false
   hljs: false
+
+# PrismJS 设置（syntax_highlighter 为 prismjs 时生效）
 prismjs:
+  # 预处理（服务端高亮）
+  # 默认值: false
   preprocess: false
   line_number: true
   tab_replace: ''
 
-# Home page setting
-# path: Root path for your blogs index page. (default = '')
-# per_page: Posts displayed per page. (0 = disable pagination)
-# order_by: Posts order. (Order by date descending by default)
+
+# ---------------------------------------------------------------
+# 首页设置
+# 默认值: path: '', per_page: 10, order_by: -date
+# ---------------------------------------------------------------
+
 index_generator:
+  # 首页路径
   path: ''
+  # 每页显示文章数（0 = 禁用分页）
   per_page: 10
+  # 文章排序方式（-date: 按日期降序）
   order_by: -date
 
-# Category & Tag
+
+# ---------------------------------------------------------------
+# 分类和标签
+# ---------------------------------------------------------------
+
+# 默认分类名称
+# 默认值: uncategorized
 default_category: uncategorized
+
+# 分类别名映射（将分类名映射为 URL 友好的路径）
 category_map:
+# 标签别名映射
 tag_map:
 
-# Metadata elements
-## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+
+# ---------------------------------------------------------------
+# 元数据
+# ---------------------------------------------------------------
+
+# 在 <head> 中添加 <meta name="generator"> 标签
+# 默认值: true
 meta_generator: true
 
-# Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
+
+# ---------------------------------------------------------------
+# 日期/时间格式
+# 使用 Moment.js 格式: http://momentjs.com/docs/#/displaying/format/
+# ---------------------------------------------------------------
+
+# 日期格式
+# 默认值: YYYY-MM-DD
 date_format: YYYY-MM-DD
+
+# 时间格式
+# 默认值: HH:mm:ss
 time_format: HH:mm:ss
-## updated_option supports 'mtime', 'date', 'empty'
+
+# 文章更新时间来源
+# mtime: 文件修改时间 | date: front-matter 中的 date | empty: 不显示
+# 默认值: mtime
 updated_option: 'mtime'
 
-# Pagination
-## Set per_page to 0 to disable pagination
+
+# ---------------------------------------------------------------
+# 分页设置
+# 默认值: per_page: 10, pagination_dir: page
+# ---------------------------------------------------------------
+
+# 每页显示数量（0 = 禁用分页，全局设置，被各 generator 的 per_page 覆盖）
 per_page: 10
+# 分页 URL 格式（如 /page/2/）
 pagination_dir: page
 
-# Include / Exclude file(s)
-## include:/exclude: options only apply to the 'source/' folder
+
+# ---------------------------------------------------------------
+# 文件包含/排除
+# 仅对 source/ 目录生效
+# 支持 glob 匹配
+# ---------------------------------------------------------------
+
 include:
 exclude:
 ignore:
 
-# Extensions
-## Plugins: https://hexo.io/plugins/
-## Themes: https://hexo.io/themes/
-#theme: landscape
+
+# ---------------------------------------------------------------
+# 扩展
+# 插件: https://hexo.io/plugins/
+# 主题: https://hexo.io/themes/
+# ---------------------------------------------------------------
+
+# 当前使用的主题
+# 默认值: landscape
 theme: next
 
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
+
+# ---------------------------------------------------------------
+# 部署设置
+# 文档: https://hexo.io/docs/one-command-deployment
+# ---------------------------------------------------------------
+
 deploy:
   type: 'git'
   repo: git@github.com:nadav-cheung/nadav-cheung.github.io.git
-  # example, https://github.com/hexojs/hexojs.github.io
   branch: gh-page
   message: hexo auto deploy
 
+
+# ---------------------------------------------------------------
+# 插件配置
+# ---------------------------------------------------------------
+
 # npm install hexo-generator-searchdb
+# 本地搜索功能配置
 search:
+  # 搜索数据文件路径
   path: search.xml
+  # 搜索范围: post(仅文章) | page(仅页面) | all(全部)
   field: post
+  # 是否包含文章正文内容
   content: true
+  # 内容格式: html | raw | strip
   format: html
 
-# npm install hexo-filter-mathjax
-mathjax:
-  tags: none # or 'ams' or 'all'
-  single_dollars: true # enable single dollar signs as in-line math delimiters
-  cjk_width: 0.9 # relative CJK char width
-  normal_width: 0.6 # relative normal (monospace) width
-  append_css: true # add CSS to pages rendered by MathJax
-  every_page: false # if true, every page will be rendered by MathJax regardless the `mathjax` setting in Front-matter
-  packages: # extra packages to load
-  extension_options: {}
-    # you can put your extension options here
-  # see http://docs.mathjax.org/en/latest/options/input/tex.html#tex-extension-options for more detail
+# MathJax 已移除服务端渲染插件 hexo-filter-mathjax
+# 现由 NexT 主题内置的客户端 MathJax 支持处理
+# 配置在 _config.next.yml 的 math: 节
 
 
-#  npm install hexo-optimize
+# npm install hexo-optimize
+# 静态资源优化（压缩 CSS/JS/HTML）
 filter_optimize:
   enable: true
-  # static resource versioning
+  # 静态资源版本号（用于缓存破坏）
+  # 默认值: false
   versioning: false
   css:
-    # minify all css files
+    # 压缩所有 CSS 文件
     minify: true
+    # 排除的文件
     excludes:
-    # use preload to load css elements dynamically
+    # 使用 preload 动态加载的 CSS
     delivery:
       - '@fortawesome/fontawesome-free'
       - 'fonts.googleapis.com'
-    # make specific css content inline into the html page
+    # 内联到 HTML 的 CSS 文件（仅支持完整路径）
     inlines:
-      # support full path only
       - css/main.css
   js:
-    # minify all js files
+    # 压缩所有 JS 文件
     minify: true
     excludes:
-    # remove the comments in each of the js files
+    # 移除 JS 注释
     remove_comments: false
   html:
-    # minify all html files
+    # 压缩所有 HTML 文件
     minify: true
     excludes:
-  # set the priority of this plugin,
-  # lower means it will be executed first, default of Hexo is 10
+  # 插件执行优先级（数字越小越先执行，Hexo 默认为 10）
   priority: 12
 
 
-# npm install hexo-abbrlink abbrlink config
+# npm install hexo-abbrlink
+# 文章短链接生成（替代默认的日期+标题链接）
 abbrlink:
-  alg: crc32      #support crc16(default) and crc32
-  rep: hex        #support dec(default) and hex
-  drafts: false   #(true)Process draft,(false)Do not process draft. false(default)
-  # Generate categories from directory-tree
-  # depth: the max_depth of directory-tree you want to generate, should > 0
+  # 算法: crc16 | crc32
+  # 默认值: crc16
+  alg: crc32
+  # 进制: dec(十进制) | hex(十六进制)
+  # 默认值: dec
+  rep: hex
+  # 是否处理草稿
+  # 默认值: false
+  drafts: false
+  # 从目录结构自动生成分类
   auto_category:
-    enable: true  #true(default)
-    depth:        #3(default)
+    enable: true
+    # 最大目录深度
+    # 默认值: 3
+    depth:
+    # 覆盖已有分类
     over_write: false
-  auto_title: false #enable auto title, it can auto fill the title by path
-  auto_date: false #enable auto date, it can auto fill the date by time today
-  force: false #enable force mode,in this mode, the plugin will ignore the cache, and calc the abbrlink for every post even it already had abbrlink. This only updates abbrlink rather than other front variables.
+  # 自动从路径填充标题
+  auto_title: false
+  # 自动填充日期
+  auto_date: false
+  # 强制模式（忽略缓存，重新计算所有文章的 abbrlink）
+  force: false
 
-# npm install hexo-generator-sitemap --save
+# npm install hexo-generator-sitemap
+# Sitemap 生成
 sitemap:
   path:
     - sitemap.xml
     - sitemap.txt
-#  templatef: ./sitemap_template.xml
-#  template_txt: ./sitemap_template.txt
+  # 在文章头信息中添加 <link rel="sitemap">
   rel: false
+  # 包含标签页
   tags: true
+  # 包含分类页
   categories: true
+
+# npm install hexo-generator-baidu-sitemap
+# 百度 Sitemap
 baidusitemap:
   path: baidusitemap.xml
-
-
-
-

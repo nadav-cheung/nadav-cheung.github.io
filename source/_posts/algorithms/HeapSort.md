@@ -1,4 +1,5 @@
 ---
+mathjax: true
 title: 《HeapSort》
 categories:
   - 算法与数据结构
@@ -7,7 +8,7 @@ tags:
   - 算法与数据结构
   - 堆排序
   - 堆
-top: 3014
+sticky: 3014
 abbrlink: 607bf52d
 ---
 

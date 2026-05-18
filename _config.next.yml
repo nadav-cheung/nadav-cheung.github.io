@@ -11,41 +11,62 @@
 # ---------------------------------------------------------------
 
 # 内容缓存，开启后加速生成速度
+# 默认值: true
 cache:
   enable: true
 
-# 生成后压缩 HTML/CSS/JS（注意：hexo-optimize 插件也会做压缩，此处关闭避免重复）
+# 生成后压缩 HTML/CSS/JS
+# 默认值: false
+# 注意: hexo-optimize 插件也会做压缩，此处关闭避免重复
 minify: false
 
 # 自定义文件路径（覆盖主题模板片段）
 # 在 source/_data/ 目录下创建对应文件即可覆盖主题默认模板
 custom_file_path:
+  # <head> 标签内注入自定义内容（如 SEO meta、第三方脚本）
   head: source/_data/head.njk
+  # 导航栏区域自定义
   header: source/_data/header.njk
+  # 侧边栏区域自定义
   sidebar: source/_data/sidebar.njk
+  # 文章元信息区域自定义（作者、日期、分类等）
   postMeta: source/_data/post-meta.njk
+  # 文章正文开始前注入内容
   postBodyStart: source/_data/post-body-start.njk
+  # 文章正文结束后注入内容
   postBodyEnd: source/_data/post-body-end.njk
+  # 页脚区域自定义
   footer: source/_data/footer.njk
+  # </body> 标签前注入内容（如统计脚本）
   bodyEnd: source/_data/body-end.njk
+  # Stylus 变量覆盖（颜色、字号、间距等）
   variable: source/_data/variables.styl
+  # Stylus mixin 覆盖
   #mixin: source/_data/mixins.styl
+  # 自定义 CSS 样式
   style: source/_data/styles.styl
+
 
 # ---------------------------------------------------------------
 # 外观方案
 # ---------------------------------------------------------------
 
-# 可选方案: Muse | Mist | Pisces | Gemini
+# 主题布局方案
+# 可选值: Muse | Mist | Pisces | Gemini
+# 默认值: Muse
+# Muse: 简洁单栏; Mist: 紧凑单栏; Pisces: 双栏; Gemini: 双栏卡片式
 scheme: Gemini
 
 # 暗色模式（跟随系统偏好自动切换）
+# 默认值: true（v8.27.0 起默认开启）
 darkmode: true
 
-# 亮暗模式切换（8.27.0 新增，默认关闭）
+# 亮暗模式切换（v8.26.0 新增）
+# 使用 CSS light-dark() 函数实现更精确的亮暗色切换
+# 默认值: enable: false, check_supports: true
 lightdark:
   enable: false
-  # 检查浏览器是否支持 light-dark() CSS 函数
+  # 检查浏览器是否支持 light-dark() CSS 函数，不支持则降级为 darkmode
   check_supports: true
 
 
@@ -54,26 +75,34 @@ lightdark:
 # ---------------------------------------------------------------
 
 # 网站图标（favicon）
+# 默认值: 主题自带 /images/favicon-*.png
 favicon:
   small: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202402051051028.png
   medium: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202402051051028.png
   apple_touch_icon: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202402051051028.png
   safari_pinned_tab: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/logo.svg
+  #android_manifest: /manifest.json
 
 # 自定义 Logo（不支持 Mist 方案）
+# 默认值: 无
 custom_logo: #/uploads/custom-logo.png
 
 # Creative Commons 许可协议
 # 可选值: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | cc-zero
+# 默认值: license: by-nc-sa, size: small, sidebar: false, post: false
 creative_commons:
   license: by-nc-sa
+  # big: 大图标 | small: 小图标
   size: small
+  # 在侧边栏显示
   sidebar: true
+  # 在文章底部显示
   post: true
   # 指定语言获取对应翻译版本，如 deed.zh
   language:
 
 # Open Graph 元数据（社交媒体分享时显示的信息）
+# 默认值: enable: true
 open_graph:
   enable: true
   options:
@@ -90,6 +119,7 @@ open_graph:
 # 导航菜单
 # 格式: `名称: /链接/ || 图标`
 # 图标使用 Font Awesome，参考: https://fontawesome.com/icons
+# 默认值: 全部注释（无菜单项）
 # ---------------------------------------------------------------
 
 menu:
@@ -98,10 +128,16 @@ menu:
   tags: /tags/ || fa fa-tags
   archives: /archives/ || fa fa-archive
   about: /about/ || fa fa-user
+  #schedule: /schedule/ || fa fa-calendar
+  #sitemap: /sitemap.xml || fa fa-sitemap
+  #commonweal: /404/ || fa fa-heartbeat
 
-# 菜单图标和徽章（显示分类/标签数量）
+# 菜单图标和徽章
+# 默认值: icons: true, badges: false
 menu_settings:
+  # 显示图标
   icons: true
+  # 显示分类/标签数量徽章
   badges: true
 
 
@@ -111,24 +147,33 @@ menu_settings:
 # ---------------------------------------------------------------
 
 sidebar:
-  # 侧边栏位置: left | right
+  # 侧边栏位置
+  # 可选值: left | right
+  # 默认值: left
   position: left
 
-  # 侧边栏宽度（仅对 Pisces | Gemini 生效）
-  # 注意：8.27.0 默认字段名已改为 width_expanded / width_dual_column
-  # 当前使用旧字段名 width，主题会兼容但建议更新
-  width: 300
+  # 侧边栏宽度（v8.27.0 新字段名）
+  # width_expanded: 单栏模式（Muse | Mist）及移动端的宽度
+  #   默认值: 320
+  # width_dual_column: 双栏模式（Pisces | Gemini）桌面端的宽度
+  #   默认值: 240
+  width_expanded: 300
+  width_dual_column: 300
 
-  # 侧边栏显示方式（仅对 Muse | Mist 生效）
+  # 侧边栏显示方式（仅对 Muse | Mist 生效，Pisces/Gemini 始终展开）
   # post: 文章页自动展开 | always: 始终展开 | hide: 点击展开 | remove: 完全移除
+  # 默认值: post
   display: post
 
   # 内边距 (px)
+  # 默认值: 18
   padding: 18
   # 与顶部菜单栏的偏移量 (px，仅 Pisces | Gemini)
+  # 默认值: 12
   offset: 12
 
 # 侧边栏头像
+# 默认值: 无头像, rounded: false, rotated: false
 avatar:
   url: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/avatar.png
   # 圆形头像
@@ -137,10 +182,12 @@ avatar:
   rotated: true
 
 # 侧边栏显示文章/分类/标签数量
+# 默认值: true
 site_state: true
 
 # 社交链接
 # 格式: `名称: 链接 || 图标`
+# 默认值: 全部注释
 social:
   知乎: https://www.zhihu.com/people/nadav-cheung/posts || fab fa-zhihu fa-beat-fade
   GitHub: https://github.com/nadav-cheung || fab fa-github
@@ -154,19 +201,24 @@ social:
 social_icons:
   enable: true
   # 仅显示图标不显示文字
+  # 默认值: false
   icons_only: true
   # 鼠标悬停动画
+  # 默认值: false
   transition: true
 
 # 友情链接
+# 默认值: icon: fa fa-globe, layout: block
 links_settings:
   icon: fa fa-globe
+  # block: 块状排列 | inline: 行内排列
   layout: block
 
 links:
 #  rss: ./atom.xml
 
 # 文章目录（TOC）
+# 默认值: enable: true, number: true, wrap: false, expand_all: false, max_depth: 6
 toc:
   enable: true
   # 自动添加序号
@@ -185,30 +237,45 @@ toc:
 # ---------------------------------------------------------------
 
 # 多语言切换器
+# 默认值: false
 language_switcher: false
 
 footer:
   # 建站年份，不设置则使用当前年份
+  # 默认值: 无（使用当前年份）
   since: 2023
 
   # 年份和版权之间的图标
   icon:
+    # Font Awesome 图标名称
+    # 默认值: fa fa-heart
     name: fa fa-heart
+    # 图标动画
+    # 默认值: false
     animated: true
+    # 图标颜色
+    # 默认值: "#ff0000"
     color: "#ff0000"
 
   # 版权信息，不设置则使用 Hexo _config.yml 中的 author
+  # 默认值: 无
   copyright:
 
   # "Powered by Hexo & NexT" 显示
+  # 默认值: true
   powered: false
 
   # 中国大陆备案信息
+  # 默认值: enable: false
   beian:
     enable: true
+    # ICP 备案号
     icp: ""
+    # 公安备案数字 ID
     gongan_id: 33010802013393
+    # 公安备案完整编号
     gongan_num: 浙公网安备33010802013393
+    # 公安备案图标 URL
     gongan_icon_url: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/%E5%A4%87%E6%A1%88%E5%9B%BE%E6%A0%87.png
 
 
@@ -218,38 +285,55 @@ footer:
 # ---------------------------------------------------------------
 
 # 使用 front-matter 中的 description 作为摘要
+# 默认值: true
 excerpt_description: true
 
 # "阅读全文" 按钮
+# 默认值: true
 read_more_btn: true
 
 # 文章元信息显示
+# 默认值: item_text: true, created_at: true, updated_at.enable: true, categories: true
 post_meta:
+  # 显示文字标签
   item_text: true
+  # 显示创建时间
   created_at: true
   updated_at:
     enable: true
     # 仅在更新日期不同于创建日期时显示
+    # 默认值: true
     another_day: true
+  # 显示分类
   categories: true
 
 # 字数统计和阅读时长
 # 依赖: hexo-word-counter
+# 默认值: separated_meta: true, item_text_total: false
 symbols_count_time:
+  # 字数和时间分开显示
   separated_meta: true
+  # 在底部统计区显示文字标签
   item_text_total: true
+  # 底部显示总字数
   total_symbols: true
+  # 底部显示总阅读时长
   total_time: true
   # 排除代码块字数统计
+  # 默认值: false
   exclude_codeblock: false
   # 每分钟阅读字数（用于计算阅读时长）
+  # 默认值: 275（英文），中文约 300
   wpm: 275
+  # 阅读时长单位后缀
   suffix: "mins."
 
 # 使用图标替代 # 号显示标签
+# 默认值: false
 tag_icon: true
 
 # 打赏设置
+# 默认值: enable: false, animation: false
 reward_settings:
   enable: true
   animation: false
@@ -257,25 +341,32 @@ reward_settings:
 reward:
   wechatpay: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202401171842413.png
   alipay: https://cdn.nadav.com.cn/gh/nadav-cheung/img-repo/hexo-blog/202401171841199.png
+  #paypal: /images/paypal.png
+  #bitcoin: /images/bitcoin.png
 
 # 关注链接（文章底部）
+# 默认值: 全部注释
 follow_me:
   知乎: https://www.zhihu.com/people/nadav-cheung/posts || fab fa-zhihu fa-beat-fade
   Telegram: https://t.me/nadav_cheung || fab fa-telegram fa-beat-fade
   ProcessOn: https://www.processon.com/u/5e690116e4b00fb1da107799 || fab a-brands fa-product-hunt fa-beat-fade
 
 # 相关文章推荐
-# 依赖: hexo-related-posts 或 hexo-posts-embedding
+# 依赖: hexo-related-posts 或 hexo-posts-embedding（v8.24.0 新增支持）
+# 默认值: enable: false
 related_posts:
   enable: false
   icon: fa fa-signs-post
 
 # 在线编辑文章（跳转到 GitHub）
+# 默认值: enable: false
 post_edit:
   enable: false
   url: https://github.com/nadav-cheung/nadav-cheung.github.io/tree/gh-page
 
-# 上下篇文章导航 (left: 两侧 | right: 右侧 | false: 关闭)
+# 上下篇文章导航
+# left: 左右两侧显示 | right: 右侧显示 | false: 关闭
+# 默认值: left
 post_navigation: left
 
 
@@ -285,14 +376,16 @@ post_navigation: left
 # ---------------------------------------------------------------
 
 # 标签云
+# 默认值: min: 12, max: 30, amount: 200, orderby: name, order: 1
 tagcloud:
-  min: 18  # 最小字号 (px)
-  max: 18  # 最大字号 (px)
-  amount: 200  # 标签总数
-  orderby: name  # 排序字段
-  order: 1  # 排序方向 (1: 升序)
+  min: 18  # 最小字号 (px)，默认 12
+  max: 18  # 最大字号 (px)，默认 30
+  amount: 200  # 标签总数，默认 200
+  orderby: name  # 排序字段，默认 name
+  order: 1  # 排序方向 (1: 升序, -1: 降序)，默认 1
 
 # Google 日历（需配置 calendar_id 和 api_key）
+# 默认值: 如下
 calendar:
   calendar_id: <required>
   api_key: <required>
@@ -311,22 +404,28 @@ calendar:
 # ---------------------------------------------------------------
 
 # 预连接 CDN（加速字体和插件加载）
+# 默认值: false
 preconnect: true
 
 # 文章/页面的文本对齐
+# 可选值: start | end | left | right | center | justify | justify-all | match-parent
+# 默认值: desktop: justify, mobile: justify
 text_align:
   desktop: justify
   mobile: justify
 
 # 移动端窄屏精简布局
+# 默认值: false
 mobile_layout_economy: true
 
-# 浏览器标签栏颜色
+# 浏览器标签栏颜色（影响移动端浏览器 UI 颜色）
+# 默认值: light: "#222", dark: "#222"
 theme_color:
   light: "#222"
   dark: "#222"
 
 # 滚动条行为
+# 默认值: overlay: false, stable: false
 body_scrollbar:
   # 滚动条覆盖内容（不占空间）
   overlay: false
@@ -334,11 +433,13 @@ body_scrollbar:
   stable: true
 
 # 代码块设置
+# 默认值: theme.light: default, theme.dark: stackoverflow-dark, copy_button.enable: false, fold.enable: false, language: false
 codeblock:
   # 代码高亮主题，所有主题: https://theme-next.js.org/highlight/
   theme:
     light: github
     dark: github-dark
+  # Prism 主题（使用 PrismJS 时生效）
   prism:
     light: prism
     dark: prism-dark
@@ -346,15 +447,18 @@ codeblock:
   copy_button:
     enable: true
     # 样式: default | flat | mac
+    # 默认值: 无
     style: mac
   # 代码块折叠（超过指定高度时折叠）
   fold:
     enable: true
     height: 500
-  # 显示语言名称（8.27.0 新增，默认关闭）
+  # 显示语言名称（v8.23.1 新增）
+  # 默认值: false
   language: false
 
 # 返回顶部按钮
+# 默认值: enable: true, sidebar: false, scrollpercent: false
 back2top:
   enable: true
   # 放在侧边栏而非右下角
@@ -363,15 +467,20 @@ back2top:
   scrollpercent: true
 
 # 阅读进度条（页面顶部）
+# 默认值: enable: false, start_at: left, position: top, reversed: false, color: "#37c6c0", height: 3px
 reading_progress:
   enable: true
+  # 进度条起始位置: left | right
   start_at: left
+  # 进度条位置: top | bottom
   position: top
+  # 反向（从右到左）
   reversed: false
   color: "#37c6c0"
   height: 3px
 
 # 书签功能（记住阅读位置）
+# 默认值: enable: false, color: "#222", save: auto
 bookmark:
   enable: true
   color: "#222"
@@ -379,6 +488,7 @@ bookmark:
   save: auto
 
 # GitHub 角标（右上角 "Follow me on GitHub"）
+# 默认值: enable: false
 github_banner:
   enable: true
   permalink: https://github.com/nadav-cheung
@@ -387,23 +497,30 @@ github_banner:
 # ---------------------------------------------------------------
 # 字体设置
 # Google Fonts: https://fonts.google.com
-# 注意：设置过多字体会导致加载缓慢
+# 注意: 设置过多字体会导致加载缓慢
 # 推荐 Web Safe 字体: Arial | Tahoma | Helvetica | Verdana | Georgia 等
+# 所有字体都会自动加载 light/normal/bold 及其斜体样式
+# 默认值: enable: false, global.family: Lato
+# 字号单位为 em，默认 1 (= 16px)
 # ---------------------------------------------------------------
 
 font:
+  # 启用自定义字体
   enable: true
 
-  # 字体 CDN 地址
+  # 字体 CDN 地址（external: true 时生效）
+  # 默认值: https://fonts.googleapis.com
   host: https://fonts.googleapis.com
 
   # 全局字体（<body> 内所有元素）
+  # external: true 从 CDN 加载 | false 使用本地/系统字体
+  # Comic Sans MS 是系统内置字体，无需 CDN 加载，设为 false 避免 wasted request
   global:
-    external: true
+    external: false
     family: Comic Sans MS
     size:
 
-  # 站点标题字体
+  # 站点标题字体 (.site-title)
   title:
     external: true
     family:
@@ -415,12 +532,12 @@ font:
     family:
     size:
 
-  # 文章正文字体
+  # 文章正文字体 (.post-body)
   posts:
     external: true
     family:
 
-  # 代码字体
+  # 代码字体 (<code> 和代码块)
   codes:
     external: true
     family:
@@ -432,10 +549,14 @@ font:
 # ---------------------------------------------------------------
 
 # 首页标题中包含副标题
+# 默认值: false
 index_with_subtitle: true
 
 # 外部链接 Base64 加密
+# 默认值: false
 exturl: false
+# 加密链接显示图标
+# 默认值: true
 exturl_icon: true
 
 # 搜索引擎验证码
@@ -451,13 +572,16 @@ baidu_site_verification: codeva-1ldrDhWqJG
 # ---------------------------------------------------------------
 
 # Note 标签（Bootstrap 风格提示框）
+# 默认值: style: simple, icons: false, light_bg_offset: 0
 note:
   # 样式: simple | modern | flat | disabled
   style: simple
   icons: false
+  # 背景亮度偏移 (%, 对 modern 和 flat 生效，modern: -12~12, flat: -18~6)
   light_bg_offset: 0
 
 # Tabs 标签页
+# 默认值: sticky: false, transition.tabs: false, transition.labels: true
 tabs:
   # 长内容时导航栏置顶
   sticky: true
@@ -466,18 +590,23 @@ tabs:
     labels: true
 
 # PDF 标签
+# 默认值: enable: false, height: 500px
 pdf:
   enable: false
   height: 500px
 
 # Mermaid 流程图
+# 默认值: enable: false, theme.light: default, theme.dark: dark
+# 当前无文章使用 mermaid，禁用以减少 ~200KB JS 加载
 mermaid:
-  enable: true
+  enable: false
+  # 可选主题: default | dark | forest | neutral
   theme:
     light: neutral
     dark: dark
 
 # WaveDrom 数字电路图
+# 默认值: false
 wavedrom:
   enable: false
 
@@ -493,11 +622,13 @@ wavedrom:
 # 文档: https://theme-next.js.org/docs/third-party-services/math-equations
 # 依赖: hexo-filter-mathjax 或 hexo-renderer-kramed
 # 注意: 请按文档安装/卸载对应的渲染器
+# 默认值: every_page: false, mathjax.enable: false, katex.enable: false
 # ---------------------------------------------------------------
 
 math:
   # 是否每页都加载（false 则仅加载 front-matter 中标记 mathjax: true 的页面）
-  every_page: true
+  # 建议设为 false，MathJax ~500KB+，仅公式页面需要
+  every_page: false
 
   mathjax:
     enable: true
@@ -506,6 +637,7 @@ math:
 
   katex:
     enable: false
+    # 自动复制 KaTeX 公式文本
     copy_tex: false
 
 
@@ -515,44 +647,55 @@ math:
 # ---------------------------------------------------------------
 
 # PJAX - 无刷新页面导航（Ajax 局部加载）
+# 默认值: false
 pjax: true
 
 # FancyBox - 图片灯箱效果（点击放大）
+# 默认值: false
 fancybox: true
 
 # Medium Zoom - 图片缩放（与 fancybox 二选一）
+# 默认值: false
 mediumzoom: false
 
 # 图片懒加载
+# 默认值: false
 lazyload: true
 
 # 盘古之白 - 自动在中文和半角字符间插入空格
+# 默认值: false
 pangu: true
 
 # Quicklink - 视口内链接预加载
+# 默认值: enable: false, home: false, archive: false, delay: true, timeout: 3000, priority: true
 quicklink:
   enable: true
+  # 首页启用预加载
   home: true
+  # 归档页启用预加载
   archive: true
+  # 页面完全加载后再初始化（避免与 PJAX 冲突）
   delay: true
+  # 预加载超时时间 (ms)
   timeout: 3000
+  # 使用 fetch() API 而非 link[rel=prefetch]（优先级更高）
   priority: true
 
 
 # ---------------------------------------------------------------
 # 动画设置
+# 默认值: motion.enable: true, async: false, duration: 200
+# 所有可选动画: https://theme-next.js.org/animate/
 # ---------------------------------------------------------------
 
 # 页面过渡动画 (Animate.css)
-# ⚠️ 兼容性问题: hexo-theme-next 8.27.0 中 async: true 会导致文章 visibility:hidden 不恢复
-# 解决方案: 设置 async: false 或 enable: false
+# ⚠️ async: true 会导致某些元素 visibility:hidden 不恢复，建议保持 false
 motion:
   enable: true
   async: false
-  # 动画持续时间 (ms，8.27.0 新增字段，默认 200)
+  # 动画持续时间 (ms)
   duration: 200
   transition:
-    # 所有可选动画: https://theme-next.js.org/animate/
     menu_item: fadeInDown
     post_block: fadeIn
     post_header: fadeInDown
@@ -562,14 +705,20 @@ motion:
     sidebar: fadeInUp
 
 # 页面加载进度条 (Pace)
+# 颜色: black | blue | green | orange | pink | purple | red | silver | white | yellow
+# 主题: big-counter | bounce | barber-shop | center-atom | center-circle | center-radar | center-simple
+#        corner-indicator | fill-left | flat-top | flash | loading-bar | mac-osx | material | minimal
+# 默认值: enable: false, color: blue, theme: minimal
 pace:
   enable: true
   color: purple
   theme: bounce
 
 # 彩色丝带背景效果 (HTML5 Canvas)
+# 默认值: enable: false, size: 300, alpha: 0.6, zIndex: -1
+# 禁用以减少 CPU 消耗和 JS 加载
 canvas_ribbon:
-  enable: true
+  enable: false
   size: 300
   alpha: 0.6
   zIndex: -1
@@ -581,30 +730,35 @@ canvas_ribbon:
 # ---------------------------------------------------------------
 
 # 评论系统配置
+# 默认值: style: tabs, active: 无, storage: true, lazyload: false
 comments:
+  # 显示样式: tabs | buttons
   style: tabs
   # 默认激活的评论系统
   active: gitalk
   # 记住用户选择的评论系统
   storage: true
-  # 懒加载评论
+  # 懒加载评论（滚动到评论区才加载）
   lazyload: false
   nav:
 
 # Disqus
+# 默认值: enable: false, count: true
 disqus:
   enable: false
   shortname:
   count: true
 
 # DisqusJS
+# 默认值: enable: false
 disqusjs:
   enable: false
   api:
   apikey:
   shortname:
 
-# 畅言
+# 畅言（⚠️ v8.25.0 已废弃，将在未来版本移除）
+# 建议迁移到 gitalk、utterances 等替代方案
 changyan:
   enable: false
   appid:
@@ -615,30 +769,46 @@ changyan:
 livere_uid:
 
 # Gitalk（基于 GitHub Issues 的评论系统）
+# 默认值: enable: false, distraction_free_mode: true
 gitalk:
   enable: true
+  # GitHub 仓库所有者
   github_id: nadav-cheung
+  # 存储评论的仓库名
   repo: gitalk.nadav-cheung.github.io
+  # GitHub OAuth App Client ID
   client_id: 95c086f5b866227c9872
+  # GitHub OAuth App Client Secret
   client_secret: 5e7dbe3a5efec790afd4b6d4682bb60748c8613a
+  # 管理员（可初始化 Issues）
   admin_user: nadav-cheung
+  # Facebook 风格无干扰模式
   distraction_free_mode: true
+  # OAuth 代理地址（国内需代理才能使用 GitHub OAuth）
   proxy: https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token
+  # 语言: en | es-ES | fr | ru | zh-CN | zh-TW
   language: zh-CN
+  # 自定义 Issue 内容（v8.27.0 新增）
+  # 例如: body: Comments for post ${title}, see ${url}
+  body:
 
-# Utterances
+# Utterances（基于 GitHub Issues，比 Gitalk 更简洁）
+# 默认值: enable: false
 utterances:
   enable: false
   repo: user-name/repo-name
+  # issue 匹配方式: pathname | url | title | og:title
   issue_term: pathname
+  # 主题: github-light | github-dark | preferred-color-scheme 等
   theme: github-light
 
-# Isso
+# Isso（自托管评论系统）
 isso:
 
 
 # ---------------------------------------------------------------
 # 内容分享
+# 默认值: enable: false
 # ---------------------------------------------------------------
 
 addtoany:
@@ -654,15 +824,20 @@ addtoany:
 # ---------------------------------------------------------------
 
 # Google Analytics
+# 默认值: tracking_id: 无, only_pageview: false
 google_analytics:
   tracking_id: G-V46WZ4FJX1
+  # 仅统计页面浏览量（性能更好，使用 Measurement Protocol API）
   only_pageview: false
+  # only_pageview 模式所需的 API Secret
   measure_protocol_api_secret:
 
 # 百度统计
+# 默认值: 无
 baidu_analytics: 53eb3c386ae25ed555acf875166e417a
 
-# GrowingIO
+# GrowingIO（⚠️ v8.25.0 已废弃，将在未来版本移除）
+# 建议迁移到 Google Analytics 或其他方案
 growingio_analytics:
 
 # Cloudflare Web Analytics
@@ -672,12 +847,14 @@ cloudflare_analytics:
 clarity_analytics:
 
 # Matomo
+# 默认值: enable: false
 matomo:
   enable: false
   server_url:
   site_id:
 
 # Umami
+# 默认值: enable: false
 umami:
   enable: false
   script_url:
@@ -685,12 +862,14 @@ umami:
   host_url:
 
 # Plausible
+# 默认值: enable: false
 plausible:
   enable: false
   script_url:
   site_domain:
 
-# LeanCloud 访问统计（已弃用，8.27.0 默认关闭）
+# LeanCloud 访问统计（⚠️ v8.25.0 已废弃，将在未来版本移除）
+# 建议迁移到 Firebase 或 busuanzi
 leancloud_visitors:
   enable: false
   app_id:
@@ -699,19 +878,24 @@ leancloud_visitors:
   security: true
 
 # Firebase 访问统计
+# 默认值: enable: false, collection: articles
 firestore:
   enable: false
   collection: articles
   apiKey: AIzaSyCzx9lt4NaNcSCHb3uiAmrTyjtfGdXdVAI
   projectId: nadav-cheung-github-io
 
-# 不蒜子 访问量统计
+# 不蒜子 访问量统计（第三方免费服务，可能不稳定）
+# 默认值: enable: false
 busuanzi_count:
   enable: true
+  # 显示总访客数
   total_visitors: true
   total_visitors_icon: fa fa-user
+  # 显示总访问量
   total_views: true
   total_views_icon: fa fa-eye
+  # 显示单篇文章阅读量
   post_views: true
   post_views_icon: far fa-eye
 
@@ -722,6 +906,7 @@ busuanzi_count:
 # ---------------------------------------------------------------
 
 # Algolia 搜索
+# 默认值: enable: false, hits.per_page: 10
 algolia_search:
   enable: false
   hits:
@@ -729,12 +914,14 @@ algolia_search:
 
 # 本地搜索
 # 依赖: hexo-generator-searchdb
+# 默认值: enable: false, trigger: auto (此处有误应为手动), top_n_per_article: 1, unescape: false, preload: false
 local_search:
   enable: true
   # auto: 输入即搜索 | manual: 回车或点击搜索按钮
   trigger: auto
   # 每篇文章显示的最大结果数，-1 表示全部
   top_n_per_article: 1
+  # 是否反转义 HTML 字符串
   unescape: true
   # 页面加载时预加载搜索数据
   preload: false
@@ -742,17 +929,24 @@ local_search:
 
 # ---------------------------------------------------------------
 # 聊天服务
+# 文档: https://theme-next.js.org/docs/third-party-services/chat-services
 # ---------------------------------------------------------------
 
+# 侧边栏聊天按钮
+# 默认值: enable: false, icon: fa fa-comment
 chat:
   enable: false
   icon: fa fa-comment
 
+# Chatra
+# 默认值: enable: false, async: true
 chatra:
   enable: false
   async: true
   id:
 
+# Tidio
+# 默认值: enable: false
 tidio:
   enable: false
   key:
@@ -764,21 +958,23 @@ tidio:
 # ---------------------------------------------------------------
 
 vendors:
-  # NexT 内部脚本（主题核心 JS）
+  # NexT 内部脚本 CDN 来源
   # 可选值: local | jsdelivr | unpkg | cdnjs | custom
-  # ⚠️ cdnjs/jsdelivr/unpkg 上没有 hexo-theme-next 8.27.0 的文件
-  # 必须设为 local 从本地加载，否则主题 JS 返回 404，页面不显示
+  # ⚠️ cdnjs/jsdelivr/unpkg 上可能没有最新版本的文件
+  # 建议设为 local 从本地加载，否则主题 JS 可能返回 404
+  # 默认值: local
   internal: local
-  # 第三方插件 CDN
+  # 第三方插件 CDN 来源
+  # 可选值: local | jsdelivr | unpkg | cdnjs | custom
+  # local 需要安装: https://github.com/next-theme/plugins
+  # 默认值: cdnjs
   plugins: custom
   # 自定义 CDN URL 模板
+  # 可用变量: ${npm_name}, ${version}, ${minified}, ${cdnjs_name}, ${cdnjs_file}
   custom_cdn_url: https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${cdnjs_file}
 
-# 静态资源路径（仅 vendors.internal 为 local 时 js 路径生效）
+# 静态资源路径（仅 vendors.internal 为 local 时生效）
+# 默认值: css: css, js: js, images: images
 css: css
 js: js
 images: images
-
-# 文章末尾自定义标签
-passage_end_tag:
-  enabled: true

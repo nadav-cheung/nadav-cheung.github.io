@@ -7,7 +7,7 @@ tags:
   - 算法与数据结构
   - 节点
   - Node
-top: 3019
+sticky: 3019
 abbrlink: fc608e54
 ---
 
