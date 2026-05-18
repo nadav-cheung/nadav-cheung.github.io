@@ -1,0 +1,88 @@
+{#- 书架组件：使用 <template> 存储，JS 动态克隆到内容区，兼容 PJAX -#}
+
+<template id="bookshelf-tpl">
+  <div id="bookshelf">
+    <div class="shelf-header">
+      <span class="shelf-line"></span>
+      <span class="shelf-heading">专题系列</span>
+      <span class="shelf-line"></span>
+    </div>
+    <div class="books-row">
+
+      <a href="/categories/算法与数据结构/" class="book-spine" style="--spine-color: #c4908f; --spine-hover: #d4a0a0;">
+        <div class="spine-rule"></div>
+        <div class="spine-title">算法与<br>数据结构</div>
+        <div class="spine-count">15 章</div>
+        <div class="spine-rule"></div>
+      </a>
+
+      <a href="/categories/LeetCode刷题笔记/" class="book-spine" style="--spine-color: #8fa4b8; --spine-hover: #a0b4c8;">
+        <div class="spine-rule"></div>
+        <div class="spine-title">LeetCode<br>刷题笔记</div>
+        <div class="spine-count">3 章</div>
+        <div class="spine-rule"></div>
+      </a>
+
+      <a href="/categories/Anthropic源码解析/" class="book-spine" style="--spine-color: #8fb8a0; --spine-hover: #a0c8b0;">
+        <div class="spine-rule"></div>
+        <div class="spine-title">Anthropic<br>源码解析</div>
+        <div class="spine-count badge-soon">即日开启</div>
+        <div class="spine-rule"></div>
+      </a>
+
+      <a href="/categories/AgentScope源码解析/" class="book-spine" style="--spine-color: #c4a882; --spine-hover: #d4b892;">
+        <div class="spine-rule"></div>
+        <div class="spine-title">AgentScope<br>源码解析</div>
+        <div class="spine-count badge-soon">即日开启</div>
+        <div class="spine-rule"></div>
+      </a>
+
+      <a href="/categories/QwenClaw源码解析/" class="book-spine" style="--spine-color: #a08fb8; --spine-hover: #b09fc8;">
+        <div class="spine-rule"></div>
+        <div class="spine-title">QwenClaw<br>源码解析</div>
+        <div class="spine-count badge-soon">即日开启</div>
+        <div class="spine-rule"></div>
+      </a>
+
+      <a href="/categories/ClaudeCode源码解析/" class="book-spine" style="--spine-color: #a8a090; --spine-hover: #b8b0a0;">
+        <div class="spine-rule"></div>
+        <div class="spine-title">ClaudeCode<br>源码解析</div>
+        <div class="spine-count badge-soon">即日开启</div>
+        <div class="spine-rule"></div>
+      </a>
+
+    </div>
+    <div class="shelf-edge"></div>
+  </div>
+</template>
+
+<script>
+(function() {
+  function initBookshelf() {
+    var old = document.getElementById('bookshelf');
+    if (old) old.remove();
+
+    var path = window.location.pathname;
+    var isHome = path === '/' || /^\/page\/\d+\/?$/.test(path);
+    if (!isHome) return;
+
+    var tpl = document.getElementById('bookshelf-tpl');
+    if (!tpl) return;
+
+    var clone = tpl.content.cloneNode(true);
+    var posts = document.querySelector('.posts-expand');
+    if (!posts) return;
+
+    var firstPost = posts.querySelector('.post-block');
+    if (firstPost) {
+      posts.insertBefore(clone, firstPost);
+    } else {
+      posts.appendChild(clone);
+    }
+  }
+
+  initBookshelf();
+  document.addEventListener('pjax:complete', initBookshelf);
+  document.addEventListener('pjax:popstate', initBookshelf);
+})();
+</script>

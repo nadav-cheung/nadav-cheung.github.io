@@ -1,77 +1,610 @@
-//标签的美化，使用圆形方框美化
-.tag-cloud a {
-  box-shadow: 0 1px 3px #6f42c1, 0 1px 2px #d9534f;
-  padding: 2px 10px;
-  margin: 8px;
-  background: #c1425c00;
-  border-bottom: none;
-  border-radius: 20px;
-}
+// ===============================================================
+// 清雅书房 - 完整自定义样式
+// Elegant Pink-White × Editorial Aesthetic
+// 白色渐变 + 淡玫瑰 + 墨色
+// ===============================================================
 
-.tag-cloud-tags a:hover {
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, .4);
-  transform: scale(1.1);
-  /*box-shadow: 10px 10px 15px 2px rgba(0,0,0,.12), 0 0 6px 0 rgba(104, 104, 105, 0.1);*/
-  transition-duration: 0.15s;
-}
+// ---------------------------------------------------------------
+// 基础排版
+// ---------------------------------------------------------------
 
+.posts-expand .post-title,
+.post-block .post-title,
+.site-title
+  font-family: 'Source Serif 4', 'Noto Serif SC', 'Georgia', serif !important
+  letter-spacing: 0.02em
 
-// [Read More]按钮样式
-.post-button .btn {
-  color: #555 !important;
-  background-color: rgb(255, 255, 255);
-  border-radius: 3px;
-  font-size: 15px;
-  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
-  border: none !important;
-  transition-property: unset;
-  padding: 0px 15px;
-}
+.site-title
+  font-weight: 900
+  color: #2d2d32 !important
 
-.post-button .btn:hover {
-  color: rgb(255, 255, 255) !important;
-  border-radius: 3px;
-  font-size: 15px;
-  box-shadow: inset 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
-  background-image: linear-gradient(90deg, #a166ab 0%, #ef4e7b 25%, #f37055 50%, #ef4e7b 75%, #a166ab 100%);
-}
+.post-body
+  font-family: 'Noto Serif SC', 'PingFang SC', 'Microsoft YaHei', serif
+  line-height: 2
+  color: #3a3a40
 
-.fa-product-hunt {
-  color: #74C0FC;
-}
+code, pre, .highlight
+  font-family: 'JetBrains Mono', 'Consolas', 'Monaco', monospace !important
 
-.fa-zhihu {
-  color: #74C0FC;
-}
+h1, h2, h3, h4, h5, h6
+  font-family: 'Source Serif 4', 'Noto Serif SC', serif
+  color: #2d2d32
+  border-bottom-color: #efe8e8 !important
 
-.my-wechat-sidebar-image {
-  //border: 0
+// ---------------------------------------------------------------
+// 页面背景
+// ---------------------------------------------------------------
+
+body
+  background: linear-gradient(180deg, #ffffff 0%, #fef6f6 100%) !important
+  background-attachment: fixed
+
+// ---------------------------------------------------------------
+// 侧边栏
+// ---------------------------------------------------------------
+
+.sidebar
+  background: #fef7f7 !important
+  box-shadow: 1px 0 0 #efe8e8
+
+.sidebar-inner
+  background: transparent !important
+  box-shadow: none !important
+
+.site-author-image
+  border: 3px solid #efe8e8
+  transition: border-color 0.3s ease
+  &:hover
+    border-color: #c4908f
+
+.site-author-name
+  color: #2d2d32 !important
+  font-family: 'Source Serif 4', 'Noto Serif SC', serif
+  font-weight: 700
+
+.site-state-item
+  border-color: #efe8e8 !important
+
+.site-state-item-count
+  color: #c4908f !important
+  font-family: 'JetBrains Mono', monospace
+
+.links-of-author-item a
+  border-bottom: none !important
+  color: #8a8a90
+  transition: all 0.2s ease
+  &:hover
+    color: #c4908f
+    transform: translateX(4px)
+
+// ---------------------------------------------------------------
+// 文章卡片
+// ---------------------------------------------------------------
+
+.post-block
+  background: #ffffff !important
+  border: 1px solid #efe8e8
+  border-radius: 8px !important
+  padding: 2em !important
+  margin-bottom: 1.5em !important
+  transition: border-color 0.3s ease, box-shadow 0.3s ease
+  box-shadow: 0 1px 4px rgba(196, 144, 143, 0.06)
+  &:hover
+    border-color: #e5dada
+    box-shadow: 0 6px 16px rgba(196, 144, 143, 0.1)
+
+.post-title
+  a
+    color: #2d2d32 !important
+    border-bottom: none !important
+    transition: color 0.2s ease
+    &:hover
+      color: #c4908f !important
+
+.post-meta
+  color: #8a8a90 !important
+  a
+    color: #8a8a90 !important
+    border-bottom: none !important
+    &:hover
+      color: #c4908f !important
+
+.post-button .btn
+  color: #c4908f !important
+  background: transparent
+  border: 1px solid #e5dada !important
+  border-radius: 6px !important
+  padding: 8px 24px !important
+  font-family: 'Source Serif 4', 'Noto Serif SC', serif
+  font-size: 0.9em
+  letter-spacing: 0.03em
+  transition: all 0.3s ease
+  box-shadow: none !important
+  &:hover
+    color: #ffffff !important
+    background: #c4908f !important
+    border-color: #c4908f !important
+
+.post-body p a
+  color: #c4908f
+  border-bottom: 1px solid rgba(#c4908f, 0.3)
+  &:hover
+    color: #b07a79
+    border-bottom-color: #b07a79
+
+// ---------------------------------------------------------------
+// 导航菜单
+// ---------------------------------------------------------------
+
+.header-inner
+  background: rgba(255, 255, 255, 0.85) !important
+  backdrop-filter: blur(12px)
+  -webkit-backdrop-filter: blur(12px)
+
+.site-nav .menu-item a
+  color: #8a8a90
+  border-bottom: none !important
+  transition: color 0.2s ease
+  &:hover, &.menu-item-active
+    color: #c4908f
+
+// ---------------------------------------------------------------
+// 代码块
+// ---------------------------------------------------------------
+
+.highlight
+  background: #fdfafa !important
+  border: 1px solid #efe8e8
+  border-radius: 6px
+
+code
+  background: rgba(#c4908f, 0.06)
+  color: #b07a79
+  border-radius: 3px
+  padding: 2px 6px
+  font-size: 0.9em
+
+.copy-btn
+  color: #8a8a90 !important
+  border-color: #efe8e8 !important
+  background: #fdfafa !important
+  &:hover
+    color: #c4908f !important
+
+// ---------------------------------------------------------------
+// 标签云
+// ---------------------------------------------------------------
+
+.tag-cloud a
+  box-shadow: 0 1px 3px rgba(196, 144, 143, 0.06)
+  padding: 4px 14px
+  margin: 8px
+  background: #ffffff
+  border: 1px solid #efe8e8
+  border-bottom: none
+  border-radius: 20px
+  color: #8a8a90
+  transition: all 0.2s ease
+  font-family: 'JetBrains Mono', monospace
+  font-size: 0.85em
+
+.tag-cloud-tags a:hover
+  background: #c4908f
+  color: #ffffff
+  border-color: #c4908f
+  transform: scale(1.05)
+
+// ---------------------------------------------------------------
+// 页脚
+// ---------------------------------------------------------------
+
+.footer
+  background: #fef5f5 !important
+  color: #8a8a90
+  a
+    color: #a08580
+    &:hover
+      color: #c4908f
+  .with-love
+    color: #e5dada
+
+.beian
+  color: #8a8a90
+  a
+    color: #a08580
+  img
+    display: inline-block
+    margin: 0 3px
+    vertical-align: middle
+    height: 20px
+
+// ---------------------------------------------------------------
+// 返回顶部
+// ---------------------------------------------------------------
+
+.back-to-top
+  background: #ffffff !important
+  color: #c4908f !important
+  border: 1px solid #efe8e8
+  &:hover
+    background: #c4908f !important
+    color: #ffffff !important
+
+// ---------------------------------------------------------------
+// 搜索
+// ---------------------------------------------------------------
+
+.search-popup
+  background: #ffffff !important
+  border: 1px solid #efe8e8
+
+.search-popup .search-input
+  background: #fdfafa !important
+  border: 1px solid #efe8e8
+  color: #2d2d32
+
+.search-popup .search-result-container
+  .search-result-list a
+    color: #2d2d32
+    &:hover
+      color: #c4908f
+  .search-result-list p
+    color: #8a8a90
+
+.search-icon, .popup-trigger
+  color: #8a8a90
+  &:hover
+    color: #c4908f
+
+// ---------------------------------------------------------------
+// 阅读进度条
+// ---------------------------------------------------------------
+
+.reading-progress-bar
+  background: linear-gradient(90deg, #c4908f, #d4a5a5) !important
+
+// ---------------------------------------------------------------
+// 分页
+// ---------------------------------------------------------------
+
+.pagination .page-number
+  background: #ffffff
+  color: #8a8a90
+  border: 1px solid #efe8e8
+  border-radius: 6px
+  transition: all 0.2s ease
+  &:hover, &.current
+    background: #c4908f
+    color: #ffffff
+    border-color: #c4908f
+
+// ---------------------------------------------------------------
+// 打赏
+// ---------------------------------------------------------------
+
+.reward-container button
+  background: #fdfafa
+  color: #c4908f
+  border: 1px solid #efe8e8
+  border-radius: 6px
+  transition: all 0.3s ease
+  &:hover
+    background: #c4908f
+    color: #ffffff
+    border-color: #c4908f
+
+// ---------------------------------------------------------------
+// TOC 目录
+// ---------------------------------------------------------------
+
+.toc .nav-item .nav-link
+  color: #8a8a90
+  border-bottom: none !important
+  transition: color 0.2s ease
+  &:hover, &.active
+    color: #c4908f !important
+
+.toc .nav-item .nav-number
+  color: #b8b0b0
+
+// ---------------------------------------------------------------
+// 微信公众号
+// ---------------------------------------------------------------
+
+.my-wechat-sidebar-image
   width: 93%
-  //height: 86px
-  display: flex;
-  justify-content: center;
+  display: flex
+  justify-content: center
 
-}
+// ---------------------------------------------------------------
+// GitHub Banner
+// ---------------------------------------------------------------
 
-.my-wechat-postbody-image {
-}
+.github-banner
+  color: #8a8a90 !important
+  border-bottom: none !important
+  &:hover
+    color: #c4908f !important
 
-// 文章内链接文本样式
-.post-body p a {
-  color: #0593d3;
-  border-bottom: none;
-  border-bottom: 1px solid #0593d3;
+// ---------------------------------------------------------------
+// 书架组件
+// ---------------------------------------------------------------
 
-  &:hover {
-    color: #fc6423;
-    border-bottom: none;
-    border-bottom: 1px solid #fc6423;
-  }
-}
+#bookshelf
+  margin: 0 auto 2.5em
+  padding: 2.5em 2em 1em
 
-.beian img {
-  display: inline-block;
-  margin: 0 3px;
-  vertical-align: middle;
-  height: 20px
-}
+.shelf-header
+  text-align: center
+  margin-bottom: 2em
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 16px
+
+.shelf-heading
+  font-family: 'Source Serif 4', 'Noto Serif SC', serif
+  font-size: 1.1em
+  font-weight: 700
+  color: #2d2d32
+  letter-spacing: 0.15em
+
+.shelf-line
+  display: inline-block
+  width: 40px
+  height: 1px
+  background: #c4908f
+  flex-shrink: 0
+
+.books-row
+  display: flex
+  justify-content: center
+  gap: 3px
+  perspective: 600px
+
+.book-spine
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  width: 88px
+  height: 210px
+  background: var(--spine-color)
+  border-radius: 2px 4px 4px 2px
+  cursor: pointer
+  text-decoration: none
+  position: relative
+  box-shadow: inset -2px 0 4px rgba(0, 0, 0, 0.08), 1px 0 2px rgba(0, 0, 0, 0.04)
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease
+
+.spine-rule
+  width: 55%
+  height: 1px
+  background: rgba(255, 255, 255, 0.25)
+  margin: 6px 0
+
+.spine-title
+  font-family: 'Noto Serif SC', serif
+  font-size: 0.8em
+  font-weight: 700
+  color: #fff
+  text-align: center
+  line-height: 1.5
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1)
+  padding: 0 6px
+  letter-spacing: 0.04em
+
+.spine-count
+  font-family: 'JetBrains Mono', monospace
+  font-size: 0.62em
+  color: rgba(255, 255, 255, 0.6)
+  margin-top: 4px
+  letter-spacing: 0.03em
+
+.spine-count.badge-soon
+  font-family: 'Noto Serif SC', serif
+  font-size: 0.56em
+  background: rgba(255, 255, 255, 0.12)
+  padding: 2px 8px
+  border-radius: 6px
+  color: rgba(255, 255, 255, 0.72)
+
+.book-spine:hover
+  transform: translateY(-14px)
+  background: var(--spine-hover)
+  box-shadow: inset -2px 0 4px rgba(0, 0, 0, 0.08), 4px 8px 18px rgba(0, 0, 0, 0.1)
+
+.shelf-edge
+  height: 2px
+  background: linear-gradient(90deg, transparent 0%, #e0d4d4 10%, #e0d4d4 90%, transparent 100%)
+  margin: 0 2em
+  border-radius: 1px
+
+@media (max-width: 768px)
+  .books-row
+    flex-wrap: wrap
+    gap: 6px
+    justify-content: center
+  .book-spine
+    width: 72px
+    height: 170px
+  .spine-title
+    font-size: 0.72em
+  #bookshelf
+    margin: 0 1em 2em
+    padding: 1.5em 1em 0.8em
+  .shelf-edge
+    margin: 0 1em
+
+// ---------------------------------------------------------------
+// 滚动条
+// ---------------------------------------------------------------
+
+::-webkit-scrollbar
+  width: 6px
+  height: 6px
+
+::-webkit-scrollbar-track
+  background: #fef6f6
+
+::-webkit-scrollbar-thumb
+  background: #e0d4d4
+  border-radius: 3px
+  &:hover
+    background: #c4908f
+
+// ---------------------------------------------------------------
+// 暗色模式
+// ---------------------------------------------------------------
+
+@media (prefers-color-scheme: dark)
+  body
+    background: linear-gradient(180deg, #0f0e10 0%, #121012 100%) !important
+    background-attachment: fixed
+
+  .sidebar
+    background: #141214 !important
+    box-shadow-color: #2a2628
+
+  .header-inner
+    background: rgba(15, 14, 16, 0.85) !important
+
+  .post-block
+    background: #1a1819 !important
+    border-color: #2a2628
+    &:hover
+      border-color: #3a3438
+
+  h1, h2, h3, h4, h5, h6
+    color: #e8e2e2
+
+  .post-title a
+    color: #e8e2e2 !important
+    &:hover
+      color: #d4a5a5 !important
+
+  .site-author-name
+    color: #e8e2e2 !important
+
+  .site-title
+    color: #e8e2e2 !important
+
+  .post-meta, .post-meta a
+    color: #7a7578 !important
+
+  .post-body
+    color: #c8c2c2
+
+  .highlight
+    background: #141214 !important
+    border-color: #2a2628
+
+  code
+    background: rgba(#d4a5a5, 0.1)
+    color: #d4a5a5
+
+  .footer
+    background: #0f0e10 !important
+
+  .back-to-top
+    background: #1a1819 !important
+    color: #d4a5a5 !important
+    border-color: #2a2628
+    &:hover
+      background: #d4a5a5 !important
+      color: #0f0e10 !important
+
+  .search-popup
+    background: #1a1819 !important
+
+  .search-popup .search-input
+    background: #0f0e10 !important
+    color: #e8e2e2
+    border-color: #2a2628
+
+  .tag-cloud a
+    background: #1a1819
+    border-color: #2a2628
+    color: #7a7578
+    &:hover
+      background: #d4a5a5
+      color: #0f0e10
+
+  .pagination .page-number
+    background: #1a1819
+    color: #7a7578
+    border-color: #2a2628
+    &:hover, &.current
+      background: #d4a5a5
+      color: #0f0e10
+
+  .links-of-author-item a
+    color: #7a7578
+    &:hover
+      color: #d4a5a5
+
+  .site-nav .menu-item a
+    color: #7a7578
+    &:hover
+      color: #d4a5a5
+
+  .toc .nav-item .nav-link
+    color: #7a7578
+    &:hover, &.active
+      color: #d4a5a5 !important
+
+  .reading-progress-bar
+    background: linear-gradient(90deg, #d4a5a5, #b8908f) !important
+
+  .copy-btn
+    background: #141214 !important
+    color: #7a7578 !important
+    border-color: #2a2628 !important
+
+  .github-banner
+    color: #7a7578 !important
+    &:hover
+      color: #d4a5a5 !important
+
+  .site-state-item-count
+    color: #d4a5a5 !important
+
+  ::-webkit-scrollbar-track
+    background: #0f0e10
+
+  ::-webkit-scrollbar-thumb
+    background: #2a2628
+    &:hover
+      background: #3a3438
+
+  .post-button .btn
+    color: #d4a5a5 !important
+    border-color: #2a2628 !important
+    &:hover
+      color: #0f0e10 !important
+      background: #d4a5a5 !important
+      border-color: #d4a5a5 !important
+
+  .post-body p a
+    color: #d4a5a5
+    border-bottom-color: rgba(#d4a5a5, 0.3)
+    &:hover
+      color: #e8bab8
+
+  .reward-container button
+    background: #141214
+    color: #d4a5a5
+    border-color: #2a2628
+    &:hover
+      background: #d4a5a5
+      color: #0f0e10
+
+  #bookshelf
+    background: transparent !important
+    border-color: transparent !important
+
+  .shelf-heading
+    color: #e8e2e2 !important
+
+  .shelf-line
+    background: #d4a5a5 !important

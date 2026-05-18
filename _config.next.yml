@@ -23,27 +23,13 @@ minify: false
 # 自定义文件路径（覆盖主题模板片段）
 # 在 source/_data/ 目录下创建对应文件即可覆盖主题默认模板
 custom_file_path:
-  # <head> 标签内注入自定义内容（如 SEO meta、第三方脚本）
   head: source/_data/head.njk
-  # 导航栏区域自定义
-  header: source/_data/header.njk
-  # 侧边栏区域自定义
   sidebar: source/_data/sidebar.njk
-  # 文章元信息区域自定义（作者、日期、分类等）
-  postMeta: source/_data/post-meta.njk
-  # 文章正文开始前注入内容
   postBodyStart: source/_data/post-body-start.njk
-  # 文章正文结束后注入内容
   postBodyEnd: source/_data/post-body-end.njk
-  # 页脚区域自定义
   footer: source/_data/footer.njk
-  # </body> 标签前注入内容（如统计脚本）
   bodyEnd: source/_data/body-end.njk
-  # Stylus 变量覆盖（颜色、字号、间距等）
   variable: source/_data/variables.styl
-  # Stylus mixin 覆盖
-  #mixin: source/_data/mixins.styl
-  # 自定义 CSS 样式
   style: source/_data/styles.styl
 
 
@@ -467,17 +453,15 @@ back2top:
   scrollpercent: true
 
 # 阅读进度条（页面顶部）
-# 默认值: enable: false, start_at: left, position: top, reversed: false, color: "#37c6c0", height: 3px
+# 颜色由 styles.styl 中的 CSS 覆盖控制
+# 默认值: enable: false
 reading_progress:
   enable: true
-  # 进度条起始位置: left | right
   start_at: left
-  # 进度条位置: top | bottom
   position: top
-  # 反向（从右到左）
   reversed: false
-  color: "#37c6c0"
-  height: 3px
+  color: "#c4908f"
+  height: 2px
 
 # 书签功能（记住阅读位置）
 # 默认值: enable: false, color: "#222", save: auto
@@ -508,39 +492,36 @@ font:
   # 启用自定义字体
   enable: true
 
-  # 字体 CDN 地址（external: true 时生效）
-  # 默认值: https://fonts.googleapis.com
+  # 字体 CDN 地址
   host: https://fonts.googleapis.com
 
-  # 全局字体（<body> 内所有元素）
-  # external: true 从 CDN 加载 | false 使用本地/系统字体
-  # Comic Sans MS 是系统内置字体，无需 CDN 加载，设为 false 避免 wasted request
+  # 全局字体
   global:
     external: false
-    family: Comic Sans MS
-    size:
+    family: Noto Serif SC, PingFang SC
+    size: 1
 
-  # 站点标题字体 (.site-title)
+  # 站点标题字体
   title:
-    external: true
-    family:
-    size:
+    external: false
+    family: Source Serif 4, Noto Serif SC
+    size: 1.5
 
   # 标题字体 (h1-h6)
   headings:
-    external: true
-    family:
+    external: false
+    family: Source Serif 4, Noto Serif SC
     size:
 
-  # 文章正文字体 (.post-body)
+  # 文章正文字体
   posts:
-    external: true
-    family:
+    external: false
+    family: Noto Serif SC, PingFang SC
 
-  # 代码字体 (<code> 和代码块)
+  # 代码字体
   codes:
     external: true
-    family:
+    family: JetBrains Mono
 
 
 # ---------------------------------------------------------------
