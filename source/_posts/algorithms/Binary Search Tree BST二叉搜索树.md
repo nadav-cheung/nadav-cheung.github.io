@@ -1,8 +1,6 @@
 ---
-title: 《Binary Search Tree BST二叉搜索树》
-categories:
-  - 算法与数据结构
-  - 二分搜索树
+title: Binary Search Tree BST二叉搜索树
+categories: [算法与数据结构]
 tags:
   - BST
   - 二分搜索树

@@ -1,10 +1,7 @@
 ---
-title: 《手写ArrayList》
-categories:
-  - 算法与数据结构
-  - ArrayList
+title: 手写ArrayList
+categories: [算法与数据结构]
 tags:
-  - 算法与数据结构
   - List
   - ArrayList
 sticky: 3018

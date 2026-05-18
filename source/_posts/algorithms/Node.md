@@ -1,12 +1,7 @@
 ---
-title: 《Node》
-categories:
-  - 算法与数据结构
-  - Node
-tags:
-  - 算法与数据结构
-  - 节点
-  - Node
+title: Node
+categories: [算法与数据结构]
+tags: [节点]
 sticky: 3019
 abbrlink: fc608e54
 ---

@@ -1,11 +1,7 @@
 ---
-title: 《Tree的基本概念》
-categories:
-  - 算法与数据结构
-  - Tree
-tags:
-  - 算法与数据结构
-  - Tree
+title: Tree的基本概念
+categories: [算法与数据结构]
+tags: [Tree]
 sticky: 3117
 abbrlink: 6e5a1512
 ---

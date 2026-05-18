@@ -1,10 +1,7 @@
 ---
-title: 《优先队列PriorityQueue》
-categories:
-  - 算法与数据结构
-  - PriorityQueue
+title: 优先队列PriorityQueue
+categories: [算法与数据结构]
 tags:
-  - 算法与数据结构
   - PriorityQueue
   - 优先队列
   - Queue

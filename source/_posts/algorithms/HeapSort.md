@@ -1,11 +1,8 @@
 ---
 mathjax: true
-title: 《HeapSort》
-categories:
-  - 算法与数据结构
-  - HeapSort
+title: HeapSort
+categories: [算法与数据结构]
 tags:
-  - 算法与数据结构
   - 堆排序
   - 堆
 sticky: 3014

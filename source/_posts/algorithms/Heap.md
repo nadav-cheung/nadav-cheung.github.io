@@ -1,12 +1,8 @@
 ---
 mathjax: true
-title: 《Heap》
-categories:
-  - 算法与数据结构
-  - Heap
-tags:
-  - 算法与数据结构
-  - 堆
+title: Heap
+categories: [算法与数据结构]
+tags: [堆]
 sticky: 3122
 abbrlink: 5eb18949
 ---
