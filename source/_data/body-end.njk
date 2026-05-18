@@ -59,7 +59,7 @@
 {#- 构建时生成分类文章计数 JSON -#}
 <script id="category-data" type="application/json">
 {
-  {%- for cat in site.categories.toArray() %}
+  {%- for cat in site.categories %}
   "{{ cat.name }}": {{ cat.posts.length }}{% if not loop.last %},{% endif %}
   {%- endfor %}
 }
