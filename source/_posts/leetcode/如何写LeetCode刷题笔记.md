@@ -1,5 +1,4 @@
 ---
-
 mathjax: true
 title: 如何写LeetCode刷题笔记
 categories: [LeetCode刷题笔记]

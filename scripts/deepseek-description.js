@@ -115,6 +115,10 @@ function needsCategories(fm) {
   return !m2;
 }
 
+function removeEmptyKey(fm, key) {
+  return fm.replace(new RegExp(`^${key}:\\s*\\n(?!\\s*-)`, 'gm'), '');
+}
+
 hexo.extend.filter.register('before_generate', async function () {
   const config = getConfig();
   if (!config.enable) return;
@@ -141,7 +145,7 @@ hexo.extend.filter.register('before_generate', async function () {
     const fmEnd = raw.indexOf('\n---', 3);
     if (fmEnd === -1) continue;
 
-    let fm = raw.slice(3, fmEnd);
+    let fm = raw.slice(raw.indexOf('---') + 3, fmEnd);
     const body = raw.slice(fmEnd + 4);
 
     const abbrMatch = fm.match(/abbrlink:\s*['"]?(\S+)/);
@@ -177,8 +181,9 @@ hexo.extend.filter.register('before_generate', async function () {
       }
     }
 
-    // Categories
+    // Categories — remove empty key before appending
     if (needsCategories(fm) && content.length >= 50) {
+      fm = removeEmptyKey(fm, 'categories');
       const cacheKey = `cats:${key}`;
       if (cache[cacheKey]) {
         fm += `\n${cache[cacheKey]}`;
@@ -203,8 +208,9 @@ hexo.extend.filter.register('before_generate', async function () {
       }
     }
 
-    // Tags
+    // Tags — remove empty key before appending
     if (needsTags(fm) && content.length >= 50) {
+      fm = removeEmptyKey(fm, 'tags');
       const cacheKey = `tags:${key}`;
       if (cache[cacheKey]) {
         fm += `\n${cache[cacheKey]}`;

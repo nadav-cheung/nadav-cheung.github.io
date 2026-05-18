@@ -363,3 +363,12 @@ sitemap:
 # 百度 Sitemap
 baidusitemap:
   path: baidusitemap.xml
+
+# DeepSeek AI 自动生成文章摘要
+# provider: openai (OpenAI 兼容) 或 anthropic (Anthropic 兼容)
+deepseek_description:
+  enable: true
+  provider: anthropic
+  api_key: sk-a792be7e2f0e4fe586fb1ceac312cf29
+  base_url: https://api.deepseek.com/anthropic
+  model: deepseek-v4-pro[1m]
