@@ -1,4 +1,5 @@
 ---
+
 title: 手写ArrayList
 categories: [算法与数据结构]
 tags:
@@ -6,6 +7,7 @@ tags:
   - ArrayList
 sticky: 3018
 abbrlink: e7bb25a0
+description: "本文围绕手写ArrayList展开，深入解析基于数组的List实现原理。从线性表的基本概念入手，阐明其动态大小与有序集合特点，并梳理添加、删除、查找、遍历等核心操作。重点剖析底层数组结构，包括默认容量、空实例数组与存储数据的elementData，详细说明初始化、元素添加、一维数组扩容实现、指定位置插入、元素替换及删除等关键步骤，为理解ArrayList内部机制提供直观参考。"
 ---
 
 ## 《算法与数据结构:手写ArrayList》

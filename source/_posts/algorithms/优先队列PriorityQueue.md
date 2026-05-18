@@ -1,4 +1,5 @@
 ---
+
 title: 优先队列PriorityQueue
 categories: [算法与数据结构]
 tags:
@@ -8,6 +9,7 @@ tags:
 sticky: 3124
 abbrlink: dbb3c5e
 date: 2024-02-20 13:44:07
+description: "优先队列基于二叉堆，按优先级动态排序，支持高效插入与删除。核心操作上浮与下沉保证极值元素出队。文章涵盖其原理、Java实现及在任务调度、图算法、网络流量管理、实时数据处理等领域的应用，凸显数据结构实用价值。"
 ---
 
 ## 《算法与数据结构：优先队列PriorityQueue》

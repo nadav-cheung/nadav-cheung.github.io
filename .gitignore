@@ -60,3 +60,6 @@ build/
 # 个人账号保密
 _config.next.yml
 _config.yml
+
+# DeepSeek 缓存
+.deepseek-cache.json

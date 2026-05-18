@@ -1,4 +1,5 @@
 ---
+
 mathjax: true
 title: HeapSort
 categories: [算法与数据结构]
@@ -7,6 +8,7 @@ tags:
   - 堆
 sticky: 3014
 abbrlink: 607bf52d
+description: "堆排序利用最大堆或最小堆数据结构，通过构建堆和反复交换堆顶与末尾元素并调整剩余堆来实现排序。该算法时间复杂度始终为O(nlogn)，空间复杂度为O(1)，属于原地排序，但相等元素相对顺序可能改变，因此不稳定。掌握堆性质和下沉（siftDown）调整是理解堆排序的关键。"
 ---
 
 ## 《算法与数据结构:HeapSort》

@@ -1,10 +1,12 @@
 ---
+
 mathjax: true
 title: Heap
 categories: [算法与数据结构]
 tags: [堆]
 sticky: 3122
 abbrlink: 5eb18949
+description: "堆是一种完全二叉树，分为最大堆和最小堆，常用数组存储，通过索引计算快速定位父子节点。插入与删除依赖siftUp和siftDown操作，以O(log n)维护堆"
 ---
 
 ## 《算法与数据结构:Heap》

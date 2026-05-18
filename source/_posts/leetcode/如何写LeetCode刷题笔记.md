@@ -1,4 +1,5 @@
 ---
+
 mathjax: true
 title: 如何写LeetCode刷题笔记
 categories: [LeetCode刷题笔记]
@@ -8,6 +9,7 @@ tags:
   - 写作
 sticky: 3000
 abbrlink: '32e49274'
+description: "撰写LeetCode刷题笔记需系统化地从选题入手，兼顾难度层级、主题分类与读者需求。核心在于详述解题思路，从问题理解、直觉分析到算法选择与"
 ---
 
 ## 《如何写LeetCode刷题笔记》
