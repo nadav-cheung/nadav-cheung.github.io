@@ -3,6 +3,36 @@ title: 第 12 章：Channel 的变装——适配器模式
 abbrlink: 3a0a77c4
 date: 2026-05-19 00:12:00
 chapter: 13
+description: Channel 适配器模式实现，17 个渠道如何统一接口
+categories:
+  - QwenPaw 架构设计
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
+description: Channel 适配器模式实现，17 个渠道如何统一接口
+categories:
+  - QwenPaw 架构设计
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
+description: Channel 适配器模式实现，17 个渠道如何统一接口
+categories:
+  - QwenPaw 架构设计
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
 ---
 
 ```

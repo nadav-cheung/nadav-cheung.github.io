@@ -3,6 +3,36 @@ title: 第 14 章：Skills 的工坊——插件架构
 abbrlink: b8f8c810
 date: 2026-05-19 00:14:00
 chapter: 15
+description: Skills 插件架构，技能与工具的区别及技能池管理
+categories:
+  - QwenPaw 工坊实战
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
+description: Skills 插件架构，技能与工具的区别及技能池管理
+categories:
+  - QwenPaw 工坊实战
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
+description: Skills 插件架构，技能与工具的区别及技能池管理
+categories:
+  - QwenPaw 工坊实战
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
 ---
 
 ```

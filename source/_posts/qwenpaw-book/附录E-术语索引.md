@@ -3,6 +3,36 @@ title: 附录 E：术语索引
 abbrlink: 204c5058
 date: 2026-05-19 00:31:00
 chapter: 32
+description: 术语解释与对照表，按拼音排序标注首次出现章节
+categories:
+  - QwenPaw 参考资料
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
+description: 术语解释与对照表，按拼音排序标注首次出现章节
+categories:
+  - QwenPaw 参考资料
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
+description: 术语解释与对照表，按拼音排序标注首次出现章节
+categories:
+  - QwenPaw 参考资料
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
 ---
 
 按拼音排序。标注首次出现的章节号，方便回溯查阅。

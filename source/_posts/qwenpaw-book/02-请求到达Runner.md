@@ -3,6 +3,36 @@ title: 第 2 章：请求到达 Runner
 abbrlink: a6ad8bb6
 date: 2026-05-19 00:02:00
 chapter: 3
+description: Runner 如何调度处理请求，工作空间管理与会话持久化机制
+categories:
+  - QwenPaw 请求的一生
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
+description: Runner 如何调度处理请求，工作空间管理与会话持久化机制
+categories:
+  - QwenPaw 请求的一生
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
+description: Runner 如何调度处理请求，工作空间管理与会话持久化机制
+categories:
+  - QwenPaw 请求的一生
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
 ---
 
 ```

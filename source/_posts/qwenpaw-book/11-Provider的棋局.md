@@ -3,6 +3,36 @@ title: 第 11 章：Provider 的棋局——策略模式与抽象层
 abbrlink: 2635256e
 date: 2026-05-19 00:11:00
 chapter: 12
+description: Provider 策略模式与抽象层设计，六种 Provider 实现差异
+categories:
+  - QwenPaw 架构设计
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
+description: Provider 策略模式与抽象层设计，六种 Provider 实现差异
+categories:
+  - QwenPaw 架构设计
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
+description: Provider 策略模式与抽象层设计，六种 Provider 实现差异
+categories:
+  - QwenPaw 架构设计
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
 ---
 
 ```

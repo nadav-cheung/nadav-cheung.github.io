@@ -3,6 +3,36 @@ title: 第 3 章：Agent 的诞生
 abbrlink: 7a05c318
 date: 2026-05-19 00:03:00
 chapter: 4
+description: Agent 对象如何被创建和管理，Mixin 注入与工厂模式的应用
+categories:
+  - QwenPaw 请求的一生
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
+description: Agent 对象如何被创建和管理，Mixin 注入与工厂模式的应用
+categories:
+  - QwenPaw 请求的一生
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
+description: Agent 对象如何被创建和管理，Mixin 注入与工厂模式的应用
+categories:
+  - QwenPaw 请求的一生
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
 ---
 
 ```

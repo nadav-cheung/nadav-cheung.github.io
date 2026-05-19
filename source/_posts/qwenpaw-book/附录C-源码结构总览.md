@@ -3,6 +3,36 @@ title: 附录C：源码结构总览
 abbrlink: cf3d2281
 date: 2026-05-19 00:29:00
 chapter: 30
+description: 源码目录结构说明，15 个子包职责与关键文件
+categories:
+  - QwenPaw 参考资料
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
+description: 源码目录结构说明，15 个子包职责与关键文件
+categories:
+  - QwenPaw 参考资料
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
+description: 源码目录结构说明，15 个子包职责与关键文件
+categories:
+  - QwenPaw 参考资料
+tags:
+  - Python
+  - AI助手
+  - FastAPI
+  - AgentScope
+  - 源码解析
+  - QwenPaw
 ---
 
 源码根目录：`src/qwenpaw/`
