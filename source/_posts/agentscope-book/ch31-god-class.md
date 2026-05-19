@@ -7,7 +7,6 @@ chapter: 31
 description: "AgentScope 的 Toolkit 单文件聚合了注册、调用、中间件等九种工具职责，共 1684 行。文章辨析它不是职责散乱的“上帝类”，而是高内聚的聚合根，对外接口简洁、状态一致。通过职责分布测量、与 LangChain 等框架横向对比以及提取 Middleware 的重构推演，论证了当前聚合设计的合理性与未来随增长拆分的可行边界。"
 categories:
   - AgentScope是如何运行的
-  - ```
 tags:
   - 代码重构
   - 设计模式

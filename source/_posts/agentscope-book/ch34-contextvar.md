@@ -13,7 +13,6 @@ tags:
   - ContextVar
   - AgentScope
   - 异步安全
-  - ```
 ---
 
 > **难度**：进阶
