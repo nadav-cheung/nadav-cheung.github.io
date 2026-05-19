@@ -2,7 +2,7 @@
 
 title: 第 32 章：编译期 Hook vs 运行时 Hook
 abbrlink: 3630c5b9
-date: 2024-03-31 00:00:00
+date: 2024-03-08 00:00:00
 chapter: 32
 description: "AgentScope 利用元类在类定义时自动为 reply、observe、print 等方法注入 Hook 包装，确保所有子类无需手动添加防重入与拦截逻辑，实现统一执行链且不侵入业务代码。相比 LangChain 等框架的运行时回调方案，这种编译期注入虽然调试较难、透明度低，但避免了遗漏风险与多重继承中重复执行的问题，代价是调用栈和 IDE 支持较差。"
 categories:

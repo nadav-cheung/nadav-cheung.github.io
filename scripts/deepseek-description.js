@@ -124,6 +124,10 @@ function needsList(fm, key) {
   return !block;
 }
 
+function sanitizeYaml(val) {
+  return val.replace(/\x60{3,}/g, '').replace(/[<>|&`]/g, '').trim();
+}
+
 function removeEmptyKey(fm, key) {
   return fm.replace(new RegExp(`^${key}:\\s*\\n(?!\\s*-)`, 'gm'), '');
 }
@@ -183,7 +187,7 @@ hexo.extend.filter.register('before_generate', async function () {
       } else {
         try {
           hexo.log.info(`[deepseek-ai] desc → ${title}`);
-          const desc = await callLLM(config, `请为以下技术博客文章生成一段 80-120 字的中文摘要，直接输出摘要文本，不要加引号、标题或任何前缀：\n\n${content}`);
+          const desc = sanitizeYaml(await callLLM(config, `请为以下技术博客文章生成一段 80-120 字的中文摘要，直接输出摘要文本，不要加引号、标题或任何前缀：\n\n${content}`));
           fm += `\ndescription: "${desc.replace(/"/g, '\\"')}"`;
           cache[cacheKey] = desc;
           descGenerated++;
@@ -208,7 +212,7 @@ hexo.extend.filter.register('before_generate', async function () {
           const resp = await callLLM(config, `请为以下技术博客文章分配合适的分类。只能从以下分类中选择一个：\n- 算法与数据结构\n- LeetCode刷题笔记\n\n直接输出 YAML 格式的 categories 字段（如 "categories:\\n  - 算法与数据结构"），不要加其他内容：\n\n${content}`);
           const catsMatch = resp.match(/categories:\s*\n(\s+-\s+.+)/s);
           if (catsMatch) {
-            const catsYaml = `categories:\n${catsMatch[1].trim().split('\n').map(c => '  - ' + c.replace(/^\s*-\s*/, '').trim()).join('\n')}`;
+            const catsYaml = `categories:\n${catsMatch[1].trim().split('\n').map(c => '  - ' + sanitizeYaml(c.replace(/^\s*-\s*/, ''))).filter(c => c !== '  - ').join('\n')}`;
             fm += `\n${catsYaml}`;
             cache[cacheKey] = catsYaml;
             catsGenerated++;
@@ -234,7 +238,7 @@ hexo.extend.filter.register('before_generate', async function () {
           const resp = await callLLM(config, `请为以下技术博客文章生成 3-5 个标签。要求：直接输出 YAML 格式的 tags 字段（如 "tags:\\n  - 标签1\\n  - 标签2"），不要加其他内容：\n\n${content}`);
           const tagsMatch = resp.match(/tags:\s*\n(\s+-\s+.+)/s);
           if (tagsMatch) {
-            const tagsYaml = `tags:\n${tagsMatch[1].trim().split('\n').map(t => '  - ' + t.replace(/^\s*-\s*/, '').trim()).join('\n')}`;
+            const tagsYaml = `tags:\n${tagsMatch[1].trim().split('\n').map(t => '  - ' + sanitizeYaml(t.replace(/^\s*-\s*/, ''))).filter(t => t !== '  - ').join('\n')}`;
             fm += `\n${tagsYaml}`;
             cache[cacheKey] = tagsYaml;
             tagsGenerated++;

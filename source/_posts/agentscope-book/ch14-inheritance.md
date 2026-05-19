@@ -2,7 +2,7 @@
 
 title: 第 14 章：继承体系——从 StateModule 到 AgentBase
 abbrlink: c9ef8dc2
-date: 2024-03-13 00:00:00
+date: 2024-03-26 00:00:00
 chapter: 14
 description: "Agent 序列化后记忆丢失，根源在于四层继承链中 StateModule 的状态追踪机制。StateModule 通过 `__setattr__` 自动记录子模块，只要记忆类正确继承自 StateModule，就会被递归序列化。排查时需检查 `moduledict` 是否包含记忆属性，非 StateModule 类型的属性则需用 `registerstate` 手动注册。层层递进的职责分离既避免了耦合，也要求修复 bug 时深入理解每层序列化的协作方式。"
 categories:

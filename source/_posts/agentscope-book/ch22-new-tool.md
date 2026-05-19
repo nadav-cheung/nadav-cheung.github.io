@@ -2,7 +2,7 @@
 
 title: 第 22 章：造一个新 Tool——数据库查询工具
 abbrlink: b927000a
-date: 2024-03-21 00:00:00
+date: 2024-03-18 00:00:00
 chapter: 22
 description: "本章从零构建SQLite数据库查询工具，涵盖同步与流式两个版本。同步版直接返回完整查询结果，流式版通过AsyncGenerator逐行输出，适应大数据场景。工具注册时自动生成JSON Schema，并通过preset_kwargs隐藏敏感配置。最后集成到Agent，并引入缓存中间件优化重复查询，完整演示了工具开发的注册、调用与优化流程。"
 categories:
