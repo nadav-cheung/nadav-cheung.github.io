@@ -19,8 +19,9 @@
 
 .sidebar
   background: $bg-white !important
-  border: none !important
-  box-shadow: none !important
+  border: 1px solid $border-color !important
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12) !important
+  border-radius: 6px
 
 .sidebar-inner
   background: transparent !important
@@ -82,6 +83,27 @@
 // 文章
 // ---------------------------------------------------------------
 
+// 标题层级
+.posts-expand .post-title
+  font-size: 1.75em
+
+.post-body
+  line-height: 1.8
+
+  h2
+    font-size: 1.25em
+    margin-top: 2em
+    margin-bottom: 0.6em
+    padding-bottom: 0.3em
+    border-bottom: 1px solid $border-color
+  h3
+    font-size: 1.1em
+    margin-top: 1.6em
+    margin-bottom: 0.5em
+  h4
+    font-size: 1em
+    margin-top: 1.4em
+
 .post-title a
   color: $text-primary !important
   border-bottom: none !important
@@ -129,9 +151,12 @@ pre code
   color: inherit
 
 .highlight
-  background: $bg-light !important
+  background: $bg-white !important
   border: 1px solid $border-color
   border-radius: 4px
+
+  pre
+    background: $bg-white !important
 
 // ---------------------------------------------------------------
 // 标签云
@@ -202,14 +227,19 @@ pre code
 // TOC（文章目录）
 // ---------------------------------------------------------------
 
-.toc .nav-item .nav-link
-  color: $text-secondary
-  border-bottom: none !important
-  &:hover, &.active
-    color: $brand !important
-
-.toc .nav-item .nav-number
-  color: $text-muted
+.post-toc
+  .nav-item
+    padding: 3px 0
+  .nav-link
+    color: $text-secondary
+    border-bottom: none !important
+    line-height: 1.7
+    &:hover, &.active
+      color: $brand !important
+  .nav-number
+    color: $text-muted
+  .nav-child
+    padding-left: 12px
 
 // ---------------------------------------------------------------
 // 打赏
