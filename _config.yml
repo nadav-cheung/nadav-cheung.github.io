@@ -364,6 +364,11 @@ sitemap:
 baidusitemap:
   path: baidusitemap.xml
 
+# QwenPaw 源码解析书籍同步
+qwenpaw_book_sync:
+  enable: true
+  source_root: /Users/nadav/IdeaProjects/QwenPaw/book
+
 # DeepSeek AI 自动生成文章摘要
 # provider: openai (OpenAI 兼容) 或 anthropic (Anthropic 兼容)
 deepseek_description:

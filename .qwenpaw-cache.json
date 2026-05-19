@@ -1,0 +1,198 @@
+{
+  "files": {
+    "00-序章-启程之前.md": {
+      "md5": "474afba3e0b8c521f23c8381dec56308",
+      "integrated": true,
+      "post_abbrlink": "f34f83ee",
+      "post_path": "source/_posts/qwenpaw-book/00-序章-启程之前.md"
+    },
+    "01-浏览器按下回车之后.md": {
+      "md5": "b2d001be0eb2a3231373710b22fb17ea",
+      "integrated": true,
+      "post_abbrlink": "51e46e35",
+      "post_path": "source/_posts/qwenpaw-book/01-浏览器按下回车之后.md"
+    },
+    "02-请求到达Runner.md": {
+      "md5": "70070ef122ac8e4e8bf3051ef4095f70",
+      "integrated": true,
+      "post_abbrlink": "a6ad8bb6",
+      "post_path": "source/_posts/qwenpaw-book/02-请求到达Runner.md"
+    },
+    "03-Agent的诞生.md": {
+      "md5": "aa3526725c08e03deb92c4fed5a40ae9",
+      "integrated": true,
+      "post_abbrlink": "7a05c318",
+      "post_path": "source/_posts/qwenpaw-book/03-Agent的诞生.md"
+    },
+    "04-系统提示词的拼装.md": {
+      "md5": "77ea198650f0c081f1121fac403e6d8c",
+      "integrated": true,
+      "post_abbrlink": "6e55d0d7",
+      "post_path": "source/_posts/qwenpaw-book/04-系统提示词的拼装.md"
+    },
+    "05-进入ReAct循环.md": {
+      "md5": "8ee199bbd0ec67bd4d9a5e4605e24572",
+      "integrated": true,
+      "post_abbrlink": "2b64fa64",
+      "post_path": "source/_posts/qwenpaw-book/05-进入ReAct循环.md"
+    },
+    "06-调用大语言模型.md": {
+      "md5": "e4826a9a04e82b589f9e5b26d1c24cff",
+      "integrated": true,
+      "post_abbrlink": "9c03eb46",
+      "post_path": "source/_posts/qwenpaw-book/06-调用大语言模型.md"
+    },
+    "07-工具的执行.md": {
+      "md5": "019a566064153427db420e9cc7745098",
+      "integrated": true,
+      "post_abbrlink": "872a4e23",
+      "post_path": "source/_posts/qwenpaw-book/07-工具的执行.md"
+    },
+    "08-响应的归途.md": {
+      "md5": "ea1e7331bab98aaf2ff57381764d9913",
+      "integrated": true,
+      "post_abbrlink": "9883b8b3",
+      "post_path": "source/_posts/qwenpaw-book/08-响应的归途.md"
+    },
+    "09-源码的地图.md": {
+      "md5": "80f89f83ff45206f99f812441e788fdb",
+      "integrated": true,
+      "post_abbrlink": "7ad78977",
+      "post_path": "source/_posts/qwenpaw-book/09-源码的地图.md"
+    },
+    "10-Agent的身世.md": {
+      "md5": "56e9be853c3ee74c97a9d407c035d7dc",
+      "integrated": true,
+      "post_abbrlink": "0f07d366",
+      "post_path": "source/_posts/qwenpaw-book/10-Agent的身世.md"
+    },
+    "11-Provider的棋局.md": {
+      "md5": "8b8ed4280a208da8eef4c2a02c900358",
+      "integrated": true,
+      "post_abbrlink": "2635256e",
+      "post_path": "source/_posts/qwenpaw-book/11-Provider的棋局.md"
+    },
+    "12-Channel的变装.md": {
+      "md5": "ac7244b51c00f6eeba62482ca317a2df",
+      "integrated": true,
+      "post_abbrlink": "3a0a77c4",
+      "post_path": "source/_posts/qwenpaw-book/12-Channel的变装.md"
+    },
+    "13-Security的围栏.md": {
+      "md5": "b3fba73604238b7e26f96760b0b422c8",
+      "integrated": true,
+      "post_abbrlink": "9c18a3a2",
+      "post_path": "source/_posts/qwenpaw-book/13-Security的围栏.md"
+    },
+    "14-Skills的工坊.md": {
+      "md5": "8bbd7d2c04a9bea75d69de50d776f556",
+      "integrated": true,
+      "post_abbrlink": "b8f8c810",
+      "post_path": "source/_posts/qwenpaw-book/14-Skills的工坊.md"
+    },
+    "15-造一把新工具.md": {
+      "md5": "0d5db15a365398858eb02ae697a0afd8",
+      "integrated": true,
+      "post_abbrlink": "2f2c0477",
+      "post_path": "source/_posts/qwenpaw-book/15-造一把新工具.md"
+    },
+    "16-造一个新技能.md": {
+      "md5": "92427ef0d12a5e6d28d3474115b1cc65",
+      "integrated": true,
+      "post_abbrlink": "994f0771",
+      "post_path": "source/_posts/qwenpaw-book/16-造一个新技能.md"
+    },
+    "17-接入一个新模型.md": {
+      "md5": "f9bbc35727c505115016e0c1a0d370e5",
+      "integrated": true,
+      "post_abbrlink": "0893e178",
+      "post_path": "source/_posts/qwenpaw-book/17-接入一个新模型.md"
+    },
+    "18-接入一个新频道.md": {
+      "md5": "42ca029119763517b2d8cdf3b4ffbdef",
+      "integrated": true,
+      "post_abbrlink": "7384dd87",
+      "post_path": "source/_posts/qwenpaw-book/18-接入一个新频道.md"
+    },
+    "19-从零到PR.md": {
+      "md5": "187aa9fb7fbcfc4074f81aff426df913",
+      "integrated": true,
+      "post_abbrlink": "217a62b1",
+      "post_path": "source/_posts/qwenpaw-book/19-从零到PR.md"
+    },
+    "20-配置的秘密.md": {
+      "md5": "eb084f830afc31a761725e0f7f073977",
+      "integrated": true,
+      "post_abbrlink": "5be82634",
+      "post_path": "source/_posts/qwenpaw-book/20-配置的秘密.md"
+    },
+    "21-记忆的宫殿.md": {
+      "md5": "78d93a17386a2b70d69cc1ee466b6889",
+      "integrated": true,
+      "post_abbrlink": "62d77eaa",
+      "post_path": "source/_posts/qwenpaw-book/21-记忆的宫殿.md"
+    },
+    "22-自治任务.md": {
+      "md5": "80ed3e54a1737ad80029141f84fc84e8",
+      "integrated": true,
+      "post_abbrlink": "d63b37df",
+      "post_path": "source/_posts/qwenpaw-book/22-自治任务.md"
+    },
+    "23-多智能体协作.md": {
+      "md5": "c2e96a0fe40911a9df4310c811d853df",
+      "integrated": true,
+      "post_abbrlink": "848f499a",
+      "post_path": "source/_posts/qwenpaw-book/23-多智能体协作.md"
+    },
+    "24-插件系统.md": {
+      "md5": "9a31e306d9ebf80683e56e71b2417c1e",
+      "integrated": true,
+      "post_abbrlink": "ce924240",
+      "post_path": "source/_posts/qwenpaw-book/24-插件系统.md"
+    },
+    "25-命令行与部署.md": {
+      "md5": "e4439403c27fb03d75d2247333861f49",
+      "integrated": true,
+      "post_abbrlink": "aec3d1e8",
+      "post_path": "source/_posts/qwenpaw-book/25-命令行与部署.md"
+    },
+    "26-测试与质量.md": {
+      "md5": "5d092b704207a7989df3febedc7de00d",
+      "integrated": true,
+      "post_abbrlink": "a899bdc2",
+      "post_path": "source/_posts/qwenpaw-book/26-测试与质量.md"
+    },
+    "附录A-环境变量速查.md": {
+      "md5": "208fe522b1b252074deedd6ca2d70a1d",
+      "integrated": true,
+      "post_abbrlink": "665ceae0",
+      "post_path": "source/_posts/qwenpaw-book/附录A-环境变量速查.md"
+    },
+    "附录B-CLI命令速查.md": {
+      "md5": "faf518fbca895a5471517be26938144f",
+      "integrated": true,
+      "post_abbrlink": "90b4c758",
+      "post_path": "source/_posts/qwenpaw-book/附录B-CLI命令速查.md"
+    },
+    "附录C-源码结构总览.md": {
+      "md5": "04cf7780c459f4b13bad9337e4a43dce",
+      "integrated": true,
+      "post_abbrlink": "cf3d2281",
+      "post_path": "source/_posts/qwenpaw-book/附录C-源码结构总览.md"
+    },
+    "附录D-错误代码速查.md": {
+      "md5": "68e336716a26ac9b45aa37ffd42f41fb",
+      "integrated": true,
+      "post_abbrlink": "6be695b8",
+      "post_path": "source/_posts/qwenpaw-book/附录D-错误代码速查.md"
+    },
+    "附录E-术语索引.md": {
+      "md5": "2708b2a96987a71bb24e8134b6b72876",
+      "integrated": true,
+      "post_abbrlink": "204c5058",
+      "post_path": "source/_posts/qwenpaw-book/附录E-术语索引.md"
+    }
+  },
+  "source_root": "/Users/nadav/IdeaProjects/QwenPaw/book",
+  "generated_at": "2026-05-19T08:20:53.499Z"
+}
