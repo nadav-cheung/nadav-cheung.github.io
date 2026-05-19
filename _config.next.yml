@@ -490,7 +490,7 @@ github_banner:
 
 font:
   # 启用自定义字体
-  enable: true
+  enable: false
 
   # 字体 CDN 地址
   host: https://fonts.googleapis.com
@@ -498,25 +498,25 @@ font:
   # 全局字体
   global:
     external: false
-    family: Noto Serif SC, PingFang SC
+    family: Comic Sans MS, cursive
     size: 1
 
   # 站点标题字体
   title:
     external: false
-    family: Source Serif 4, Noto Serif SC
+    family: Comic Sans MS, cursive
     size: 1.5
 
   # 标题字体 (h1-h6)
   headings:
     external: false
-    family: Source Serif 4, Noto Serif SC
+    family: Comic Sans MS, cursive
     size:
 
   # 文章正文字体
   posts:
     external: false
-    family: Noto Serif SC, PingFang SC
+    family: Comic Sans MS, cursive
 
   # 代码字体
   codes:
