@@ -1,8 +1,8 @@
 {#- 页脚：站点运行时间 -#}
-<div id="site-time" style="font-family: 'JetBrains Mono', monospace; font-size: 0.85em; color: #a0a0a5; letter-spacing: 0.03em;"></div>
+<div id="site-time" class="site-time-widget"></div>
 <script>
 (function() {
-  const start = new Date(2022, 1, 23, 11, 40, 0);
+  const start = new Date(2022, 0, 23, 11, 40, 0);
   let timer;
   function update() {
     const diff = Date.now() - start;

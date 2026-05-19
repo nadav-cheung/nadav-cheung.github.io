@@ -4,15 +4,15 @@ title: 第 15 章：元类与 Hook——方法调用的拦截
 abbrlink: 1fd0933e
 date: 2026-05-19 00:00:00
 chapter: 15
-description: "本文深入解析AgentScope的Hook系统，通过元类AgentMeta在类定义时自动包装reply等方法，无需修改源码即可注入pre/post逻辑。wrapwithhooks实现防重入保护与链式执行，将位置参数归一化为关键字字典以便Hook修改。Hook支持实例级与类级别注册，ReActAgentMeta进一步扩展reasoning与acting钩子点，构建灵活可扩展的Agent基础设施。"
+description: "深入解析 Hook 系统的元类实现：_AgentMeta 在类定义时自动包装 reply 等方法，_wrap_with_hooks 提供防重入保护与链式执行，参数归一化让 Hook 能安全修改调用参数，_ReActAgentMeta 进一步扩展 reasoning 与 acting 钩子点。"
 categories:
   - AgentScope是如何运行的
 tags:
-  - AgentScope
-  - Hook机制
   - Python元类
-  - Agent开发
-  - 源码分析
+  - Hook机制
+  - 方法拦截
+  - 装饰器模式
+  - AOP编程
 ---
 
 > **难度**：进阶

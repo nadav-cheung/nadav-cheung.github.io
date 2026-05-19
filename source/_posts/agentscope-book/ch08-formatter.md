@@ -5,15 +5,16 @@ title: 第 8 站：格式转换
 abbrlink: a5de3ffa
 date: 2026-05-19 00:00:00
 chapter: 8
+description: "解析AgentScope中Formatter的三层继承体系，从FormatterBase到TruncatedFormatterBase的Token截断，再到OpenAIChatFormatter的具体转换。讲解保护系统提示、工具调用与结果成对删除等截断规则，以及Formatter独立于Model适配多种API的设计。"
 categories:
   - AgentScope是如何运行的
 tags:
-  - AgentScope
   - Formatter
   - Token截断
   - API格式转换
   - 多模态消息
-description: "本文解析了 AgentScope 框架中 Formatter 组件的三层继承体系，阐述其如何将内部 Msg 对象翻译为大模型 API 所需的 JSON 字典列表。重点介绍了 Token 循环截断策略及其核心规则，包括保护系统提示、工具调用与结果成对删除等机制，并说明了 Formatter 独立于 Model 的设计优势，使同一格式转换器可适配多种兼容服务。"
+  - 继承体系
+  - LLM API
 ---
 
 > 消息在 Agent 内部用的是 `Msg` 对象，但 OpenAI API 要的是 `[{"role": "user", "content": "..."}]` 这样的 JSON——谁来负责翻译？

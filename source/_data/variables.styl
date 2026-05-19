@@ -1,41 +1,57 @@
 // ===============================================================
-// 清雅书房 - 主题变量覆盖
-// Elegant Pink-White × Editorial Aesthetic
+// 设计令牌 (Design Tokens) — 全站颜色唯一定义处
+// 改色只改此文件，styles.styl / njk 模板只引用，不硬编码
 // ===============================================================
 
-// 品牌色 — 淡玫瑰 (dusty rose)
-$rose          = #c4908f
-$rose-dk       = #b07a79
-$rose-dim      = #a08580
+// 品牌
+$brand       = #555555
+$brand-dk    = #333333
+$brand-lt    = #777777
 
-// 背景 — 白至粉白渐变
-$body-bg-color                = #ffffff
-$content-bg-color             = #ffffff
-$card-bg-color                = #fef7f7
+// 文字
+$text-primary   = #1a1a1a
+$text-secondary = #666666
+$text-muted     = #999999
 
-// 文字 — 墨色
-$text-color                   = #2d2d32
-$blockquote-color             = #8a8a90
+// 背景
+$bg-white = #ffffff
+$bg-light = #f8f8f8
+
+// 边框
+$border-color = #e8e8e8
+
+// ===============================================================
+// NexT 主题变量覆盖 — 全部引用上方令牌
+// ===============================================================
+
+// 背景
+$body-bg-color                  = $bg-white
+$content-bg-color               = $bg-white
+$card-bg-color                  = $bg-light
+
+// 文字
+$text-color                     = $text-primary
+$blockquote-color               = $text-muted
 
 // 链接
-$link-color                   = $rose
-$link-hover-color             = $rose-dk
-$link-decoration-color        = rgba($rose, 0.3)
+$link-color                     = $brand
+$link-hover-color               = $brand-dk
+$link-decoration-color          = rgba($brand, 0.2)
 
-// 选择
-$selection-bg                 = $rose
-$selection-color              = #ffffff
+// 选中
+$selection-bg                   = $brand
+$selection-color                = $bg-white
 
 // 表格
-$table-border-color           = #efe8e8
-$table-cell-border-bottom-color = #efe8e8
-$table-row-odd-bg-color       = #fdf8f8
-$table-row-hover-bg-color     = #fef5f5
+$table-border-color             = $border-color
+$table-cell-border-bottom-color = $border-color
+$table-row-odd-bg-color         = $bg-light
+$table-row-hover-bg-color       = $bg-light
 
 // 按钮
-$btn-default-bg               = $rose
-$btn-default-color            = #ffffff
-$btn-default-border-color     = $rose
-$btn-default-hover-bg         = $rose-dk
-$btn-default-hover-color      = #ffffff
-$btn-default-hover-border-color = $rose-dk
+$btn-default-bg                 = $brand
+$btn-default-color              = $bg-white
+$btn-default-border-color       = $brand
+$btn-default-hover-bg           = $brand-dk
+$btn-default-hover-color        = $bg-white
+$btn-default-hover-border-color = $brand-dk

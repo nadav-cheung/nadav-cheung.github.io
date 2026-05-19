@@ -4,15 +4,16 @@ title: 第 14 章：继承体系——从 StateModule 到 AgentBase
 abbrlink: c9ef8dc2
 date: 2026-05-19 00:00:00
 chapter: 14
-description: "Agent 序列化后记忆丢失，根源在于四层继承链中 StateModule 的状态追踪机制。StateModule 通过 `__setattr__` 自动记录子模块，只要记忆类正确继承自 StateModule，就会被递归序列化。排查时需检查 `moduledict` 是否包含记忆属性，非 StateModule 类型的属性则需用 `registerstate` 手动注册。层层递进的职责分离既避免了耦合，也要求修复 bug 时深入理解每层序列化的协作方式。"
+description: "以"记忆丢失"Bug 为线索，逐层拆解从 StateModule 到 ReActAgent 的四层继承链，解析每层的职责边界与序列化协作机制，帮助读者掌握对象状态持久化的排查思路。"
 categories:
   - AgentScope是如何运行的
 tags:
-  - Agent 架构
-  - 序列化与反序列化
-  - 继承与多态
-  - 源代码调试
-  - 记忆丢失修复
+  - 继承体系
+  - 序列化机制
+  - StateModule
+  - 面向对象设计
+  - Bug排查
+  - Agent架构
 ---
 
 > **难度**：中等

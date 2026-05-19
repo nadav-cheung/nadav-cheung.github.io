@@ -4,15 +4,15 @@ title: 第 19 章：发布-订阅——多 Agent 通信的广播机制
 abbrlink: 8c168bd0
 date: 2026-05-19 00:00:00
 chapter: 19
-description: "发布-订阅模式下，MsgHub作为消息调度中心实现Agent间自动广播。发布者无需知晓订阅者，三者协作：AgentBase的subscribers字典按Hub名称管理订阅关系；call方法在回复后自动调用broadcasttosubscribers分发消息，并移除内部思考块防止信息泄漏；MsgHub作为异步上下文管理器统一注册与清理订阅。消息最终通过observe存入各Agent记忆，实现完全解耦的会话语境共享。"
+description: "解析 MsgHub 实现的发布-订阅广播机制：AgentBase 维护订阅者字典，__call__ 在回复后自动广播并移除思考块防止信息泄漏，MsgHub 作为异步上下文管理器统一注册与清理订阅关系，实现多 Agent 间的松耦合通信。"
 categories:
   - AgentScope是如何运行的
 tags:
   - 发布-订阅模式
-  - AgentScope
   - MsgHub
-  - 多智能体协作
-  - 源码解析
+  - 多智能体通信
+  - 消息广播
+  - 松耦合架构
 ---
 
 > **难度**：中等

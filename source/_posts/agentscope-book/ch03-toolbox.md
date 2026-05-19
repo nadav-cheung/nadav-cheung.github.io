@@ -4,15 +4,16 @@ title: 第 3 章 准备工具箱
 abbrlink: 70891d57
 date: 2026-05-19 00:00:00
 chapter: 3
-description: "本文聚焦Agentscope框架初始化流程，解析`agentscope.init()`与异步基础。路线图明确章节处于准备阶段，核心是理解`await`实现非阻塞等待的本质。通过逐行阅读源码，揭示了`import`时配置实例`config`已生成默认值，而`init()`函数则负责按需覆盖项目名、日志路径等参数。文章重点剖析了`ContextVar`的设计动机，它通过上下文隔离机制，确保并发场景下各Agent的全局配置互不干扰，为后续多任务协同奠定基础。"
+description: "聚焦AgentScope框架初始化流程，从async/await异步编程基础讲起，逐步解析agentscope.init()源码实现。揭示模块导入时配置已生成默认值、init()按需覆盖参数的机制，重点剖析ContextVar上下文隔离设计如何确保并发场景下各Agent的全局配置互不干扰。"
 categories:
   - AgentScope是如何运行的
 tags:
-  - AgentScope
-  - 源码阅读
+  - 框架初始化
   - async/await
-  - init
   - ContextVar
+  - 异步编程
+  - 源码解析
+  - Python并发
 ---
 
 > **卷一每章的结构**：路线图 → 知识补全 → 源码入口 → 逐行阅读 → 调试实践 → 试一试 → 检查点 → 下一站预告

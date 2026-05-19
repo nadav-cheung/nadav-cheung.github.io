@@ -3,11 +3,16 @@ title: 第 1 章：什么是大模型（LLM）
 abbrlink: 9038c0d2
 date: 2026-05-19 00:00:00
 chapter: 1
-description: "本章从“超级输入法”的类比入手，解释大模型作为文本预测引擎如何涌现理解指令、推理和格式输出能力。随后介绍Chat API的四角色消息机制与无状态对话原理，引出Tool Calling让模型生成函数调用意图，再由代码执行并返回结果。最后梳理AgentScope框架如何封装这些底层能力，以ReAct循环实现天气查询Agent，串联起“思考—行动—反馈”的完整流程。"
+description: “从超级输入法类比出发，通俗解释大语言模型的文本预测本质及涌现出的指令理解与推理能力。讲解Chat API四角色消息机制与无状态对话原理，剖析Tool Calling如何让模型生成函数调用意图，最后展示AgentScope以ReAct循环串联思考、行动与反馈的天气查询Agent示例。”
 categories:
   - AgentScope是如何运行的
 tags:
-  - 大模型
+  - 大语言模型
+  - Chat API
+  - Tool Calling
+  - ReAct
+  - LLM入门
+  - 智能体框架
 ---
 
 这一章回答三个问题：大模型是什么、它怎么跟你对话、它怎么调用外部工具。读完之后，你会理解全书追踪的那个"天气查询 Agent"到底依赖了什么底层能力。

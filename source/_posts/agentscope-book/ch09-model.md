@@ -4,15 +4,16 @@ title: 第 9 站：调用模型
 abbrlink: 03dd72ec
 date: 2026-05-19 00:00:00
 chapter: 9
-description: "本文深入 AgentScope 模型适配层，剖析 ChatModelBase 统一调用接口及流式/非流式响应解析流程。详细解读 ChatResponse 的 Text、ToolUse、Thinking 等内容块类型，并展示结构化输出如何借助工具调用伪装实现自动回退。还涵盖流式增量累积、调试技巧与推理模型思考过程暴露机制。"
+description: "深入AgentScope模型适配层源码，剖析ChatModelBase统一调用接口与流式、非流式两种响应解析流程。详细解读ChatResponse中Text、ToolUse、Thinking等内容块类型，展示结构化输出如何借助工具调用伪装实现自动回退，涵盖流式增量累积与推理模型思考过程暴露机制。"
 categories:
   - AgentScope是如何运行的
 tags:
-  - AgentScope
-  - 模型源码
+  - 模型适配
   - 流式响应
   - 结构化输出
   - ChatResponse
+  - 工具调用
+  - API集成
 ---
 
 > Formatter 把消息翻译好了，现在终于要发送给大模型了。我们追踪 HTTP 请求从发出到响应的全过程。

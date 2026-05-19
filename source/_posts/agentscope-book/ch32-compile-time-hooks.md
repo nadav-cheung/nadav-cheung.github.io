@@ -4,15 +4,16 @@ title: 第 32 章：编译期 Hook vs 运行时 Hook
 abbrlink: 3630c5b9
 date: 2026-05-19 00:00:00
 chapter: 32
-description: "AgentScope 利用元类在类定义时自动为 reply、observe、print 等方法注入 Hook 包装，确保所有子类无需手动添加防重入与拦截逻辑，实现统一执行链且不侵入业务代码。相比 LangChain 等框架的运行时回调方案，这种编译期注入虽然调试较难、透明度低，但避免了遗漏风险与多重继承中重复执行的问题，代价是调用栈和 IDE 支持较差。"
+description: "对比元类编译期注入与运行时动态包装两种 Hook 实现策略，解析 AgentScope 选择编译期的三大理由：覆盖保证、继承链防重入安全、业务代码零侵入。深入追踪防重入机制的调用链执行过程，并讨论调试困难、元类恐惧等代价。"
 categories:
   - AgentScope是如何运行的
 tags:
   - Python元类
   - 编译期注入
   - Hook机制
-  - AgentScope
+  - 防重入
   - 设计决策
+  - 方法拦截
 ---
 
 > **难度**：进阶

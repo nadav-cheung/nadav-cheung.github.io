@@ -4,15 +4,16 @@ title: 第 23 章：造一个新 Model Provider——接入 FastLLM API
 abbrlink: ca4b4aa4
 date: 2026-05-19 00:00:00
 chapter: 23
-description: "本文以假想的FastLLM服务为例，演示分三步接入新模型：先实现非流式调用与配套Formatter，再扩展支持SSE流式响应，并说明增量累积的解析思路，最后通过将Pydantic模型伪装为工具调用实现结构化输出。文中强调Model与Formatter分离的设计收益，并给出PR检查清单、自检练习及设计图，帮助读者完整掌握模型适配器的开发流程。"
+description: "本章以虚构的 FastLLM 服务为例，分三步实现完整的模型适配器：先搭建非流式调用与配套 Formatter，再扩展支持 SSE 流式响应及增量累积解析，最后通过将 Pydantic 模型伪装为工具调用实现结构化输出。全文贯穿 Model 与 Formatter 分离的设计理念，帮助读者掌握接入任意大模型 API 的开发流程。"
 categories:
   - AgentScope是如何运行的
 tags:
-  - AgentScope
-  - Model Provider
-  - FastLLM
+  - 模型适配器
+  - 流式响应
+  - SSE
   - Formatter
   - 结构化输出
+  - Pydantic
 ---
 
 > **难度**：进阶

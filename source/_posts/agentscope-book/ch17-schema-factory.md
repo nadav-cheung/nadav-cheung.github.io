@@ -8,12 +8,13 @@ chapter: 17
 categories:
   - AgentScope是如何运行的
 tags:
-  - AgentScope
+  - 工厂模式
   - JSON Schema
   - Pydantic
   - 工具调用
-  - 函数解析
-description: "AgentScope 通过 `parsetoolfunction` 函数将 Python 函数的签名与 Google 风格 docstring 自动转换为 OpenAI 所需的 JSON Schema。该过程先用 `docstringparser` 提取参数描述，用 `inspect.signature` 获取类型信息，再利用 Pydantic 的 `createmodel` 动态构建模型并调用 `modeljsonschema` 生成标准 Schema，同时支持类型验证和动态扩展。"
+  - 函数签名解析
+  - 动态模型生成
+description: "详解 _parse_tool_function 如何将 Python 函数签名与 Google 风格 docstring 自动转换为 JSON Schema，利用 inspect 提取类型信息、Pydantic create_model 动态构建验证模型，并支持运行时 Schema 扩展。"
 ---
 
 > **难度**：中等

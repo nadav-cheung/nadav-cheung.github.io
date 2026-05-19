@@ -4,15 +4,16 @@ title: 第 5 章 第 2 站：Agent 收信
 abbrlink: c3c8e673
 date: 2026-05-19 00:00:00
 chapter: 5
-description: "消息进入Agent后，call方法首先生成唯一回复ID并记录asyncio任务以支持中断，然后调用被Hook包装的reply方法。得益于元类AgentMeta，在类定义时便自动为reply、observe等关键方法套上三明治包装，允许注册实例级和类级Hook，实现灵活拦截；防重入守卫保障多继承安全��最终通过订阅者字典按MsgHub分组广播，过滤思考块并清理任务，奠定了AgentScope可扩展的通信基础。"
+description: "追踪消息进入Agent后的处理流程，解析__call__方法如何生成回复ID并调用被Hook包装的reply方法。深入讲解元类_AgentMeta自动为关键方法套上Hook包装的机制，剖析实例级与类级Hook注册、防重入守卫设计，以及MsgHub分组广播机制，揭示AgentScope可扩展通信架构的根基。"
 categories:
   - AgentScope是如何运行的
 tags:
-  - AgentScope
-  - 源码解析
-  - Hook系统
   - 元类
+  - Hook系统
   - Agent架构
+  - 消息广播
+  - 异步任务管理
+  - Python高级特性
 ---
 
 > **卷一每章的结构**：路线图 → 知识补全 → 源码入口 → 逐行阅读 → 调试实践 → 试一试 → 检查点 → 下一站预告

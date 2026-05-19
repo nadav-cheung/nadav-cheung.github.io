@@ -3,10 +3,15 @@ mathjax: true
 title: Heap
 date: 2024-02-04 00:00:00
 categories: [算法与数据结构]
-tags: [堆]
+tags:
+  - 堆
+  - 数据结构
+  - 二叉堆
+  - 优先队列
+  - Java
 sticky: 3122
 abbrlink: 5eb18949
-description: "堆是一种完全二叉树，分为最大堆和最小堆，常用数组存储，通过索引计算快速定位父子节点。插入与删除依赖siftUp和siftDown操作，以O(log n)维护堆"
+description: "堆是一种基于完全二叉树的数据结构，分为最大堆和最小堆，采用数组存储并通过索引定位父子节点。核心操作siftUp和siftDown以O(log n)维护堆性质，堆化操作可在O(n)内将数组转为堆。本文详解最小堆的数组实现、插入删除源码及位运算技巧。"
 ---
 
 ## 《算法与数据结构:Heap》

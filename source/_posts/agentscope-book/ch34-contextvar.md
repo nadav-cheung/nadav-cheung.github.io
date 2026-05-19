@@ -4,15 +4,16 @@ title: 第 34 章：为什么用 ContextVar——并发安全的配置传递
 abbrlink: 91f88903
 date: 2026-05-19 00:00:00
 chapter: 34
-description: "AgentScope 采用 ContextVar 而非全局变量或 threading.local 存储 init() 的全局配置。全局变量在异步并发下会互相覆盖，而 asyncio 是单线程模式让 threading.local 失效。ContextVar 为每个异步任务提供独立副本，无需加锁即可保证异步安全，还能实现隐式传递与组合调用。尽管存在调试不直观和 API 学习成本，但它是 AgentScope 全异步架构下唯一同时满足线程与异步安全的方案。"
+description: "解析 AgentScope 为何选用 ContextVar 而非全局变量或 threading.local 管理全局配置。全局变量在异步并发下互相覆盖，threading.local 在单线程 asyncio 中失效，唯有 ContextVar 为每个异步任务提供独立副本，无需加锁即可同时保证线程安全与异步安全。"
 categories:
   - AgentScope是如何运行的
 tags:
-  - Python
-  - asyncio
   - ContextVar
-  - AgentScope
-  - 异步安全
+  - asyncio
+  - 并发安全
+  - 配置管理
+  - Python并发
+  - 异步编程
 ---
 
 > **难度**：进阶

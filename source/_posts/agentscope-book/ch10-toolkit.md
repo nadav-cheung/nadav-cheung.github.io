@@ -4,15 +4,16 @@ title: 第 10 站：执行工具
 abbrlink: d4d5d03d
 date: 2026-05-19 00:00:00
 chapter: 10
-description: "模型返回工具调用请求后，Toolkit通过显式注册找到对应函数，合并预设参数执行，并将结果封装返回。本章详解工具注册自动生成JSON Schema、工具分组激活，以及基于装饰器的中间件洋葱模型，在调用前后插入逻辑。"
+description: "追踪模型返回工具调用请求后的执行全过程，解析Toolkit如何通过显式注册定位对应Python函数、合并预设参数执行并将结果封装为ToolResponse。详细讲解工具注册时自动生成JSON Schema的机制、工具分组的动态激活与停用策略，以及基于装饰器的中间件洋葱模型如何在调用前后层层插入自定义逻辑。"
 categories:
   - AgentScope是如何运行的
 tags:
-  - AgentScope
   - Toolkit
   - 工具注册
   - 中间件
   - 洋葱模型
+  - JSON Schema
+  - 装饰器模式
 ---
 
 > 模型返回了 `ToolUseBlock(name="get_weather", input={"city": "北京"})`。但这只是一个 JSON 对象——怎么从它变成真正执行 `get_weather("北京")` 的函数调用？

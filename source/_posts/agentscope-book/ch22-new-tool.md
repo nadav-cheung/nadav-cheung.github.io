@@ -4,14 +4,15 @@ title: 第 22 章：造一个新 Tool——数据库查询工具
 abbrlink: b927000a
 date: 2026-05-19 00:00:00
 chapter: 22
-description: "本章从零构建SQLite数据库查询工具，涵盖同步与流式两个版本。同步版直接返回完整查询结果，流式版通过AsyncGenerator逐行输出，适应大数据场景。工具注册时自动生成JSON Schema，并通过preset_kwargs隐藏敏感配置。最后集成到Agent，并引入缓存中间件优化重复查询，完整演示了工具开发的注册、调用与优化流程。"
+description: "本章从零构建一个 SQLite 数据库查询工具，分别实现同步返回完整结果的版本和基于 AsyncGenerator 逐行输出的流式版本。工具注册时框架自动从函数签名与 docstring 生成 JSON Schema，通过 preset_kwargs 机制隐藏数据库路径等敏感配置。最后演示工具集成到 ReActAgent 的完整流程，并附带缓存中间件优化练习。"
 categories:
   - AgentScope是如何运行的
 tags:
-  - Agent工具开发
+  - 工具开发
   - SQLite
   - 流式响应
-  - 工具注册
+  - JSON Schema
+  - ToolResponse
   - 中间件
 ---
 

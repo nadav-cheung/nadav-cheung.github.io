@@ -5,15 +5,16 @@ title: 第 33 章：为什么 ContentBlock 是 TypedDict Union
 abbrlink: f560b5ba
 date: 2026-05-19 00:00:00
 chapter: 33
+description: "解析 AgentScope 为何用 TypedDict Union 而非 OOP 继承或 dataclass 定义 ContentBlock。TypedDict 既是字典又带类型提示，实现零序列化成本和与 OpenAI API 的天然兼容，配合 Union 类型与 match/case 实现类型安全的多态分发，代价是缺失共享基类和行为能力。"
 categories:
   - AgentScope是如何运行的
 tags:
-  - Python
   - TypedDict
+  - Python类型系统
+  - 数据建模
+  - 序列化优化
+  - API兼容性
   - 架构决策
-  - 序列化
-  - AgentScope
-description: "AgentScope 采用 TypedDict 定义 ContentBlock，放弃 OOP 继承和 dataclass，因其本质是数据而非行为。TypedDict 既是字典又带类型提示，零序列化成本，与 OpenAI 等 API 返回的 JSON 直接兼容，无需额外转换，并通过 Required 实现精细字段控制。代价是无共享基类和缺失内置方法，但换来了轻量、类型安全和高性能。"
 ---
 
 > **难度**：进阶

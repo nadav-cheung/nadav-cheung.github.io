@@ -4,15 +4,16 @@ title: 附录 A：Python 进阶速查
 abbrlink: e0bde082
 date: 2026-05-19 00:00:00
 chapter: 37
-description: "本书附录汇总Python进阶概念：async/await实现协程并发，TypedDict为字典提供开发期类型约束与IDE补全，ContextVar隔离异步任务变量副本，元类拦截类创建过程。此外涵盖functools.wraps保留函数元信息、AsyncGenerator异步生成器、Pydantic BaseModel数据验证、inspect.signature获取参数签名，以及OrderedDict、深拷贝与match/case结构化匹配等实用特性。"
+description: "汇总全书涉及的Python进阶概念，涵盖async/await协程并发、TypedDict类型约束、ContextVar异步变量隔离、元类拦截类创建，以及functools.wraps、AsyncGenerator、Pydantic验证、inspect.signature、深拷贝与match/case结构化匹配等特性。"
 categories:
   - AgentScope是如何运行的
 tags:
-  - Python
-  - 进阶概念
-  - 类型注解
+  - Python进阶
   - 异步编程
-  - 数据结构
+  - TypedDict
+  - 元类
+  - Pydantic
+  - 类型注解
 ---
 
 本附录汇总全书涉及的 Python 进阶概念，供查阅。

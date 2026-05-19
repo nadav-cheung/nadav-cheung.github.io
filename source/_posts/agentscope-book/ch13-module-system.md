@@ -4,15 +4,15 @@ title: 第 13 章：模块系统——文件的命名与导入
 abbrlink: f3158095
 date: 2026-05-19 00:00:00
 chapter: 13
-description: "在 AgentScope 框架中，以 `_` 开头的文件如 `_agentbase.py` 表示内部实现，不应直接导入。公共 API 通过各级 `__init__.py` 暴露，`__init__.py` 充当“门面”，控制外部可见的类和函数，使内部文件可自由重构而不影响用户代码。导入路径采用 `agentscope.子包.公共类` 结构，顶层 `__init__.py` 负责注册子模块并定义 `__all__`。理解这一基于下划线前缀的约定，有助于清晰把握框架的公共 API 边界和模块发现机制。"
+description: “本章讲解 AgentScope 的模块组织规则：下划线前缀标识内部实现，__init__.py 充当公共 API 门面，三层导入路径从顶层包到子包再到公共类，以及 agentscope.init() 的模块发现与自动注册机制。”
 categories:
   - AgentScope是如何运行的
 tags:
-  - AgentScope
-  - Python模块
-  - 下划线命名约定
+  - Python模块系统
   - 公共API设计
-  - 导入系统
+  - 下划线命名约定
+  - 包导入机制
+  - 模块发现
 ---
 
 > **难度**：入门

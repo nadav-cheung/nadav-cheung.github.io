@@ -4,15 +4,16 @@ title: 第 26 章：集成 MCP Server——对接本地工具服务
 abbrlink: b045fc2c
 date: 2026-05-19 00:00:00
 chapter: 26
-description: "本文讲解如何将 MCP Server 提供的工具注册到 AgentScope 的 Toolkit 中，使 ReActAgent 可像调用普通函数一样使用远程工具。通过理解 MCP 协议与工具发现机制，介绍了三种传输方式（stdio、HTTP），并演示了获取工具列表、包装可调用函数并分组注册的完整流程。利用抽象层设计，MCP 工具与本地函数对上层代码完全透明，实现无缝集成。"
+description: "本章讲解如何将 MCP Server 提供的远程工具注册到 Toolkit 中，使 Agent 能像调用本地 Python 函数一样使用外部服务。文章介绍 MCP 协议的核心概念与工具发现机制，对比 stdio 和 HTTP 两种传输方式，演示从获取工具列表到包装可调用函数再到分组注册的完整流程，体现抽象层让远程工具与本地函数对上层代码完全透明的设计理念。"
 categories:
   - AgentScope是如何运行的
 tags:
-  - AgentScope
-  - MCP协议
+  - MCP 协议
   - 工具集成
-  - Toolkit
-  - Agent开发
+  - 远程调用
+  - stdio
+  - HTTP 传输
+  - 抽象层设计
 ---
 
 > **难度**：中等

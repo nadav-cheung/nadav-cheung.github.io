@@ -460,7 +460,7 @@ reading_progress:
   start_at: left
   position: top
   reversed: false
-  color: "#c4908f"
+  color: "#555555"
   height: 2px
 
 # 书签功能（记住阅读位置）
@@ -953,9 +953,7 @@ vendors:
   # 自定义 CDN URL 模板
   # 可用变量: ${npm_name}, ${version}, ${minified}, ${cdnjs_name}, ${cdnjs_file}
   custom_cdn_url: https://cdnjs.cloudflare.com/ajax/libs/${cdnjs_name}/${version}/${cdnjs_file}
-
-# 静态资源路径（仅 vendors.internal 为 local 时生效）
-# 默认值: css: css, js: js, images: images
-css: css
-js: js
-images: images
+  # 静态资源路径（仅 vendors.internal 为 local 时生效）
+  css: css
+  js: js
+  images: images

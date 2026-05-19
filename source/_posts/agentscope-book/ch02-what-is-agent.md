@@ -4,15 +4,16 @@ title: 第 2 章 什么是 Agent
 abbrlink: 71cc54ce
 date: 2026-05-19 00:00:00
 chapter: 2
-description: "大模型虽能预测文字，却无法行动或记忆。Agent 为其装上大脑（LLM）、记忆（Memory）、工具（Tool）与 ReAct 工作流，实现“想→做→看”循环，从只会说的顾问变身全能助手。通过记忆保存对话，借助工具调用外部服务，在推理与行动的交替中纠错规划，直至完成任务。"
+description: “揭示Agent如何将只能输出文字的大模型升级为能行动、能记忆的全能助手。通过天气查询Agent实例，详细讲解LLM大脑、Memory记忆、Tool工具与ReAct循环四大核心组件的协作机制，展示Agent在推理与行动交替中查外部服务、保存对话上下文并自主纠错规划的完整工作流程。”
 categories:
   - AgentScope是如何运行的
 tags:
   - Agent
-  - AgentScope
   - ReAct
-  - LLM
-  - 教程
+  - 工具调用
+  - 记忆系统
+  - LLM应用
+  - 智能体架构
 ---
 
 > 卷零每章的结构：生活类比 → 动手试试 → 核心概念 → 试一试 → 检查点

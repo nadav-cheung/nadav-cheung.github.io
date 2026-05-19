@@ -4,15 +4,16 @@ title: 第 6 章：第 3 站：工作记忆
 abbrlink: afad0d79
 date: 2026-05-19 00:00:00
 chapter: 6
-description: "工作记忆以列表元组存储消息与标记，MemoryBase契约定义add/getmemory等接口。内存实现通过深拷贝隔离快照，并去重；检索可按标记过滤或排除，支持前置压缩摘要，为模型推理提供有序、可筛选的对话上下文。"
+description: "打开AgentScope工作记忆的内部实现，解析MemoryBase抽象基类定义的add、get_memory、delete接口，以及InMemoryMemory如何用列表元组存储消息与标记、通过深拷贝隔离快照并去重。讲解mark标记过滤与排除机制、压缩摘要前置替换策略，展示为模型推理提供有序可筛选对话上下文的设计。"
 categories:
   - AgentScope是如何运行的
 tags:
-  - AgentScope
   - 工作记忆
-  - MemoryBase
-  - InMemoryMemory
-  - mark机制
+  - 抽象基类
+  - 深拷贝
+  - mark标记系统
+  - 对话上下文
+  - 源码解析
 ---
 
 > 天气 Agent 收到了"北京今天天气怎么样？"这条消息。它不会立即被送给模型推理——第一步是存入**工作记忆（Working Memory）**。消息从外部世界涌入 Agent，先"记住"，再"思考"。本章我们打开这个容器，看看它的内部结构。

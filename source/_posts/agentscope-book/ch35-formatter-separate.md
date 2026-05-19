@@ -4,15 +4,16 @@ title: 第 35 章：为什么 Formatter 独立于 Model
 abbrlink: 01f62316
 date: 2026-05-19 00:00:00
 chapter: 35
-description: "AgentScope 将消息格式转换与 API 调用分别抽象为 Formatter 和 Model 两个独立类，避免传统框架合并方案带来的 N×M 类爆炸问题，实现 N+M 的组合自由。这一分离支撑了格式与通信的独立测试、独立替换和关注点分离，通过契约匹配抹平不同 API 的语义差异，正是框架“可扩展模块”思想的体现。"
+description: “解析 AgentScope 为何将消息格式转换与 API 调用分离为 Formatter 和 Model 两个独立类。合并方案导致 N 乘以 M 的类爆炸，分离后只需 N 加 M 个类即可自由组合，实现格式转换与 HTTP 调用的独立测试、运行时替换和关注点分离。”
 categories:
   - AgentScope是如何运行的
 tags:
-  - AgentScope
-  - 架构设计
   - 关注点分离
-  - Formatter与Model解耦
-  - 多智能体框架
+  - Formatter设计
+  - 模型适配
+  - 正交分解
+  - 可扩展架构
+  - 框架设计
 ---
 
 > **难度**：中等

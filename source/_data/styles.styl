@@ -1,433 +1,297 @@
 // ===============================================================
-// 清雅书房 - 完整自定义样式
-// Elegant Pink-White × Editorial Aesthetic
+// 自定义样式 — 所有颜色引用 variables.styl，不硬编码
 // ===============================================================
-
-// ---------------------------------------------------------------
-// CSS 变量（亮色 / 暗色统一管理）
-// ---------------------------------------------------------------
-
-:root
-  --text-primary: #2d2d32
-  --text-body: #3a3a40
-  --text-secondary: #8a8a90
-  --text-footer-link: #a08580
-  --text-nav-number: #b8b0b0
-  --accent: #c4908f
-  --accent-dark: #b07a79
-  --accent-light: #d4a5a5
-  --bg-body-start: #ffffff
-  --bg-body-end: #fef6f6
-  --bg-card: #ffffff
-  --bg-sidebar: #fef7f7
-  --bg-footer: #fef5f5
-  --bg-code: #fdfafa
-  --bg-input: #fdfafa
-  --bg-header: rgba(255, 255, 255, 0.85)
-  --bg-code-inline: rgba(196, 144, 143, 0.06)
-  --border: #efe8e8
-  --border-light: #e5dada
-  --border-hover: #e5dada
-  --shadow-card: 0 1px 4px rgba(196, 144, 143, 0.06)
-  --shadow-card-hover: 0 6px 16px rgba(196, 144, 143, 0.1)
-  --link-border: rgba(196, 144, 143, 0.3)
-  --scrollbar-track: #fef6f6
-  --scrollbar-thumb: #e0d4d4
-  --scrollbar-thumb-hover: #c4908f
-  --btn-hover-text: #ffffff
-  --btn-hover-bg: #c4908f
-  --edge: linear-gradient(90deg, transparent 0%, #e0d4d4 10%, #e0d4d4 90%, transparent 100%)
-  --with-love: #e5dada
-
-@media (prefers-color-scheme: dark)
-  :root
-    --text-primary: #e8e2e2
-    --text-body: #c8c2c2
-    --text-secondary: #7a7578
-    --text-footer-link: #7a7578
-    --text-nav-number: #7a7578
-    --accent: #d4a5a5
-    --accent-dark: #b8908f
-    --accent-light: #e8bab8
-    --bg-body-start: #0f0e10
-    --bg-body-end: #121012
-    --bg-card: #1a1819
-    --bg-sidebar: #141214
-    --bg-footer: #0f0e10
-    --bg-code: #141214
-    --bg-input: #0f0e10
-    --bg-header: rgba(15, 14, 16, 0.85)
-    --bg-code-inline: rgba(212, 165, 165, 0.1)
-    --border: #2a2628
-    --border-light: #2a2628
-    --border-hover: #3a3438
-    --shadow-card: 0 1px 4px rgba(0, 0, 0, 0.06)
-    --shadow-card-hover: 0 6px 16px rgba(0, 0, 0, 0.1)
-    --link-border: rgba(212, 165, 165, 0.3)
-    --scrollbar-track: #0f0e10
-    --scrollbar-thumb: #2a2628
-    --scrollbar-thumb-hover: #3a3438
-    --btn-hover-text: #0f0e10
-    --btn-hover-bg: #d4a5a5
-    --edge: linear-gradient(90deg, transparent 0%, #2a2628 10%, #2a2628 90%, transparent 100%)
-    --with-love: #2a2628
-
-// ---------------------------------------------------------------
-// 基础排版
-// ---------------------------------------------------------------
-
-.posts-expand .post-title,
-.post-block .post-title,
-.site-title
-  font-family: 'Source Serif 4', 'Noto Serif SC', 'Georgia', serif !important
-  letter-spacing: 0.02em
-
-.site-title
-  font-weight: 900
-  color: var(--text-primary) !important
-
-.post-body
-  font-family: 'Noto Serif SC', 'PingFang SC', 'Microsoft YaHei', serif
-  line-height: 2
-  color: var(--text-body)
-
-code, pre, .highlight
-  font-family: 'JetBrains Mono', 'Consolas', 'Monaco', monospace !important
-
-h1, h2, h3, h4, h5, h6
-  font-family: 'Source Serif 4', 'Noto Serif SC', serif
-  color: var(--text-primary)
-  border-bottom-color: var(--border) !important
-
-// ---------------------------------------------------------------
-// 页面背景
-// ---------------------------------------------------------------
-
-body
-  background: linear-gradient(180deg, var(--bg-body-start) 0%, var(--bg-body-end) 100%) !important
-  background-attachment: fixed
 
 // ---------------------------------------------------------------
 // 侧边栏
 // ---------------------------------------------------------------
 
+.site-brand-container
+  background: $bg-white !important
+  border-bottom: 1px solid $border-color
+
+.site-title
+  color: $text-primary !important
+  text-shadow: none !important
+
+.site-brand-container .site-description
+  color: $text-muted !important
+
 .sidebar
-  background: var(--bg-sidebar) !important
-  box-shadow: 1px 0 0 var(--border)
+  background: $bg-white !important
+  border: none !important
+  box-shadow: none !important
 
 .sidebar-inner
   background: transparent !important
   box-shadow: none !important
 
-.site-author-image
-  border: 3px solid var(--border)
-  transition: border-color 0.3s ease
-  &:hover
-    border-color: var(--accent)
-
 .site-author-name
-  color: var(--text-primary) !important
-  font-family: 'Source Serif 4', 'Noto Serif SC', serif
-  font-weight: 700
+  color: $text-primary !important
+
+.site-description
+  color: $text-secondary !important
 
 .site-state-item
-  border-color: var(--border) !important
+  border-color: $border-color !important
 
 .site-state-item-count
-  color: var(--accent) !important
-  font-family: 'JetBrains Mono', monospace
+  color: $brand !important
+
+.site-state-item-name
+  color: $text-muted !important
 
 .links-of-author-item a
+  color: $text-secondary !important
   border-bottom: none !important
-  color: var(--text-secondary)
-  transition: all 0.2s ease
   &:hover
-    color: var(--accent)
-    transform: translateX(4px)
+    color: $brand !important
+
+.links-of-author-item .fa,
+.links-of-author-item .fab,
+.links-of-author-item .fas
+  color: $text-muted !important
+
+.sidebar .cc-animate
+  color: $text-muted !important
+
+.my-wechat-sidebar-image
+  width: 88%
+  display: block
+  margin: 0 auto
+  border-radius: 6px
+
+.sidebar iframe
+  border-radius: 6px
 
 // ---------------------------------------------------------------
-// 文章卡片
-// ---------------------------------------------------------------
-
-.post-block
-  background: var(--bg-card) !important
-  border: 1px solid var(--border)
-  border-radius: 8px !important
-  padding: 2em !important
-  margin-bottom: 1.5em !important
-  transition: border-color 0.3s ease, box-shadow 0.3s ease
-  box-shadow: var(--shadow-card)
-  &:hover
-    border-color: var(--border-hover)
-    box-shadow: var(--shadow-card-hover)
-
-.post-title
-  a
-    color: var(--text-primary) !important
-    border-bottom: none !important
-    transition: color 0.2s ease
-    &:hover
-      color: var(--accent) !important
-
-.post-meta
-  color: var(--text-secondary) !important
-  a
-    color: var(--text-secondary) !important
-    border-bottom: none !important
-    &:hover
-      color: var(--accent) !important
-
-.post-button .btn
-  color: var(--accent) !important
-  background: transparent
-  border: 1px solid var(--border-light) !important
-  border-radius: 6px !important
-  padding: 8px 24px !important
-  font-family: 'Source Serif 4', 'Noto Serif SC', serif
-  font-size: 0.9em
-  letter-spacing: 0.03em
-  transition: all 0.3s ease
-  box-shadow: none !important
-  &:hover
-    color: var(--btn-hover-text) !important
-    background: var(--btn-hover-bg) !important
-    border-color: var(--btn-hover-bg) !important
-
-.post-body p a
-  color: var(--accent)
-  border-bottom: 1px solid var(--link-border)
-  &:hover
-    color: var(--accent-dark)
-    border-bottom-color: var(--accent-dark)
-
-// ---------------------------------------------------------------
-// 导航菜单
+// 导航
 // ---------------------------------------------------------------
 
 .header-inner
-  background: var(--bg-header) !important
-  backdrop-filter: blur(12px)
-  -webkit-backdrop-filter: blur(12px)
+  background: $bg-white !important
+  border-bottom: 1px solid $border-color !important
 
 .site-nav .menu-item a
-  color: var(--text-secondary)
+  color: $text-secondary
   border-bottom: none !important
-  transition: color 0.2s ease
   &:hover, &.menu-item-active
-    color: var(--accent)
+    color: $brand !important
 
 // ---------------------------------------------------------------
-// 代码块
+// 文章
 // ---------------------------------------------------------------
 
-.highlight
-  background: var(--bg-code) !important
-  border: 1px solid var(--border)
-  border-radius: 6px
+.post-title a
+  color: $text-primary !important
+  border-bottom: none !important
+  &:hover
+    color: $brand !important
+
+.post-meta
+  color: $text-muted !important
+  a
+    color: $text-muted !important
+    border-bottom: none !important
+    &:hover
+      color: $brand !important
+
+.post-body p a
+  color: $brand
+  border-bottom: 1px solid rgba($brand, 0.2)
+  &:hover
+    color: $brand-lt
+
+.post-button .btn
+  color: $brand !important
+  background: transparent !important
+  border: 1px solid $border-color !important
+  border-radius: 4px !important
+  box-shadow: none !important
+  &:hover
+    color: $bg-white !important
+    background: $brand !important
+    border-color: $brand !important
+
+// ---------------------------------------------------------------
+// 代码
+// ---------------------------------------------------------------
 
 code
-  background: var(--bg-code-inline)
-  color: var(--accent-dark)
+  background: $bg-light
+  color: $brand
   border-radius: 3px
-  padding: 2px 6px
-  font-size: 0.9em
+  padding: 2px 5px
+  font-size: 0.88em
 
-.copy-btn
-  color: var(--text-secondary) !important
-  border-color: var(--border) !important
-  background: var(--bg-code) !important
-  &:hover
-    color: var(--accent) !important
+pre code
+  background: transparent
+  color: inherit
+
+.highlight
+  background: $bg-light !important
+  border: 1px solid $border-color
+  border-radius: 4px
 
 // ---------------------------------------------------------------
 // 标签云
 // ---------------------------------------------------------------
 
 .tag-cloud a
-  box-shadow: var(--shadow-card)
-  padding: 4px 14px
-  margin: 8px
-  background: var(--bg-card)
-  border: 1px solid var(--border)
-  border-bottom: none
-  border-radius: 20px
-  color: var(--text-secondary)
-  transition: all 0.2s ease
-  font-family: 'JetBrains Mono', monospace
-  font-size: 0.85em
-
-.tag-cloud-tags a:hover
-  background: var(--accent)
-  color: var(--btn-hover-text)
-  border-color: var(--accent)
-  transform: scale(1.05)
-
-// ---------------------------------------------------------------
-// 页脚
-// ---------------------------------------------------------------
-
-.footer
-  background: var(--bg-footer) !important
-  color: var(--text-secondary)
-  a
-    color: var(--text-footer-link)
-    &:hover
-      color: var(--accent)
-  .with-love
-    color: var(--with-love)
-
-.beian
-  color: var(--text-secondary)
-  a
-    color: var(--text-footer-link)
-  img
-    display: inline-block
-    margin: 0 3px
-    vertical-align: middle
-    height: 20px
-
-// ---------------------------------------------------------------
-// 返回顶部
-// ---------------------------------------------------------------
-
-.back-to-top
-  background: var(--bg-card) !important
-  color: var(--accent) !important
-  border: 1px solid var(--border)
+  color: $text-secondary
+  border: 1px solid $border-color
+  border-radius: 4px
+  padding: 4px 12px
+  margin: 4px
+  box-shadow: none
   &:hover
-    background: var(--btn-hover-bg) !important
-    color: var(--btn-hover-text) !important
-
-// ---------------------------------------------------------------
-// 搜索
-// ---------------------------------------------------------------
-
-.search-popup
-  background: var(--bg-card) !important
-  border: 1px solid var(--border)
-
-.search-popup .search-input
-  background: var(--bg-input) !important
-  border: 1px solid var(--border)
-  color: var(--text-primary)
-
-.search-popup .search-result-container
-  .search-result-list a
-    color: var(--text-primary)
-    &:hover
-      color: var(--accent)
-  .search-result-list p
-    color: var(--text-secondary)
-
-.search-icon, .popup-trigger
-  color: var(--text-secondary)
-  &:hover
-    color: var(--accent)
-
-// ---------------------------------------------------------------
-// 阅读进度条
-// ---------------------------------------------------------------
-
-.reading-progress-bar
-  background: linear-gradient(90deg, var(--accent), var(--accent-light)) !important
+    background: $brand
+    color: $bg-white
+    border-color: $brand
 
 // ---------------------------------------------------------------
 // 分页
 // ---------------------------------------------------------------
 
 .pagination .page-number
-  background: var(--bg-card)
-  color: var(--text-secondary)
-  border: 1px solid var(--border)
-  border-radius: 6px
-  transition: all 0.2s ease
+  color: $text-secondary
+  border: 1px solid $border-color
+  border-radius: 4px
+  box-shadow: none
   &:hover, &.current
-    background: var(--accent)
-    color: var(--btn-hover-text)
-    border-color: var(--accent)
+    background: $brand
+    color: $bg-white
+    border-color: $brand
+
+// ---------------------------------------------------------------
+// 页脚
+// ---------------------------------------------------------------
+
+.footer
+  color: $text-muted !important
+  a
+    color: $text-secondary
+    &:hover
+      color: $brand
+  .with-love
+    color: $text-muted
+
+// ---------------------------------------------------------------
+// 返回顶部
+// ---------------------------------------------------------------
+
+.back-to-top
+  background: $bg-white !important
+  color: $brand !important
+  border: 1px solid $border-color
+  box-shadow: none
+  &:hover
+    background: $brand !important
+    color: $bg-white !important
+
+// ---------------------------------------------------------------
+// 搜索
+// ---------------------------------------------------------------
+
+.search-icon, .popup-trigger
+  color: $text-secondary
+  &:hover
+    color: $brand
+
+// ---------------------------------------------------------------
+// TOC（文章目录）
+// ---------------------------------------------------------------
+
+.toc .nav-item .nav-link
+  color: $text-secondary
+  border-bottom: none !important
+  &:hover, &.active
+    color: $brand !important
+
+.toc .nav-item .nav-number
+  color: $text-muted
 
 // ---------------------------------------------------------------
 // 打赏
 // ---------------------------------------------------------------
 
 .reward-container button
-  background: var(--bg-code)
-  color: var(--accent)
-  border: 1px solid var(--border)
-  border-radius: 6px
-  transition: all 0.3s ease
+  background: $bg-light
+  color: $brand
+  border: 1px solid $border-color
+  border-radius: 4px
   &:hover
-    background: var(--accent)
-    color: var(--btn-hover-text)
-    border-color: var(--accent)
+    background: $brand
+    color: $bg-white
+    border-color: $brand
 
 // ---------------------------------------------------------------
-// TOC 目录
+// 进度条
 // ---------------------------------------------------------------
 
-.toc .nav-item .nav-link
-  color: var(--text-secondary)
-  border-bottom: none !important
-  transition: color 0.2s ease
-  &:hover, &.active
-    color: var(--accent) !important
-
-.toc .nav-item .nav-number
-  color: var(--text-nav-number)
-
-// ---------------------------------------------------------------
-// 微信公众号
-// ---------------------------------------------------------------
-
-.my-wechat-sidebar-image
-  width: 93%
-  display: flex
-  justify-content: center
+.reading-progress-bar
+  background: $brand !important
 
 // ---------------------------------------------------------------
 // GitHub Banner
 // ---------------------------------------------------------------
 
 .github-banner
-  color: var(--text-secondary) !important
+  color: $text-secondary !important
   border-bottom: none !important
   &:hover
-    color: var(--accent) !important
+    color: $brand !important
 
 // ---------------------------------------------------------------
-// 书架组件
+// 备案
+// ---------------------------------------------------------------
+
+.beian
+  color: $text-muted
+  a
+    color: $text-secondary
+  img
+    display: inline-block
+    margin: 0 2px
+    vertical-align: middle
+    height: 16px
+
+// ---------------------------------------------------------------
+// 书架
 // ---------------------------------------------------------------
 
 #bookshelf
-  margin: 0 auto 2.5em
-  padding: 2.5em 2em 1em
+  margin: 0 auto 2em
+  padding: 2em 2em 1em
+  background: $bg-white
+  border-radius: 6px
+  border: 1px solid $border-color
 
 .shelf-header
   text-align: center
-  margin-bottom: 2em
+  margin-bottom: 1.5em
   display: flex
   align-items: center
   justify-content: center
-  gap: 16px
+  gap: 12px
 
 .shelf-heading
-  font-family: 'Source Serif 4', 'Noto Serif SC', serif
-  font-size: 1.1em
-  font-weight: 700
-  color: var(--text-primary)
-  letter-spacing: 0.15em
+  font-size: 0.9em
+  font-weight: 600
+  color: $text-secondary
+  letter-spacing: 0.1em
 
 .shelf-line
   display: inline-block
-  width: 40px
+  width: 24px
   height: 1px
-  background: var(--accent)
+  background: $border-color
   flex-shrink: 0
 
 .books-row
   display: flex
   justify-content: center
-  gap: 3px
+  gap: 4px
   perspective: 600px
 
 .book-spine
@@ -435,74 +299,94 @@ code
   flex-direction: column
   align-items: center
   justify-content: center
-  width: 88px
+  width: 86px
   height: 210px
   background: var(--spine-color)
-  border-radius: 2px 4px 4px 2px
+  border-radius: 2px 5px 5px 2px
   cursor: pointer
   text-decoration: none
   position: relative
-  box-shadow: inset -2px 0 4px rgba(0, 0, 0, 0.08), 1px 0 2px rgba(0, 0, 0, 0.04)
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease
+  box-shadow: inset -3px 0 6px rgba(0, 0, 0, 0.1), 1px 1px 3px rgba(0, 0, 0, 0.06)
+  transition: transform 0.25s ease, box-shadow 0.25s ease
 
 .spine-rule
-  width: 55%
+  width: 50%
   height: 1px
-  background: rgba(255, 255, 255, 0.25)
-  margin: 6px 0
+  background: rgba(255, 255, 255, 0.2)
+  margin: 5px 0
 
 .spine-title
-  font-family: 'Noto Serif SC', serif
-  font-size: 0.8em
+  font-size: 0.78em
   font-weight: 700
-  color: #fff
+  color: rgba(255, 255, 255, 0.92)
   text-align: center
   line-height: 1.5
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1)
   padding: 0 6px
-  letter-spacing: 0.04em
+  letter-spacing: 0.03em
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15)
 
 .spine-count
-  font-family: 'JetBrains Mono', monospace
-  font-size: 0.62em
+  font-size: 0.6em
   color: rgba(255, 255, 255, 0.6)
-  margin-top: 4px
-  letter-spacing: 0.03em
+  margin-top: 3px
 
 .spine-count.badge-soon
-  font-family: 'Noto Serif SC', serif
-  font-size: 0.56em
+  font-size: 0.52em
   background: rgba(255, 255, 255, 0.12)
-  padding: 2px 8px
-  border-radius: 6px
-  color: rgba(255, 255, 255, 0.72)
+  padding: 2px 7px
+  border-radius: 4px
+  color: rgba(255, 255, 255, 0.7)
 
 .book-spine:hover
-  transform: translateY(-14px)
-  background: var(--spine-hover)
-  box-shadow: inset -2px 0 4px rgba(0, 0, 0, 0.08), 4px 8px 18px rgba(0, 0, 0, 0.1)
+  transform: translateY(-14px) scale(1.02)
+  box-shadow: inset -3px 0 6px rgba(0, 0, 0, 0.1), 4px 10px 20px rgba(0, 0, 0, 0.12)
 
 .shelf-edge
   height: 2px
-  background: var(--edge)
+  background: $border-color
   margin: 0 2em
   border-radius: 1px
 
 @media (max-width: 768px)
   .books-row
     flex-wrap: wrap
-    gap: 6px
-    justify-content: center
+    gap: 5px
   .book-spine
-    width: 72px
-    height: 170px
+    width: 68px
+    height: 165px
   .spine-title
-    font-size: 0.72em
+    font-size: 0.68em
   #bookshelf
     margin: 0 1em 2em
     padding: 1.5em 1em 0.8em
   .shelf-edge
     margin: 0 1em
+
+// ---------------------------------------------------------------
+// njk 模板用的 CSS class（替代内联样式）
+// ---------------------------------------------------------------
+
+.post-qr-wrapper
+  text-align: center
+  margin-bottom: 1em
+
+.post-qr-image
+  max-width: 200px
+  border-radius: 6px
+  border: 1px solid $border-color
+
+.post-end-notice
+  text-align: center
+  color: $text-muted
+  font-size: 0.85em
+  padding: 1.5em 0
+  letter-spacing: 0.05em
+
+.site-time-widget
+  font-family: 'JetBrains Mono', 'Consolas', monospace
+  font-size: 0.85em
+  color: $text-muted
+  letter-spacing: 0.03em
 
 // ---------------------------------------------------------------
 // 滚动条
@@ -513,19 +397,10 @@ code
   height: 6px
 
 ::-webkit-scrollbar-track
-  background: var(--scrollbar-track)
+  background: transparent
 
 ::-webkit-scrollbar-thumb
-  background: var(--scrollbar-thumb)
+  background: $border-color
   border-radius: 3px
   &:hover
-    background: var(--scrollbar-thumb-hover)
-
-// ---------------------------------------------------------------
-// 暗色模式补充（无法用变量表达的样式）
-// ---------------------------------------------------------------
-
-@media (prefers-color-scheme: dark)
-  #bookshelf
-    background: transparent !important
-    border-color: transparent !important
+    background: $text-muted

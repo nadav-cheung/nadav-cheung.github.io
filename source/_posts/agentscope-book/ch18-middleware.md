@@ -4,15 +4,15 @@ title: 第 18 章：中间件与洋葱模型——工具执行的拦截链
 abbrlink: 988470df
 date: 2026-05-19 00:00:00
 chapter: 18
-description: "AgentScope 的 Toolkit 通过中间件系统实现工具调用的日志与耗时记录，无需修改工具函数。其核心采用洋葱模型，applymiddlewares 装饰器在每次调用时将中间件动态组装成链，先注册的处于最外层。中间件为异步生成器，能逐块拦截流式响应，支持观察、权限校验和缓存三种典型用法，便于在调用前后插入通用逻辑。"
+description: "本章剖析 Toolkit 中间件的洋葱模型实现：_apply_middlewares 在每次调用时动态组装中间件链，先注册的处于最外层，支持日志记录、权限检查和缓存三种典型用法，在不修改工具函数的前提下插入通用逻辑。"
 categories:
   - AgentScope是如何运行的
 tags:
-  - 中间件
+  - 中间件模式
   - 洋葱模型
-  - Toolkit
-  - AsyncGenerator
-  - AgentScope
+  - 工具执行拦截
+  - 异步生成器
+  - 横切关注点
 ---
 
 > **难度**：中等

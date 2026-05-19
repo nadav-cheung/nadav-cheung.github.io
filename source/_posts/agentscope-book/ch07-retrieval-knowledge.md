@@ -3,15 +3,16 @@ title: 第 7 站：检索与知识
 abbrlink: 52dd2eba
 date: 2026-05-19 00:00:00
 chapter: 7
-description: "本文解析了Agent长期记忆的实现：区别于仅限单次对话的工作记忆，长期记忆支持跨对话信息存储，并提供staticcontrol（开发者预设自动检索）与agentcontrol（将记忆操作注册为工具由大模型自主调用）两种控制模式。同时梳理了RAG知识库从文档分块、Embedding向量化到向量检索的完整流程，阐明工作记忆、长期记忆与外部知识三者如何协同增强Agent的上下文能力。"
+description: "探索Agent长期记忆与外部知识检索的实现。对比工作记忆的对话内局限，讲解LongTermMemoryBase的static_control与agent_control两种控制模式，梳理RAG知识库从文档分块、Embedding向量化到向量检索的全链路流程，阐明三种记忆层次如何协同增强Agent的上下文能力。"
 categories:
   - AgentScope是如何运行的
 tags:
   - 长期记忆
-  - RAG知识库
-  - Embedding向量检索
-  - AgentScope源码
-  - 工作记忆
+  - RAG
+  - Embedding
+  - 向量检索
+  - 知识库
+  - 异步编程
 ---
 
 > 天气 Agent 收到"北京今天天气怎么样？"后，不仅要查天气工具，还可能需要记住用户之前说过"我经常去北京出差"——这种跨对话的信息，存在哪里？

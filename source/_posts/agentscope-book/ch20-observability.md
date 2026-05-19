@@ -4,15 +4,15 @@ title: 第 20 章：可观测性与持久化——追踪、序列化与状态管
 abbrlink: 638dee63
 date: 2026-05-19 00:00:00
 chapter: 20
-description: "AgentScope基于OpenTelemetry实现全链路追踪，利用追踪装饰器记录模型调用、工具执行等每次操作，并部署于中间件外层以完整捕获调用链。StateModule持久化状态，支持断点续跑与回放，解决了长时间运行Agent的排障难题。"
+description: "本章讲解 AgentScope 基于 OpenTelemetry 的全链路追踪系统，涵盖五种专用追踪装饰器的层级设计与零开销开关机制，并回顾 StateModule 持久化如何支持断点续跑与状态回放，解决长时间运行 Agent 的排障难题。"
 categories:
   - AgentScope是如何运行的
 tags:
-  - AgentScope
-  - OpenTelemetry
-  - Tracing
-  - StateModule
   - 可观测性
+  - OpenTelemetry
+  - 分布式追踪
+  - 状态持久化
+  - 生产环境调试
 ---
 
 > **难度**：中等
