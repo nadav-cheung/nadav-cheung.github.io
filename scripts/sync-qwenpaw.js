@@ -254,6 +254,25 @@ function syncBook(config) {
   console.log(`[qwenpaw-sync] Done: ${synced} synced, ${skipped} unchanged, ${removed} removed`);
 }
 
+// ----- Hexo integration -----
+
+function registerHexoExtension(hexo) {
+  const config = hexo.config.qwenpaw_book_sync || {};
+  if (!config.enable) return;
+
+  hexo.extend.filter.register('before_generate', function () {
+    config.base_dir = hexo.base_dir;
+    config.source_root = config.source_root ||
+      '/Users/nadav/IdeaProjects/QwenPaw/book';
+    syncBook(config);
+  });
+}
+
+// If loaded as Hexo script
+if (typeof hexo !== 'undefined') {
+  registerHexoExtension(hexo);
+}
+
 // Run directly
 if (require.main === module) {
   syncBook({
@@ -262,4 +281,4 @@ if (require.main === module) {
   });
 }
 
-module.exports = { syncBook };
+module.exports = { syncBook, registerHexoExtension };

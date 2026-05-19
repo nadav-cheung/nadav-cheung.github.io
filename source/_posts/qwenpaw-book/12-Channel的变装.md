@@ -3,37 +3,21 @@ title: 第 12 章：Channel 的变装——适配器模式
 abbrlink: 3a0a77c4
 date: 2026-05-19 00:12:00
 chapter: 13
-description: Channel 适配器模式实现，17 个渠道如何统一接口
+description: 适配器模式统一 17 个聊天平台的消息格式——BaseChannel 抽象接口设计、钉钉、飞书、微信、Telegram、Discord 等平台的消息接收与发送如何通过同一套接口完成适配。
 categories:
-  - QwenPaw 架构设计
+  - QwenPaw是如何运行的
 tags:
   - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
   - QwenPaw
-description: Channel 适配器模式实现，17 个渠道如何统一接口
-categories:
-  - QwenPaw 架构设计
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
   - 源码解析
-  - QwenPaw
-description: Channel 适配器模式实现，17 个渠道如何统一接口
-categories:
-  - QwenPaw 架构设计
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
-  - QwenPaw
+  - Channel
+  - 适配器模式
+  - 钉钉
+  - 飞书
+  - Telegram
+  - 设计模式
 ---
+
 
 ```
 卷二：理解设计

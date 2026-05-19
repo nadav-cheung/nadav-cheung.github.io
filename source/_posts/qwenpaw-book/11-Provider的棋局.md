@@ -3,37 +3,21 @@ title: 第 11 章：Provider 的棋局——策略模式与抽象层
 abbrlink: 2635256e
 date: 2026-05-19 00:11:00
 chapter: 12
-description: Provider 策略模式与抽象层设计，六种 Provider 实现差异
+description: 策略模式实现多模型统一调用——Provider 抽象基类的接口设计、6 种 Provider 实现的差异分析、OpenAI、Anthropic、Ollama 等不同 API 的封装策略与切换机制。
 categories:
-  - QwenPaw 架构设计
+  - QwenPaw是如何运行的
 tags:
   - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
   - QwenPaw
-description: Provider 策略模式与抽象层设计，六种 Provider 实现差异
-categories:
-  - QwenPaw 架构设计
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
   - 源码解析
-  - QwenPaw
-description: Provider 策略模式与抽象层设计，六种 Provider 实现差异
-categories:
-  - QwenPaw 架构设计
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
-  - QwenPaw
+  - Provider
+  - 策略模式
+  - OpenAI
+  - Anthropic
+  - Ollama
+  - 设计模式
 ---
+
 
 ```
 卷二：理解设计

@@ -1,0 +1,478 @@
+{
+  "files": {
+    "README.md": {
+      "md5": "b280b5a6e3464b3472ed8a8756c4e3a4",
+      "integrated": false
+    },
+    "卷一-消息的旅程/第03章-准备工具箱.md": {
+      "md5": "d4adf53609113eb4703d9adb0edbeee2",
+      "integrated": true,
+      "post_abbrlink": "9ed23b71",
+      "post_path": "source/_posts/claudecode-book/第03章-准备工具箱.md"
+    },
+    "卷一-消息的旅程/第04章-回车键之后.md": {
+      "md5": "4afdb128eaddfe9f7f1bad61b5caab4c",
+      "integrated": true,
+      "post_abbrlink": "7a3522b2",
+      "post_path": "source/_posts/claudecode-book/第04章-回车键之后.md"
+    },
+    "卷一-消息的旅程/第05章-消息被装进信封.md": {
+      "md5": "e4d92985c3088dbfd5c465273cdd8a09",
+      "integrated": true,
+      "post_abbrlink": "e8027bbe",
+      "post_path": "source/_posts/claudecode-book/第05章-消息被装进信封.md"
+    },
+    "卷一-消息的旅程/第06章-工具的注册与发现.md": {
+      "md5": "b3a25a1dc827678d8ff2b2b7b217f572",
+      "integrated": true,
+      "post_abbrlink": "fabd43ba",
+      "post_path": "source/_posts/claudecode-book/第06章-工具的注册与发现.md"
+    },
+    "卷一-消息的旅程/第07章-信封飞向远方.md": {
+      "md5": "9a2a26b2bfa2eeb2c3f831ee3958c465",
+      "integrated": true,
+      "post_abbrlink": "2b08367f",
+      "post_path": "source/_posts/claudecode-book/第07章-信封飞向远方.md"
+    },
+    "卷一-消息的旅程/第08章-文字一个字一个字地回来.md": {
+      "md5": "45581f813349ac0f6ed6eefaa6c9e48c",
+      "integrated": true,
+      "post_abbrlink": "56229ded",
+      "post_path": "source/_posts/claudecode-book/第08章-文字一个字一个字地回来.md"
+    },
+    "卷一-消息的旅程/第09章-AI说要执行命令.md": {
+      "md5": "82f997dd9804ec516bd02057ca8d2978",
+      "integrated": true,
+      "post_abbrlink": "be993671",
+      "post_path": "source/_posts/claudecode-book/第09章-AI说要执行命令.md"
+    },
+    "卷一-消息的旅程/第10章-命令真的被执行了.md": {
+      "md5": "e3da0da3b9f9b2a12c30f6c9ca95a128",
+      "integrated": true,
+      "post_abbrlink": "d42d8c3f",
+      "post_path": "source/_posts/claudecode-book/第10章-命令真的被执行了.md"
+    },
+    "卷一-消息的旅程/第11章-你确定吗.md": {
+      "md5": "f17c976c92400202dfaad0c5fcaba55d",
+      "integrated": true,
+      "post_abbrlink": "7066806a",
+      "post_path": "source/_posts/claudecode-book/第11章-你确定吗.md"
+    },
+    "卷一-消息的旅程/第12章-结果回到AI手中.md": {
+      "md5": "71e44cd6db3a164a5c5e5515dd805a83",
+      "integrated": true,
+      "post_abbrlink": "0a4b4b9a",
+      "post_path": "source/_posts/claudecode-book/第12章-结果回到AI手中.md"
+    },
+    "卷一-消息的旅程/第13章-对话越来越长.md": {
+      "md5": "a10efc5b070ddfadb736a3cb075ef11c",
+      "integrated": true,
+      "post_abbrlink": "5c1bade7",
+      "post_path": "source/_posts/claudecode-book/第13章-对话越来越长.md"
+    },
+    "卷一-消息的旅程/第14章-屏幕上的每一帧.md": {
+      "md5": "848cf30004cc13af281134dde8ae689f",
+      "integrated": true,
+      "post_abbrlink": "0f77bc7d",
+      "post_path": "source/_posts/claudecode-book/第14章-屏幕上的每一帧.md"
+    },
+    "卷一-消息的旅程/第15章-循环的终点与起点.md": {
+      "md5": "3f2f26f6605b1282397090643698b34c",
+      "integrated": true,
+      "post_abbrlink": "e9f1cbe9",
+      "post_path": "source/_posts/claudecode-book/第15章-循环的终点与起点.md"
+    },
+    "卷一-消息的旅程/第16章-你的第一次追踪.md": {
+      "md5": "7d12c35e55a7de72f9261fe0d949b0f7",
+      "integrated": true,
+      "post_abbrlink": "6884c5de",
+      "post_path": "source/_posts/claudecode-book/第16章-你的第一次追踪.md"
+    },
+    "卷三-造物主的工坊/第29章-搭建你的工坊.md": {
+      "md5": "51909e8804626066102e0c5beae5e2e2",
+      "integrated": true,
+      "post_abbrlink": "ffe062a9",
+      "post_path": "source/_posts/claudecode-book/第29章-搭建你的工坊.md"
+    },
+    "卷三-造物主的工坊/第30章-第一次修改.md": {
+      "md5": "ac7a6f9f09ad43e42abcd6ea56d716aa",
+      "integrated": true,
+      "post_abbrlink": "7c313f38",
+      "post_path": "source/_posts/claudecode-book/第30章-第一次修改.md"
+    },
+    "卷三-造物主的工坊/第31章-创建你的第一个工具.md": {
+      "md5": "aa97715128a74d7b874c8c9fa67892c9",
+      "integrated": true,
+      "post_abbrlink": "39d55fc0",
+      "post_path": "source/_posts/claudecode-book/第31章-创建你的第一个工具.md"
+    },
+    "卷三-造物主的工坊/第32章-处理用户输入-Zod验证.md": {
+      "md5": "b666591b8668c9f0767962dac739fd19",
+      "integrated": true,
+      "post_abbrlink": "739a4125",
+      "post_path": "source/_posts/claudecode-book/第32章-处理用户输入-Zod验证.md"
+    },
+    "卷三-造物主的工坊/第33章-添加权限规则.md": {
+      "md5": "32ec39740367c11a090db9b7eba64f44",
+      "integrated": true,
+      "post_abbrlink": "dde49500",
+      "post_path": "source/_posts/claudecode-book/第33章-添加权限规则.md"
+    },
+    "卷三-造物主的工坊/第34章-接入MCP-Server.md": {
+      "md5": "c682cfb150d8a0edb31d352c73833db5",
+      "integrated": true,
+      "post_abbrlink": "dd1dcb0d",
+      "post_path": "source/_posts/claudecode-book/第34章-接入MCP-Server.md"
+    },
+    "卷三-造物主的工坊/第35章-构建多Agent协作.md": {
+      "md5": "c635bcf4c91bcd4f8533dbc8a3397b2f",
+      "integrated": true,
+      "post_abbrlink": "ca99ec19",
+      "post_path": "source/_posts/claudecode-book/第35章-构建多Agent协作.md"
+    },
+    "卷三-造物主的工坊/第36章-开发完整插件.md": {
+      "md5": "1a2b82a913cca3d7ee15161f9c8d6dc8",
+      "integrated": true,
+      "post_abbrlink": "c5e6ebbf",
+      "post_path": "source/_posts/claudecode-book/第36章-开发完整插件.md"
+    },
+    "卷三-造物主的工坊/第37章-编写测试.md": {
+      "md5": "5f7be7d5af9d3427cd47a77a9c695cb1",
+      "integrated": true,
+      "post_abbrlink": "9f272de6",
+      "post_path": "source/_posts/claudecode-book/第37章-编写测试.md"
+    },
+    "卷三-造物主的工坊/第38章-调试的艺术.md": {
+      "md5": "8e156707377c55212d248469ea2f884f",
+      "integrated": true,
+      "post_abbrlink": "a8a62cc2",
+      "post_path": "source/_posts/claudecode-book/第38章-调试的艺术.md"
+    },
+    "卷三-造物主的工坊/第39章-从代码到贡献.md": {
+      "md5": "5cc750de796c8cd9825d7f204f9b2857",
+      "integrated": true,
+      "post_abbrlink": "5fd4e9ba",
+      "post_path": "source/_posts/claudecode-book/第39章-从代码到贡献.md"
+    },
+    "卷三-造物主的工坊/第40章-第一个真实贡献.md": {
+      "md5": "3475792d038b6ec2995762c348b09259",
+      "integrated": true,
+      "post_abbrlink": "88a5b455",
+      "post_path": "source/_posts/claudecode-book/第40章-第一个真实贡献.md"
+    },
+    "卷二-引擎室的秘密/第17章-打开引擎室的门.md": {
+      "md5": "ec38f7d13ea66694e3a41131a40f3474",
+      "integrated": true,
+      "post_abbrlink": "8ceaa9d1",
+      "post_path": "source/_posts/claudecode-book/第17章-打开引擎室的门.md"
+    },
+    "卷二-引擎室的秘密/第18章-主入口一切的起点.md": {
+      "md5": "4d56ef2229c2c709cb306400aeb65f7d",
+      "integrated": true,
+      "post_abbrlink": "8c4aaef7",
+      "post_path": "source/_posts/claudecode-book/第18章-主入口一切的起点.md"
+    },
+    "卷二-引擎室的秘密/第19章-React在终端里奔跑.md": {
+      "md5": "51b54616a82d7a8f328cebc08ae21332",
+      "integrated": true,
+      "post_abbrlink": "623dffcd",
+      "post_path": "source/_posts/claudecode-book/第19章-React在终端里奔跑.md"
+    },
+    "卷二-引擎室的秘密/第20章-工具的DNA.md": {
+      "md5": "37210c28df9e04c44a1ae5715aedd510",
+      "integrated": true,
+      "post_abbrlink": "4209b89a",
+      "post_path": "source/_posts/claudecode-book/第20章-工具的DNA.md"
+    },
+    "卷二-引擎室的秘密/第21章-工具执行引擎.md": {
+      "md5": "90e66442a61316c4f3ddb0a1dcfa1fc8",
+      "integrated": true,
+      "post_abbrlink": "3b30cc5e",
+      "post_path": "source/_posts/claudecode-book/第21章-工具执行引擎.md"
+    },
+    "卷二-引擎室的秘密/第22章-安全门卫.md": {
+      "md5": "c45fd95dcbccff9efb91afe19d076d3b",
+      "integrated": true,
+      "post_abbrlink": "b69d5aa2",
+      "post_path": "source/_posts/claudecode-book/第22章-安全门卫.md"
+    },
+    "卷二-引擎室的秘密/第23章-斜杠命令与插件系统.md": {
+      "md5": "277818530a06dee2861e0f356bfd0da3",
+      "integrated": true,
+      "post_abbrlink": "105c1ac7",
+      "post_path": "source/_posts/claudecode-book/第23章-斜杠命令与插件系统.md"
+    },
+    "卷二-引擎室的秘密/第24章-Hook系统.md": {
+      "md5": "ddcf8253daabf12458a533aa9702ccbc",
+      "integrated": true,
+      "post_abbrlink": "b893ae1e",
+      "post_path": "source/_posts/claudecode-book/第24章-Hook系统.md"
+    },
+    "卷二-引擎室的秘密/第25章-外部世界的入口.md": {
+      "md5": "025f79e887635c99324424351c1ed75d",
+      "integrated": true,
+      "post_abbrlink": "77769bd0",
+      "post_path": "source/_posts/claudecode-book/第25章-外部世界的入口.md"
+    },
+    "卷二-引擎室的秘密/第26章-Agent的克隆与协作.md": {
+      "md5": "9ec7d76ff17149e081f2ae383b1d2acd",
+      "integrated": true,
+      "post_abbrlink": "dfae88d8",
+      "post_path": "source/_posts/claudecode-book/第26章-Agent的克隆与协作.md"
+    },
+    "卷二-引擎室的秘密/第27章-跨越会话的记忆.md": {
+      "md5": "ab216b0b1efe7ca586b63a17ad5f7a44",
+      "integrated": true,
+      "post_abbrlink": "b5164991",
+      "post_path": "source/_posts/claudecode-book/第27章-跨越会话的记忆.md"
+    },
+    "卷二-引擎室的秘密/第28章-API通信的暗面.md": {
+      "md5": "0e124dbf401eb967c37eaf1bd9b146f8",
+      "integrated": true,
+      "post_abbrlink": "06fa381c",
+      "post_path": "source/_posts/claudecode-book/第28章-API通信的暗面.md"
+    },
+    "卷五-Agent的造物法则/第53章-一个HTTP请求之外.md": {
+      "md5": "8e2edffaaad73f5fd6c46a5183f62279",
+      "integrated": true,
+      "post_abbrlink": "ec951c22",
+      "post_path": "source/_posts/claudecode-book/第53章-一个HTTP请求之外.md"
+    },
+    "卷五-Agent的造物法则/第54章-消息的形状.md": {
+      "md5": "a00fff68306c2bcd30afcee055affc32",
+      "integrated": true,
+      "post_abbrlink": "562862ed",
+      "post_path": "source/_posts/claudecode-book/第54章-消息的形状.md"
+    },
+    "卷五-Agent的造物法则/第55章-文字如溪流.md": {
+      "md5": "f36171f77bf5b509b5c877b0829ceab7",
+      "integrated": true,
+      "post_abbrlink": "f32444d4",
+      "post_path": "source/_posts/claudecode-book/第55章-文字如溪流.md"
+    },
+    "卷五-Agent的造物法则/第56章-工具调用的双面人生.md": {
+      "md5": "bb32d8dff5e8f07e9f14ed71f19bd879",
+      "integrated": true,
+      "post_abbrlink": "6290407d",
+      "post_path": "source/_posts/claudecode-book/第56章-工具调用的双面人生.md"
+    },
+    "卷五-Agent的造物法则/第57章-MCP的双面.md": {
+      "md5": "b049d5a5594814202968d1565c6f3b3e",
+      "integrated": true,
+      "post_abbrlink": "09cfbc35",
+      "post_path": "source/_posts/claudecode-book/第57章-MCP的双面.md"
+    },
+    "卷五-Agent的造物法则/第58章-MCP原语的三位一体.md": {
+      "md5": "f9aba88405d8fce01e7d446ccdce7ce7",
+      "integrated": true,
+      "post_abbrlink": "47721a8f",
+      "post_path": "source/_posts/claudecode-book/第58章-MCP原语的三位一体.md"
+    },
+    "卷五-Agent的造物法则/第59章-思维被拉长了.md": {
+      "md5": "3989d525103fecfe1766dbc39dfaf691",
+      "integrated": true,
+      "post_abbrlink": "47ac6791",
+      "post_path": "source/_posts/claudecode-book/第59章-思维被拉长了.md"
+    },
+    "卷五-Agent的造物法则/第60章-聪明的缓存.md": {
+      "md5": "817e350a51e954268bd7fa8fde9410aa",
+      "integrated": true,
+      "post_abbrlink": "2f25aabd",
+      "post_path": "source/_posts/claudecode-book/第60章-聪明的缓存.md"
+    },
+    "卷五-Agent的造物法则/第61章-输出的精确控制.md": {
+      "md5": "912b54e969124ee77f0f3d913b140afc",
+      "integrated": true,
+      "post_abbrlink": "214c692e",
+      "post_path": "source/_posts/claudecode-book/第61章-输出的精确控制.md"
+    },
+    "卷五-Agent的造物法则/第62章-配置的多重宇宙.md": {
+      "md5": "ce822842b204c70477b1eaf03d375b75",
+      "integrated": true,
+      "post_abbrlink": "643aae51",
+      "post_path": "source/_posts/claudecode-book/第62章-配置的多重宇宙.md"
+    },
+    "卷五-Agent的造物法则/第63章-循环的引擎.md": {
+      "md5": "33964c5086d34b9b6ff5598060b2af3a",
+      "integrated": true,
+      "post_abbrlink": "36d40204",
+      "post_path": "source/_posts/claudecode-book/第63章-循环的引擎.md"
+    },
+    "卷五-Agent的造物法则/第64章-工具的路由与调度.md": {
+      "md5": "36ee3b5f484a8e01dc6cc2570c8e7155",
+      "integrated": true,
+      "post_abbrlink": "953b4387",
+      "post_path": "source/_posts/claudecode-book/第64章-工具的路由与调度.md"
+    },
+    "卷五-Agent的造物法则/第65章-技能的编织.md": {
+      "md5": "257af3abfec95056b9ecb6844fb4f13b",
+      "integrated": true,
+      "post_abbrlink": "e089dbc5",
+      "post_path": "source/_posts/claudecode-book/第65章-技能的编织.md"
+    },
+    "卷五-Agent的造物法则/第66章-你的Agent框架.md": {
+      "md5": "051f9422e148b4cdc437578c75c60821",
+      "integrated": true,
+      "post_abbrlink": "3ca45973",
+      "post_path": "source/_posts/claudecode-book/第66章-你的Agent框架.md"
+    },
+    "卷四-架构师的棋盘/第41章-为什么是TypeScript.md": {
+      "md5": "993206dee9f7d65589a17bbc3cca33ca",
+      "integrated": true,
+      "post_abbrlink": "4502ab77",
+      "post_path": "source/_posts/claudecode-book/第41章-为什么是TypeScript.md"
+    },
+    "卷四-架构师的棋盘/第42章-为什么是React-Ink.md": {
+      "md5": "1c0e293fe2d0210d79faa1cf5ffc49b0",
+      "integrated": true,
+      "post_abbrlink": "89fcdca8",
+      "post_path": "source/_posts/claudecode-book/第42章-为什么是React-Ink.md"
+    },
+    "卷四-架构师的棋盘/第43章-为什么用Zod.md": {
+      "md5": "ec153a67c7b1a46ecff70a3fd93ffca3",
+      "integrated": true,
+      "post_abbrlink": "a2549689",
+      "post_path": "source/_posts/claudecode-book/第43章-为什么用Zod.md"
+    },
+    "卷四-架构师的棋盘/第44章-工具系统的演进.md": {
+      "md5": "78fd69cb3169efd4eb595a6a421bd416",
+      "integrated": true,
+      "post_abbrlink": "a61f2692",
+      "post_path": "source/_posts/claudecode-book/第44章-工具系统的演进.md"
+    },
+    "卷四-架构师的棋盘/第45章-安全与便利的平衡.md": {
+      "md5": "def8d615085200318e07872dcf730428",
+      "integrated": true,
+      "post_abbrlink": "30a8a6e4",
+      "post_path": "source/_posts/claudecode-book/第45章-安全与便利的平衡.md"
+    },
+    "卷四-架构师的棋盘/第46章-有限窗口的智慧.md": {
+      "md5": "1ca2108af7931b9154a7af41165979f7",
+      "integrated": true,
+      "post_abbrlink": "afecacf8",
+      "post_path": "source/_posts/claudecode-book/第46章-有限窗口的智慧.md"
+    },
+    "卷四-架构师的棋盘/第47章-为什么query.ts是大AsyncGenerator.md": {
+      "md5": "3bac21346d2412a74813812cf09c14b4",
+      "integrated": true,
+      "post_abbrlink": "be348669",
+      "post_path": "source/_posts/claudecode-book/第47章-为什么query.ts是大AsyncGenerator.md"
+    },
+    "卷四-架构师的棋盘/第48章-Agent架构的取舍.md": {
+      "md5": "f0c586c117b0602446c7c8e57866e89d",
+      "integrated": true,
+      "post_abbrlink": "e009838d",
+      "post_path": "source/_posts/claudecode-book/第48章-Agent架构的取舍.md"
+    },
+    "卷四-架构师的棋盘/第49章-开放协议的价值.md": {
+      "md5": "4cf069672edf7f2a50611a90af1ede57",
+      "integrated": true,
+      "post_abbrlink": "da5f8071",
+      "post_path": "source/_posts/claudecode-book/第49章-开放协议的价值.md"
+    },
+    "卷四-架构师的棋盘/第50章-性能的故事.md": {
+      "md5": "da824436ff3171343e2432e03b4adb65",
+      "integrated": true,
+      "post_abbrlink": "8e5a2cfe",
+      "post_path": "source/_posts/claudecode-book/第50章-性能的故事.md"
+    },
+    "卷四-架构师的棋盘/第51章-安全的纵深防御.md": {
+      "md5": "fba4415d71ff7d357ab711faac184457",
+      "integrated": true,
+      "post_abbrlink": "a6213bc5",
+      "post_path": "source/_posts/claudecode-book/第51章-安全的纵深防御.md"
+    },
+    "卷四-架构师的棋盘/第52.5章-Token经济学.md": {
+      "md5": "672409bdbc1d32c96348484cf353c9d7",
+      "integrated": true,
+      "post_abbrlink": "50285c92",
+      "post_path": "source/_posts/claudecode-book/第52.5章-Token经济学.md"
+    },
+    "卷四-架构师的棋盘/第52章-稳定历史与未来.md": {
+      "md5": "a23f3c979b6c3c1a690c7fccc1027d7a",
+      "integrated": true,
+      "post_abbrlink": "5668d4ef",
+      "post_path": "source/_posts/claudecode-book/第52章-稳定历史与未来.md"
+    },
+    "卷零-出发前的地图/第01章-你和AI的第一次对话.md": {
+      "md5": "525d6da964cf6450fe7c54ed0a6c683d",
+      "integrated": true,
+      "post_abbrlink": "9214d329",
+      "post_path": "source/_posts/claudecode-book/第01章-你和AI的第一次对话.md"
+    },
+    "卷零-出发前的地图/第02章-什么是Agentic-Loop.md": {
+      "md5": "b5534070ffe4cf57e4a986a7a9aef846",
+      "integrated": true,
+      "post_abbrlink": "4eb445bf",
+      "post_path": "source/_posts/claudecode-book/第02章-什么是Agentic-Loop.md"
+    },
+    "附录/附录A-TypeScript速成.md": {
+      "md5": "ca8b4a66118fc89354c5ad007739d585",
+      "integrated": true,
+      "post_abbrlink": "6ad5dcde",
+      "post_path": "source/_posts/claudecode-book/附录A-TypeScript速成.md"
+    },
+    "附录/附录B-Java到TypeScript迁移.md": {
+      "md5": "a016fc07d75326ae10469bbb67303442",
+      "integrated": true,
+      "post_abbrlink": "7d77ab5f",
+      "post_path": "source/_posts/claudecode-book/附录B-Java到TypeScript迁移.md"
+    },
+    "附录/附录C-术语表.md": {
+      "md5": "df8bf0ec331b0244a8d37ef52d684eeb",
+      "integrated": true,
+      "post_abbrlink": "834e181b",
+      "post_path": "source/_posts/claudecode-book/附录C-术语表.md"
+    },
+    "附录/附录D-命令速查与源码路径.md": {
+      "md5": "bc70f09e132b5b99a6d455d7f111dc9f",
+      "integrated": true,
+      "post_abbrlink": "47637801",
+      "post_path": "source/_posts/claudecode-book/附录D-命令速查与源码路径.md"
+    },
+    "附录/附录E-AI生态全景图.md": {
+      "md5": "055e34d9cbe2c80cb07e840b410b5a0b",
+      "integrated": true,
+      "post_abbrlink": "a4002936",
+      "post_path": "source/_posts/claudecode-book/附录E-AI生态全景图.md"
+    },
+    "附录/附录F-AI概念关系形式化分析.md": {
+      "md5": "a9924c9fc61dd6e861ae925bb6fe74ce",
+      "integrated": true,
+      "post_abbrlink": "7580681d",
+      "post_path": "source/_posts/claudecode-book/附录F-AI概念关系形式化分析.md"
+    },
+    "附录/附录G-AI评估与Agent-Benchmarking.md": {
+      "md5": "fe95868c13eb145835ed2d97cd8cb274",
+      "integrated": true,
+      "post_abbrlink": "23fe1a26",
+      "post_path": "source/_posts/claudecode-book/附录G-AI评估与Agent-Benchmarking.md"
+    },
+    "附录/附录H-Agent框架的CI-CD与配置管理.md": {
+      "md5": "9335d62d86e322f1c4bc30f7e8509005",
+      "integrated": true,
+      "post_abbrlink": "f403c6fa",
+      "post_path": "source/_posts/claudecode-book/附录H-Agent框架的CI-CD与配置管理.md"
+    },
+    "附录/附录I-向量数据库-Agent的记忆引擎.md": {
+      "md5": "0d2c88be5f4a371c15a6d73029f7e430",
+      "integrated": true,
+      "post_abbrlink": "9c6a30f1",
+      "post_path": "source/_posts/claudecode-book/附录I-向量数据库-Agent的记忆引擎.md"
+    },
+    "附录/附录J-分布式Agent架构.md": {
+      "md5": "12ec398d156afdaef9069de033a42bc0",
+      "integrated": true,
+      "post_abbrlink": "94f32eaa",
+      "post_path": "source/_posts/claudecode-book/附录J-分布式Agent架构.md"
+    },
+    "附录/附录K-Prompt-Engineering系统工程.md": {
+      "md5": "335398ead8f32b5fb9c0c2678acec8c3",
+      "integrated": true,
+      "post_abbrlink": "8f56f9af",
+      "post_path": "source/_posts/claudecode-book/附录K-Prompt-Engineering系统工程.md"
+    }
+  },
+  "source_root": "/Users/nadav/IdeaProjects/claudeai/teaching/book",
+  "generated_at": "2026-05-19T09:52:13.595Z"
+}

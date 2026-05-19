@@ -3,37 +3,19 @@ title: 第 14 章：Skills 的工坊——插件架构
 abbrlink: b8f8c810
 date: 2026-05-19 00:14:00
 chapter: 15
-description: Skills 插件架构，技能与工具的区别及技能池管理
+description: 技能系统的插件架构深度解析——Skill 与 Tool 在本质上的区别、技能的安装注册与管理生命周期、技能市场的运作机制、提示注入的实现原理以及内置的安全扫描流程。
 categories:
-  - QwenPaw 工坊实战
+  - QwenPaw是如何运行的
 tags:
   - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
   - QwenPaw
-description: Skills 插件架构，技能与工具的区别及技能池管理
-categories:
-  - QwenPaw 工坊实战
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
   - 源码解析
-  - QwenPaw
-description: Skills 插件架构，技能与工具的区别及技能池管理
-categories:
-  - QwenPaw 工坊实战
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
-  - QwenPaw
+  - Skills
+  - 插件架构
+  - 提示注入
+  - 技能市场
 ---
+
 
 ```
 卷二：理解设计

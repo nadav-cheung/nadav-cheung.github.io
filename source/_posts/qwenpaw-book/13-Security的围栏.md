@@ -3,37 +3,20 @@ title: 第 13 章：Security 的围栏——拦截器与规则引擎
 abbrlink: 9c18a3a2
 date: 2026-05-19 00:13:00
 chapter: 14
-description: 安全拦截器与规则引擎，ToolGuardEngine 与 Guardian 调度
+description: ToolGuardEngine 三层安全防护体系的完整设计——危险 Shell 命令的模式匹配与混淆检测、密钥的加密存储方案、技能安装前的安全扫描流程与拦截策略。
 categories:
-  - QwenPaw 架构设计
+  - QwenPaw是如何运行的
 tags:
   - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
   - QwenPaw
-description: 安全拦截器与规则引擎，ToolGuardEngine 与 Guardian 调度
-categories:
-  - QwenPaw 架构设计
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
   - 源码解析
-  - QwenPaw
-description: 安全拦截器与规则引擎，ToolGuardEngine 与 Guardian 调度
-categories:
-  - QwenPaw 架构设计
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
-  - QwenPaw
+  - 安全
+  - ToolGuard
+  - 命令检测
+  - 加密
+  - 规则引擎
 ---
+
 
 ```
 卷二：理解设计

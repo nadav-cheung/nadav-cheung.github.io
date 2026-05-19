@@ -3,37 +3,20 @@ title: 第 10 章：Agent 的身世——Mixin 与继承
 abbrlink: 0f07d366
 date: 2026-05-19 00:10:00
 chapter: 11
-description: Agent 的继承体系与 MRO，三层 _reasoning() 重写机制
+description: QwenPawAgent 的完整继承链与 MRO 方法解析顺序——为什么同时继承 ToolGuardMixin 和 ReActAgent，三层 _reasoning() 重写的设计考量与 AgentConfig 配置体系。
 categories:
-  - QwenPaw 架构设计
+  - QwenPaw是如何运行的
 tags:
   - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
   - QwenPaw
-description: Agent 的继承体系与 MRO，三层 _reasoning() 重写机制
-categories:
-  - QwenPaw 架构设计
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
   - 源码解析
-  - QwenPaw
-description: Agent 的继承体系与 MRO，三层 _reasoning() 重写机制
-categories:
-  - QwenPaw 架构设计
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
-  - QwenPaw
+  - Mixin
+  - 继承
+  - MRO
+  - AgentConfig
+  - 面向对象设计
 ---
+
 
 ```
 卷一：追踪请求                    卷二：理解设计

@@ -3,37 +3,17 @@ title: 附录C：源码结构总览
 abbrlink: cf3d2281
 date: 2026-05-19 00:29:00
 chapter: 30
-description: 源码目录结构说明，15 个子包职责与关键文件
+description: QwenPaw 源码目录完整索引——src/qwenpaw/ 下所有模块文件的用途与功能说明，包括 agents、providers、channels、skills、security 等核心子目录的结构一览。
 categories:
-  - QwenPaw 参考资料
+  - QwenPaw是如何运行的
 tags:
   - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
   - QwenPaw
-description: 源码目录结构说明，15 个子包职责与关键文件
-categories:
-  - QwenPaw 参考资料
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
-  - QwenPaw
-description: 源码目录结构说明，15 个子包职责与关键文件
-categories:
-  - QwenPaw 参考资料
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
-  - QwenPaw
+  - 参考手册
+  - 源码结构
+  - 目录索引
 ---
+
 
 源码根目录：`src/qwenpaw/`
 

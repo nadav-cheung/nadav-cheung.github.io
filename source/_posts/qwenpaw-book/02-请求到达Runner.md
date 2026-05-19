@@ -3,37 +3,18 @@ title: 第 2 章：请求到达 Runner
 abbrlink: a6ad8bb6
 date: 2026-05-19 00:02:00
 chapter: 3
-description: Runner 如何调度处理请求，工作空间管理与会话持久化机制
+description: 请求穿越 Channel 适配层到达 Runner 调度器的完整路径——深入 Agent 工作空间的发现与匹配逻辑，理解命令分发、会话持久化与 Agent 生命周期管理的全部细节。
 categories:
-  - QwenPaw 请求的一生
+  - QwenPaw是如何运行的
 tags:
   - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
   - QwenPaw
-description: Runner 如何调度处理请求，工作空间管理与会话持久化机制
-categories:
-  - QwenPaw 请求的一生
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
   - 源码解析
-  - QwenPaw
-description: Runner 如何调度处理请求，工作空间管理与会话持久化机制
-categories:
-  - QwenPaw 请求的一生
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
-  - QwenPaw
+  - Runner
+  - Agent调度
+  - 工作空间
 ---
+
 
 ```
 Browser -> HTTP -> FastAPI -> [Channel] -> [Runner] -> Agent -> Prompt -> ReAct -> LLM -> Tool -> Response

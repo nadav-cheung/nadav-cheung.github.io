@@ -364,7 +364,17 @@ sitemap:
 baidusitemap:
   path: baidusitemap.xml
 
+# AgentScope 源码解析书籍同步
+book_sync:
+  enable: true
+  source_root: /Users/nadav/IdeaProjects/agentscope/teaching/book
+
 # QwenPaw 源码解析书籍同步
 qwenpaw_book_sync:
   enable: true
   source_root: /Users/nadav/IdeaProjects/QwenPaw/book
+
+# Claude Code 源码解析书籍同步
+claudecode_book_sync:
+  enable: true
+  source_root: /Users/nadav/IdeaProjects/claudeai/teaching/book

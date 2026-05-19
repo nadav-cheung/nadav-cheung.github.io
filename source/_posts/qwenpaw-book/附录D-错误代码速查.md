@@ -3,37 +3,17 @@ title: 附录D：错误代码速查
 abbrlink: 6be695b8
 date: 2026-05-19 00:30:00
 chapter: 31
-description: 错误代码含义与处理，核心业务异常与 API 异常体系
+description: QwenPaw 异常体系与错误代码完整参考——Provider 通信异常、模型格式化异常、系统命令执行异常、Agent 运行时异常的分类体系、错误码定义规范与排查建议。
 categories:
-  - QwenPaw 参考资料
+  - QwenPaw是如何运行的
 tags:
   - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
   - QwenPaw
-description: 错误代码含义与处理，核心业务异常与 API 异常体系
-categories:
-  - QwenPaw 参考资料
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
-  - QwenPaw
-description: 错误代码含义与处理，核心业务异常与 API 异常体系
-categories:
-  - QwenPaw 参考资料
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
-  - QwenPaw
+  - 参考手册
+  - 错误代码
+  - 异常处理
 ---
+
 
 QwenPaw 的异常体系建立在 `agentscope_runtime` 引擎的基础异常类之上，通过错误代码（error code）标识不同类型的故障。
 

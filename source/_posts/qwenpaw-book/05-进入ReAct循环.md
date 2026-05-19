@@ -3,37 +3,18 @@ title: 第 5 章：进入 ReAct 循环
 abbrlink: 2b64fa64
 date: 2026-05-19 00:05:00
 chapter: 6
-description: ReAct 循环的执行机制，思考-行动-观察的交替过程与消息队列
+description: ReAct 推理-行动循环的完整源码实现——Agent 如何交替进行思考与行动，每轮迭代中发生了什么，观察执行结果后如何调整下一步策略，以及循环的终止条件与异常退出机制。
 categories:
-  - QwenPaw 请求的一生
+  - QwenPaw是如何运行的
 tags:
   - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
   - QwenPaw
-description: ReAct 循环的执行机制，思考-行动-观察的交替过程与消息队列
-categories:
-  - QwenPaw 请求的一生
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
   - 源码解析
-  - QwenPaw
-description: ReAct 循环的执行机制，思考-行动-观察的交替过程与消息队列
-categories:
-  - QwenPaw 请求的一生
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
-  - QwenPaw
+  - ReAct
+  - Agent循环
+  - 推理与行动
 ---
+
 
 ```
 Browser -> HTTP -> FastAPI -> Runner -> Agent -> Prompt -> [ReAct] -> LLM -> Tool -> Response

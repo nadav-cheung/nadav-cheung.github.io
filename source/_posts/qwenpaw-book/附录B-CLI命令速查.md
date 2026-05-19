@@ -3,37 +3,17 @@ title: 附录B：CLI 命令速查
 abbrlink: 90b4c758
 date: 2026-05-19 00:28:00
 chapter: 29
-description: CLI 命令参考，qwenpaw 命令与全局选项速查
+description: QwenPaw 命令行工具完整参考手册——全局选项、所有子命令及其参数的速查索引，涵盖 app、init、doctor、env、skill 等全部命令的用法说明。
 categories:
-  - QwenPaw 参考资料
+  - QwenPaw是如何运行的
 tags:
   - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
   - QwenPaw
-description: CLI 命令参考，qwenpaw 命令与全局选项速查
-categories:
-  - QwenPaw 参考资料
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
-  - QwenPaw
-description: CLI 命令参考，qwenpaw 命令与全局选项速查
-categories:
-  - QwenPaw 参考资料
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
-  - QwenPaw
+  - 参考手册
+  - CLI
+  - 命令速查
 ---
+
 
 QwenPaw 的命令行入口为 `qwenpaw`，基于 Click 框架构建，支持 `-h`/`--help` 查看帮助。
 

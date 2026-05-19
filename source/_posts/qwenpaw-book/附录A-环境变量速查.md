@@ -3,37 +3,17 @@ title: 附录A：环境变量速查
 abbrlink: 665ceae0
 date: 2026-05-19 00:27:00
 chapter: 28
-description: 环境变量配置参考，QWENPAW_ 前缀与 COPAW_ 兼容
+description: QwenPaw 全部环境变量速查表——工作目录路径的配置方式、模型 API 密钥与端点地址的设置、服务监听地址与端口号、调试与日志开关的完整变量名、默认值及详细使用说明。
 categories:
-  - QwenPaw 参考资料
+  - QwenPaw是如何运行的
 tags:
   - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
   - QwenPaw
-description: 环境变量配置参考，QWENPAW_ 前缀与 COPAW_ 兼容
-categories:
-  - QwenPaw 参考资料
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
-  - QwenPaw
-description: 环境变量配置参考，QWENPAW_ 前缀与 COPAW_ 兼容
-categories:
-  - QwenPaw 参考资料
-tags:
-  - Python
-  - AI助手
-  - FastAPI
-  - AgentScope
-  - 源码解析
-  - QwenPaw
+  - 参考手册
+  - 环境变量
+  - 配置
 ---
+
 
 所有环境变量均可通过 `.env` 文件、系统环境变量、`qwenpaw env set` 命令或 `envs.json` 持久化文件设置。
 
