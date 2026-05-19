@@ -2,7 +2,7 @@
 
 title: 第 4 章 第 1 站：消息诞生
 abbrlink: 8b7dc5cc
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:03:00
 chapter: 4
 description: "深入剖析AgentScope中Msg消息对象的创建与设计。Msg作为纯数据容器支持字符串与ContentBlock列表两种形态，通过TypedDict定义七种内容块类型兼顾灵活性与类型安全，选择TypedDict而非dataclass使消息天然适配JSON序列化，同时介绍DictMixin字典式访问与序列化等关键细节。"
 categories:

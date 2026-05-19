@@ -2,7 +2,7 @@
 
 title: 第 32 章：编译期 Hook vs 运行时 Hook
 abbrlink: 3630c5b9
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:31:00
 chapter: 32
 description: "对比元类编译期注入与运行时动态包装两种 Hook 实现策略，解析 AgentScope 选择编译期的三大理由：覆盖保证、继承链防重入安全、业务代码零侵入。深入追踪防重入机制的调用链执行过程，并讨论调试困难、元类恐惧等代价。"
 categories:

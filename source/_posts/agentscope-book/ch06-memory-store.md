@@ -2,7 +2,7 @@
 
 title: 第 6 章：第 3 站：工作记忆
 abbrlink: afad0d79
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:05:00
 chapter: 6
 description: "打开AgentScope工作记忆的内部实现，解析MemoryBase抽象基类定义的add、get_memory、delete接口，以及InMemoryMemory如何用列表元组存储消息与标记、通过深拷贝隔离快照并去重。讲解mark标记过滤与排除机制、压缩摘要前置替换策略，展示为模型推理提供有序可筛选对话上下文的设计。"
 categories:

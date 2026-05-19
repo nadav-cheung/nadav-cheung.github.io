@@ -2,7 +2,7 @@
 
 title: 第 5 章 第 2 站：Agent 收信
 abbrlink: c3c8e673
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:04:00
 chapter: 5
 description: "追踪消息进入Agent后的处理流程，解析__call__方法如何生成回复ID并调用被Hook包装的reply方法。深入讲解元类_AgentMeta自动为关键方法套上Hook包装的机制，剖析实例级与类级Hook注册、防重入守卫设计，以及MsgHub分组广播机制，揭示AgentScope可扩展通信架构的根基。"
 categories:

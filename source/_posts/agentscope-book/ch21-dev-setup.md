@@ -2,7 +2,7 @@
 
 title: 第 21 章：扩展准备——搭建开发环境与测试策略
 abbrlink: 592a9730
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:20:00
 chapter: 21
 description: "本章手把手搭建 AgentScope 二次开发环境，涵盖仓库克隆与开发模式安装、pre-commit 钩子链配置、测试目录结构与异步测试模式解读，以及代码规范速查。通过三个无需 API Key 的验证步骤确认环境就绪，为后续自定义 Tool、Memory、Agent 等扩展开发提供可靠的工作台基础。"
 categories:

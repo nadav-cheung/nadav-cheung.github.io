@@ -2,7 +2,7 @@
 
 title: 第 22 章：造一个新 Tool——数据库查询工具
 abbrlink: b927000a
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:21:00
 chapter: 22
 description: "本章从零构建一个 SQLite 数据库查询工具，分别实现同步返回完整结果的版本和基于 AsyncGenerator 逐行输出的流式版本。工具注册时框架自动从函数签名与 docstring 生成 JSON Schema，通过 preset_kwargs 机制隐藏数据库路径等敏感配置。最后演示工具集成到 ReActAgent 的完整流程，并附带缓存中间件优化练习。"
 categories:

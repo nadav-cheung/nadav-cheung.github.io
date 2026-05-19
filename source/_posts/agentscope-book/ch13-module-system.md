@@ -2,9 +2,9 @@
 
 title: 第 13 章：模块系统——文件的命名与导入
 abbrlink: f3158095
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:12:00
 chapter: 13
-description: “本章讲解 AgentScope 的模块组织规则：下划线前缀标识内部实现，__init__.py 充当公共 API 门面，三层导入路径从顶层包到子包再到公共类，以及 agentscope.init() 的模块发现与自动注册机制。”
+description: 本章讲解 AgentScope 的模块组织规则：下划线前缀标识内部实现，__init__.py 充当公共 API 门面，三层导入路径从顶层包到子包再到公共类，以及 agentscope.init() 的模块发现与自动注册机制。
 categories:
   - AgentScope是如何运行的
 tags:

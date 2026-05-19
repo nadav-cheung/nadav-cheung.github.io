@@ -3,7 +3,7 @@
 
 title: 第 8 站：格式转换
 abbrlink: a5de3ffa
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:07:00
 chapter: 8
 description: "解析AgentScope中Formatter的三层继承体系，从FormatterBase到TruncatedFormatterBase的Token截断，再到OpenAIChatFormatter的具体转换。讲解保护系统提示、工具调用与结果成对删除等截断规则，以及Formatter独立于Model适配多种API的设计。"
 categories:

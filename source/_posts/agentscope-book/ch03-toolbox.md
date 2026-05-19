@@ -2,7 +2,7 @@
 
 title: 第 3 章 准备工具箱
 abbrlink: 70891d57
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:02:00
 chapter: 3
 description: "聚焦AgentScope框架初始化流程，从async/await异步编程基础讲起，逐步解析agentscope.init()源码实现。揭示模块导入时配置已生成默认值、init()按需覆盖参数的机制，重点剖析ContextVar上下文隔离设计如何确保并发场景下各Agent的全局配置互不干扰。"
 categories:

@@ -2,7 +2,7 @@
 
 title: 第 10 站：执行工具
 abbrlink: d4d5d03d
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:09:00
 chapter: 10
 description: "追踪模型返回工具调用请求后的执行全过程，解析Toolkit如何通过显式注册定位对应Python函数、合并预设参数执行并将结果封装为ToolResponse。详细讲解工具注册时自动生成JSON Schema的机制、工具分组的动态激活与停用策略，以及基于装饰器的中间件洋葱模型如何在调用前后层层插入自定义逻辑。"
 categories:

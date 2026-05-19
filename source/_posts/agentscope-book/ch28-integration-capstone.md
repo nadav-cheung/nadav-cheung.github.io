@@ -2,7 +2,7 @@
 
 title: 第 28 章：终章——集成实战
 abbrlink: 82d1d56b
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:27:00
 chapter: 28
 description: "本章将前六章构建的 Tool、Model、Memory、Agent、MCP 集成与高级中间件组装为完整的 Agent 系统，通过单元测试、集成测试和端到端测试三层验证组装效果。文章实现无需 API Key 的模拟循环与完整 ReAct 循环，设置测试覆盖率不低于百分之八十的标准，并对比内存与 SQLite 两种 Memory 的性能基准，以 PR 检查清单收尾第三卷。"
 categories:

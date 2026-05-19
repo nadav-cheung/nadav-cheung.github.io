@@ -2,7 +2,7 @@
 
 title: 第 16 章：策略模式——Formatter 的多态分发
 abbrlink: 265e5952
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:15:00
 chapter: 16
 description: "以 Formatter 为例讲解策略模式如何将 API 格式转换与模型调用解耦，结合模板方法模式在 TruncatedFormatterBase 中定义格式化骨架，并对比 OpenAI 与 Anthropic 的 JSON 结构差异。"
 categories:

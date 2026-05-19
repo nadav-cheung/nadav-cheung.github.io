@@ -2,9 +2,9 @@
 
 title: 第 25 章：造一个新 Agent 类型——Plan-Execute Agent
 abbrlink: 6f7cb63f
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:24:00
 chapter: 25
-description: “本章实现一个 Plan-Execute Agent，直接继承 AgentBase 获得完全的循环控制自由。其工作流程分为 Plan（生成步骤列表）、Execute（逐步执行并调用工具）和 Review（检查结果决定是否修改计划）三个阶段，与 ReAct 的边想边做模式形成对比。文章详细讲解 reply 方法及各阶段的实现，并讨论继承与组合的设计权衡。”
+description: 本章实现一个 Plan-Execute Agent，直接继承 AgentBase 获得完全的循环控制自由。其工作流程分为 Plan（生成步骤列表）、Execute（逐步执行并调用工具）和 Review（检查结果决定是否修改计划）三个阶段，与 ReAct 的边想边做模式形成对比。文章详细讲解 reply 方法及各阶段的实现，并讨论继承与组合的设计权衡。
 categories:
   - AgentScope是如何运行的
 tags:

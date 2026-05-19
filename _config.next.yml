@@ -578,9 +578,9 @@ pdf:
 
 # Mermaid 流程图
 # 默认值: enable: false, theme.light: default, theme.dark: dark
-# 当前无文章使用 mermaid，禁用以减少 ~200KB JS 加载
+# 31 篇 agentscope-book 文章使用 mermaid 流程图
 mermaid:
-  enable: false
+  enable: true
   # 可选主题: default | dark | forest | neutral
   theme:
     light: neutral

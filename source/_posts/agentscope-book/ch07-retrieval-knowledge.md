@@ -1,7 +1,7 @@
 ---
 title: 第 7 站：检索与知识
 abbrlink: 52dd2eba
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:06:00
 chapter: 7
 description: "探索Agent长期记忆与外部知识检索的实现。对比工作记忆的对话内局限，讲解LongTermMemoryBase的static_control与agent_control两种控制模式，梳理RAG知识库从文档分块、Embedding向量化到向量检索的全链路流程，阐明三种记忆层次如何协同增强Agent的上下文能力。"
 categories:

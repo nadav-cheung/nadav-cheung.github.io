@@ -2,9 +2,9 @@
 
 title: 第 31 章：上帝类 vs 模块拆分
 abbrlink: fdc92fe7
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:30:00
 chapter: 31
-description: “辨析 AgentScope Toolkit 的 1684 行单文件聚合是否属于反模式的”上帝类”。通过量化九种职责的行数分布、内聚性分析和与 ReActAgent 的横向对比，论证其作为高内聚聚合根的合理性，并推演中间件拆分的重构边界与代价。”
+description: 辨析 AgentScope Toolkit 的 1684 行单文件聚合是否属于反模式的上帝类。通过量化九种职责的行数分布、内聚性分析和与 ReActAgent 的横向对比，论证其作为高内聚聚合根的合理性，并推演中间件拆分的重构边界与代价。
 categories:
   - AgentScope是如何运行的
 tags:

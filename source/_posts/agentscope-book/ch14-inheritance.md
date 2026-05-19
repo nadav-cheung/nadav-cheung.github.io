@@ -2,9 +2,9 @@
 
 title: 第 14 章：继承体系——从 StateModule 到 AgentBase
 abbrlink: c9ef8dc2
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:13:00
 chapter: 14
-description: "以"记忆丢失"Bug 为线索，逐层拆解从 StateModule 到 ReActAgent 的四层继承链，解析每层的职责边界与序列化协作机制，帮助读者掌握对象状态持久化的排查思路。"
+description: '以"记忆丢失"Bug 为线索，逐层拆解从 StateModule 到 ReActAgent 的四层继承链，解析每层的职责边界与序列化协作机制，帮助读者掌握对象状态持久化的排查思路。'
 categories:
   - AgentScope是如何运行的
 tags:

@@ -2,9 +2,9 @@
 
 title: 第 2 章 什么是 Agent
 abbrlink: 71cc54ce
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:01:00
 chapter: 2
-description: “揭示Agent如何将只能输出文字的大模型升级为能行动、能记忆的全能助手。通过天气查询Agent实例，详细讲解LLM大脑、Memory记忆、Tool工具与ReAct循环四大核心组件的协作机制，展示Agent在推理与行动交替中查外部服务、保存对话上下文并自主纠错规划的完整工作流程。”
+description: 揭示Agent如何将只能输出文字的大模型升级为能行动、能记忆的全能助手。通过天气查询Agent实例，详细讲解LLM大脑、Memory记忆、Tool工具与ReAct循环四大核心组件的协作机制，展示Agent在推理与行动交替中查外部服务、保存对话上下文并自主纠错规划的完整工作流程。
 categories:
   - AgentScope是如何运行的
 tags:

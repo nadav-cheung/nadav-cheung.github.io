@@ -2,7 +2,7 @@
 
 title: 第 36 章：架构全景与边界
 abbrlink: a7614c80
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:35:00
 chapter: 36
 description: "从全局视角梳理 AgentScope 24 个模块的四层依赖关系图，区分核心层与边缘模块，剖析 _utils/_common.py 等边界模糊处的设计权衡。全书 36 章复盘从基础概念到设计权衡的完整学习路径，展望多模态与 A2A 协议的演化方向。"
 categories:

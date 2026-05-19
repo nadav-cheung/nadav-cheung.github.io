@@ -2,7 +2,7 @@
 
 title: 第 26 章：集成 MCP Server——对接本地工具服务
 abbrlink: b045fc2c
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:25:00
 chapter: 26
 description: "本章讲解如何将 MCP Server 提供的远程工具注册到 Toolkit 中，使 Agent 能像调用本地 Python 函数一样使用外部服务。文章介绍 MCP 协议的核心概念与工具发现机制，对比 stdio 和 HTTP 两种传输方式，演示从获取工具列表到包装可调用函数再到分组注册的完整流程，体现抽象层让远程工具与本地函数对上层代码完全透明的设计理念。"
 categories:

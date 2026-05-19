@@ -2,7 +2,7 @@
 
 title: 第 11 站：循环与返回
 abbrlink: 7297614b
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:10:00
 chapter: 11
 description: "本章深入解析 ReActAgent.reply() 的完整循环机制，涵盖推理、行动与总结三个阶段，介绍记忆压缩如何防止上下文溢出，以及结构化输出、并行工具调用和 PlanNotebook 计划子系统的实现细节。"
 categories:

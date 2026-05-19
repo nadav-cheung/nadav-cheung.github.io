@@ -2,7 +2,7 @@
 
 title: 第 29 章：消息为什么是唯一接口
 abbrlink: 6ba06eed
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:28:00
 chapter: 29
 description: "深入剖析 AgentScope 为何选择单一 Msg 类作为全框架唯一通信接口，而非多种消息类型或纯字符串方案。通过对比 LangChain 的多类型设计和 AutoGen 的字典方案，分析统一接口在序列化、扩展性和互操作方面的优势，以及运行时类型检查和角色语义模糊的代价。"
 categories:

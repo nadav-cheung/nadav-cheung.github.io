@@ -2,7 +2,7 @@
 
 title: 第 30 章：为什么不用装饰器注册工具
 abbrlink: 04d4f60b
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:29:00
 chapter: 30
 description: "对比 AgentScope 的实例级工具注册与 LangChain 全局装饰器方案，解析显式注册在多 Agent 场景下的优势。实例级注册让不同 Agent 持有独立工具集，支持运行时动态决定注册内容，同一函数可复用为不同名称和描述，且测试隔离无需清理全局状态。"
 categories:

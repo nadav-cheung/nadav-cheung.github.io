@@ -18,9 +18,9 @@ hexo.extend.filter.register('before_generate', function () {
     // Both have chapter → sort by chapter ascending (reading order)
     if (ca && cb) return ca - cb;
 
-    // One has chapter, one doesn't → chapter posts come after non-chapter posts
-    if (ca && !cb) return 1;
-    if (!ca && cb) return -1;
+    // One has chapter, one doesn't → chapter posts come before non-chapter posts
+    if (ca && !cb) return -1;
+    if (!ca && cb) return 1;
 
     // Neither has chapter → default date-descending
     return b.date - a.date;

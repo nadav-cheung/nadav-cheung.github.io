@@ -2,7 +2,7 @@
 
 title: 第 15 章：元类与 Hook——方法调用的拦截
 abbrlink: 1fd0933e
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:14:00
 chapter: 15
 description: "深入解析 Hook 系统的元类实现：_AgentMeta 在类定义时自动包装 reply 等方法，_wrap_with_hooks 提供防重入保护与链式执行，参数归一化让 Hook 能安全修改调用参数，_ReActAgentMeta 进一步扩展 reasoning 与 acting 钩子点。"
 categories:

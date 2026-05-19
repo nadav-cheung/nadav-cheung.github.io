@@ -3,7 +3,7 @@
 
 title: 第 33 章：为什么 ContentBlock 是 TypedDict Union
 abbrlink: f560b5ba
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:32:00
 chapter: 33
 description: "解析 AgentScope 为何用 TypedDict Union 而非 OOP 继承或 dataclass 定义 ContentBlock。TypedDict 既是字典又带类型提示，实现零序列化成本和与 OpenAI API 的天然兼容，配合 Union 类型与 match/case 实现类型安全的多态分发，代价是缺失共享基类和行为能力。"
 categories:

@@ -2,7 +2,7 @@
 
 title: 第 9 站：调用模型
 abbrlink: 03dd72ec
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:08:00
 chapter: 9
 description: "深入AgentScope模型适配层源码，剖析ChatModelBase统一调用接口与流式、非流式两种响应解析流程。详细解读ChatResponse中Text、ToolUse、Thinking等内容块类型，展示结构化输出如何借助工具调用伪装实现自动回退，涵盖流式增量累积与推理模型思考过程暴露机制。"
 categories:
