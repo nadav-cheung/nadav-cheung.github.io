@@ -6,7 +6,7 @@ date: 2024-03-05 00:00:00
 chapter: 6
 description: "工作记忆以列表元组存储消息与标记，MemoryBase契约定义add/getmemory等接口。内存实现通过深拷贝隔离快照，并去重；检索可按标记过滤或排除，支持前置压缩摘要，为模型推理提供有序、可筛选的对话上下文。"
 categories:
-  - 算法与数据结构
+  - AgentScope是如何运行的
 tags:
   - AgentScope
   - 工作记忆

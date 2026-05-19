@@ -6,7 +6,7 @@ date: 2024-04-03 00:00:00
 chapter: 35
 description: "AgentScope 将消息格式转换与 API 调用分别抽象为 Formatter 和 Model 两个独立类，避免传统框架合并方案带来的 N×M 类爆炸问题，实现 N+M 的组合自由。这一分离支撑了格式与通信的独立测试、独立替换和关注点分离，通过契约匹配抹平不同 API 的语义差异，正是框架“可扩展模块”思想的体现。"
 categories:
-  - 算法与数据结构
+  - AgentScope是如何运行的
 tags:
   - AgentScope
   - 架构设计

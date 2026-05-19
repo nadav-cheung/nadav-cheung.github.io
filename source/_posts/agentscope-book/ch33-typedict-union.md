@@ -6,7 +6,7 @@ abbrlink: f560b5ba
 date: 2024-04-01 00:00:00
 chapter: 33
 categories:
-  - 算法与数据结构
+  - AgentScope是如何运行的
 tags:
   - Python
   - TypedDict

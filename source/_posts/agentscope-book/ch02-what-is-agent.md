@@ -6,7 +6,7 @@ date: 2024-03-01 00:00:00
 chapter: 2
 description: "大模型虽能预测文字，却无法行动或记忆。Agent 为其装上大脑（LLM）、记忆（Memory）、工具（Tool）与 ReAct 工作流，实现“想→做→看”循环，从只会说的顾问变身全能助手。通过记忆保存对话，借助工具调用外部服务，在推理与行动的交替中纠错规划，直至完成任务。"
 categories:
-  - 算法与数据结构
+  - AgentScope是如何运行的
 tags:
   - Agent
   - AgentScope

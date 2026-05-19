@@ -6,7 +6,7 @@ date: 2024-03-09 00:00:00
 chapter: 10
 description: "模型返回工具调用请求后，Toolkit通过显式注册找到对应函数，合并预设参数执行，并将结果封装返回。本章详解工具注册自动生成JSON Schema、工具分组激活，以及基于装饰器的中间件洋葱模型，在调用前后插入逻辑。"
 categories:
-  - 算法与数据结构
+  - AgentScope是如何运行的
 tags:
   - AgentScope
   - Toolkit

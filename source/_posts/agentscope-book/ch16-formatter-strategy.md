@@ -6,7 +6,7 @@ date: 2024-03-15 00:00:00
 chapter: 16
 description: "AgentScope 利用策略模式将 API 格式转换（Formatter）与模型调用（Model）解耦，ReActAgent 只依赖抽象接口，切换 OpenAI 或 Anthropic 等提供商无需改动 Agent。模板方法模式在 TruncatedFormatterBase 中定义格式化骨架与消息分组，让工具调用、系统提示等 JSON 结构差异对上层完全透明，实现格式与调用的正交组合。"
 categories:
-  - 算法与数据结构
+  - AgentScope是如何运行的
 tags:
   - 策略模式
   - AgentScope

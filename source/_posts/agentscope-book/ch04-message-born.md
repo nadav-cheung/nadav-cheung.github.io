@@ -6,7 +6,7 @@ date: 2024-03-03 00:00:00
 chapter: 4
 description: "本文剖析了AgentScope中Msg消息对象的创建与设计。Msg作为纯数据容器，支持字符串或ContentBlock列表两种内容形态，通过TypedDict定义七种内容块（文本、图片、工具调用等），兼顾灵活性与类型安全。选用TypedDict而非dataclass，使消息天然适配JSON序列化，减少API交互转换开销。同时介绍了DictMixin赋予对象字典式访问能力，以及序列化、ID生成等关键细节。"
 categories:
-  - 算法与数据结构
+  - AgentScope是如何运行的
 tags:
   - AgentScope
   - 消息系统

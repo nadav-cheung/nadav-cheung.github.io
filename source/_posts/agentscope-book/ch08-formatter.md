@@ -6,7 +6,7 @@ abbrlink: a5de3ffa
 date: 2024-03-07 00:00:00
 chapter: 8
 categories:
-  - 算法与数据结构
+  - AgentScope是如何运行的
 tags:
   - AgentScope
   - Formatter

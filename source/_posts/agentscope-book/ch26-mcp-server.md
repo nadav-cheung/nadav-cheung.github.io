@@ -6,7 +6,7 @@ date: 2024-03-25 00:00:00
 chapter: 26
 description: "本文讲解如何将 MCP Server 提供的工具注册到 AgentScope 的 Toolkit 中，使 ReActAgent 可像调用普通函数一样使用远程工具。通过理解 MCP 协议与工具发现机制，介绍了三种传输方式（stdio、HTTP），并演示了获取工具列表、包装可调用函数并分组注册的完整流程。利用抽象层设计，MCP 工具与本地函数对上层代码完全透明，实现无缝集成。"
 categories:
-  - 算法与数据结构
+  - AgentScope是如何运行的
   - ```
 tags:
   - AgentScope

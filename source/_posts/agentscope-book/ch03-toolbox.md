@@ -6,7 +6,7 @@ date: 2024-03-02 00:00:00
 chapter: 3
 description: "本文聚焦Agentscope框架初始化流程，解析`agentscope.init()`与异步基础。路线图明确章节处于准备阶段，核心是理解`await`实现非阻塞等待的本质。通过逐行阅读源码，揭示了`import`时配置实例`config`已生成默认值，而`init()`函数则负责按需覆盖项目名、日志路径等参数。文章重点剖析了`ContextVar`的设计动机，它通过上下文隔离机制，确保并发场景下各Agent的全局配置互不干扰，为后续多任务协同奠定基础。"
 categories:
-  - 算法与数据结构
+  - AgentScope是如何运行的
 tags:
   - AgentScope
   - 源码阅读

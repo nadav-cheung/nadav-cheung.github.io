@@ -6,7 +6,7 @@ date: 2024-03-20 00:00:00
 chapter: 21
 description: "本章以搭建AgentScope开发环境为实例，完整演示卷三的六步模板。从克隆仓库、安装开发依赖、配置pre-commit检查链，到解读测试目录结构与异步测试模式，逐步跑通无需API Key的测试和代码质量工具。最后提供环境验证练习，确保后续自定义工具、记忆与Agent的开发有可靠的工作台支撑。"
 categories:
-  - 算法与数据结构
+  - AgentScope是如何运行的
 tags:
   - AgentScope
   - 开发环境配置

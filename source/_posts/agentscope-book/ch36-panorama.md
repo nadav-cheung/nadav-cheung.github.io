@@ -6,7 +6,7 @@ date: 2024-04-04 00:00:00
 chapter: 36
 description: "本章从全局视角梳理了AgentScope 24个模块的四层依赖关系，区分核心与边缘模块，剖析utils/common.py等边界模糊处的设计权衡，并展望多模态、A2A等演化路径，最后通过实验引导读者亲手验证架构全景。"
 categories:
-  - 算法与数据结构
+  - AgentScope是如何运行的
 tags:
   - 架构分析
   - 依赖全景

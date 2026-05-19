@@ -6,7 +6,7 @@ date: 2024-03-24 00:00:00
 chapter: 25
 description: "本文实现了一种Plan-Execute Agent，继承AgentBase而非ReActAgentBase，以获取完全的循环控制自由。其工作流程分为Plan（生成步骤列表）、Execute（逐步执行并调用工具）和Review（检查结果并决定是否修改计划）三个阶段，与ReAct的“边想边做”不同，Plan-Execute是“先计划再执行”。文中详细介绍了类结构、reply方法及各阶段实现，并通过设计权衡说明了继承与组合的选择。"
 categories:
-  - 算法与数据结构
+  - AgentScope是如何运行的
 tags:
   - Plan-Execute Agent
   - Agent设计模式

@@ -6,7 +6,7 @@ date: 2024-03-04 00:00:00
 chapter: 5
 description: "消息进入Agent后，call方法首先生成唯一回复ID并记录asyncio任务以支持中断，然后调用被Hook包装的reply方法。得益于元类AgentMeta，在类定义时便自动为reply、observe等关键方法套上三明治包装，允许注册实例级和类级Hook，实现灵活拦截；防重入守卫保障多继承安全��最终通过订阅者字典按MsgHub分组广播，过滤思考块并清理任务，奠定了AgentScope可扩展的通信基础。"
 categories:
-  - 算法与数据结构
+  - AgentScope是如何运行的
 tags:
   - AgentScope
   - 源码解析
