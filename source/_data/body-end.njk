@@ -108,8 +108,23 @@
     }
   }
 
+  // 降低回到顶部按钮出现阈值（默认 5% 对大文章太高）
+  function fixBackToTop() {
+    var btn = document.querySelector('.back-to-top');
+    if (!btn) return;
+    var onScroll = function () {
+      var pct = document.body.scrollHeight > window.innerHeight
+        ? 100 * window.scrollY / (document.body.scrollHeight - window.innerHeight)
+        : 0;
+      btn.classList.toggle('back-to-top-on', window.scrollY > 150 || Math.round(pct) >= 5);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
+
+  fixBackToTop();
   initBookshelf();
-  document.addEventListener('pjax:complete', initBookshelf);
-  document.addEventListener('pjax:popstate', initBookshelf);
+  document.addEventListener('pjax:complete', function () { initBookshelf(); fixBackToTop(); });
+  document.addEventListener('pjax:popstate', function () { initBookshelf(); fixBackToTop(); });
 })();
 </script>

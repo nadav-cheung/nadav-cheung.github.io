@@ -210,7 +210,7 @@ toc:
   # 自动添加序号
   number: true
   # 标题超宽时换行
-  wrap: false
+  wrap: true
   # 展开所有层级（而非仅当前阅读位置）
   expand_all: true
   # 最大标题深度 (1-6)
@@ -341,14 +341,14 @@ follow_me:
 # 依赖: hexo-related-posts 或 hexo-posts-embedding（v8.24.0 新增支持）
 # 默认值: enable: false
 related_posts:
-  enable: false
+  enable: true
   icon: fa fa-signs-post
 
 # 在线编辑文章（跳转到 GitHub）
 # 默认值: enable: false
 post_edit:
-  enable: false
-  url: https://github.com/nadav-cheung/nadav-cheung.github.io/tree/gh-page
+  enable: true
+  url: https://github.com/nadav-cheung/nadav-cheung.github.io/tree/1.0.x/source/_posts
 
 # 上下篇文章导航
 # left: 左右两侧显示 | right: 右侧显示 | false: 关闭
@@ -441,7 +441,7 @@ codeblock:
     height: 500
   # 显示语言名称（v8.23.1 新增）
   # 默认值: false
-  language: false
+  language: true
 
 # 返回顶部按钮
 # 默认值: enable: true, sidebar: false, scrollpercent: false
@@ -720,7 +720,7 @@ comments:
   # 记住用户选择的评论系统
   storage: true
   # 懒加载评论（滚动到评论区才加载）
-  lazyload: false
+  lazyload: true
   nav:
 
 # Disqus
