@@ -1,5 +1,4 @@
 ---
-
 title: 第 10 站：执行工具
 abbrlink: d4d5d03d
 date: 2026-05-19 00:09:00
@@ -9,11 +8,6 @@ categories:
   - AgentScope是如何运行的
 tags:
   - Toolkit
-  - 工具注册
-  - 中间件
-  - 洋葱模型
-  - JSON Schema
-  - 装饰器模式
 ---
 
 > 模型返回了 `ToolUseBlock(name="get_weather", input={"city": "北京"})`。但这只是一个 JSON 对象——怎么从它变成真正执行 `get_weather("北京")` 的函数调用？
@@ -425,6 +419,12 @@ async def timing_middleware(kwargs, next_handler):
 
 toolkit.register_middleware(timing_middleware)
 ```
+
+> **参考答案**：
+>
+> 1. **抛出异常**。`namesake_strategy` 的默认值是 `"raise"`，注册同名函数会直接报错。其他选项：`"override"`（覆盖旧函数）、`"skip"`（跳过新函数）、`"rename"`（自动给新函数改名）。
+> 2. **`tool_call["input"]` 优先**。合并代码是 `{**preset_kwargs, **(tool_call["input"])}`——后面的字典覆盖前面的同名键。这意味着模型传入的参数可以覆盖预设值。
+> 3. 上面的代码已经是一个完整的计时中间件实现。它记录开始时间，调用 `next_handler` 向下传递，最后打印总耗时。
 
 ---
 

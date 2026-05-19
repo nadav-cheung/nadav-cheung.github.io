@@ -1,5 +1,4 @@
 ---
-
 title: 第 19 章：发布-订阅——多 Agent 通信的广播机制
 abbrlink: 8c168bd0
 date: 2026-05-19 00:18:00
@@ -9,10 +8,6 @@ categories:
   - AgentScope是如何运行的
 tags:
   - 发布-订阅模式
-  - MsgHub
-  - 多智能体通信
-  - 消息广播
-  - 松耦合架构
 ---
 
 > **难度**：中等
@@ -315,6 +310,11 @@ git checkout src/agentscope/agent/_agent_base.py
 
 1. 如果两个 MsgHub 有重叠的参与者，`_subscribers` 字典会怎样？
 2. `enable_auto_broadcast=False` 时，MsgHub 还能做什么？
+
+> **参考答案**：
+>
+> 1. **互不影响**。`_subscribers` 是 `dict[str, list[AgentBase]]`，键是 **MsgHub 名称**。每个 MsgHub 有自己的键，参与者完全独立。一个 Agent 可以同时出现在多个 MsgHub 的订阅者列表中。广播时，`_broadcast_to_subscribers` 遍历 `self._subscribers.values()`，所以消息会发到所有 MsgHub 的订阅者。
+> 2. `enable_auto_broadcast=False` 时，Agent 的 `__call__` 不再自动广播，但 MsgHub 仍然可以通过 `hub.broadcast(msg)` **手动广播**消息给所有参与者。此外，`set_auto_broadcast(True)` 可以随时重新开启自动广播。这种模式适合需要精确控制广播时机的场景。
 
 ---
 

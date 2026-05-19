@@ -1,5 +1,4 @@
 ---
-
 title: 第 18 章：中间件与洋葱模型——工具执行的拦截链
 abbrlink: 988470df
 date: 2026-05-19 00:17:00
@@ -9,10 +8,6 @@ categories:
   - AgentScope是如何运行的
 tags:
   - 中间件模式
-  - 洋葱模型
-  - 工具执行拦截
-  - 异步生成器
-  - 横切关注点
 ---
 
 > **难度**：中等
@@ -370,6 +365,12 @@ async def timing_middleware(kwargs, next_handler):
     elapsed = time.time() - start
     print(f"  [计时] 耗时 {elapsed:.3f}s")
 ```
+
+> **参考答案**：
+>
+> 1. **A → B → C**。中间件按注册顺序构建洋葱链：A 在最外层，C 在最内层（最靠近工具函数）。请求从外到内穿过，所以 pre-processing 顺序是 A 先、C 最后。post-processing 则相反：C → B → A。
+> 2. **后续所有中间件和工具函数都不会执行**。调用链在那里被截断，中间件可以 `yield` 自己的 `ToolResponse` 作为替代返回。这个特性常用于**守卫模式**：权限检查中间件发现无权限时，直接返回错误响应，不执行实际工具。
+> 3. 上面的代码已经是一个完整的计时中间件。它记录开始时间，调用 `next_handler` 向下传递，循环结束后计算并打印耗时。
 
 ---
 

@@ -1,5 +1,4 @@
 ---
-
 title: 第 6 章：第 3 站：工作记忆
 abbrlink: afad0d79
 date: 2026-05-19 00:05:00
@@ -9,11 +8,6 @@ categories:
   - AgentScope是如何运行的
 tags:
   - 工作记忆
-  - 抽象基类
-  - 深拷贝
-  - mark标记系统
-  - 对话上下文
-  - 源码解析
 ---
 
 > 天气 Agent 收到了"北京今天天气怎么样？"这条消息。它不会立即被送给模型推理——第一步是存入**工作记忆（Working Memory）**。消息从外部世界涌入 Agent，先"记住"，再"思考"。本章我们打开这个容器，看看它的内部结构。
@@ -419,6 +413,8 @@ planning 消息 (2 条):
 ```
 
 **思考题**：如果一条消息同时有 `mark="planning"` 和 `exclude_mark="planning"`，`get_memory` 会怎么处理？阅读源码第 67-79 行，验证你的猜想。
+
+> **参考答案**：结果是**空列表**。`get_memory` 先用 `mark` 正向过滤，保留所有带 `"planning"` 标记的消息；再用 `exclude_mark` 反向过滤，把它们全部排除。两次过滤是串行执行的（先 `mark` 再 `exclude_mark`），没有任何冲突检测或报错。源码注释也写明了："mark 和 exclude_mark should not overlap"——这是调用者的责任。
 
 ---
 

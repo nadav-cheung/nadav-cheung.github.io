@@ -142,9 +142,11 @@ function fixChapterDates(postsDir) {
       content = content.replace(/^(date:.*)\n/m, '$1\nchapter: ' + order + '\n');
     }
 
-    // Generate date: 2024-03-01 + (order-1) days
-    const d = new Date(2024, 2, order);
-    const dateStr = d.toISOString().slice(0, 10) + ' 00:00:00';
+    // Generate date with minute offset on 2026-05-19 (avoids timezone shift)
+    const mins = order - 1;
+    const hh = String(Math.floor(mins / 60)).padStart(2, '0');
+    const mm = String(mins % 60).padStart(2, '0');
+    const dateStr = '2026-05-19 ' + hh + ':' + mm + ':00';
     content = content.replace(/^(date:\s*).*$/m, '$1' + dateStr);
 
     atomicWrite(postPath, content);

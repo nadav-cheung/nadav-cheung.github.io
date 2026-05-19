@@ -2,7 +2,7 @@
 
 title: 附录 A：Python 进阶速查
 abbrlink: e0bde082
-date: 2026-05-19 00:00:00
+date: 2026-05-19 00:36:00
 chapter: 37
 description: "汇总全书涉及的Python进阶概念，涵盖async/await协程并发、TypedDict类型约束、ContextVar异步变量隔离、元类拦截类创建，以及functools.wraps、AsyncGenerator、Pydantic验证、inspect.signature、深拷贝与match/case结构化匹配等特性。"
 categories:

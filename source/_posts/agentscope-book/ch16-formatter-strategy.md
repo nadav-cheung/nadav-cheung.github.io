@@ -1,5 +1,4 @@
 ---
-
 title: 第 16 章：策略模式——Formatter 的多态分发
 abbrlink: 265e5952
 date: 2026-05-19 00:15:00
@@ -9,11 +8,6 @@ categories:
   - AgentScope是如何运行的
 tags:
   - 策略模式
-  - 模板方法模式
-  - Formatter
-  - 多模型适配
-  - 设计模式
-  - 正交分解
 ---
 
 > **难度**：中等
@@ -296,6 +290,12 @@ grep -n "class.*Formatter.*TruncatedFormatterBase" src/agentscope/formatter/*.py
 1. 如果 OpenAI API 改变了工具调用的 JSON 格式，你需要修改哪些文件？ReActAgent 需要修改吗？
 2. 为什么 `_group_messages` 返回 `AsyncGenerator` 而不是 `list`？（提示：考虑性能）
 3. Anthropic 为什么把工具结果放在 `user` 角色而不是 `tool` 角色？这对 Formatter 的实现有什么影响？
+
+> **参考答案**：
+>
+> 1. 只需修改 `src/agentscope/formatter/_openai_chat_formatter.py`（格式转换）和可能的 `src/agentscope/model/_openai_model.py`（响应解析）。**ReActAgent 不需要修改**——这正是策略模式的价值：Agent 只处理统一的 `Msg` 和 `ToolUseBlock`，API 格式差异被 Formatter 隔离。
+> 2. 使用 `AsyncGenerator` 支持**惰性处理**——Formatter 可以边扫描消息列表边逐组产出格式化结果，不需要等整个列表扫描完才开始输出。对于有大量工具调用序列的长对话，这减少了内存占用和首字节延迟。
+> 3. 这是 Anthropic API 的硬性规定：工具结果必须作为 `user` 角色的消息发送，内容中包含 `type: "tool_result"` 的块。Formatter 实现需要为 Anthropic 专门处理这个差异——把工具结果包装成 `{"role": "user", "content": [{"type": "tool_result", ...}]}` 而不是 OpenAI 格式的 `{"role": "tool", ...}`。
 
 ---
 

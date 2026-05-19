@@ -1,5 +1,4 @@
 ---
-
 title: 第 23 章：造一个新 Model Provider——接入 FastLLM API
 abbrlink: ca4b4aa4
 date: 2026-05-19 00:22:00
@@ -9,11 +8,6 @@ categories:
   - AgentScope是如何运行的
 tags:
   - 模型适配器
-  - 流式响应
-  - SSE
-  - Formatter
-  - 结构化输出
-  - Pydantic
 ---
 
 > **难度**：进阶
@@ -504,6 +498,11 @@ grep -n "_truncate" src/agentscope/formatter/_truncated_formatter_base.py
 
 1. 如果 FastLLM 的 API 不支持 `tools` 参数，你的 Model 还能支持工具调用吗？（提示：思考 `tool_choice` 的处理）
 2. 流式模式下，`yield ChatResponse` 的 `content` 应该是累积文本还是增量文本？（提示：看 `_openai_model.py:376` 的 `text` 变量）
+
+> **参考答案**：
+>
+> 1. **不能直接支持，但可以变通**。如果 API 不支持 `tools` 参数，标准的工具调用流程（模型返回 `ToolUseBlock`）无法走通。变通方案是：在系统提示中描述可用的工具和 JSON Schema，让模型在文本中输出工具调用意图，然后在 Model 层解析文本提取工具名和参数。不过这需要额外的解析逻辑，且不如原生工具调用可靠。
+> 2. **累积文本**。`_openai_model.py:376` 使用 `text += getattr(choice.delta, "content", None) or ""` 累积所有 chunk 的内容。每次 yield 的 `ChatResponse` 包含从开始到当前的**完整文本**，不是增量。这是因为 AgentScope 的下游消费者（Agent、Memory）需要随时拿到完整的响应状态。
 
 ---
 

@@ -1,6 +1,6 @@
 {
   "source_root": "/Users/nadav/IdeaProjects/agentscope/teaching/book",
-  "generated_at": "2026-05-18T18:30:10.051Z",
+  "generated_at": "2026-05-19T05:37:02.991Z",
   "files": {
     "README.md": {
       "md5": "ecac9e350812df9780f672fcf587d3a1",
@@ -263,7 +263,7 @@
       "post_path": "source/_posts/agentscope-book/ch03-toolbox.md"
     },
     "volume-1-journey/ch04-message-born.md": {
-      "md5": "c79e9ab2b373b830da72256f8d8a88c3",
+      "md5": "e7a65cd711ff8e593d7ada93b2422f28",
       "integrated": true,
       "post_abbrlink": "8b7dc5cc",
       "post_path": "source/_posts/agentscope-book/ch04-message-born.md"
@@ -275,37 +275,37 @@
       "post_path": "source/_posts/agentscope-book/ch05-agent-receives.md"
     },
     "volume-1-journey/ch06-memory-store.md": {
-      "md5": "db05c7398531279d0a2211895017ad54",
+      "md5": "0baa2aadf2816505092fcb0fd115d1ad",
       "integrated": true,
       "post_abbrlink": "afad0d79",
       "post_path": "source/_posts/agentscope-book/ch06-memory-store.md"
     },
     "volume-1-journey/ch07-retrieval-knowledge.md": {
-      "md5": "45affba870a1ff9520598a14538928be",
+      "md5": "3e1018f73a40c0747569c2bef96357de",
       "integrated": true,
       "post_abbrlink": "52dd2eba",
       "post_path": "source/_posts/agentscope-book/ch07-retrieval-knowledge.md"
     },
     "volume-1-journey/ch08-formatter.md": {
-      "md5": "e3034725d2e208c3ebff60eda0584754",
+      "md5": "263aed67eb6645302e833212afe585e2",
       "integrated": true,
       "post_abbrlink": "a5de3ffa",
       "post_path": "source/_posts/agentscope-book/ch08-formatter.md"
     },
     "volume-1-journey/ch09-model.md": {
-      "md5": "c189e9a02494a9e3f94c80ccfec6f65e",
+      "md5": "813dd696d5d6762236f8913d3dfd52f7",
       "integrated": true,
       "post_abbrlink": "03dd72ec",
       "post_path": "source/_posts/agentscope-book/ch09-model.md"
     },
     "volume-1-journey/ch10-toolkit.md": {
-      "md5": "a8d1996d229e7d46a43e534716329062",
+      "md5": "f266efb11f6c57b1aa8c48537b93a114",
       "integrated": true,
       "post_abbrlink": "d4d5d03d",
       "post_path": "source/_posts/agentscope-book/ch10-toolkit.md"
     },
     "volume-1-journey/ch11-loop-return.md": {
-      "md5": "59468394d3718d2c98af3ebbe8622fb1",
+      "md5": "73c9c5b4f1795f0b0c1258d71785d417",
       "integrated": true,
       "post_abbrlink": "7297614b",
       "post_path": "source/_posts/agentscope-book/ch11-loop-return.md"
@@ -317,49 +317,49 @@
       "post_path": "source/_posts/agentscope-book/ch12-journey-review.md"
     },
     "volume-2-patterns/ch13-module-system.md": {
-      "md5": "57c826a8be2277102e5f863ec96eb2ab",
+      "md5": "f59e8b1c04f0bc83898db7070d10341e",
       "integrated": true,
       "post_abbrlink": "f3158095",
       "post_path": "source/_posts/agentscope-book/ch13-module-system.md"
     },
     "volume-2-patterns/ch14-inheritance.md": {
-      "md5": "7c6e6572ee3ae30da2b598ad5f46116d",
+      "md5": "21d170759fb339bf72cd5a4dc015c10d",
       "integrated": true,
       "post_abbrlink": "c9ef8dc2",
       "post_path": "source/_posts/agentscope-book/ch14-inheritance.md"
     },
     "volume-2-patterns/ch15-metaclass-hooks.md": {
-      "md5": "0615167c43cc269074ad28e42da742f9",
+      "md5": "76aeef37a4b621faf775c78acedc22bc",
       "integrated": true,
       "post_abbrlink": "1fd0933e",
       "post_path": "source/_posts/agentscope-book/ch15-metaclass-hooks.md"
     },
     "volume-2-patterns/ch16-formatter-strategy.md": {
-      "md5": "1f8af2f70a530b7a3f2af061ac4ac0f8",
+      "md5": "950463cf7bd75e5d09d38bc7846de000",
       "integrated": true,
       "post_abbrlink": "265e5952",
       "post_path": "source/_posts/agentscope-book/ch16-formatter-strategy.md"
     },
     "volume-2-patterns/ch17-schema-factory.md": {
-      "md5": "e3524b97901d59d44a0ded591e5c3463",
+      "md5": "d26e1e3d185b96304f5d2efd1d60a7c6",
       "integrated": true,
       "post_abbrlink": "8e2afebe",
       "post_path": "source/_posts/agentscope-book/ch17-schema-factory.md"
     },
     "volume-2-patterns/ch18-middleware.md": {
-      "md5": "566594cbe0ad527586f7abe0b5259955",
+      "md5": "055e70dbd2ed7a8fb166af629a2dd70d",
       "integrated": true,
       "post_abbrlink": "988470df",
       "post_path": "source/_posts/agentscope-book/ch18-middleware.md"
     },
     "volume-2-patterns/ch19-pubsub.md": {
-      "md5": "69ebd8cfa59c27e18d155649fb62c478",
+      "md5": "e292cfee5e70b06c96eda318c24628ff",
       "integrated": true,
       "post_abbrlink": "8c168bd0",
       "post_path": "source/_posts/agentscope-book/ch19-pubsub.md"
     },
     "volume-2-patterns/ch20-observability.md": {
-      "md5": "29ebe890297a426d9109c01bbc8483cd",
+      "md5": "6ba4a51791b9d075d1079f2075b57873",
       "integrated": true,
       "post_abbrlink": "638dee63",
       "post_path": "source/_posts/agentscope-book/ch20-observability.md"
@@ -371,43 +371,43 @@
       "post_path": "source/_posts/agentscope-book/ch21-dev-setup.md"
     },
     "volume-3-building/ch22-new-tool.md": {
-      "md5": "1997a8bb3da3f30446083649e8b17e92",
+      "md5": "213c17a921345010d95ece3920a2d644",
       "integrated": true,
       "post_abbrlink": "b927000a",
       "post_path": "source/_posts/agentscope-book/ch22-new-tool.md"
     },
     "volume-3-building/ch23-new-model.md": {
-      "md5": "7ea819cccb0c66144472993f79485af4",
+      "md5": "3d0e64e700306bc035cb9124c4f162f7",
       "integrated": true,
       "post_abbrlink": "ca4b4aa4",
       "post_path": "source/_posts/agentscope-book/ch23-new-model.md"
     },
     "volume-3-building/ch24-new-memory.md": {
-      "md5": "62230671146a0dea3a404a3cd6ce159d",
+      "md5": "8aff97f893e0d53cbe922d1d63d373f1",
       "integrated": true,
       "post_abbrlink": "ab512c41",
       "post_path": "source/_posts/agentscope-book/ch24-new-memory.md"
     },
     "volume-3-building/ch25-new-agent.md": {
-      "md5": "0f10b3e9278f760139b058041a2cf0e4",
+      "md5": "667639d95701961363a6e66a9ab2b984",
       "integrated": true,
       "post_abbrlink": "6f7cb63f",
       "post_path": "source/_posts/agentscope-book/ch25-new-agent.md"
     },
     "volume-3-building/ch26-mcp-server.md": {
-      "md5": "867c6704092d24d9f37f85b66c8e41be",
+      "md5": "1ef088c0d6011f851140d05868d72099",
       "integrated": true,
       "post_abbrlink": "b045fc2c",
       "post_path": "source/_posts/agentscope-book/ch26-mcp-server.md"
     },
     "volume-3-building/ch27-advanced-extension.md": {
-      "md5": "494af0352ce20b9e42e400a786d15488",
+      "md5": "532f62688d582e548e4fa849edf1db29",
       "integrated": true,
       "post_abbrlink": "50fd5e00",
       "post_path": "source/_posts/agentscope-book/ch27-advanced-extension.md"
     },
     "volume-3-building/ch28-integration-capstone.md": {
-      "md5": "118a845f5bf8c2b1492a347600dec2a2",
+      "md5": "b636d6449328f024909208e8d54e04c7",
       "integrated": true,
       "post_abbrlink": "82d1d56b",
       "post_path": "source/_posts/agentscope-book/ch28-integration-capstone.md"
