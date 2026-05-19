@@ -156,7 +156,7 @@ sidebar:
   padding: 18
   # 与顶部菜单栏的偏移量 (px，仅 Pisces | Gemini)
   # 默认值: 12
-  offset: 12
+  offset: 24
 
 # 侧边栏头像
 # 默认值: 无头像, rounded: false, rotated: false
