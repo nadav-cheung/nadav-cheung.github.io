@@ -1,0 +1,464 @@
+{
+  "source_root": "/Users/nadav/IdeaProjects/agentscope/teaching/book",
+  "generated_at": "2026-05-18T18:30:10.051Z",
+  "files": {
+    "README.md": {
+      "md5": "ecac9e350812df9780f672fcf587d3a1",
+      "integrated": false
+    },
+    "appendix/glossary.md": {
+      "md5": "dfa8cbf3249df0234f09fdab6c724822",
+      "integrated": true,
+      "post_abbrlink": "1ef9964b",
+      "post_path": "source/_posts/agentscope-book/glossary.md"
+    },
+    "appendix/python-primer.md": {
+      "md5": "ad5dc25d2b76856f12de7b09a15ca88b",
+      "integrated": true,
+      "post_abbrlink": "e0bde082",
+      "post_path": "source/_posts/agentscope-book/python-primer.md"
+    },
+    "appendix/source-map.md": {
+      "md5": "7a2fe5f7ab8e5c43795a258a7fa12a6a",
+      "integrated": true,
+      "post_abbrlink": "54bb8367",
+      "post_path": "source/_posts/agentscope-book/source-map.md"
+    },
+    "lab/README.md": {
+      "md5": "ed58d5fce7194e40090773a8375c0f07",
+      "integrated": false
+    },
+    "lab/ch01_hello_llm.py": {
+      "md5": "664cf6eba35d3f02c6d40ead3b8d3ce5",
+      "integrated": false
+    },
+    "lab/ch01_hello_llm_README.md": {
+      "md5": "037f15c6da93461c1cc0dabb28aedb1b",
+      "integrated": false
+    },
+    "lab/ch02_hello_agent_README.md": {
+      "md5": "cedb7f631c8b2dd1d4c956d45f065dc7",
+      "integrated": false
+    },
+    "lab/ch02_pure_python_loop.py": {
+      "md5": "ff377cd60ae27ecec27aa90b30ea1e74",
+      "integrated": false
+    },
+    "lab/ch02_weather_agent.py": {
+      "md5": "771746de155706f21b85106c1fc0a857",
+      "integrated": false
+    },
+    "lab/ch04_message_README.md": {
+      "md5": "bbf1d1ec128de930a2972e01762592a3",
+      "integrated": false
+    },
+    "lab/ch04_msg_create.py": {
+      "md5": "3950a7db7e38c9e242e4e7f9f431b881",
+      "integrated": false
+    },
+    "lab/ch04_msg_serialize.py": {
+      "md5": "8df280a822054fd6c36d57101e224f7b",
+      "integrated": false
+    },
+    "lab/ch05_agent_call_flow.py": {
+      "md5": "9cbd9e49c8887d3af83a59e376936cc2",
+      "integrated": false
+    },
+    "lab/ch05_agent_receives_README.md": {
+      "md5": "733ea78d11287e6fb0bc53d48fd29639",
+      "integrated": false
+    },
+    "lab/ch05_hook_demo.py": {
+      "md5": "43debde7bd9f49a46f946e70e4e617d5",
+      "integrated": false
+    },
+    "lab/ch06_memory_README.md": {
+      "md5": "e1872e69d86376c0abf5f46936aab437",
+      "integrated": false
+    },
+    "lab/ch06_memory_compress.py": {
+      "md5": "9c360393d21cf212d1fcf0d320b8d58d",
+      "integrated": false
+    },
+    "lab/ch06_memory_store.py": {
+      "md5": "77d79e84824fdd457fad6b5f18054477",
+      "integrated": false
+    },
+    "lab/ch08_anthropic_format.py": {
+      "md5": "31c6546e52d5c3f49cdf1c7e20da0bc6",
+      "integrated": false
+    },
+    "lab/ch08_formatter_README.md": {
+      "md5": "a0cb68c617fec22c7dbf3e45ec91521b",
+      "integrated": false
+    },
+    "lab/ch08_openai_format.py": {
+      "md5": "80f626aa22ff731c14ad8a1da097b4a6",
+      "integrated": false
+    },
+    "lab/ch09_model_README.md": {
+      "md5": "3aa77f649e4c0e8968dec51847c18a70",
+      "integrated": false
+    },
+    "lab/ch09_structured_output.py": {
+      "md5": "ae38a6b8db8144759db8c9c6a4eca23a",
+      "integrated": false
+    },
+    "lab/ch09_sync_vs_stream.py": {
+      "md5": "16b894a4d69111ed01e2bac9f3ef406a",
+      "integrated": false
+    },
+    "lab/ch10_middleware_demo.py": {
+      "md5": "96318592c349dfd7d4b75d27ee6637ca",
+      "integrated": false
+    },
+    "lab/ch10_register_tool.py": {
+      "md5": "cddc7fde1530fd21df0b3d93d6b2fe4d",
+      "integrated": false
+    },
+    "lab/ch10_toolkit_README.md": {
+      "md5": "6dceae9605d7c5f53310cb70d068179d",
+      "integrated": false
+    },
+    "lab/ch11_loop_README.md": {
+      "md5": "6f32a73b59cb79a817f2e97a489a132f",
+      "integrated": false
+    },
+    "lab/ch11_react_loop.py": {
+      "md5": "d4ead612c593b2ada215e57ebec9afdc",
+      "integrated": false
+    },
+    "lab/ch22_custom_tool.py": {
+      "md5": "3c46690a5288e844f740bc1f2f8fdfb6",
+      "integrated": false
+    },
+    "lab/ch22_new_tool_README.md": {
+      "md5": "c8a7c73970389a4e48148d278740db2a",
+      "integrated": false
+    },
+    "lab/ch23_custom_provider.py": {
+      "md5": "5e3160d7126f52983f389c2264388d17",
+      "integrated": false
+    },
+    "lab/ch23_new_model_README.md": {
+      "md5": "13b072f9fb49c9a9d36cbfeebcfab20b",
+      "integrated": false
+    },
+    "lab/ch24_new_memory_README.md": {
+      "md5": "1c8d177f7e70508410cca53569c22766",
+      "integrated": false
+    },
+    "lab/ch24_sqlite_memory.py": {
+      "md5": "8338b30089791ef3f141a90ae7e5616e",
+      "integrated": false
+    },
+    "lab/ch25_new_agent_README.md": {
+      "md5": "e90ae67fe983a362477e2b8e5a59304e",
+      "integrated": false
+    },
+    "lab/ch25_plan_execute_agent.py": {
+      "md5": "a6664222eeef06eb708bba94d89a5bd2",
+      "integrated": false
+    },
+    "lab/ch26_mcp_integration.py": {
+      "md5": "5b8076422f6f37a77ab53bfdac536e5f",
+      "integrated": false
+    },
+    "lab/ch26_mcp_server_README.md": {
+      "md5": "4229dcd69f97498698659bb9cc65535c",
+      "integrated": false
+    },
+    "lab/ch27_advanced_extension_README.md": {
+      "md5": "e4c3318cbb4c3e77bd117f1665d2ea7b",
+      "integrated": false
+    },
+    "lab/ch27_agent_skill.py": {
+      "md5": "0e7c6d72b145767c87f55ab9453ced71",
+      "integrated": false
+    },
+    "lab/ch27_rate_limit_middleware.py": {
+      "md5": "fe4b88a9da4fe449b89ab0f7ed5ff291",
+      "integrated": false
+    },
+    "lab/ch28_capstone_README.md": {
+      "md5": "99ed87ba45d71f4bf4964a1b4f62b4ca",
+      "integrated": false
+    },
+    "lab/ch28_integration.py": {
+      "md5": "6debce7f38eac5c8ed170a7d57616fa7",
+      "integrated": false
+    },
+    "lab/config.py": {
+      "md5": "25449d6e0d8ee36368f17ae1e3da485f",
+      "integrated": false
+    },
+    "lab/mock_responses/ch01_general.json": {
+      "md5": "2c4f8401fe721264a1555e6cf490d411",
+      "integrated": false
+    },
+    "lab/mock_responses/ch02_weather_answer.json": {
+      "md5": "587a652a512e4665c29107e716e40a34",
+      "integrated": false
+    },
+    "lab/mock_responses/ch02_weather_tool.json": {
+      "md5": "a5a520f7d5235e40238e8adaa98a869e",
+      "integrated": false
+    },
+    "lab/mock_responses/ch09_stream.json": {
+      "md5": "79c67b3d39813d3e4f7ce4e1ff0f1ee3",
+      "integrated": false
+    },
+    "lab/mock_responses/ch09_structured.json": {
+      "md5": "4fdc5914bf22cc66a4d68a4acfb0d76d",
+      "integrated": false
+    },
+    "lab/mock_server.py": {
+      "md5": "9a979a2934971b868492feb57910f7e2",
+      "integrated": false
+    },
+    "lab/test_config.py": {
+      "md5": "cb8917dcd1e4510b6973026b576b2f5a",
+      "integrated": false
+    },
+    "lab/verify_companion.py": {
+      "md5": "e553af419f9a0b2a13855329b47dedfa",
+      "integrated": false
+    },
+    "scripts/add_nav_links.py": {
+      "md5": "56a2f4320b3346faa881b868f4dd9974",
+      "integrated": false
+    },
+    "scripts/ai_check_FINAL_REPORT.md": {
+      "md5": "0a8226c14dcc42690c10b0b1a4a43fb8",
+      "integrated": false
+    },
+    "scripts/ai_check_results.json": {
+      "md5": "efcbbb316105c287c1a55d09c1e7d151",
+      "integrated": false
+    },
+    "scripts/ai_full_check.py": {
+      "md5": "28c02afd343df2906460ca05b922c35a",
+      "integrated": false
+    },
+    "scripts/verify_references.sh": {
+      "md5": "877573bc35bde010ebb79c14d1b01b4f",
+      "integrated": false
+    },
+    "volume-0-basics/ch01-what-is-llm.md": {
+      "md5": "2b830f1d5171254d45dda984eaa88776",
+      "integrated": true,
+      "post_abbrlink": "9038c0d2",
+      "post_path": "source/_posts/agentscope-book/ch01-what-is-llm.md"
+    },
+    "volume-0-basics/ch02-what-is-agent.md": {
+      "md5": "3bb73af8be811a718ffc0fa99702e85f",
+      "integrated": true,
+      "post_abbrlink": "71cc54ce",
+      "post_path": "source/_posts/agentscope-book/ch02-what-is-agent.md"
+    },
+    "volume-1-journey/ch03-toolbox.md": {
+      "md5": "f56e3949b64e958c8c954bbcfdccdab1",
+      "integrated": true,
+      "post_abbrlink": "70891d57",
+      "post_path": "source/_posts/agentscope-book/ch03-toolbox.md"
+    },
+    "volume-1-journey/ch04-message-born.md": {
+      "md5": "c79e9ab2b373b830da72256f8d8a88c3",
+      "integrated": true,
+      "post_abbrlink": "8b7dc5cc",
+      "post_path": "source/_posts/agentscope-book/ch04-message-born.md"
+    },
+    "volume-1-journey/ch05-agent-receives.md": {
+      "md5": "159682fb393510a8173c4ac046854b07",
+      "integrated": true,
+      "post_abbrlink": "c3c8e673",
+      "post_path": "source/_posts/agentscope-book/ch05-agent-receives.md"
+    },
+    "volume-1-journey/ch06-memory-store.md": {
+      "md5": "db05c7398531279d0a2211895017ad54",
+      "integrated": true,
+      "post_abbrlink": "afad0d79",
+      "post_path": "source/_posts/agentscope-book/ch06-memory-store.md"
+    },
+    "volume-1-journey/ch07-retrieval-knowledge.md": {
+      "md5": "45affba870a1ff9520598a14538928be",
+      "integrated": true,
+      "post_abbrlink": "52dd2eba",
+      "post_path": "source/_posts/agentscope-book/ch07-retrieval-knowledge.md"
+    },
+    "volume-1-journey/ch08-formatter.md": {
+      "md5": "e3034725d2e208c3ebff60eda0584754",
+      "integrated": true,
+      "post_abbrlink": "a5de3ffa",
+      "post_path": "source/_posts/agentscope-book/ch08-formatter.md"
+    },
+    "volume-1-journey/ch09-model.md": {
+      "md5": "c189e9a02494a9e3f94c80ccfec6f65e",
+      "integrated": true,
+      "post_abbrlink": "03dd72ec",
+      "post_path": "source/_posts/agentscope-book/ch09-model.md"
+    },
+    "volume-1-journey/ch10-toolkit.md": {
+      "md5": "a8d1996d229e7d46a43e534716329062",
+      "integrated": true,
+      "post_abbrlink": "d4d5d03d",
+      "post_path": "source/_posts/agentscope-book/ch10-toolkit.md"
+    },
+    "volume-1-journey/ch11-loop-return.md": {
+      "md5": "59468394d3718d2c98af3ebbe8622fb1",
+      "integrated": true,
+      "post_abbrlink": "7297614b",
+      "post_path": "source/_posts/agentscope-book/ch11-loop-return.md"
+    },
+    "volume-1-journey/ch12-journey-review.md": {
+      "md5": "3e54c4f7e0de8f2c2d85a43c8b9bd512",
+      "integrated": true,
+      "post_abbrlink": "9c5ca021",
+      "post_path": "source/_posts/agentscope-book/ch12-journey-review.md"
+    },
+    "volume-2-patterns/ch13-module-system.md": {
+      "md5": "57c826a8be2277102e5f863ec96eb2ab",
+      "integrated": true,
+      "post_abbrlink": "f3158095",
+      "post_path": "source/_posts/agentscope-book/ch13-module-system.md"
+    },
+    "volume-2-patterns/ch14-inheritance.md": {
+      "md5": "7c6e6572ee3ae30da2b598ad5f46116d",
+      "integrated": true,
+      "post_abbrlink": "c9ef8dc2",
+      "post_path": "source/_posts/agentscope-book/ch14-inheritance.md"
+    },
+    "volume-2-patterns/ch15-metaclass-hooks.md": {
+      "md5": "0615167c43cc269074ad28e42da742f9",
+      "integrated": true,
+      "post_abbrlink": "1fd0933e",
+      "post_path": "source/_posts/agentscope-book/ch15-metaclass-hooks.md"
+    },
+    "volume-2-patterns/ch16-formatter-strategy.md": {
+      "md5": "1f8af2f70a530b7a3f2af061ac4ac0f8",
+      "integrated": true,
+      "post_abbrlink": "265e5952",
+      "post_path": "source/_posts/agentscope-book/ch16-formatter-strategy.md"
+    },
+    "volume-2-patterns/ch17-schema-factory.md": {
+      "md5": "e3524b97901d59d44a0ded591e5c3463",
+      "integrated": true,
+      "post_abbrlink": "8e2afebe",
+      "post_path": "source/_posts/agentscope-book/ch17-schema-factory.md"
+    },
+    "volume-2-patterns/ch18-middleware.md": {
+      "md5": "566594cbe0ad527586f7abe0b5259955",
+      "integrated": true,
+      "post_abbrlink": "988470df",
+      "post_path": "source/_posts/agentscope-book/ch18-middleware.md"
+    },
+    "volume-2-patterns/ch19-pubsub.md": {
+      "md5": "69ebd8cfa59c27e18d155649fb62c478",
+      "integrated": true,
+      "post_abbrlink": "8c168bd0",
+      "post_path": "source/_posts/agentscope-book/ch19-pubsub.md"
+    },
+    "volume-2-patterns/ch20-observability.md": {
+      "md5": "29ebe890297a426d9109c01bbc8483cd",
+      "integrated": true,
+      "post_abbrlink": "638dee63",
+      "post_path": "source/_posts/agentscope-book/ch20-observability.md"
+    },
+    "volume-3-building/ch21-dev-setup.md": {
+      "md5": "5b647cd033b1d1c177a78823399cdb6c",
+      "integrated": true,
+      "post_abbrlink": "592a9730",
+      "post_path": "source/_posts/agentscope-book/ch21-dev-setup.md"
+    },
+    "volume-3-building/ch22-new-tool.md": {
+      "md5": "1997a8bb3da3f30446083649e8b17e92",
+      "integrated": true,
+      "post_abbrlink": "b927000a",
+      "post_path": "source/_posts/agentscope-book/ch22-new-tool.md"
+    },
+    "volume-3-building/ch23-new-model.md": {
+      "md5": "7ea819cccb0c66144472993f79485af4",
+      "integrated": true,
+      "post_abbrlink": "ca4b4aa4",
+      "post_path": "source/_posts/agentscope-book/ch23-new-model.md"
+    },
+    "volume-3-building/ch24-new-memory.md": {
+      "md5": "62230671146a0dea3a404a3cd6ce159d",
+      "integrated": true,
+      "post_abbrlink": "ab512c41",
+      "post_path": "source/_posts/agentscope-book/ch24-new-memory.md"
+    },
+    "volume-3-building/ch25-new-agent.md": {
+      "md5": "0f10b3e9278f760139b058041a2cf0e4",
+      "integrated": true,
+      "post_abbrlink": "6f7cb63f",
+      "post_path": "source/_posts/agentscope-book/ch25-new-agent.md"
+    },
+    "volume-3-building/ch26-mcp-server.md": {
+      "md5": "867c6704092d24d9f37f85b66c8e41be",
+      "integrated": true,
+      "post_abbrlink": "b045fc2c",
+      "post_path": "source/_posts/agentscope-book/ch26-mcp-server.md"
+    },
+    "volume-3-building/ch27-advanced-extension.md": {
+      "md5": "494af0352ce20b9e42e400a786d15488",
+      "integrated": true,
+      "post_abbrlink": "50fd5e00",
+      "post_path": "source/_posts/agentscope-book/ch27-advanced-extension.md"
+    },
+    "volume-3-building/ch28-integration-capstone.md": {
+      "md5": "118a845f5bf8c2b1492a347600dec2a2",
+      "integrated": true,
+      "post_abbrlink": "82d1d56b",
+      "post_path": "source/_posts/agentscope-book/ch28-integration-capstone.md"
+    },
+    "volume-4-why/ch29-msg-interface.md": {
+      "md5": "4322a8276ca2cfeba63785bd2100f1b2",
+      "integrated": true,
+      "post_abbrlink": "6ba06eed",
+      "post_path": "source/_posts/agentscope-book/ch29-msg-interface.md"
+    },
+    "volume-4-why/ch30-no-decorator.md": {
+      "md5": "bd193e9eafb3ab650bd25777242f4434",
+      "integrated": true,
+      "post_abbrlink": "04d4f60b",
+      "post_path": "source/_posts/agentscope-book/ch30-no-decorator.md"
+    },
+    "volume-4-why/ch31-god-class.md": {
+      "md5": "6ec9fb2bd46c0da07b1160b5702c6720",
+      "integrated": true,
+      "post_abbrlink": "fdc92fe7",
+      "post_path": "source/_posts/agentscope-book/ch31-god-class.md"
+    },
+    "volume-4-why/ch32-compile-time-hooks.md": {
+      "md5": "5b5695a0e8d1c5f0191fb39d2ffa11ef",
+      "integrated": true,
+      "post_abbrlink": "3630c5b9",
+      "post_path": "source/_posts/agentscope-book/ch32-compile-time-hooks.md"
+    },
+    "volume-4-why/ch33-typedict-union.md": {
+      "md5": "e7b36e8e672e3e83f6f6060b87043961",
+      "integrated": true,
+      "post_abbrlink": "f560b5ba",
+      "post_path": "source/_posts/agentscope-book/ch33-typedict-union.md"
+    },
+    "volume-4-why/ch34-contextvar.md": {
+      "md5": "35ff8330820f8e09c96df7b314230913",
+      "integrated": true,
+      "post_abbrlink": "91f88903",
+      "post_path": "source/_posts/agentscope-book/ch34-contextvar.md"
+    },
+    "volume-4-why/ch35-formatter-separate.md": {
+      "md5": "9efec1d3d0c04247e30283b1e9a355fb",
+      "integrated": true,
+      "post_abbrlink": "01f62316",
+      "post_path": "source/_posts/agentscope-book/ch35-formatter-separate.md"
+    },
+    "volume-4-why/ch36-panorama.md": {
+      "md5": "63df61e4450c9095ccc8acf184418bc1",
+      "integrated": true,
+      "post_abbrlink": "a7614c80",
+      "post_path": "source/_posts/agentscope-book/ch36-panorama.md"
+    }
+  }
+}
