@@ -4,6 +4,7 @@
 title: 第 17 章：工厂与 Schema——从函数到 JSON Schema
 abbrlink: 8e2afebe
 date: 2024-03-16 00:00:00
+chapter: 17
 categories:
   - 算法与数据结构
 tags:

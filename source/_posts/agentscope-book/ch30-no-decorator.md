@@ -3,6 +3,7 @@
 title: 第 30 章：为什么不用装饰器注册工具
 abbrlink: 04d4f60b
 date: 2024-03-29 00:00:00
+chapter: 30
 description: "AgentScope 采用实例级工具注册，通过 `toolkit.registertoolfunction()` 将函数绑定到具体 Toolkit 实例，避免全局状态污染。相比 LangChain 的 `@tool` 全局装饰器，这种设计支持不同 Agent 持有各自独立的工具集，可在运行时动态决定注册哪些工具，并实现同一函数以不同名称或描述复用。实例隔离让测试更简单，无需手动清理全局注册表，更适配多 Agent 场景的灵活性需求。"
 categories:
   - 算法与数据结构

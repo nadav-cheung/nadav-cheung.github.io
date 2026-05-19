@@ -137,10 +137,14 @@ function fixChapterDates(postsDir) {
     const postPath = path.join(postsDir, fname);
     let content = fs.readFileSync(postPath, 'utf-8');
 
-    // Generate date: 2024-03-01 + (order-1) days
-    const d = new Date(2024, 2, order); // month is 0-based, so 2 = March
-    const dateStr = d.toISOString().slice(0, 10) + ' 00:00:00';
+    // Ensure chapter field exists
+    if (!/^chapter:\s*\d+$/m.test(content)) {
+      content = content.replace(/^(date:.*)\n/m, '$1\nchapter: ' + order + '\n');
+    }
 
+    // Generate date: 2024-03-01 + (order-1) days
+    const d = new Date(2024, 2, order);
+    const dateStr = d.toISOString().slice(0, 10) + ' 00:00:00';
     content = content.replace(/^(date:\s*).*$/m, '$1' + dateStr);
 
     atomicWrite(postPath, content);
@@ -215,7 +219,9 @@ function syncBook(config) {
       const fname = path.basename(rel);
       const destPath = path.join(postsDir, fname);
 
-      const dateStr = new Date().toISOString().replace(/T/, ' ').slice(0, 19);
+      const chapter = CHAPTER_ORDER[fname];
+      const chapterLine = chapter ? `\nchapter: ${chapter}` : '';
+      const dateStr = new Date(2024, 2, chapter || 1).toISOString().slice(0, 10) + ' 00:00:00';
 
       // If post already exists, preserve AI-generated front matter fields
       let preserved = '';
@@ -233,7 +239,7 @@ function syncBook(config) {
         }
       }
 
-      const post = `---\ntitle: ${title}\nabbrlink: ${abbrlink}\ndate: ${dateStr}${preserved}\n---\n\n${body}\n`;
+      const post = `---\ntitle: ${title}\nabbrlink: ${abbrlink}\ndate: ${dateStr}${chapterLine}${preserved}\n---\n\n${body}\n`;
 
       atomicWrite(destPath, post);
 

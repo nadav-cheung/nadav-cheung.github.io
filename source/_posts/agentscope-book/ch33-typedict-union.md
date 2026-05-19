@@ -4,6 +4,7 @@
 title: 第 33 章：为什么 ContentBlock 是 TypedDict Union
 abbrlink: f560b5ba
 date: 2024-04-01 00:00:00
+chapter: 33
 categories:
   - 算法与数据结构
 tags:
