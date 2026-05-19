@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://nadav.com.cn/posts/52dd2eba/</loc>
+    
+    <lastmod>2026-05-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://nadav.com.cn/posts/54bb8367/</loc>
     
     <lastmod>2026-05-19</lastmod>
@@ -371,7 +380,7 @@
   </url>
   
   <url>
-    <loc>https://nadav.com.cn/posts/e7bb25a0/</loc>
+    <loc>https://nadav.com.cn/posts/d161d12f/</loc>
     
     <lastmod>2026-05-19</lastmod>
     
@@ -380,7 +389,7 @@
   </url>
   
   <url>
-    <loc>https://nadav.com.cn/posts/d161d12f/</loc>
+    <loc>https://nadav.com.cn/posts/e7bb25a0/</loc>
     
     <lastmod>2026-05-19</lastmod>
     
@@ -479,7 +488,7 @@
   </url>
   
   <url>
-    <loc>https://nadav.com.cn/tags/index.html</loc>
+    <loc>https://nadav.com.cn/categories/index.html</loc>
     
     <lastmod>2026-05-18</lastmod>
     
@@ -488,7 +497,7 @@
   </url>
   
   <url>
-    <loc>https://nadav.com.cn/categories/index.html</loc>
+    <loc>https://nadav.com.cn/tags/index.html</loc>
     
     <lastmod>2026-05-18</lastmod>
     
@@ -613,27 +622,6 @@
   </url>
   
   <url>
-    <loc>https://nadav.com.cn/tags/Hook%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/%E5%85%83%E7%B1%BB/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/Agent%E6%9E%B6%E6%9E%84/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://nadav.com.cn/tags/%E5%B7%A5%E4%BD%9C%E8%AE%B0%E5%BF%86/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -656,6 +644,55 @@
   
   <url>
     <loc>https://nadav.com.cn/tags/mark%E6%9C%BA%E5%88%B6/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/Hook%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E5%85%83%E7%B1%BB/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/Agent%E6%9E%B6%E6%9E%84/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E9%95%BF%E6%9C%9F%E8%AE%B0%E5%BF%86/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/RAG%E7%9F%A5%E8%AF%86%E5%BA%93/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/Embedding%E5%90%91%E9%87%8F%E6%A3%80%E7%B4%A2/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/AgentScope%E6%BA%90%E7%A0%81/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -718,34 +755,6 @@
   </url>
   
   <url>
-    <loc>https://nadav.com.cn/tags/ReAct%E5%BE%AA%E7%8E%AF/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/ReActAgent/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/%E8%AE%B0%E5%BF%86%E5%8E%8B%E7%BC%A9/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/%E5%B7%A5%E5%85%B7%E8%B0%83%E7%94%A8/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://nadav.com.cn/tags/Toolkit/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -774,6 +783,55 @@
   </url>
   
   <url>
+    <loc>https://nadav.com.cn/tags/ReAct%E5%BE%AA%E7%8E%AF/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/ReActAgent/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E8%AE%B0%E5%BF%86%E5%8E%8B%E7%BC%A9/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E5%B7%A5%E5%85%B7%E8%B0%83%E7%94%A8/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E7%B3%BB%E7%BB%9F/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E6%9E%B6%E6%9E%84%E5%85%A8%E6%99%AF/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/ReAct%E6%A8%A1%E5%BC%8F/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://nadav.com.cn/tags/Python%E6%A8%A1%E5%9D%97/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -796,27 +854,6 @@
   
   <url>
     <loc>https://nadav.com.cn/tags/%E5%AF%BC%E5%85%A5%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E7%B3%BB%E7%BB%9F/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/%E6%9E%B6%E6%9E%84%E5%85%A8%E6%99%AF/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/ReAct%E6%A8%A1%E5%BC%8F/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1040,27 +1077,6 @@
   </url>
   
   <url>
-    <loc>https://nadav.com.cn/tags/MemoryBackend/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/%E6%8C%81%E4%B9%85%E5%8C%96%E5%AD%98%E5%82%A8/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://nadav.com.cn/tags/Plan-Execute-Agent/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -1083,6 +1099,55 @@
   
   <url>
     <loc>https://nadav.com.cn/tags/%E4%BB%BB%E5%8A%A1%E8%A7%84%E5%88%92/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/MemoryBackend/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E6%8C%81%E4%B9%85%E5%8C%96%E5%AD%98%E5%82%A8/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E6%8A%80%E6%9C%AF%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E6%B6%88%E6%81%AF%E8%AE%BE%E8%AE%A1/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E6%9E%B6%E6%9E%84%E5%86%B3%E7%AD%96/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E7%BB%9F%E4%B8%80%E6%8E%A5%E5%8F%A3/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E6%A1%86%E6%9E%B6%E5%AF%B9%E6%AF%94/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1152,34 +1217,6 @@
   </url>
   
   <url>
-    <loc>https://nadav.com.cn/tags/%E6%B6%88%E6%81%AF%E8%AE%BE%E8%AE%A1/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/%E6%9E%B6%E6%9E%84%E5%86%B3%E7%AD%96/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/%E7%BB%9F%E4%B8%80%E6%8E%A5%E5%8F%A3/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/%E6%A1%86%E6%9E%B6%E5%AF%B9%E6%AF%94/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://nadav.com.cn/tags/%E7%BC%96%E8%AF%91%E6%9C%9F%E6%B3%A8%E5%85%A5/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -1195,6 +1232,34 @@
   
   <url>
     <loc>https://nadav.com.cn/tags/%E5%BA%8F%E5%88%97%E5%8C%96/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E6%9C%AF%E8%AF%AD%E5%AF%B9%E7%85%A7/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1223,6 +1288,34 @@
   
   <url>
     <loc>https://nadav.com.cn/tags/%E5%A4%9A%E6%99%BA%E8%83%BD%E4%BD%93%E6%A1%86%E6%9E%B6/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E6%BA%90%E7%A0%81%E7%B4%A2%E5%BC%95/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E6%A1%86%E6%9E%B6%E6%9E%B6%E6%9E%84/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E6%A8%A1%E5%9D%97%E5%8C%96%E8%AE%BE%E8%AE%A1/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://nadav.com.cn/tags/%E5%A4%9AAgent%E7%B3%BB%E7%BB%9F/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1264,34 +1357,6 @@
   </url>
   
   <url>
-    <loc>https://nadav.com.cn/tags/%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/%E6%9C%AF%E8%AF%AD%E5%AF%B9%E7%85%A7/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/%E5%BC%82%E6%AD%A5%E7%BC%96%E7%A8%8B/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://nadav.com.cn/tags/%E8%BF%9B%E9%98%B6%E6%A6%82%E5%BF%B5/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -1313,28 +1378,21 @@
   </url>
   
   <url>
-    <loc>https://nadav.com.cn/tags/%E6%BA%90%E7%A0%81%E7%B4%A2%E5%BC%95/</loc>
+    <loc>https://nadav.com.cn/tags/%E5%86%99%E4%BD%9C/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://nadav.com.cn/tags/%E6%A1%86%E6%9E%B6%E6%9E%B6%E6%9E%84/</loc>
+    <loc>https://nadav.com.cn/tags/%E5%A0%86%E6%8E%92%E5%BA%8F/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://nadav.com.cn/tags/%E6%A8%A1%E5%9D%97%E5%8C%96%E8%AE%BE%E8%AE%A1/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/%E5%A4%9AAgent%E7%B3%BB%E7%BB%9F/</loc>
+    <loc>https://nadav.com.cn/tags/%E5%A0%86/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1349,27 +1407,6 @@
   
   <url>
     <loc>https://nadav.com.cn/tags/%E4%BA%8C%E5%88%86%E6%90%9C%E7%B4%A2%E6%A0%91/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/%E5%A0%86/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/%E5%A0%86%E6%8E%92%E5%BA%8F/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/%E5%86%99%E4%BD%9C/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -1446,6 +1483,13 @@
   </url>
   
   <url>
+    <loc>https://nadav.com.cn/tags/KMP%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://nadav.com.cn/tags/List/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
@@ -1454,13 +1498,6 @@
   
   <url>
     <loc>https://nadav.com.cn/tags/ArrayList/</loc>
-    <lastmod>2026-05-19</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://nadav.com.cn/tags/KMP%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
