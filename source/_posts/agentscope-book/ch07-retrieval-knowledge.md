@@ -1,7 +1,7 @@
 ---
 title: 第 7 站：检索与知识
 abbrlink: 52dd2eba
-date: 2024-04-02 00:00:00
+date: 2026-05-19 00:00:00
 chapter: 7
 description: "本文解析了Agent长期记忆的实现：区别于仅限单次对话的工作记忆，长期记忆支持跨对话信息存储，并提供staticcontrol（开发者预设自动检索）与agentcontrol（将记忆操作注册为工具由大模型自主调用）两种控制模式。同时梳理了RAG知识库从文档分块、Embedding向量化到向量检索的完整流程，阐明工作记忆、长期记忆与外部知识三者如何协同增强Agent的上下文能力。"
 categories:

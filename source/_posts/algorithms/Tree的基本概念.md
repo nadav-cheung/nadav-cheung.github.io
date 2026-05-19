@@ -1,5 +1,6 @@
 ---
 title: Tree的基本概念
+date: 2024-02-04 00:00:00
 categories: [算法与数据结构]
 tags: [Tree]
 sticky: 3117

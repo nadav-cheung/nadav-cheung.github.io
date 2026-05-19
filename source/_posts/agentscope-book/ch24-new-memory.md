@@ -2,7 +2,7 @@
 
 title: 第 24 章：造一个新 Memory Backend——SQLite Memory
 abbrlink: ab512c41
-date: 2024-03-16 00:00:00
+date: 2026-05-19 00:00:00
 chapter: 24
 description: "本章实现一个基于 SQLite 的 MemoryBackend，消息持久化到数据库，支持标记系统与 statedict/loadstatedict 序列化。相比重启即遗忘的 InMemoryMemory，SQLite 方案只需保存数据库路径即可恢复状态。文章详解如何使用 MemoryBase 接口，设计消息与标记表，并逐步实现 add、getmemory 等方法，最终通过对比测试确保与内存方案行为一致、可替换使用。"
 categories:

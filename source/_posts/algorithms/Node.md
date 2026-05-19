@@ -1,5 +1,6 @@
 ---
 title: Node
+date: 2024-02-05 00:00:00
 categories: [算法与数据结构]
 tags: [节点]
 sticky: 3019

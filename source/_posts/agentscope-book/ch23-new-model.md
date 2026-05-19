@@ -2,7 +2,7 @@
 
 title: 第 23 章：造一个新 Model Provider——接入 FastLLM API
 abbrlink: ca4b4aa4
-date: 2024-03-17 00:00:00
+date: 2026-05-19 00:00:00
 chapter: 23
 description: "本文以假想的FastLLM服务为例，演示分三步接入新模型：先实现非流式调用与配套Formatter，再扩展支持SSE流式响应，并说明增量累积的解析思路，最后通过将Pydantic模型伪装为工具调用实现结构化输出。文中强调Model与Formatter分离的设计收益，并给出PR检查清单、自检练习及设计图，帮助读者完整掌握模型适配器的开发流程。"
 categories:

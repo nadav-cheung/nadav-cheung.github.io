@@ -3,7 +3,7 @@
 
 title: 第 8 站：格式转换
 abbrlink: a5de3ffa
-date: 2024-04-01 00:00:00
+date: 2026-05-19 00:00:00
 chapter: 8
 categories:
   - AgentScope是如何运行的

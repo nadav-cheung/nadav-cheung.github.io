@@ -2,7 +2,7 @@
 
 title: 第 15 章：元类与 Hook——方法调用的拦截
 abbrlink: 1fd0933e
-date: 2024-03-25 00:00:00
+date: 2026-05-19 00:00:00
 chapter: 15
 description: "本文深入解析AgentScope的Hook系统，通过元类AgentMeta在类定义时自动包装reply等方法，无需修改源码即可注入pre/post逻辑。wrapwithhooks实现防重入保护与链式执行，将位置参数归一化为关键字字典以便Hook修改。Hook支持实例级与类级别注册，ReActAgentMeta进一步扩展reasoning与acting钩子点，构建灵活可扩展的Agent基础设施。"
 categories:
