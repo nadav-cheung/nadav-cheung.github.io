@@ -262,7 +262,7 @@ pre code
 
 #bookshelf
   margin: 0 auto 2em
-  padding: 2em 2em 1em
+  padding: 2em 1.2em 1em
   background: $bg-white
   border-radius: 6px
   border: 1px solid $border-color
@@ -291,7 +291,7 @@ pre code
 .books-row
   display: flex
   justify-content: center
-  gap: 4px
+  gap: 6px
   perspective: 600px
 
 .book-spine
@@ -299,7 +299,7 @@ pre code
   flex-direction: column
   align-items: center
   justify-content: center
-  width: 86px
+  flex: 1 1 0
   height: 210px
   background: var(--spine-color)
   border-radius: 2px 5px 5px 2px
@@ -316,7 +316,7 @@ pre code
   margin: 5px 0
 
 .spine-title
-  font-size: 0.78em
+  font-size: 0.82em
   font-weight: 700
   color: rgba(255, 255, 255, 0.92)
   text-align: center
@@ -352,7 +352,8 @@ pre code
     flex-wrap: wrap
     gap: 5px
   .book-spine
-    width: 68px
+    flex: none
+    width: 80px
     height: 165px
   .spine-title
     font-size: 0.68em
