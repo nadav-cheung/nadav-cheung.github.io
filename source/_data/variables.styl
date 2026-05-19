@@ -1,6 +1,5 @@
 // ===============================================================
 // 设计令牌 (Design Tokens) — 全站颜色唯一定义处
-// 改色只改此文件，styles.styl / njk 模板只引用，不硬编码
 // ===============================================================
 
 // 品牌
@@ -8,17 +7,44 @@ $brand       = #555555
 $brand-dk    = #333333
 $brand-lt    = #777777
 
-// 文字
+// 文字（浅色）
 $text-primary   = #1a1a1a
 $text-secondary = #666666
 $text-muted     = #777777
 
-// 背景
+// 背景（浅色）
 $bg-white = #ffffff
 $bg-light = #f8f8f8
 
-// 边框
+// 边框（浅色）
 $border-color = #e8e8e8
+
+// ===============================================================
+// 补充 CSS 自定义属性 — NexT 未覆盖的部分
+// NexT 已定义: --body-bg-color, --content-bg-color, --text-color,
+//   --card-bg-color, --link-color 等 (见 _colors.styl)
+// 我们只补充: secondary text, muted text, border, light bg
+// 暗色值严格对齐 NexT 色板 (#282828/#333/#ccc/#555)
+// ===============================================================
+
+:root
+  --custom-text-secondary: $text-secondary
+  --custom-text-muted: $text-muted
+  --custom-bg-light: $bg-light
+  --custom-border-color: $border-color
+  --custom-brand: $brand
+  --custom-brand-dk: $brand-dk
+  --custom-brand-lt: $brand-lt
+
+@media (prefers-color-scheme: dark)
+  :root
+    --custom-text-secondary: #aaa
+    --custom-text-muted: #999
+    --custom-bg-light: #282828
+    --custom-border-color: #555
+    --custom-brand: #ccc
+    --custom-brand-dk: #ddd
+    --custom-brand-lt: #999
 
 // ===============================================================
 // NexT 主题变量覆盖 — 全部引用上方令牌

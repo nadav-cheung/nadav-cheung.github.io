@@ -1,5 +1,9 @@
 // ===============================================================
-// 自定义样式 — 所有颜色引用 variables.styl，不硬编码
+// 自定义样式 — 优先复用 NexT CSS 变量，确保暗色模式完全统一
+// NexT 变量: --content-bg-color, --body-bg-color, --text-color,
+//   --link-color, --brand-color 等
+// 补充变量: --custom-text-secondary, --custom-text-muted,
+//   --custom-border-color, --custom-bg-light, --custom-brand*
 // ===============================================================
 
 // ---------------------------------------------------------------
@@ -7,19 +11,19 @@
 // ---------------------------------------------------------------
 
 .site-brand-container
-  background: $bg-white !important
-  border-bottom: 1px solid $border-color
+  background: var(--content-bg-color) !important
+  border-bottom: 1px solid var(--custom-border-color)
 
 .site-title
-  color: $text-primary !important
+  color: var(--text-color) !important
   text-shadow: none !important
 
 .site-brand-container .site-description
-  color: $text-muted !important
+  color: var(--custom-text-muted) !important
 
 .sidebar
-  background: $bg-white !important
-  border: 1px solid $border-color !important
+  background: var(--content-bg-color) !important
+  border: 1px solid var(--custom-border-color) !important
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12) !important
   border-radius: 6px
 
@@ -28,33 +32,33 @@
   box-shadow: none !important
 
 .site-author-name
-  color: $text-primary !important
+  color: var(--text-color) !important
 
 .site-description
-  color: $text-secondary !important
+  color: var(--custom-text-secondary) !important
 
 .site-state-item
-  border-color: $border-color !important
+  border-color: var(--custom-border-color) !important
 
 .site-state-item-count
-  color: $brand !important
+  color: var(--brand-color) !important
 
 .site-state-item-name
-  color: $text-muted !important
+  color: var(--custom-text-muted) !important
 
 .links-of-author-item a
-  color: $text-secondary !important
+  color: var(--custom-text-secondary) !important
   border-bottom: none !important
   &:hover
-    color: $brand !important
+    color: var(--brand-color) !important
 
 .links-of-author-item .fa,
 .links-of-author-item .fab,
 .links-of-author-item .fas
-  color: $text-muted !important
+  color: var(--custom-text-muted) !important
 
 .sidebar .cc-animate
-  color: $text-muted !important
+  color: var(--custom-text-muted) !important
 
 .my-wechat-sidebar-image
   width: 88%
@@ -73,14 +77,14 @@
   margin-bottom: 16px !important
 
 .header-inner
-  background: $bg-white !important
-  border-bottom: 1px solid $border-color !important
+  background: var(--content-bg-color) !important
+  border-bottom: 1px solid var(--custom-border-color) !important
 
 .site-nav .menu-item a
-  color: $text-secondary
+  color: var(--custom-text-secondary)
   border-bottom: none !important
   &:hover, &.menu-item-active
-    color: $brand !important
+    color: var(--brand-color) !important
 
 // ---------------------------------------------------------------
 // 文章
@@ -98,7 +102,7 @@
     margin-top: 2em
     margin-bottom: 0.6em
     padding-bottom: 0.3em
-    border-bottom: 1px solid $border-color
+    border-bottom: 1px solid var(--custom-border-color)
   h3
     font-size: 1.1em
     margin-top: 1.6em
@@ -108,43 +112,43 @@
     margin-top: 1.4em
 
 .post-title a
-  color: $text-primary !important
+  color: var(--text-color) !important
   border-bottom: none !important
   &:hover
-    color: $brand !important
+    color: var(--link-color) !important
 
 .post-meta
-  color: $text-muted !important
+  color: var(--custom-text-muted) !important
   a
-    color: $text-muted !important
+    color: var(--custom-text-muted) !important
     border-bottom: none !important
     &:hover
-      color: $brand !important
+      color: var(--link-color) !important
 
 .post-body p a
-  color: $brand
+  color: var(--link-color)
   border-bottom: 1px solid rgba(85, 85, 85, 0.2)
   &:hover
-    color: $brand-lt
+    color: var(--custom-brand-lt)
 
 .post-button .btn
-  color: $brand !important
+  color: var(--link-color) !important
   background: transparent !important
-  border: 1px solid $border-color !important
+  border: 1px solid var(--custom-border-color) !important
   border-radius: 4px !important
   box-shadow: none !important
   &:hover
-    color: $bg-white !important
-    background: $brand !important
-    border-color: $brand !important
+    color: var(--content-bg-color) !important
+    background: var(--link-color) !important
+    border-color: var(--link-color) !important
 
 // ---------------------------------------------------------------
 // 代码
 // ---------------------------------------------------------------
 
 code
-  background: $bg-light
-  color: $brand
+  background: var(--custom-bg-light)
+  color: var(--link-color)
   border-radius: 3px
   padding: 2px 5px
   font-size: 0.88em
@@ -154,77 +158,77 @@ pre code
   color: inherit
 
 .highlight
-  background: $bg-white !important
-  border: 1px solid $border-color
+  background: var(--content-bg-color) !important
+  border: 1px solid var(--custom-border-color)
   border-radius: 4px
 
   pre
-    background: $bg-white !important
+    background: var(--content-bg-color) !important
 
 // ---------------------------------------------------------------
 // 标签云
 // ---------------------------------------------------------------
 
 .tag-cloud a
-  color: $text-secondary
-  border: 1px solid $border-color
+  color: var(--custom-text-secondary)
+  border: 1px solid var(--custom-border-color)
   border-radius: 4px
   padding: 4px 12px
   margin: 4px
   box-shadow: none
   &:hover
-    background: $brand
-    color: $bg-white
-    border-color: $brand
+    background: var(--link-color)
+    color: var(--content-bg-color)
+    border-color: var(--link-color)
 
 // ---------------------------------------------------------------
 // 分页
 // ---------------------------------------------------------------
 
 .pagination .page-number
-  color: $text-secondary
-  border: 1px solid $border-color
+  color: var(--custom-text-secondary)
+  border: 1px solid var(--custom-border-color)
   border-radius: 4px
   box-shadow: none
   &:hover, &.current
-    background: $brand
-    color: $bg-white
-    border-color: $brand
+    background: var(--link-color)
+    color: var(--content-bg-color)
+    border-color: var(--link-color)
 
 // ---------------------------------------------------------------
 // 页脚
 // ---------------------------------------------------------------
 
 .footer
-  color: $text-muted !important
+  color: var(--custom-text-muted) !important
   a
-    color: $text-secondary
+    color: var(--custom-text-secondary)
     &:hover
-      color: $brand
+      color: var(--link-color)
   .with-love
-    color: $text-muted
+    color: var(--custom-text-muted)
 
 // ---------------------------------------------------------------
 // 返回顶部
 // ---------------------------------------------------------------
 
 .back-to-top
-  background: $bg-white !important
-  color: $brand !important
-  border: 1px solid $border-color
+  background: var(--body-bg-color) !important
+  color: var(--brand-color) !important
+  border: 1px solid var(--custom-border-color)
   box-shadow: none
   &:hover
-    background: $brand !important
-    color: $bg-white !important
+    background: var(--brand-color) !important
+    color: var(--body-bg-color) !important
 
 // ---------------------------------------------------------------
 // 搜索
 // ---------------------------------------------------------------
 
 .search-icon, .popup-trigger
-  color: $text-secondary
+  color: var(--custom-text-secondary)
   &:hover
-    color: $brand
+    color: var(--link-color)
 
 // ---------------------------------------------------------------
 // TOC（文章目录）
@@ -238,13 +242,13 @@ pre code
   .nav-item
     padding: 3px 0
   .nav-link
-    color: $text-secondary
+    color: var(--custom-text-secondary)
     border-bottom: none !important
     line-height: 1.7
     &:hover, &.active
-      color: $brand !important
+      color: var(--brand-color) !important
   .nav-number
-    color: $text-muted
+    color: var(--custom-text-muted)
   .nav-child
     padding-left: 12px
 
@@ -253,40 +257,40 @@ pre code
 // ---------------------------------------------------------------
 
 .reward-container button
-  background: $bg-light
-  color: $brand
-  border: 1px solid $border-color
+  background: var(--custom-bg-light)
+  color: var(--brand-color)
+  border: 1px solid var(--custom-border-color)
   border-radius: 4px
   &:hover
-    background: $brand
-    color: $bg-white
-    border-color: $brand
+    background: var(--brand-color)
+    color: var(--content-bg-color)
+    border-color: var(--brand-color)
 
 // ---------------------------------------------------------------
 // 进度条
 // ---------------------------------------------------------------
 
 .reading-progress-bar
-  background: $brand !important
+  background: var(--theme-color) !important
 
 // ---------------------------------------------------------------
 // GitHub Banner
 // ---------------------------------------------------------------
 
 .github-banner
-  color: $text-secondary !important
+  color: var(--custom-text-secondary) !important
   border-bottom: none !important
   &:hover
-    color: $brand !important
+    color: var(--link-color) !important
 
 // ---------------------------------------------------------------
 // 备案
 // ---------------------------------------------------------------
 
 .beian
-  color: $text-muted
+  color: var(--custom-text-muted)
   a
-    color: $text-secondary
+    color: var(--custom-text-secondary)
   img
     display: inline-block
     margin: 0 2px
@@ -300,9 +304,9 @@ pre code
 #bookshelf
   margin: 0 auto 2em
   padding: 2em 1.2em 1em
-  background: $bg-white
+  background: var(--content-bg-color)
   border-radius: 6px
-  border: 1px solid $border-color
+  border: 1px solid var(--custom-border-color)
 
 .shelf-header
   text-align: center
@@ -315,14 +319,14 @@ pre code
 .shelf-heading
   font-size: 0.9em
   font-weight: 600
-  color: $text-secondary
+  color: var(--custom-text-secondary)
   letter-spacing: 0.1em
 
 .shelf-line
   display: inline-block
   width: 24px
   height: 1px
-  background: $border-color
+  background: var(--custom-border-color)
   flex-shrink: 0
 
 .books-row
@@ -380,7 +384,7 @@ pre code
 
 .shelf-edge
   height: 2px
-  background: $border-color
+  background: var(--custom-border-color)
   margin: 0 2em
   border-radius: 1px
 
@@ -411,11 +415,11 @@ pre code
 .post-qr-image
   max-width: 200px
   border-radius: 6px
-  border: 1px solid $border-color
+  border: 1px solid var(--custom-border-color)
 
 .post-end-notice
   text-align: center
-  color: $text-muted
+  color: var(--custom-text-muted)
   font-size: 0.85em
   padding: 1.5em 0
   letter-spacing: 0.05em
@@ -423,7 +427,7 @@ pre code
 .site-time-widget
   font-family: 'JetBrains Mono', 'Consolas', monospace
   font-size: 0.85em
-  color: $text-muted
+  color: var(--custom-text-muted)
   letter-spacing: 0.03em
 
 // ---------------------------------------------------------------
@@ -438,10 +442,10 @@ pre code
   background: transparent
 
 ::-webkit-scrollbar-thumb
-  background: $border-color
+  background: var(--custom-border-color)
   border-radius: 3px
   &:hover
-    background: $text-muted
+    background: var(--custom-text-muted)
 
 // 侧边栏模块间距
 .sidebar-nav
