@@ -2,7 +2,7 @@
 
 title: 附录 A：Python 进阶速查
 abbrlink: e0bde082
-date: 2026-05-18 18:29:40
+date: 2024-04-05 00:00:00
 description: "本书附录汇总Python进阶概念：async/await实现协程并发，TypedDict为字典提供开发期类型约束与IDE补全，ContextVar隔离异步任务变量副本，元类拦截类创建过程。此外涵盖functools.wraps保留函数元信息、AsyncGenerator异步生成器、Pydantic BaseModel数据验证、inspect.signature获取参数签名，以及OrderedDict、深拷贝与match/case结构化匹配等实用特性。"
 categories:
   - 算法与数据结构
@@ -16,7 +16,7 @@ tags:
 
 本附录汇总全书涉及的 Python 进阶概念，供查阅。
 
-> **上一章：[第 36 章 架构全景与边界](../volume-4-why/ch36-panorama.md)**
+> **上一章：[第 36 章 架构全景与边界](/posts/a7614c80/)**
 
 ---
 
@@ -310,4 +310,4 @@ def handle_block(block: ContentBlock):
 
 ---
 
-> **下一章：[附录 B：术语表](./glossary.md)**
+> **下一章：[附录 B：术语表](/posts/1ef9964b/)**

@@ -2,7 +2,7 @@
 
 title: 第 9 站：调用模型
 abbrlink: 03dd72ec
-date: 2026-05-18 18:29:40
+date: 2024-03-08 00:00:00
 description: "本文深入 AgentScope 模型适配层，剖析 ChatModelBase 统一调用接口及流式/非流式响应解析流程。详细解读 ChatResponse 的 Text、ToolUse、Thinking 等内容块类型，并展示结构化输出如何借助工具调用伪装实现自动回退。还涵盖流式增量累积、调试技巧与推理模型思考过程暴露机制。"
 categories:
   - 算法与数据结构
@@ -16,7 +16,7 @@ tags:
 
 > Formatter 把消息翻译好了，现在终于要发送给大模型了。我们追踪 HTTP 请求从发出到响应的全过程。
 
-> **上一章：[第 8 站：格式转换](./ch08-formatter.md)**
+> **上一章：[第 8 站：格式转换](/posts/a5de3ffa/)**
 
 ## 路线图
 
@@ -519,4 +519,4 @@ git checkout src/agentscope/model/
 
 模型返回了 `ToolUseBlock`——"请调用 `get_weather` 工具，参数是 `city: 北京`"。但怎么从 JSON Schema 描述的工具变成真正执行 Python 函数？下一站，我们打开 **Toolkit（工具箱）**，追踪工具注册和调用的全过程。
 
-> **下一章：[第 10 站：执行工具](./ch10-toolkit.md)**
+> **下一章：[第 10 站：执行工具](/posts/d4d5d03d/)**

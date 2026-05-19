@@ -2,7 +2,7 @@
 
 title: 第 31 章：上帝类 vs 模块拆分
 abbrlink: fdc92fe7
-date: 2026-05-18 18:29:40
+date: 2024-03-30 00:00:00
 description: "AgentScope 的 Toolkit 单文件聚合了注册、调用、中间件等九种工具职责，共 1684 行。文章辨析它不是职责散乱的“上帝类”，而是高内聚的聚合根，对外接口简洁、状态一致。通过职责分布测量、与 LangChain 等框架横向对比以及提取 Middleware 的重构推演，论证了当前聚合设计的合理性与未来随增长拆分的可行边界。"
 categories:
   - 算法与数据结构
@@ -19,7 +19,7 @@ tags:
 >
 > `src/agentscope/tool/_toolkit.py` 有 1684 行。注册、调用、中间件、分组、异步任务、Schema 管理——全在一个文件里。这是上帝类，还是合理的聚合？
 
-> **上一章：[第 30 章 为什么不用装饰器注册工具](./ch30-no-decorator.md)**
+> **上一章：[第 30 章 为什么不用装饰器注册工具](/posts/04d4f60b/)**
 
 ## 决策回顾
 
@@ -233,4 +233,4 @@ Refactoring Guru 的 Extract Class 原则建议：当一部分方法使用独立
 
 `Toolkit` 的"大"是空间维度的问题。接下来我们看时间维度的设计选择——Hook 为什么在类定义时注入（编译期），而不是在调用时添加（运行时）？
 
-> **下一章：[第 32 章 编译期 Hook vs 运行时 Hook](./ch32-compile-time-hooks.md)**
+> **下一章：[第 32 章 编译期 Hook vs 运行时 Hook](/posts/3630c5b9/)**

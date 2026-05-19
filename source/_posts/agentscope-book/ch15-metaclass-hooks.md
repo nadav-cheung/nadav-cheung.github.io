@@ -2,7 +2,7 @@
 
 title: 第 15 章：元类与 Hook——方法调用的拦截
 abbrlink: 1fd0933e
-date: 2026-05-18 18:29:40
+date: 2024-03-14 00:00:00
 description: "本文深入解析AgentScope的Hook系统，通过元类AgentMeta在类定义时自动包装reply等方法，无需修改源码即可注入pre/post逻辑。wrapwithhooks实现防重入保护与链式执行，将位置参数归一化为关键字字典以便Hook修改。Hook支持实例级与类级别注册，ReActAgentMeta进一步扩展reasoning与acting钩子点，构建灵活可扩展的Agent基础设施。"
 categories:
   - 算法与数据结构
@@ -18,7 +18,7 @@ tags:
 >
 > 你想在 Agent 每次 reply 前后自动执行一些逻辑（比如日志记录、参数校验），但不想修改 Agent 的源码。Hook 系统就是为这个设计的——它是怎么实现的？
 
-> **上一章：[第 14 章 继承体系](./ch14-inheritance.md)**
+> **上一章：[第 14 章 继承体系](/posts/c9ef8dc2/)**
 
 ## 知识补全：元类（Metaclass）
 
@@ -333,4 +333,4 @@ git checkout src/agentscope/agent/
 
 Hook 是在特定方法前后插入逻辑。还有一种更通用的模式——**策略模式**：同一个接口，根据不同的情况选择不同的实现。下一章我们看 Formatter 如何使用策略模式适配不同的模型 API。
 
-> **下一章：[第 16 章 策略模式](./ch16-formatter-strategy.md)**
+> **下一章：[第 16 章 策略模式](/posts/265e5952/)**

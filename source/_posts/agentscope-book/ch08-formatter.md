@@ -3,7 +3,7 @@
 
 title: 第 8 站：格式转换
 abbrlink: a5de3ffa
-date: 2026-05-18 18:29:40
+date: 2024-03-07 00:00:00
 categories:
   - 算法与数据结构
 tags:
@@ -17,7 +17,7 @@ description: "本文解析了 AgentScope 框架中 Formatter 组件的三层继�
 
 > 消息在 Agent 内部用的是 `Msg` 对象，但 OpenAI API 要的是 `[{"role": "user", "content": "..."}]` 这样的 JSON——谁来负责翻译？
 
-> **上一章：[第 7 站：检索与知识](./ch07-retrieval-knowledge.md)**
+> **上一章：[第 7 站：检索与知识](/posts/52dd2eba/)**
 
 ## 路线图
 
@@ -454,4 +454,4 @@ git checkout src/agentscope/formatter/
 
 消息已经被格式化成 OpenAI API 需要的 JSON 了。下一站，我们追踪最核心的一步——**调用大模型**。看看 `ChatModelBase` 如何发送请求、接收响应、处理流式返回。
 
-> **下一章：[第 9 站：调用模型](./ch09-model.md)**
+> **下一章：[第 9 站：调用模型](/posts/03dd72ec/)**

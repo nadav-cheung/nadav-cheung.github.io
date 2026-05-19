@@ -2,7 +2,7 @@
 
 title: 第 30 章：为什么不用装饰器注册工具
 abbrlink: 04d4f60b
-date: 2026-05-18 18:29:40
+date: 2024-03-29 00:00:00
 description: "AgentScope 采用实例级工具注册，通过 `toolkit.registertoolfunction()` 将函数绑定到具体 Toolkit 实例，避免全局状态污染。相比 LangChain 的 `@tool` 全局装饰器，这种设计支持不同 Agent 持有各自独立的工具集，可在运行时动态决定注册哪些工具，并实现同一函数以不同名称或描述复用。实例隔离让测试更简单，无需手动清理全局注册表，更适配多 Agent 场景的灵活性需求。"
 categories:
   - 算法与数据结构
@@ -19,7 +19,7 @@ tags:
 >
 > LangChain 用 `@tool` 装饰器注册工具函数。AgentScope 用 `toolkit.register_tool_function(func)`。显式注册有什么好处？
 
-> **上一章：[第 29 章 消息为什么是唯一接口](./ch29-msg-interface.md)**
+> **上一章：[第 29 章 消息为什么是唯一接口](/posts/6ba06eed/)**
 
 ## 决策回顾
 
@@ -252,4 +252,4 @@ print(f"B 的 Schema: {toolkit_b.tools['greet_formal'].json_schema}")
 
 注册方式决定了"工具怎么来"。但工具相关的代码都塞在一个文件里——`_toolkit.py` 有 1500+ 行。这是上帝类还是合理的设计？下一章我们看模块拆分的权衡。
 
-> **下一章：[第 31 章 上帝类 vs 模块拆分](./ch31-god-class.md)**
+> **下一章：[第 31 章 上帝类 vs 模块拆分](/posts/fdc92fe7/)**

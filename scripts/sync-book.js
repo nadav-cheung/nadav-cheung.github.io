@@ -77,6 +77,76 @@ function parseFrontMatter(raw) {
   };
 }
 
+// ----- post-processors -----
+
+const CHAPTER_ORDER = {
+  'ch01-what-is-llm.md': 1, 'ch02-what-is-agent.md': 2, 'ch03-toolbox.md': 3,
+  'ch04-message-born.md': 4, 'ch05-agent-receives.md': 5, 'ch06-memory-store.md': 6,
+  'ch07-retrieval-knowledge.md': 7, 'ch08-formatter.md': 8, 'ch09-model.md': 9,
+  'ch10-toolkit.md': 10, 'ch11-loop-return.md': 11, 'ch12-journey-review.md': 12,
+  'ch13-module-system.md': 13, 'ch14-inheritance.md': 14, 'ch15-metaclass-hooks.md': 15,
+  'ch16-formatter-strategy.md': 16, 'ch17-schema-factory.md': 17, 'ch18-middleware.md': 18,
+  'ch19-pubsub.md': 19, 'ch20-observability.md': 20, 'ch21-dev-setup.md': 21,
+  'ch22-new-tool.md': 22, 'ch23-new-model.md': 23, 'ch24-new-memory.md': 24,
+  'ch25-new-agent.md': 25, 'ch26-mcp-server.md': 26, 'ch27-advanced-extension.md': 27,
+  'ch28-integration-capstone.md': 28, 'ch29-msg-interface.md': 29, 'ch30-no-decorator.md': 30,
+  'ch31-god-class.md': 31, 'ch32-compile-time-hooks.md': 32, 'ch33-typedict-union.md': 33,
+  'ch34-contextvar.md': 34, 'ch35-formatter-separate.md': 35, 'ch36-panorama.md': 36,
+  'python-primer.md': 37, 'glossary.md': 38, 'source-map.md': 39,
+};
+
+function fixPostLinks(postsDir, fileCache) {
+  // Build basename → abbrlink map
+  const nameToAbbr = {};
+  for (const [rel, info] of Object.entries(fileCache)) {
+    if (info.integrated && info.post_abbrlink) {
+      nameToAbbr[path.basename(rel)] = info.post_abbrlink;
+    }
+  }
+
+  for (const fname of fs.readdirSync(postsDir)) {
+    if (!fname.endsWith('.md')) continue;
+    const postPath = path.join(postsDir, fname);
+    let content = fs.readFileSync(postPath, 'utf-8');
+    const original = content;
+
+    // Replace [text](path/to/file.md) with [text](/posts/abbrlink/)
+    content = content.replace(
+      /\[([^\]]+)\]\(([^)]+\.md)\)/g,
+      (match, text, target) => {
+        const basename = path.basename(target);
+        if (nameToAbbr[basename]) {
+          return `[${text}](/posts/${nameToAbbr[basename]}/)`;
+        }
+        return match;
+      }
+    );
+
+    if (content !== original) {
+      atomicWrite(postPath, content);
+    }
+  }
+}
+
+function fixChapterDates(postsDir) {
+  for (const fname of fs.readdirSync(postsDir)) {
+    if (!fname.endsWith('.md')) continue;
+    const order = CHAPTER_ORDER[fname];
+    if (!order) continue;
+
+    const postPath = path.join(postsDir, fname);
+    let content = fs.readFileSync(postPath, 'utf-8');
+
+    // Generate date: 2024-03-01 + (order-1) days
+    const d = new Date(2024, 2, order); // month is 0-based, so 2 = March
+    const dateStr = d.toISOString().slice(0, 10) + ' 00:00:00';
+
+    content = content.replace(/^(date:\s*).*$/m, '$1' + dateStr);
+
+    atomicWrite(postPath, content);
+  }
+}
+
 // ----- main sync logic -----
 
 function syncBook(config) {
@@ -191,6 +261,10 @@ function syncBook(config) {
       }
     }
   }
+
+  // Post-process: fix cross-reference links and chapter ordering
+  fixPostLinks(postsDir, newFiles);
+  fixChapterDates(postsDir);
 
   // Write updated cache
   cache.files = newFiles;

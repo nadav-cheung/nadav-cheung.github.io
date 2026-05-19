@@ -2,7 +2,7 @@
 
 title: 第 23 章：造一个新 Model Provider——接入 FastLLM API
 abbrlink: ca4b4aa4
-date: 2026-05-18 18:29:40
+date: 2024-03-22 00:00:00
 description: "本文以假想的FastLLM服务为例，演示分三步接入新模型：先实现非流式调用与配套Formatter，再扩展支持SSE流式响应，并说明增量累积的解析思路，最后通过将Pydantic模型伪装为工具调用实现结构化输出。文中强调Model与Formatter分离的设计收益，并给出PR检查清单、自检练习及设计图，帮助读者完整掌握模型适配器的开发流程。"
 categories:
   - 算法与数据结构
@@ -18,7 +18,7 @@ tags:
 >
 > 你想接入一个新的大模型服务 "FastLLM"。它的 API 格式和 OpenAI 不一样——你需要同时写 Model 和 Formatter。本章分三步走：非流式 → 流式 → 结构化输出。
 
-> **上一章：[第 22 章 造一个新 Tool](./ch22-new-tool.md)**
+> **上一章：[第 22 章 造一个新 Tool](/posts/b927000a/)**
 
 ## 任务目标
 
@@ -509,4 +509,4 @@ grep -n "_truncate" src/agentscope/formatter/_truncated_formatter_base.py
 
 我们造了 Tool 和 Model。下一章，我们造一个 **Memory Backend**——用 SQLite 实现持久化记忆，让 Agent 重启后还能记住之前的对话。
 
-> **下一章：[第 24 章 造一个新 Memory Backend](./ch24-new-memory.md)**
+> **下一章：[第 24 章 造一个新 Memory Backend](/posts/ab512c41/)**

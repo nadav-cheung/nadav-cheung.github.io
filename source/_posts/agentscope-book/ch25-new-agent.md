@@ -2,7 +2,7 @@
 
 title: 第 25 章：造一个新 Agent 类型——Plan-Execute Agent
 abbrlink: 6f7cb63f
-date: 2026-05-18 18:29:40
+date: 2024-03-24 00:00:00
 description: "本文实现了一种Plan-Execute Agent，继承AgentBase而非ReActAgentBase，以获取完全的循环控制自由。其工作流程分为Plan（生成步骤列表）、Execute（逐步执行并调用工具）和Review（检查结果并决定是否修改计划）三个阶段，与ReAct的“边想边做”不同，Plan-Execute是“先计划再执行”。文中详细介绍了类结构、reply方法及各阶段实现，并通过设计权衡说明了继承与组合的选择。"
 categories:
   - 算法与数据结构
@@ -18,7 +18,7 @@ tags:
 >
 > ReAct Agent 是"边想边做"。但有些复杂任务需要"先想清楚再动手"——先制定计划，再逐步执行。这就是 Plan-Execute 模式。
 
-> **上一章：[第 24 章 造一个新 Memory Backend](./ch24-new-memory.md)**
+> **上一章：[第 24 章 造一个新 Memory Backend](/posts/ab512c41/)**
 
 ## 任务目标
 
@@ -477,4 +477,4 @@ if review.get("needs_revision"):
 
 我们造了 Tool、Model、Memory、Agent 四个齿轮。下一章，我们接入一个**外部工具协议**——MCP Server，让 Agent 可以调用本地 MCP 服务提供的工具。
 
-> **下一章：[第 26 章 集成 MCP Server](./ch26-mcp-server.md)**
+> **下一章：[第 26 章 集成 MCP Server](/posts/b045fc2c/)**

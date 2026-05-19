@@ -2,7 +2,7 @@
 
 title: 第 34 章：为什么用 ContextVar——并发安全的配置传递
 abbrlink: 91f88903
-date: 2026-05-18 18:29:40
+date: 2024-04-02 00:00:00
 description: "AgentScope 采用 ContextVar 而非全局变量或 threading.local 存储 init() 的全局配置。全局变量在异步并发下会互相覆盖，而 asyncio 是单线程模式让 threading.local 失效。ContextVar 为每个异步任务提供独立副本，无需加锁即可保证异步安全，还能实现隐式传递与组合调用。尽管存在调试不直观和 API 学习成本，但它是 AgentScope 全异步架构下唯一同时满足线程与异步安全的方案。"
 categories:
   - 算法与数据结构
@@ -19,7 +19,7 @@ tags:
 >
 > `agentscope.init()` 设置的全局配置（模型名、日志级别、追踪开关等）在异步环境中怎么保证安全？为什么用 `ContextVar` 而不是全局变量？
 
-> **上一章：[第 33 章 为什么 ContentBlock 是 TypedDict Union](./ch33-typedict-union.md)**
+> **上一章：[第 33 章 为什么 ContentBlock 是 TypedDict Union](/posts/f560b5ba/)**
 
 ## 决策回顾
 
@@ -266,4 +266,4 @@ Python 的 `contextvars` 模块对 ContextVar 的核心 API 说明是：
 
 配置传递是跨层的问题。接下来我们看另一个跨层的设计选择——Formatter 为什么要独立于 Model 存在？
 
-> **下一章：[第 35 章 为什么 Formatter 独立于 Model](./ch35-formatter-separate.md)**
+> **下一章：[第 35 章 为什么 Formatter 独立于 Model](/posts/01f62316/)**

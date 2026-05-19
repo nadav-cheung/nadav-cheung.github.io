@@ -2,7 +2,7 @@
 
 title: 第 35 章：为什么 Formatter 独立于 Model
 abbrlink: 01f62316
-date: 2026-05-18 18:29:40
+date: 2024-04-03 00:00:00
 description: "AgentScope 将消息格式转换与 API 调用分别抽象为 Formatter 和 Model 两个独立类，避免传统框架合并方案带来的 N×M 类爆炸问题，实现 N+M 的组合自由。这一分离支撑了格式与通信的独立测试、独立替换和关注点分离，通过契约匹配抹平不同 API 的语义差异，正是框架“可扩展模块”思想的体现。"
 categories:
   - 算法与数据结构
@@ -18,7 +18,7 @@ tags:
 >
 > 其他框架把消息格式转换和 API 调用放在同一个类里。AgentScope 把它们分成 `Formatter` 和 `Model` 两个独立的类。为什么？
 
-> **上一章：[第 34 章 为什么用 ContextVar](./ch34-contextvar.md)**
+> **上一章：[第 34 章 为什么用 ContextVar](/posts/91f88903/)**
 
 ## 决策回顾
 
@@ -230,4 +230,4 @@ grep -n "self.model" src/agentscope/agent/_react_agent.py | head -5
 
 我们看了 7 个具体的设计决策。最后一章，我们拉远视角，看整个架构的全景图和边界。
 
-> **下一章：[第 36 章 架构全景与边界](./ch36-panorama.md)**
+> **下一章：[第 36 章 架构全景与边界](/posts/a7614c80/)**

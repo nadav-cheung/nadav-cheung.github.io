@@ -2,7 +2,7 @@
 
 title: 第 29 章：消息为什么是唯一接口
 abbrlink: 6ba06eed
-date: 2026-05-18 18:27:37
+date: 2024-03-28 00:00:00
 description: "AgentScope 拒绝多种消息类型和纯字符串方案，选择单一 Msg 类作为所有组件间的统一通信接口。Msg 通过 role 字段区分角色，content 字段统一承载文本、工具调用等多模态内容，避免了类型爆炸和接口割裂。尽管带来了运行时类型检查等代价，但统一接口简化了序列化、扩展和互操作，是整个框架的核心设计目标。"
 categories:
   - 算法与数据结构
@@ -18,7 +18,7 @@ tags:
 >
 > AgentScope 中，Agent、Model、Tool、Memory 全部通过 `Msg` 对象通信。为什么不让 Agent 直接返回字符串？为什么不定义多种消息类型？
 
-> **上一章：[第 28 章 终章——集成实战](../volume-3-building/ch28-integration-capstone.md)**
+> **上一章：[第 28 章 终章——集成实战](/posts/82d1d56b/)**
 
 ## 决策回顾
 
@@ -238,4 +238,4 @@ msg2 = Msg.from_dict(d)
 
 `Msg` 是统一接口。但工具函数的注册方式——为什么是 `toolkit.register_tool_function(func)` 而不是在函数上加 `@tool` 装饰器？下一章我们看注册方式的选择。
 
-> **下一章：[第 30 章 为什么不用装饰器注册工具](./ch30-no-decorator.md)**
+> **下一章：[第 30 章 为什么不用装饰器注册工具](/posts/04d4f60b/)**

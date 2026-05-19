@@ -2,7 +2,7 @@
 
 title: 第 13 章：模块系统——文件的命名与导入
 abbrlink: f3158095
-date: 2026-05-18 18:27:37
+date: 2024-03-12 00:00:00
 description: "在 AgentScope 框架中，以 `_` 开头的文件如 `_agentbase.py` 表示内部实现，不应直接导入。公共 API 通过各级 `__init__.py` 暴露，`__init__.py` 充当“门面”，控制外部可见的类和函数，使内部文件可自由重构而不影响用户代码。导入路径采用 `agentscope.子包.公共类` 结构，顶层 `__init__.py` 负责注册子模块并定义 `__all__`。理解这一基于下划线前缀的约定，有助于清晰把握框架的公共 API 边界和模块发现机制。"
 categories:
   - 算法与数据结构
@@ -18,7 +18,7 @@ tags:
 >
 > 你 clone 了仓库，打开 `src/agentscope/` 看到一堆 `_` 开头的文件——`_agent_base.py`、`_react_agent.py`、`_model_base.py`……为什么有些文件有下划线前缀？导入路径又是怎么组织的？
 
-> **上一章：[旅程复盘](../volume-1-journey/ch12-journey-review.md)**
+> **上一章：[旅程复盘](/posts/9c5ca021/)**
 
 ## 知识补全：Python 模块与包
 
@@ -313,4 +313,4 @@ ls src/agentscope/agent/_.py 2>/dev/null | wc -l
 
 下一章我们打开继承体系，从 `StateModule` → `AgentBase` → `ReActAgentBase` → `ReActAgent` 的四层继承链，看每一层提供了什么能力。
 
-> **下一章：[第 14 章 继承体系](./ch14-inheritance.md)**
+> **下一章：[第 14 章 继承体系](/posts/c9ef8dc2/)**

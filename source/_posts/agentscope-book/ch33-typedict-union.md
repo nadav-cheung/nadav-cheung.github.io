@@ -3,7 +3,7 @@
 
 title: 第 33 章：为什么 ContentBlock 是 TypedDict Union
 abbrlink: f560b5ba
-date: 2026-05-18 18:29:40
+date: 2024-04-01 00:00:00
 categories:
   - 算法与数据结构
 tags:
@@ -19,7 +19,7 @@ description: "AgentScope 采用 TypedDict 定义 ContentBlock，放弃 OOP 继�
 >
 > `TextBlock`、`ToolUseBlock`、`ImageBlock`……这些 ContentBlock 都是 `TypedDict`，没有共同基类，没有方法。为什么不用 OOP 继承？为什么不用 dataclass？
 
-> **上一章：[第 32 章 编译期 Hook vs 运行时 Hook](./ch32-compile-time-hooks.md)**
+> **上一章：[第 32 章 编译期 Hook vs 运行时 Hook](/posts/3630c5b9/)**
 
 ## 决策回顾
 
@@ -229,4 +229,4 @@ TypedDict 直接对应 JSON dict 结构，与 OpenAI 等 API 的消息格式天�
 
 ContentBlock 的选择是"数据优先 vs 行为优先"。接下来我们看另一个数据相关的选择——配置为什么用 `ContextVar` 而不是全局变量或线程局部存储？
 
-> **下一章：[第 34 章 为什么用 ContextVar](./ch34-contextvar.md)**
+> **下一章：[第 34 章 为什么用 ContextVar](/posts/91f88903/)**

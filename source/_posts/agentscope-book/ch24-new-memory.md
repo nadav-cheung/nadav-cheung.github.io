@@ -2,7 +2,7 @@
 
 title: 第 24 章：造一个新 Memory Backend——SQLite Memory
 abbrlink: ab512c41
-date: 2026-05-18 18:29:40
+date: 2024-03-23 00:00:00
 description: "本章实现一个基于 SQLite 的 MemoryBackend，消息持久化到数据库，支持标记系统与 statedict/loadstatedict 序列化。相比重启即遗忘的 InMemoryMemory，SQLite 方案只需保存数据库路径即可恢复状态。文章详解如何使用 MemoryBase 接口，设计消息与标记表，并逐步实现 add、getmemory 等方法，最终通过对比测试确保与内存方案行为一致、可替换使用。"
 categories:
   - 算法与数据结构
@@ -18,7 +18,7 @@ tags:
 >
 > `InMemoryMemory` 把消息存在内存里，Agent 重启就忘了。你想要一个持久化的 Memory——用 SQLite 存储对话历史，重启后还能恢复。
 
-> **上一章：[第 23 章 造一个新 Model Provider](./ch23-new-model.md)**
+> **上一章：[第 23 章 造一个新 Model Provider](/posts/ca4b4aa4/)**
 
 ## 任务目标
 
@@ -594,4 +594,4 @@ async def test_search():
 
 我们造了 Tool、Model、Memory 三个齿轮。下一章，我们造最复杂的一个——**新的 Agent 类型**。实现一个 Plan-Execute Agent，让模型先做计划再执行。
 
-> **下一章：[第 25 章 造一个新 Agent 类型](./ch25-new-agent.md)**
+> **下一章：[第 25 章 造一个新 Agent 类型](/posts/6f7cb63f/)**

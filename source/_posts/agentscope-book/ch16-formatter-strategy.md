@@ -2,7 +2,7 @@
 
 title: 第 16 章：策略模式——Formatter 的多态分发
 abbrlink: 265e5952
-date: 2026-05-18 18:29:40
+date: 2024-03-15 00:00:00
 description: "AgentScope 利用策略模式将 API 格式转换（Formatter）与模型调用（Model）解耦，ReActAgent 只依赖抽象接口，切换 OpenAI 或 Anthropic 等提供商无需改动 Agent。模板方法模式在 TruncatedFormatterBase 中定义格式化骨架与消息分组，让工具调用、系统提示等 JSON 结构差异对上层完全透明，实现格式与调用的正交组合。"
 categories:
   - 算法与数据结构
@@ -18,7 +18,7 @@ tags:
 >
 > 你把 Formatter 从 `OpenAIChatFormatter` 换成 `AnthropicChatFormatter`，Agent 的行为完全不变——只是发送给 API 的 JSON 格式变了。这是怎么做到的？
 
-> **上一章：[第 15 章 元类与 Hook](./ch15-metaclass-hooks.md)**
+> **上一章：[第 15 章 元类与 Hook](/posts/1fd0933e/)**
 
 ## 知识补全：策略模式
 
@@ -301,4 +301,4 @@ grep -n "class.*Formatter.*TruncatedFormatterBase" src/agentscope/formatter/*.py
 
 Formatter 把 `Msg` 转成 API 需要的 JSON。但工具的 JSON Schema 是怎么从 Python 函数的 docstring 和类型标注自动生成的？那个"自动生成"的过程涉及 `inspect` 模块、docstring 解析和 Pydantic 模型转换。下一章我们看工厂与 Schema。
 
-> **下一章：[第 17 章 工厂与 Schema](./ch17-schema-factory.md)**
+> **下一章：[第 17 章 工厂与 Schema](/posts/8e2afebe/)**

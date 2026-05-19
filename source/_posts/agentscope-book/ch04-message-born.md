@@ -2,7 +2,7 @@
 
 title: 第 4 章 第 1 站：消息诞生
 abbrlink: 8b7dc5cc
-date: 2026-05-18 18:29:40
+date: 2024-03-03 00:00:00
 description: "本文剖析了AgentScope中Msg消息对象的创建与设计。Msg作为纯数据容器，支持字符串或ContentBlock列表两种内容形态，通过TypedDict定义七种内容块（文本、图片、工具调用等），兼顾灵活性与类型安全。选用TypedDict而非dataclass，使消息天然适配JSON序列化，减少API交互转换开销。同时介绍了DictMixin赋予对象字典式访问能力，以及序列化、ID生成等关键细节。"
 categories:
   - 算法与数据结构
@@ -16,7 +16,7 @@ tags:
 
 > 万物皆有起点。在 AgentScope 的世界里，一切从一条消息开始。
 
-> **上一章：[第 3 章 准备工具箱](./ch03-toolbox.md)**
+> **上一章：[第 3 章 准备工具箱](/posts/70891d57/)**
 
 ---
 
@@ -634,4 +634,4 @@ for block in msg.get_content_blocks("image"):
 
 下一站，我们去看消息的第一个目的地：**Agent 是如何接收消息、发起推理的**。
 
-> **下一章：[第 5 章 第 2 站：Agent 收信](./ch05-agent-receives.md)**
+> **下一章：[第 5 章 第 2 站：Agent 收信](/posts/c3c8e673/)**

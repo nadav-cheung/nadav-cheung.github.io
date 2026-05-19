@@ -2,7 +2,7 @@
 
 title: 第 10 站：执行工具
 abbrlink: d4d5d03d
-date: 2026-05-18 18:29:40
+date: 2024-03-09 00:00:00
 description: "模型返回工具调用请求后，Toolkit通过显式注册找到对应函数，合并预设参数执行，并将结果封装返回。本章详解工具注册自动生成JSON Schema、工具分组激活，以及基于装饰器的中间件洋葱模型，在调用前后插入逻辑。"
 categories:
   - 算法与数据结构
@@ -16,7 +16,7 @@ tags:
 
 > 模型返回了 `ToolUseBlock(name="get_weather", input={"city": "北京"})`。但这只是一个 JSON 对象——怎么从它变成真正执行 `get_weather("北京")` 的函数调用？
 
-> **上一章：[第 9 站：调用模型](./ch09-model.md)**
+> **上一章：[第 9 站：调用模型](/posts/03dd72ec/)**
 
 ## 路线图
 
@@ -471,4 +471,4 @@ git checkout src/agentscope/tool/
 
 工具执行完毕，结果已经返回。但 ReAct Agent 不会只做一轮——它要**循环**，直到得出最终答案。下一站是全卷最长的一章，我们打开 `ReActAgent.reply()`，追踪推理-行动-总结的完整循环。
 
-> **下一章：[第 11 站：循环与返回](./ch11-loop-return.md)**
+> **下一章：[第 11 站：循环与返回](/posts/7297614b/)**

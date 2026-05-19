@@ -2,7 +2,7 @@
 
 title: 第 32 章：编译期 Hook vs 运行时 Hook
 abbrlink: 3630c5b9
-date: 2026-05-18 18:29:40
+date: 2024-03-31 00:00:00
 description: "AgentScope 利用元类在类定义时自动为 reply、observe、print 等方法注入 Hook 包装，确保所有子类无需手动添加防重入与拦截逻辑，实现统一执行链且不侵入业务代码。相比 LangChain 等框架的运行时回调方案，这种编译期注入虽然调试较难、透明度低，但避免了遗漏风险与多重继承中重复执行的问题，代价是调用栈和 IDE 支持较差。"
 categories:
   - 算法与数据结构
@@ -18,7 +18,7 @@ tags:
 >
 > AgentScope 用元类在**类定义时**注入 Hook 包装。为什么不在每次调用时动态包装？这个选择有什么后果？
 
-> **上一章：[第 31 章 上帝类 vs 模块拆分](./ch31-god-class.md)**
+> **上一章：[第 31 章 上帝类 vs 模块拆分](/posts/fdc92fe7/)**
 
 ## 决策回顾
 
@@ -228,4 +228,4 @@ git checkout src/agentscope/agent/_agent_meta.py
 
 Hook 的注入时机是一个设计选择。接下来我们看另一个选择——ContentBlock 为什么用 `TypedDict`（Union 类型）而不是 OOP 类继承？
 
-> **下一章：[第 33 章 为什么 ContentBlock 是 TypedDict Union](./ch33-typedict-union.md)**
+> **下一章：[第 33 章 为什么 ContentBlock 是 TypedDict Union](/posts/f560b5ba/)**

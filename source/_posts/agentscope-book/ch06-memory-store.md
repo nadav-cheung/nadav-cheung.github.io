@@ -2,7 +2,7 @@
 
 title: 第 6 章：第 3 站：工作记忆
 abbrlink: afad0d79
-date: 2026-05-18 18:29:40
+date: 2024-03-05 00:00:00
 description: "工作记忆以列表元组存储消息与标记，MemoryBase契约定义add/getmemory等接口。内存实现通过深拷贝隔离快照，并去重；检索可按标记过滤或排除，支持前置压缩摘要，为模型推理提供有序、可筛选的对话上下文。"
 categories:
   - 算法与数据结构
@@ -16,7 +16,7 @@ tags:
 
 > 天气 Agent 收到了"北京今天天气怎么样？"这条消息。它不会立即被送给模型推理——第一步是存入**工作记忆（Working Memory）**。消息从外部世界涌入 Agent，先"记住"，再"思考"。本章我们打开这个容器，看看它的内部结构。
 
-> **上一章：[第 5 章 第 2 站：Agent 收信](./ch05-agent-receives.md)**
+> **上一章：[第 5 章 第 2 站：Agent 收信](/posts/c3c8e673/)**
 
 ---
 
@@ -440,4 +440,4 @@ planning 消息 (2 条):
 
 工作记忆之外，还有**长期记忆**和**知识库**。下一站我们将看到长期记忆如何通过 `static_control` 和 `agent_control` 两种模式管理持久知识，以及 RAG（Retrieval-Augmented Generation）如何从海量文档中检索相关内容。
 
-> **下一章：[第 7 站：检索与知识](./ch07-retrieval-knowledge.md)**
+> **下一章：[第 7 站：检索与知识](/posts/52dd2eba/)**

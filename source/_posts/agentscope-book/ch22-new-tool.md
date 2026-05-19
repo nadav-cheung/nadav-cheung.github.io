@@ -2,7 +2,7 @@
 
 title: 第 22 章：造一个新 Tool——数据库查询工具
 abbrlink: b927000a
-date: 2026-05-18 18:29:40
+date: 2024-03-21 00:00:00
 description: "本章从零构建SQLite数据库查询工具，涵盖同步与流式两个版本。同步版直接返回完整查询结果，流式版通过AsyncGenerator逐行输出，适应大数据场景。工具注册时自动生成JSON Schema，并通过preset_kwargs隐藏敏感配置。最后集成到Agent，并引入缓存中间件优化重复查询，完整演示了工具开发的注册、调用与优化流程。"
 categories:
   - 算法与数据结构
@@ -18,7 +18,7 @@ tags:
 >
 > 你需要给 Agent 加一个数据库查询工具，让它能回答"我们有多少活跃用户？"这类问题。本章从零构建一个完整的 Tool，包括同步和流式两个版本。
 
-> **上一章：[第 21 章 扩展准备](./ch21-dev-setup.md)**
+> **上一章：[第 21 章 扩展准备](/posts/592a9730/)**
 
 ## 任务目标
 
@@ -537,4 +537,4 @@ async for r in toolkit.call_tool_function(ToolUseBlock(
 
 我们造了一个新 Tool。下一章，我们造一个更复杂的组件——**新的 Model Provider**。接入一个虚构的 "FastLLM" API，从非流式到流式到结构化输出，三步走。
 
-> **下一章：[第 23 章 造一个新 Model Provider](./ch23-new-model.md)**
+> **下一章：[第 23 章 造一个新 Model Provider](/posts/ca4b4aa4/)**

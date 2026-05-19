@@ -2,7 +2,7 @@
 
 title: 第 19 章：发布-订阅——多 Agent 通信的广播机制
 abbrlink: 8c168bd0
-date: 2026-05-18 18:29:40
+date: 2024-03-18 00:00:00
 description: "发布-订阅模式下，MsgHub作为消息调度中心实现Agent间自动广播。发布者无需知晓订阅者，三者协作：AgentBase的subscribers字典按Hub名称管理订阅关系；call方法在回复后自动调用broadcasttosubscribers分发消息，并移除内部思考块防止信息泄漏；MsgHub作为异步上下文管理器统一注册与清理订阅。消息最终通过observe存入各Agent记忆，实现完全解耦的会话语境共享。"
 categories:
   - 算法与数据结构
@@ -18,7 +18,7 @@ tags:
 >
 > 三个 Agent 在讨论中轮流发言，每个人说的话其他人都能看到。这不是轮询，而是自动广播——MsgHub 是怎么做到的？
 
-> **上一章：[第 18 章 中间件与洋葱模型](./ch18-middleware.md)**
+> **上一章：[第 18 章 中间件与洋葱模型](/posts/988470df/)**
 
 ## 知识补全：发布-订阅模式
 
@@ -339,4 +339,4 @@ async def observe(self, msg: Msg) -> None:
 
 到目前为止，我们看了继承、元类/Hook、策略、工厂/Schema、中间件、发布-订阅六种模式。最后一章我们把目光投向系统的"可观测性"——日志、追踪和持久化。
 
-> **下一章：[第 20 章 可观测性与持久化](./ch20-observability.md)**
+> **下一章：[第 20 章 可观测性与持久化](/posts/638dee63/)**

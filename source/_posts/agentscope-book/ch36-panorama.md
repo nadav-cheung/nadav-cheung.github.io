@@ -2,7 +2,7 @@
 
 title: 第 36 章：架构全景与边界
 abbrlink: a7614c80
-date: 2026-05-18 18:29:40
+date: 2024-04-04 00:00:00
 description: "本章从全局视角梳理了AgentScope 24个模块的四层依赖关系，区分核心与边缘模块，剖析utils/common.py等边界模糊处的设计权衡，并展望多模态、A2A等演化路径，最后通过实验引导读者亲手验证架构全景。"
 categories:
   - 算法与数据结构
@@ -18,7 +18,7 @@ tags:
 >
 > 我们已经看了 7 个具体的设计决策。这一章拉远视角，看整个框架的依赖图、模块边界、以及那些"存在但没展开"的角落。
 
-> **上一章：[第 35 章 为什么 Formatter 独立于 Model](./ch35-formatter-separate.md)**
+> **上一章：[第 35 章 为什么 Formatter 独立于 Model](/posts/01f62316/)**
 
 ## 依赖全景图
 
@@ -272,4 +272,4 @@ AgentScope 源码带读系列视频教程覆盖了以下核心内容：
 2. 在"简单性"和"灵活性"之间，AgentScope 的平衡点在哪里？
 3. 哪个设计决策最让你惊讶？为什么？
 
-> **下一章：[附录 A：Python 进阶速查](../appendix/python-primer.md)**
+> **下一章：[附录 A：Python 进阶速查](/posts/e0bde082/)**
