@@ -1,28 +1,43 @@
 'use strict';
 
-/**
- * Sort posts with a `chapter` front-matter field by chapter order (ascending).
- * Posts without a chapter field retain default date-based ordering.
- *
- * This ensures book chapters always appear in reading order on index/category/tag pages.
- */
+const pagination = require('hexo-pagination');
 
-hexo.extend.filter.register('before_generate', function () {
-  const posts = hexo.locals.get('posts');
-  if (!posts || !posts.data) return;
+// Override the default category generator (hexo-generator-category) to support
+// chapter-based ordering. Scripts in scripts/ load AFTER plugins, so this
+// generator's output for the same routes wins over the default one.
 
-  posts.data.sort((a, b) => {
-    const ca = a.chapter;
-    const cb = b.chapter;
+hexo.extend.generator.register('category', function (locals) {
+  const config = this.config;
+  const perPage = config.category_generator.per_page;
+  const paginationDir = config.pagination_dir || 'page';
 
-    // Both have chapter → sort by chapter ascending (reading order)
-    if (ca && cb) return ca - cb;
+  return locals.categories.reduce((result, category) => {
+    if (!category.length) return result;
 
-    // One has chapter, one doesn't → chapter posts come before non-chapter posts
-    if (ca && !cb) return -1;
-    if (!ca && cb) return 1;
+    const posts = category.posts.sort('date');
 
-    // Neither has chapter → default date-descending
-    return b.date - a.date;
-  });
+    if (posts.data.some(p => p.chapter !== undefined)) {
+      posts.data.sort((a, b) => {
+        const ca = a.chapter;
+        const cb = b.chapter;
+
+        if (ca !== undefined && cb !== undefined) return ca - cb;
+        if (ca !== undefined) return -1;
+        if (cb !== undefined) return 1;
+
+        return b.date - a.date;
+      });
+    }
+
+    const data = pagination(category.path, posts, {
+      perPage,
+      layout: ['category', 'archive', 'index'],
+      format: paginationDir + '/%d/',
+      data: {
+        category: category.name,
+      },
+    });
+
+    return result.concat(data);
+  }, []);
 });
