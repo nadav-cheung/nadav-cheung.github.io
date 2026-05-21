@@ -14,8 +14,10 @@ npx hexo clean && npx hexo generate
 # Deploy to GitHub Pages (builds + pushes to gh-page branch)
 npx hexo clean && npx hexo deploy
 
-# Sync book chapters from external source repo
-node scripts/sync-book.js
+# Sync book chapters from external source repos
+node scripts/sync-book.js          # agentscope → source/_posts/agentscope-book/
+node scripts/sync-claudecode.js    # claudeai    → source/_posts/claudecode-book/
+node scripts/sync-qwenpaw.js       # QwenPaw    → source/_posts/qwenpaw-book/
 ```
 
 ## Architecture
@@ -46,14 +48,18 @@ All custom code is in `source/_data/`. NexT's `custom_file_path` in `_config.nex
 
 - **`chapter-sort.js`**: Overrides the default category generator to sort posts with a `chapter` front-matter field by chapter number ascending. Necessary because `hexo-generator-category` sorts by `-date` and ignores `before_generate` filters.
 - **`sync-book.js`**: Syncs markdown chapters from `/Users/nadav/IdeaProjects/agentscope/teaching/book` into `source/_posts/agentscope-book/`. Uses MD5-based `.source-cache.json` to detect changes. Preserves AI-generated front-matter fields (description, categories, tags) from existing posts.
+- **`sync-claudecode.js`**: Syncs Claude Code book from `/Users/nadav/IdeaProjects/claudeai/teaching/book` into `source/_posts/claudecode-book/`. Same MD5-cache pattern (`.claudecode-cache.json`). Walks subdirectories matching `卷*/第*章*.md` and `附录/附录*.md`. Post-processes: rewrites `.md` internal links to abbrlink URLs, assigns chapter ordering and incremental dates.
+- **`sync-qwenpaw.js`**: Syncs QwenPaw book from `/Users/nadav/IdeaProjects/QwenPaw/book` into `source/_posts/qwenpaw-book/`. Same pattern (`.qwenpaw-cache.json`). Flat directory (no subdirectory walk). Same post-processing as sync-claudecode.js.
 
 ### Content structure
 
 ```
 source/_posts/
   agentscope-book/   # 39 chapters (ch01–ch36 + 3 appendix), chapter front-matter field
-  algorithms/        # 15 posts, some with sticky values
-  leetcode/          # 3 posts, some with sticky values
+  claudecode-book/   # Claude Code 源码解析书（卷零–卷五 + 附录）
+  qwenpaw-book/      # QwenPaw 源码解析书（32 chapters + appendix）
+  algorithms/        # 算法文章
+  leetcode/          # LeetCode 题解
 ```
 
 ### Key plugins

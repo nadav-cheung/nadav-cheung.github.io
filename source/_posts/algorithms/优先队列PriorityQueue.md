@@ -5,7 +5,6 @@ tags:
   - PriorityQueue
   - 优先队列
   - Queue
-sticky: 3124
 abbrlink: dbb3c5e
 date: 2024-02-20 13:44:07
 description: "优先队列基于二叉堆实现，按优先级动态排序，核心操作siftUp与siftDown保证极值元素高效出队。本文详解优先队列的工作原理，提供完整的Java手写实现代码，并介绍其在任务调度、Dijkstra算法、网络流量管理和实时数据处理中的应用场景。"

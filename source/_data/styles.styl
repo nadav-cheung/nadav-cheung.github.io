@@ -457,3 +457,45 @@ pre code
 .links-of-author
   margin-top: 8px
   margin-bottom: 8px
+
+// ---------------------------------------------------------------
+// APlayer 音乐播放器（侧边栏）
+// ---------------------------------------------------------------
+.sidebar .aplayer
+  visibility: visible !important
+  margin: 8px 0
+  border-radius: 4px
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08)
+  .aplayer-body
+    background: var(--content-bg-color)
+  .aplayer-pic
+    border-radius: 4px 0 0 4px
+  .aplayer-info
+    color: var(--text-color)
+    .aplayer-music .aplayer-title
+      color: var(--text-color)
+    .aplayer-music .aplayer-author
+      color: var(--custom-text-muted)
+    .aplayer-controller .aplayer-time
+      color: var(--custom-text-muted)
+      .aplayer-icon
+        fill: var(--custom-text-muted)
+  .aplayer-lrc
+    &::before, &::after
+      background: transparent !important
+    p
+      color: var(--custom-text-secondary)
+    .aplayer-lrc-current
+      color: var(--text-color)
+  .aplayer-list
+    background: var(--content-bg-color)
+    border-top: 1px solid var(--custom-border-color)
+    ol li
+      color: var(--text-color)
+      border-bottom: 1px solid var(--custom-border-color)
+      &:hover
+        background: var(--custom-bg-light)
+      &.aplayer-list-light
+        background: var(--custom-bg-light)
+      .aplayer-list-cur
+        background-color: var(--brand-color)

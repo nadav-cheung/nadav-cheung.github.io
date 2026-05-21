@@ -5,7 +5,6 @@ categories: [算法与数据结构]
 tags:
   - List
   - ArrayList
-sticky: 3018
 abbrlink: e7bb25a0
 description: "手写ArrayList深入解析基于数组的List实现原理，从线性表基本概念出发，剖析底层数组结构包括默认容量、elementData存储。本文详解初始化、元素添加、数组扩容、指定位置插入、替换与删除等关键操作的Java代码实现，配合图示直观展示ArrayList内部机制。"
 ---
