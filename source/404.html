@@ -1,18 +1,98 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-    <meta http-equiv="content-type" content="text/html;charset=utf-8;"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="robots" content="all" />
-    <meta name="robots" content="index,follow"/>
-    <link rel="stylesheet" type="text/css" href="https://qzone.qq.com/gy/404/style/404style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>404 — 页面未找到</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+      background: #f8f8f8;
+      color: #1a1a1a;
+      display: flex; justify-content: center; align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
+    .wrapper {
+      max-width: 500px;
+      background: #fff;
+      border-radius: 12px;
+      padding: 60px 40px 50px;
+      box-shadow: 0 2px 16px rgba(0,0,0,.06);
+    }
+    .code {
+      font-size: 96px;
+      font-weight: 800;
+      line-height: 1;
+      color: #555;
+      letter-spacing: -2px;
+      margin-bottom: 8px;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 12px;
+    }
+    .desc {
+      font-size: 15px;
+      color: #777;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-block;
+      padding: 10px 28px;
+      border-radius: 6px;
+      font-size: 14px;
+      text-decoration: none;
+      transition: all .2s;
+      cursor: pointer;
+      border: none;
+    }
+    .btn-primary {
+      background: #555;
+      color: #fff;
+    }
+    .btn-primary:hover { background: #333; }
+    .btn-outline {
+      background: #fff;
+      color: #555;
+      border: 1px solid #d0d0d0;
+    }
+    .btn-outline:hover { border-color: #555; color: #333; }
+    .divider {
+      width: 40px; height: 2px;
+      background: #e8e8e8;
+      margin: 28px auto;
+    }
+    .hint {
+      font-size: 13px;
+      color: #999;
+      margin-top: 24px;
+    }
+  </style>
 </head>
 <body>
-<script type="text/plain" src="http://www.qq.com/404/search_children.js"
-        charset="utf-8" homePageUrl="/"
-        homePageName="回到我的主页">
-</script>
-<script src="https://qzone.qq.com/gy/404/data.js" charset="utf-8"></script>
-<script src="https://qzone.qq.com/gy/404/page.js" charset="utf-8"></script>
+<div class="wrapper">
+  <div class="code">404</div>
+  <div class="title">页面未找到</div>
+  <div class="desc">
+    你访问的页面不存在、已被移动或链接失效。<br>
+    试试返回首页，或者用右上角搜索功能查找内容。
+  </div>
+  <div class="actions">
+    <a class="btn btn-primary" href="/">回到首页</a>
+    <a class="btn btn-outline" href="/archives/">文章归档</a>
+  </div>
+  <div class="divider"></div>
+  <div class="hint">
+    如果这是从站内链接跳转过来的，<br>请在评论区告知作者修复。
+  </div>
+</div>
 </body>
 </html>
