@@ -6,45 +6,40 @@
   <meta name="robots" content="noindex">
   <title>404 — 页面未找到</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
-      background: #f8f8f8;
-      color: #1a1a1a;
-      display: flex; justify-content: center; align-items: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 20px;
-    }
-    .wrapper {
+    .wrapper-404 *,
+    .wrapper-404 *::before,
+    .wrapper-404 *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    .wrapper-404 {
       max-width: 500px;
-      background: #fff;
+      margin: 40px auto;
+      text-align: center;
+      background: var(--content-bg-color, #fff);
       border-radius: 12px;
       padding: 60px 40px 50px;
       box-shadow: 0 2px 16px rgba(0,0,0,.06);
     }
-    .code {
+    .wrapper-404 .code {
       font-size: 96px;
       font-weight: 800;
       line-height: 1;
-      color: #555;
+      color: var(--brand-color, #555);
       letter-spacing: -2px;
       margin-bottom: 8px;
     }
-    .title {
+    .wrapper-404 .title {
       font-size: 20px;
       font-weight: 600;
-      color: #333;
+      color: var(--text-color, #333);
       margin-bottom: 12px;
     }
-    .desc {
+    .wrapper-404 .desc {
       font-size: 15px;
-      color: #777;
+      color: var(--custom-text-muted, #777);
       line-height: 1.7;
       margin-bottom: 32px;
     }
-    .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
-    .btn {
+    .wrapper-404 .actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .wrapper-404 .btn {
       display: inline-block;
       padding: 10px 28px;
       border-radius: 6px;
@@ -54,31 +49,31 @@
       cursor: pointer;
       border: none;
     }
-    .btn-primary {
-      background: #555;
+    .wrapper-404 .btn-primary {
+      background: var(--brand-color, #555);
       color: #fff;
     }
-    .btn-primary:hover { background: #333; }
-    .btn-outline {
-      background: #fff;
-      color: #555;
-      border: 1px solid #d0d0d0;
+    .wrapper-404 .btn-primary:hover { background: var(--brand-hover-color, #333); }
+    .wrapper-404 .btn-outline {
+      background: var(--content-bg-color, #fff);
+      color: var(--brand-color, #555);
+      border: 1px solid var(--custom-border-color, #d0d0d0);
     }
-    .btn-outline:hover { border-color: #555; color: #333; }
-    .divider {
+    .wrapper-404 .btn-outline:hover { border-color: var(--brand-color, #555); color: var(--brand-hover-color, #333); }
+    .wrapper-404 .divider {
       width: 40px; height: 2px;
-      background: #e8e8e8;
+      background: var(--custom-border-color, #e8e8e8);
       margin: 28px auto;
     }
-    .hint {
+    .wrapper-404 .hint {
       font-size: 13px;
-      color: #999;
+      color: var(--custom-text-muted, #999);
       margin-top: 24px;
     }
   </style>
 </head>
 <body>
-<div class="wrapper">
+<div class="wrapper-404">
   <div class="code">404</div>
   <div class="title">页面未找到</div>
   <div class="desc">
